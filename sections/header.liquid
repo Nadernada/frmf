@@ -311,7 +311,7 @@
         {%- if header_icons_as_text -%}
           <span class="navtext">{{ 'layout.cart.title' | t }}</span>
         {%- else -%}
-          {{ cart_icon }}
+          {%- render 'icon-cart' -%}
         {%- endif -%}
       </a>
     </div>

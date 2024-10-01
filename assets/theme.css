@@ -9387,7 +9387,7 @@ body:has(.site-header[data-transparent=true]):has(.main-content > .supports-tran
   list-style: none;
   display: flex;
   align-items: stretch;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
@@ -9428,7 +9428,8 @@ body:has(.site-header[data-transparent=true]):has(.main-content > .supports-tran
 }
 
 .site-header--nav-center .nav--default {
-  justify-content: center;
+  justify-content: start;
+  padding-left: calc(var(--gutter) + var(--inner));
 }
 
 .site-header--compress .nav {

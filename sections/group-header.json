@@ -20,8 +20,8 @@
             "text": "<p>New customers save 10% with code WELCOME10</p>",
             "text_color": "",
             "heading_highlight_type": "circle",
-            "highlight_color": "#D43747",
-            "highlight_text_color": "#000",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
             "icon_name": "none",
             "icon_color": "",
             "icon_width": 20,
@@ -55,7 +55,7 @@
         "bg_color": "#ffffff",
         "gradient": "",
         "color": "#000000",
-        "border_color": "#000"
+        "border_color": "#000000"
       }
     },
     "header": {
@@ -83,12 +83,12 @@
         "header_border": false,
         "link_hover_effect": "dot",
         "logo_not_home": "{{ shop.brand.logo }}",
-        "logo_max_width": 100,
+        "logo_max_width": 70,
         "main-menu": "main-menu",
         "main_menu_secondary": "",
-        "show_images": false,
+        "show_images": true,
         "image_aspect_ratio": 1,
-        "menu_alignment": "left",
+        "menu_alignment": "center",
         "header_icons_as_text": false,
         "highlight_item": "Sale",
         "highlight_item_color": "#d02e2e",

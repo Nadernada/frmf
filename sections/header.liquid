@@ -252,7 +252,7 @@
   capture cart_icon
     case settings.cart_icon
       when 'bag'
-        render 'icon-shopping-bag'
+        render 'icon-cart'
       when 'shopping_cart'
         render 'icon-shopping-cart'
     endcase
@@ -311,7 +311,7 @@
         {%- if header_icons_as_text -%}
           <span class="navtext">{{ 'layout.cart.title' | t }}</span>
         {%- else -%}
-          {%- render 'icon-cart' -%}
+          {{ cart_icon }}
         {%- endif -%}
       </a>
     </div>

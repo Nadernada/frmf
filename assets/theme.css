@@ -9424,7 +9424,7 @@ body:has(.site-header[data-transparent=true]):has(.main-content > .supports-tran
 }
 
 .site-header--nav-right .nav--default {
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .site-header--nav-center .nav--default {
@@ -9529,7 +9529,7 @@ body:has(.site-header[data-transparent=true]):has(.main-content > .supports-tran
   width: 100%;
   height: var(--BORDER-WIDTH);
   display: block;
-  background: var(--btn-text, var(--text));
+  background: var(--accent);
   transition: none;
   pointer-events: none;
 }
@@ -9771,7 +9771,7 @@ body:has(.site-header[data-transparent=true]):has(.main-content > .supports-tran
   --text: var(--COLOR-TEXT);
   position: absolute;
   top: 100%;
-  background: transparent;
+  background: #E9E9E9;
   line-height: 22px;
   margin: 0;
   text-align: left;

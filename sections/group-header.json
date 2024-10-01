@@ -65,7 +65,8 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image_second_menu": false,
+            "image_second_menu": true,
+            "image": "shopify://shop_images/Home_kit.png",
             "aspect_ratio": 1,
             "wide_image": false,
             "title": "",

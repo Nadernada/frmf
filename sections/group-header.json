@@ -18,6 +18,10 @@
           "type": "text",
           "settings": {
             "text": "<p>New customers save 10% with code WELCOME10</p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#D43747",
+            "highlight_text_color": "#000",
             "icon_name": "none",
             "icon_color": "",
             "icon_width": 20,
@@ -33,15 +37,25 @@
       "block_order": [
         "announcement-0"
       ],
+      "disabled": true,
       "settings": {
         "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": true,
         "padding": 10,
         "slider_speed": 7,
+        "show_arrows": false,
         "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "text_caps": false,
+        "type_style": "subheading-text",
         "text_size": 100,
+        "letter_spacing": 0,
         "message_spacing": 25,
         "bg_color": "#ffffff",
-        "color": "#000000"
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000"
       }
     },
     "header": {
@@ -51,9 +65,11 @@
           "type": "image",
           "settings": {
             "position": "1",
+            "image_second_menu": false,
             "aspect_ratio": 1,
             "wide_image": false,
             "title": "",
+            "heading_size": 100,
             "link_text": "",
             "link": ""
           }
@@ -63,14 +79,17 @@
         "ab19c0db-63ca-4489-a211-693e66e76639"
       ],
       "settings": {
-        "sticky_header": false,
-        "header_border": true,
+        "sticky_header": true,
+        "header_border": false,
+        "link_hover_effect": "dot",
         "logo_not_home": "{{ shop.brand.logo }}",
         "logo_max_width": 100,
         "main-menu": "main-menu",
+        "main_menu_secondary": "",
         "show_images": false,
         "image_aspect_ratio": 1,
         "menu_alignment": "left",
+        "header_icons_as_text": false,
         "highlight_item": "Sale",
         "highlight_item_color": "#d02e2e",
         "header_transparent": true,

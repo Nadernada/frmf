@@ -12,52 +12,28 @@
     "section-slideshow-0": {
       "type": "section-slideshow",
       "blocks": {
-        "section-slideshow-0-block-0": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 10,
-            "text_width": "wide",
-            "text_position": "center",
-            "text_color": "text-light",
-            "subheading": "Introducing",
-            "title": "<p>Welcome to Palo Alto</p>",
-            "heading_highlight_type": "circle",
-            "highlight_color": "#d43747",
-            "highlight_text_color": "#000000",
-            "text": "Add more info or delete this text",
-            "button_1_text": "Shop All",
-            "button_1_link": "shopify://collections/all",
-            "button_1_color": "btn--primary",
-            "button_1_style": "btn--solid",
-            "button_1_size": "btn--large",
-            "button_2_text": "Learn More",
-            "button_2_link": "",
-            "button_2_color": "btn--secondary",
-            "button_2_style": "btn--solid",
-            "button_2_size": "btn--large",
-            "video_text": "",
-            "video_link": ""
-          }
-        },
         "section-slideshow-0-block-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Frame_189.png",
             "overlay_opacity": 10,
             "text_width": "wide",
             "text_position": "bottom-left",
-            "text_color": "text-light",
-            "subheading": "Introducing",
-            "title": "<p>Welcome to Palo Alto</p>",
+            "text_alignment": "text-left",
+            "text_color": "text-dark",
+            "subheading": "",
+            "title": "<p>Home jersey 2024</p>",
             "heading_highlight_type": "circle",
             "highlight_color": "#d43747",
             "highlight_text_color": "#000000",
-            "text": "Add more info or delete this text",
-            "button_1_text": "Shop All",
+            "text": "Our shop by Player collection is crafted for those who embody both passion and performance. From bold colors to standout designs, our collection seamlessly combines comfort with top-tier athletic fashion.",
+            "stacked_button": false,
+            "button_1_text": "Shop Now",
             "button_1_link": "shopify://collections/all",
             "button_1_color": "btn--primary",
             "button_1_style": "btn--solid",
             "button_1_size": "btn--large",
-            "button_2_text": "Learn More",
+            "button_2_text": "",
             "button_2_link": "",
             "button_2_color": "btn--secondary",
             "button_2_style": "btn--solid",
@@ -68,7 +44,6 @@
         }
       },
       "block_order": [
-        "section-slideshow-0-block-0",
         "section-slideshow-0-block-1"
       ],
       "settings": {
@@ -82,75 +57,9 @@
         "duration": 4,
         "transition": "zoom-out",
         "enable_zoom_animation": true,
+        "enable_card_scrolling": false,
+        "increase_border_radius": true,
         "heading_size": 180
-      }
-    },
-    "section-countdown-0": {
-      "type": "section-countdown",
-      "blocks": {
-        "section-countdown-0-block-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "<p>Countdown is on</p>",
-            "size": 75
-          }
-        },
-        "section-countdown-0-block-1": {
-          "type": "heading",
-          "settings": {
-            "text": "<p>Shop Before It Ends</p>",
-            "size": 120,
-            "heading_highlight_type": "italics",
-            "highlight_color": "#d43747",
-            "highlight_text_color": "#000000"
-          }
-        },
-        "section-countdown-0-block-2": {
-          "type": "timer",
-          "settings": {
-            "end_date": "2024-12-31",
-            "end_time": "11:59",
-            "period": "am",
-            "end_message": "",
-            "hide_on_complete": true
-          }
-        },
-        "section-countdown-0-block-3": {
-          "type": "button",
-          "settings": {
-            "button_1_text": "Shop the sale",
-            "button_1_link": "shopify://collections/all",
-            "button_1_color": "btn--white",
-            "button_1_style": "btn--solid-border",
-            "button_1_size": "btn--medium",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_color": "btn--black",
-            "button_2_style": "btn--solid",
-            "button_2_size": "btn--small"
-          }
-        }
-      },
-      "block_order": [
-        "section-countdown-0-block-0",
-        "section-countdown-0-block-1",
-        "section-countdown-0-block-2",
-        "section-countdown-0-block-3"
-      ],
-      "settings": {
-        "layout_style": "inline",
-        "height": "150",
-        "enable_mobile_height": false,
-        "mobile_height": "400",
-        "overlay_opacity": 10,
-        "enable_zoom_animation": true,
-        "bg_color": "#ffffff",
-        "gradient": "",
-        "text_color": "text-dark",
-        "text_width": "normal",
-        "width": "wrapper--full",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "section-grid-0": {
@@ -168,7 +77,8 @@
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
           }
         },
         "section-grid-0-block-1": {
@@ -183,7 +93,8 @@
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
           }
         },
         "section-grid-0-block-2": {
@@ -198,7 +109,8 @@
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
           }
         },
         "section-grid-0-block-3": {
@@ -213,7 +125,8 @@
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
           }
         }
       },
@@ -225,6 +138,8 @@
       ],
       "settings": {
         "desktop_height": "five-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
         "heading_size": 110,
         "button_1_color": "btn--white",
         "button_1_style": "btn--text",
@@ -234,6 +149,8 @@
         "button_2_size": "btn--small",
         "bg_color_secondary": false,
         "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "overlay_text": true,
         "width": "wrapper--full-padded",
         "add_gutter": true,
         "padding_top": 40,
@@ -360,9 +277,12 @@
       ],
       "settings": {
         "layout": "1",
+        "count_up_enabled": true,
+        "count_up_duration": 100,
         "height": "400",
         "bg_color": "",
         "enable_slider_mobile": true,
+        "columns_mobile": "1",
         "width": "wrapper--full-padded",
         "padding_top": 20,
         "padding_bottom": 20
@@ -599,6 +519,9 @@
         "section-sticky-images-and-text-0-block-0": {
           "type": "slide",
           "settings": {
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
             "subheading": "New this month",
             "title": "<p>Our latest obsessions.</p>",
             "heading_size": 130,
@@ -616,6 +539,9 @@
         "section-sticky-images-and-text-0-block-1": {
           "type": "slide",
           "settings": {
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
             "subheading": "",
             "title": "<p>Sustainable trends you'll love!</p>",
             "heading_size": 130,
@@ -633,6 +559,9 @@
         "section-sticky-images-and-text-0-block-2": {
           "type": "slide",
           "settings": {
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
             "subheading": "Lookbooks",
             "title": "<p>Summer 2024</p>",
             "heading_size": 130,
@@ -685,7 +614,8 @@
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
           }
         },
         "section-grid-1-block-1": {
@@ -700,7 +630,8 @@
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
           }
         }
       },
@@ -710,6 +641,8 @@
       ],
       "settings": {
         "desktop_height": "six-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
         "heading_size": 150,
         "button_1_color": "btn--secondary",
         "button_1_style": "btn--solid-border",
@@ -719,6 +652,8 @@
         "button_2_size": "btn--small",
         "bg_color_secondary": false,
         "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "overlay_text": true,
         "width": "wrapper--full-padded",
         "add_gutter": true,
         "padding_top": 50,
@@ -749,7 +684,8 @@
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
           }
         }
       },
@@ -758,6 +694,8 @@
       ],
       "settings": {
         "desktop_height": "three-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
         "heading_size": 130,
         "button_1_color": "btn--white",
         "button_1_style": "btn--text",
@@ -767,6 +705,8 @@
         "button_2_size": "btn--small",
         "bg_color_secondary": false,
         "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "overlay_text": true,
         "width": "wrapper",
         "add_gutter": true,
         "padding_top": 60,
@@ -998,6 +938,7 @@
         "title": "",
         "align_text": "text-center",
         "columns": 3,
+        "columns_mobile": "1",
         "show_images": false,
         "show_borders": true,
         "equalize_height": true,
@@ -1016,7 +957,6 @@
   },
   "order": [
     "section-slideshow-0",
-    "section-countdown-0",
     "section-grid-0",
     "section-marquee-0",
     "section-promotion-row-0",

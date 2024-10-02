@@ -48,12 +48,25 @@
         "collection_8TGJxE": {
           "type": "collection",
           "settings": {
-            "ft_collection": "away-kit-24-25",
+            "ft_collection": "training",
             "collection_text": "New This Month",
             "collection_image": "{{ block.settings.ft_collection.image }}",
             "button_collection_text": "Shop Now",
             "button_collection_link": "{{ block.settings.ft_collection.url }}",
-            "button_collection_color": "btn--black",
+            "button_collection_color": "btn--white",
+            "button_collection_style": "btn--outline",
+            "button_collection_size": "btn--small"
+          }
+        },
+        "collection_daQLNF": {
+          "type": "collection",
+          "settings": {
+            "ft_collection": "home-jersey-2024",
+            "collection_text": "Best Selling",
+            "collection_image": "{{ block.settings.ft_collection.image }}",
+            "button_collection_text": "Shop Now",
+            "button_collection_link": "",
+            "button_collection_color": "btn--white",
             "button_collection_style": "btn--outline",
             "button_collection_size": "btn--small"
           }
@@ -63,7 +76,8 @@
         "heading_Cyb4Vd",
         "text_69LRbm",
         "button_RpkN6n",
-        "collection_8TGJxE"
+        "collection_8TGJxE",
+        "collection_daQLNF"
       ],
       "settings": {
         "height": "six-fifty-height",

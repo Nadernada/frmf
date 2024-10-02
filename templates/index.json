@@ -18,8 +18,8 @@
             "text": "<p>Home Jersey 2024</p>",
             "size": 180,
             "heading_highlight_type": "italics",
-            "highlight_color": "#D43747",
-            "highlight_text_color": "#000"
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000"
           }
         },
         "text_69LRbm": {
@@ -44,12 +44,21 @@
             "button_2_style": "btn--solid",
             "button_2_size": "btn--small"
           }
+        },
+        "collection_8TGJxE": {
+          "type": "collection",
+          "settings": {
+            "collection-text": "Collection",
+            "collection-image": "shopify://shop_images/away_kit.png",
+            "collection_button_text": "pop"
+          }
         }
       },
       "block_order": [
         "heading_Cyb4Vd",
         "text_69LRbm",
-        "button_RpkN6n"
+        "button_RpkN6n",
+        "collection_8TGJxE"
       ],
       "settings": {
         "height": "six-fifty-height",

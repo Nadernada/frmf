@@ -15919,7 +15919,7 @@ body:has(.card-scrolling-effect):has([data-header-sticky]) .main-content > .shop
   text-decoration: none;
   text-transform: none;
   font-weight: var(--FONT-WEIGHT-BODY-BOLD);
-  font-size: calc(0.9rem * var(--adjust-product-grid-heading));
+  font-size: calc(1.1rem * var(--adjust-product-grid-heading));
   line-height: 1;
 }
 @media only screen and (max-width: 479px) {

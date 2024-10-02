@@ -575,11 +575,11 @@
       data-aos-delay="{{ aos_delay }}"
     {% endif %}>
     {%- liquid
-      assign button_product_link = block.settings.button_product_link
-      assign button_product_text = block.settings.button_product_text
-      assign button_product_style = block.settings.button_product_style
-      assign button_product_color = block.settings.button_product_color
-      assign button_product_size = block.settings.button_product_size
+      assign button_product_link = section.settings.button_product_link
+      assign button_product_text = section.settings.button_product_text
+      assign button_product_style = section.settings.button_product_style
+      assign button_product_color = section.settings.button_product_color
+      assign button_product_size = section.settings.button_product_size
     -%}
 
     {%- unless alignment_inline -%}

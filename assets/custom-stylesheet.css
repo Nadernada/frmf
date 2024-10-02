@@ -114,3 +114,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.offset {
+  margin-top: 2rem;
+}
+
+.white-bg {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: var(--RADIUS);
+}

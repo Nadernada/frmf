@@ -144,14 +144,14 @@
         "width": "wrapper--full-padded",
         "padding_top": 60,
         "padding_bottom": 60,
-        "button_text": "Shop Now",
+        "button_text": "",
         "button_link": "",
         "button_color": "btn--primary",
         "button_style": "btn--solid",
         "button_size": "btn--small",
-        "button_product_text": "",
+        "button_product_text": "Shop Now",
         "button_product_link": "",
-        "button_product_color": "btn--black",
+        "button_product_color": "btn--primary",
         "button_product_style": "btn--solid",
         "button_product_size": "btn--small"
       }

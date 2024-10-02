@@ -124,3 +124,15 @@
   padding: 1.5rem;
   border-radius: var(--RADIUS);
 }
+
+.mosaic__item--1 {
+  margin-bottom: 3rem;
+}
+
+.mosaic__item--2 {
+  margin-top: 4rem;
+}
+
+.mosaic__item--3 {
+  transform: translateY(-3rem);
+}

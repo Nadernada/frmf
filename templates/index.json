@@ -163,52 +163,52 @@
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "",
+            "collection": "mens-collection",
             "overlay_opacity": 10,
-            "text_position": "center",
+            "text_position": "bottom-left",
             "subheading": "",
             "show_description": true,
             "button_1_text": "Shop Now",
-            "overlay_text_color": "text-light"
+            "overlay_text_color": "text-dark"
           }
         },
         "collection_DTtiPw": {
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "",
+            "collection": "womens-collection",
             "overlay_opacity": 10,
-            "text_position": "center",
+            "text_position": "bottom-left",
             "subheading": "",
             "show_description": true,
             "button_1_text": "Shop Now",
-            "overlay_text_color": "text-light"
+            "overlay_text_color": "text-dark"
           }
         },
         "collection_CMitMt": {
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "",
+            "collection": "kids-collection",
             "overlay_opacity": 10,
-            "text_position": "center",
+            "text_position": "bottom-left",
             "subheading": "",
             "show_description": true,
             "button_1_text": "Shop Now",
-            "overlay_text_color": "text-light"
+            "overlay_text_color": "text-dark"
           }
         },
         "collection_tUcyrm": {
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "",
+            "collection": "official-training",
             "overlay_opacity": 10,
-            "text_position": "center",
+            "text_position": "bottom-left",
             "subheading": "",
             "show_description": true,
             "button_1_text": "Shop Now",
-            "overlay_text_color": "text-light"
+            "overlay_text_color": "text-dark"
           }
         }
       },
@@ -227,7 +227,7 @@
         "button_1_style": "btn--text",
         "button_1_size": "btn--small",
         "button_2_color": "btn--black",
-        "button_2_style": "btn--text",
+        "button_2_style": "btn--outline",
         "button_2_size": "btn--small",
         "bg_color_secondary": false,
         "enable_slider_mobile": true,

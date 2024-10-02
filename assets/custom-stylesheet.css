@@ -39,3 +39,8 @@
   border-color: var(--accent);
   color: white;
 }
+
+.hero-featured-collection {
+  width: 25%;
+  height: auto;
+}

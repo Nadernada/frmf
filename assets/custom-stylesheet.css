@@ -43,4 +43,6 @@
 .hero-featured-collection {
   width: 25%;
   height: auto;
+  display: flex;
+  position: relative;
 }

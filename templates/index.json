@@ -48,9 +48,10 @@
         "collection_8TGJxE": {
           "type": "collection",
           "settings": {
-            "collection-text": "Collection",
-            "collection-image": "shopify://shop_images/away_kit.png",
-            "collection_button_text": "pop"
+            "ft_collection": "away-kit-24-25",
+            "collection_text": "Away Kit 24/25{{ block.settings.ft_collection.title }}",
+            "collection_image": "{{ block.settings.ft_collection.image }}",
+            "collection_button_text": "Shop Now"
           }
         }
       },

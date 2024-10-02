@@ -13,3 +13,29 @@
 .navlink:hover > .navlink--highlight--icon {
   transform: rotate(180deg);
 }
+
+.sbp-tabs {
+  width: 60%;
+  justify-content: end;
+  margin-bottom: calc(var(--gutter) / 2 + 0.5rem);
+}
+
+.sbp-scrollbar {
+  display: flex;
+  justify-content: end;
+}
+
+.tabs__link {
+  padding: .6rem 1.2rem;
+  font-weight: 600;
+  color: #CC0A16;
+  border: 1px #CC0A16 solid;
+  border-radius: .5rem;
+  margin-right: 15px;
+}
+
+.tabs__link.current {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}

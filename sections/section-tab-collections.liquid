@@ -97,113 +97,137 @@
 >
 
   <div class="{{ section_width }}">
-    <div>
+    {%- assign tabs_navigation = '' -%}
+    <div class="tabs__head tab-collections__head tab-collections__head--has-button">
 
-      {%- if section.settings.title != empty -%}
-        <div class="section__header {{ text_alignment }}">
-          <h2 class="h2"
-            {% if animations_enabled %}
-              data-aos="fade-up"
-              data-aos-anchor="{{ aos_anchor }}"
-              data-aos-delay="{{ animation_delay }}"
-              {%- assign animation_delay = animation_delay | plus: 150 -%}
-            {% endif %}>{{ section.settings.title }}</h2>
-            
-            {%- if settings.show_spacer_lines -%}
-              <hr class="section__heading-line"
-                {% if animations_enabled %}
-                  data-aos="fade-up"
-                  data-aos-delay="{{ animation_delay }}"
-                  data-aos-anchor="{{ aos_anchor }}"
-                {% endif %}>
+    {%- if section.settings.title != empty -%}
+      <div class="section__header {{ text_alignment }}">
+        <h2 class="h2"
+          {% if animations_enabled %}
+            data-aos="fade-up"
+            data-aos-anchor="{{ aos_anchor }}"
+            data-aos-delay="{{ animation_delay }}"
+            {%- assign animation_delay = animation_delay | plus: 150 -%}
+          {% endif %}>{{ section.settings.title }}</h2>
+          
+          {%- if settings.show_spacer_lines -%}
+            <hr class="section__heading-line"
+              {% if animations_enabled %}
+                data-aos="fade-up"
+                data-aos-delay="{{ animation_delay }}"
+                data-aos-anchor="{{ aos_anchor }}"
+              {% endif %}>
               {%- assign animation_delay = animation_delay | plus: 150 -%}
             {%- endif -%}
           </div>
         {%- endif -%}
-        {%- assign tabs_navigation = '' -%}
 
-      {%- for block in section.blocks -%}
-        {%- liquid
-          assign tab_collection = collections[block.settings.tab_collection]
-          assign tab_collection_url = tab_collection.url | default: '#!'
-          assign tab_collection_title = block.settings.title | default: tab_collection.title | default: 'Collection'
-          assign tab_collection_products = tab_collection.products
-          assign number_of_products = block.settings.number_of_products
-          assign image = block.settings.image | default: tab_collection.image
-          assign heading = block.settings.heading
-          assign overlay_opacity = block.settings.overlay_opacity | times: 0.01
-          assign button_text = block.settings.button_text
-          assign button_link = block.settings.button_link | default: tab_collection_url
-          assign button_style = block.settings.button_style
-          assign button_color = block.settings.button_color
-          assign button_size = block.settings.button_size
-          assign show_image = block.settings.show_image
+    {%- for block in section.blocks -%}
+      {%- liquid
+        assign tab_collection = collections[block.settings.tab_collection]
+        assign tab_collection_url = tab_collection.url | default: '#!'
+        assign tab_collection_title = block.settings.title | default: tab_collection.title | default: 'Collection'
+        assign tab_collection_products = tab_collection.products
+        assign number_of_products = block.settings.number_of_products
+        assign image = block.settings.image | default: tab_collection.image
+        assign heading = block.settings.heading
+        assign overlay_opacity = block.settings.overlay_opacity | times: 0.01
+        assign button_text = block.settings.button_text
+        assign button_link = block.settings.button_link | default: tab_collection_url
+        assign button_style = block.settings.button_style
+        assign button_color = block.settings.button_color
+        assign button_size = block.settings.button_size
+        assign show_image = block.settings.show_image
 
-          capture collection_button_classes
-            echo 'btn'
-            echo ' ' | append: collection_button_style
-            echo ' ' | append: collection_button_size
-            echo ' ' | append: collection_button_color
-            echo ' tab-collections__button'
-            case text_alignment
-              when 'text-center'
-                echo ' tab-collections__button--center'
-              when 'text-left'
-                echo ' tab-collections__button--left'
-            endcase
-            if forloop.first
-              echo ' current'
+        capture collection_button_classes
+          echo 'btn'
+          echo ' ' | append: collection_button_style
+          echo ' ' | append: collection_button_size
+          echo ' ' | append: collection_button_color
+          echo ' tab-collections__button'
+          case text_alignment
+            when 'text-center'
+              echo ' tab-collections__button--center'
+            when 'text-left'
+              echo ' tab-collections__button--left'
+          endcase
+          if forloop.first
+            echo ' current'
+          endif
+        endcapture
+
+        capture onboarding_products_one
+          for i in (1..number_of_products)
+            capture placeholder_index
+              cycle 1, 2, 3, 5, 6
+            endcapture
+            assign columns = settings.products_per_row_on_desktop | plus: 0
+            assign product_index = forloop.index0
+            if show_image
+              assign product_index = forloop.index
             endif
-          endcapture
+            assign items_animation_delay = product_index
+            render 'product-grid-item--onboarding', carousel: true, columns_mobile: columns_mobile, placeholder_index: placeholder_index, index: forloop.index0, block_id: block.id, animation_anchor: aos_anchor_body, animation_delay: items_animation_delay
+          endfor
+        endcapture
 
-          capture onboarding_products_one
-            for i in (1..number_of_products)
-              capture placeholder_index
-                cycle 1, 2, 3, 5, 6
-              endcapture
-              assign columns = settings.products_per_row_on_desktop | plus: 0
-              assign product_index = forloop.index0
-              if show_image
-              assign product_index = forloop.index
-              endif
-              assign items_animation_delay = product_index
-              render 'product-grid-item--onboarding', carousel: true, columns_mobile: columns_mobile, placeholder_index: placeholder_index, index: forloop.index0, block_id: block.id, animation_anchor: aos_anchor_body, animation_delay: items_animation_delay
-              endfor
-              endcapture
-              
-              capture onboarding_products_two
-              for i in (1..number_of_products)
-              capture placeholder_index
+        capture onboarding_products_two
+          for i in (1..number_of_products)
+            capture placeholder_index
               cycle 6, 5, 3, 2, 1
-              endcapture
-              assign columns = settings.products_per_row_on_desktop | plus: 0
-              assign product_index = forloop.index0
-              if show_image
+            endcapture
+            assign columns = settings.products_per_row_on_desktop | plus: 0
+            assign product_index = forloop.index0
+            if show_image
               assign product_index = forloop.index
-              endif
-              assign items_animation_delay = product_index
-              render 'product-grid-item--onboarding', carousel: true, columns_mobile: columns_mobile, placeholder_index: placeholder_index, index: forloop.index0, block_id: block.id, animation_anchor: aos_anchor_body, animation_delay: items_animation_delay
-              endfor
-              endcapture
-        -%}
+            endif
+            assign items_animation_delay = product_index
+            render 'product-grid-item--onboarding', carousel: true, columns_mobile: columns_mobile, placeholder_index: placeholder_index, index: forloop.index0, block_id: block.id, animation_anchor: aos_anchor_body, animation_delay: items_animation_delay
+          endfor
+        endcapture
+      -%}
 
-        {%- style -%}
-          {{ selector_id }} .item--{{ block.id }} { --overlay-opacity: {{ overlay_opacity }}; }
-        {%- endstyle -%}
+      {%- style -%}
+        {{ selector_id }} .item--{{ block.id }} { --overlay-opacity: {{ overlay_opacity }}; }
+      {%- endstyle -%}
 
-        {%- capture tabs_navigation -%}
-          {{ tabs_navigation }}
+      {%- capture tabs_navigation -%}
+        {{ tabs_navigation }}
 
-          <li class="tabs__link{% if forloop.first %} current{% endif %}"
-            data-tabs-link="{{ forloop.index0 }}"
-            data-block-id="{{ block.id }}"
-            tabindex="0"
-            {{ block.shopify_attributes }}>
-            <span>{{ tab_collection_title }}</span>
-          </li>
-        {%- endcapture -%}
+        <li class="tabs__link{% if forloop.first %} current{% endif %}"
+          data-tabs-link="{{ forloop.index0 }}"
+          data-block-id="{{ block.id }}"
+          tabindex="0"
+          {{ block.shopify_attributes }}>
+          <span>{{ tab_collection_title }}</span>
+        </li>
+      {%- endcapture -%}
 
-        {%- endfor -%}
+
+
+    {%- endfor -%}
+    {%- if tabs_navigation != '' and section.blocks.size > 1 or show_buttons -%}
+      <div class="sbp-tabs tabs__head tab-collections__head{% if show_buttons and collection_buttons != blank %} tab-collections__head--has-button{% endif %} {{ text_alignment }}"
+        {% if animations_enabled %}
+          data-aos="fade-up"
+          data-aos-anchor="{{ aos_anchor }}"
+          data-aos-delay="{{ animation_delay }}"
+          {%- assign animation_delay = animation_delay | plus: 150 -%}
+        {% endif %}>
+        <div class="sbp-scrollbar tabs-scrollbar {{ text_alignment }}" data-custom-scrollbar-parent>
+          <div class="tabs-scrollbar__holder" data-custom-scrollbar-holder>
+            <ul class="tabs__nav {{ type_style }}" data-custom-scrollbar-items>
+              {{ tabs_navigation }}
+            </ul>
+
+            {% comment %} <div class="custom-scrollbar" data-custom-scrollbar> {% endcomment %}
+              {% comment %} <div class="custom-scrollbar__thumb" data-custom-scrollbar-thumb></div> {% endcomment %}
+            {% comment %} </div> {% endcomment %}
+          </div>
+        </div>
+
+      </div>
+    {%- endif -%}
     </div>
 
     {%- if section.settings.text != empty -%}
@@ -224,7 +248,6 @@
       {%- endif -%}
 
       <div class="tab-collections-wrapper tabs" data-tabs-holder data-start-index="{{ current_idx }}">
-        {%- assign tabs_navigation = '' -%}
         {%- assign tabs = '' -%}
 
         {%- for block in section.blocks -%}
@@ -295,18 +318,6 @@
           {%- style -%}
             {{ selector_id }} .item--{{ block.id }} { --overlay-opacity: {{ overlay_opacity }}; }
           {%- endstyle -%}
-
-          {%- capture tabs_navigation -%}
-            {{ tabs_navigation }}
-
-            <li class="tabs__link{% if forloop.first %} current{% endif %}"
-              data-tabs-link="{{ forloop.index0 }}"
-              data-block-id="{{ block.id }}"
-              tabindex="0"
-              {{ block.shopify_attributes }}>
-              <span>{{ tab_collection_title }}</span>
-            </li>
-          {%- endcapture -%}
 
           {%- capture tabs -%}
             {{ tabs }}
@@ -417,29 +428,6 @@
           {%- endcapture -%}
         {%- endfor -%}
 
-        {%- if tabs_navigation != '' and section.blocks.size > 1 or show_buttons -%}
-          <div class="tabs__head tab-collections__head{% if show_buttons and collection_buttons != blank %} tab-collections__head--has-button{% endif %} {{ text_alignment }}"
-            {% if animations_enabled %}
-              data-aos="fade-up"
-              data-aos-anchor="{{ aos_anchor }}"
-              data-aos-delay="{{ animation_delay }}"
-              {%- assign animation_delay = animation_delay | plus: 150 -%}
-            {% endif %}>
-            <div class="tabs-scrollbar {{ text_alignment }}" data-custom-scrollbar-parent>
-              <div class="tabs-scrollbar__holder" data-custom-scrollbar-holder>
-                <ul class="tabs__nav {{ type_style }}" data-custom-scrollbar-items>
-                  {{ tabs_navigation }}
-                </ul>
-
-                <div class="custom-scrollbar" data-custom-scrollbar>
-                  <div class="custom-scrollbar__thumb" data-custom-scrollbar-thumb></div>
-                </div>
-              </div>
-            </div>
-
-            {{ collection_buttons }}
-          </div>
-        {%- endif -%}
 
         <div id="tabCollectionsBody--{{ section.id }}"
           class="tabs__contents"

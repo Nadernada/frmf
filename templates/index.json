@@ -51,7 +51,11 @@
             "ft_collection": "away-kit-24-25",
             "collection_text": "Away Kit 24/25{{ block.settings.ft_collection.title }}",
             "collection_image": "{{ block.settings.ft_collection.image }}",
-            "collection_button_text": "Shop Now"
+            "button_collection_text": "Shop Now",
+            "button_collection_link": "{{ block.settings.ft_collection.url }}",
+            "button_collection_color": "btn--black",
+            "button_collection_style": "btn--outline",
+            "button_collection_size": "btn--small"
           }
         }
       },

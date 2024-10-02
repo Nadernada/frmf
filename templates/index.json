@@ -279,7 +279,7 @@
         "button_product_link": "",
         "button_product_color": "btn--primary",
         "button_product_style": "btn--solid",
-        "button_product_size": "btn--medium",
+        "button_product_size": "btn--small",
         "bg_color_secondary": false,
         "enable_slider_mobile": true,
         "width": "wrapper--full-padded",

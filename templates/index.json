@@ -61,7 +61,7 @@
         "enable_zoom_animation": true,
         "enable_card_scrolling": false,
         "increase_border_radius": true,
-        "text_width": "narrow",
+        "text_width": "wide",
         "text_position": "bottom-left",
         "text_alignment": "text-left",
         "text_color": "text-dark"

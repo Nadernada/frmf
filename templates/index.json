@@ -239,207 +239,31 @@
         "padding_bottom": 60
       }
     },
-    "section-overlapping-images-0": {
-      "type": "section-overlapping-images",
+    "section_collection_GpAxjQ": {
+      "type": "section-collection",
       "settings": {
-        "text_position": "right",
-        "text_alignment": "left",
-        "images_width": 750,
-        "images_offset": 115,
-        "image_link_1": "",
-        "image_link_2": "",
-        "hide_image_2": false,
-        "title": "<p>Our Story, Our Promise</p>",
+        "collection": "best-sellers",
+        "products_layout": "carousel",
+        "number_of_products": 4,
+        "products_per_row_on_desktop": 2,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Best Sellers</p>",
         "heading_highlight_type": "circle",
-        "highlight_color": "#d43747",
-        "highlight_text_color": "#000000",
-        "description": "<p>Use this text to describe a product, promotion, or your company.</p>",
-        "heading_size": 140,
-        "button_text": "Button text",
-        "button_link": "",
-        "button_color": "btn--white",
-        "button_style": "btn--solid-border",
-        "button_size": "btn--medium",
-        "video_text": "",
-        "video_link": "",
-        "bg_color_secondary": false,
-        "gradient": "",
-        "animation": "horizontal",
-        "animation_intensity": 50,
-        "width": "wrapper--full-padded",
-        "padding_top": 10,
-        "padding_bottom": 100
-      }
-    },
-    "section-grid-0": {
-      "type": "section-grid",
-      "blocks": {
-        "section-grid-0-block-0": {
-          "type": "image",
-          "settings": {
-            "width": "25",
-            "overlay_opacity": 10,
-            "text_position": "bottom-left",
-            "subheading": "",
-            "title": "Trending",
-            "text": "Add more info or delete this text",
-            "button_1_text": "Shop Now",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "overlay_text_color": "text-light"
-          }
-        },
-        "section-grid-0-block-1": {
-          "type": "image",
-          "settings": {
-            "width": "25",
-            "overlay_opacity": 10,
-            "text_position": "bottom-left",
-            "subheading": "",
-            "title": "Clearance",
-            "text": "Add more info or delete this text",
-            "button_1_text": "Shop Now",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "overlay_text_color": "text-light"
-          }
-        },
-        "section-grid-0-block-2": {
-          "type": "image",
-          "settings": {
-            "width": "25",
-            "overlay_opacity": 10,
-            "text_position": "bottom-left",
-            "subheading": "",
-            "title": "Sale",
-            "text": "Add more info or delete this text",
-            "button_1_text": "Shop Now",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "overlay_text_color": "text-light"
-          }
-        },
-        "section-grid-0-block-3": {
-          "type": "image",
-          "settings": {
-            "width": "25",
-            "overlay_opacity": 10,
-            "text_position": "bottom-left",
-            "subheading": "",
-            "title": "New",
-            "text": "Add more info or delete this text",
-            "button_1_text": "Shop Now",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "overlay_text_color": "text-light"
-          }
-        }
-      },
-      "block_order": [
-        "section-grid-0-block-0",
-        "section-grid-0-block-1",
-        "section-grid-0-block-2",
-        "section-grid-0-block-3"
-      ],
-      "settings": {
-        "desktop_height": "five-fifty-height",
-        "enable_mobile_height": false,
-        "mobile_height": "four-fifty-height-mobile",
-        "heading_size": 110,
-        "button_1_color": "btn--white",
-        "button_1_style": "btn--text",
-        "button_1_size": "btn--small",
-        "button_2_color": "btn--black",
-        "button_2_style": "btn--text",
-        "button_2_size": "btn--small",
+        "highlight_color": "#D43747",
+        "highlight_text_color": "#000",
+        "heading_size": 100,
+        "text": "",
+        "text_size": 100,
+        "button_text": "",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--large",
         "bg_color_secondary": false,
         "enable_slider_mobile": true,
-        "columns_mobile": "1",
-        "overlay_text": true,
         "width": "wrapper--full-padded",
-        "add_gutter": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "section-marquee-2": {
-      "type": "section-marquee",
-      "blocks": {
-        "section-marquee-2-block-0": {
-          "type": "text",
-          "settings": {
-            "text": "<p>New collections just released - <a href=\"/collections\" title=\"All collections\">Shop now</a></p>",
-            "text_color": "",
-            "heading_highlight_type": "circle",
-            "highlight_color": "#d43747",
-            "highlight_text_color": "#000000",
-            "icon_name": "none",
-            "icon_color": "",
-            "icon_width": 25,
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "section-marquee-2-block-1": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "image_width": 100
-          }
-        },
-        "section-marquee-2-block-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use code <strong>TENOFF</strong> for 10% off first purchase</p>",
-            "text_color": "",
-            "heading_highlight_type": "circle",
-            "highlight_color": "#d43747",
-            "highlight_text_color": "#000000",
-            "icon_name": "none",
-            "icon_color": "",
-            "icon_width": 25,
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "section-marquee-2-block-3": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "image_width": 100
-          }
-        }
-      },
-      "block_order": [
-        "section-marquee-2-block-0",
-        "section-marquee-2-block-1",
-        "section-marquee-2-block-2",
-        "section-marquee-2-block-3"
-      ],
-      "settings": {
-        "layout": "marquee",
-        "show_top_border": true,
-        "show_bottom_border": true,
-        "padding": 10,
-        "marquee_speed": 100,
-        "direction": "ticker-ltr",
-        "slider_speed": 7,
-        "show_arrows": false,
-        "text_caps": false,
-        "type_style": "subheading-text",
-        "text_size": 120,
-        "letter_spacing": 0,
-        "message_spacing": 10,
-        "bg_color": "#ffffff",
-        "gradient": "",
-        "color": "#545454",
-        "border_color": "#000000",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "section-sticky-images-and-text-0": {
@@ -888,9 +712,7 @@
     "section_banner_image_N7VULm",
     "section_tab_collections_Wcpd4R",
     "section_grid_AXV7pe",
-    "section-overlapping-images-0",
-    "section-grid-0",
-    "section-marquee-2",
+    "section_collection_GpAxjQ",
     "section-sticky-images-and-text-0",
     "section-grid-1",
     "section-divider-0",

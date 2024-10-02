@@ -26,7 +26,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our shop by Player collection is crafted for those who embody both passion and performance. From bold colors to standout designs, our collection seamlessly combines comfort with top-tier athletic fashion.</p>",
-            "size": 120
+            "size": 130
           }
         },
         "button_RpkN6n": {
@@ -56,7 +56,7 @@
         "enable_mobile_height": false,
         "mobile_height": "four-fifty-height-mobile",
         "image": "shopify://shop_images/Frame_189.png",
-        "overlay_opacity": 10,
+        "overlay_opacity": 0,
         "transition": "zoom-out",
         "enable_zoom_animation": true,
         "enable_card_scrolling": false,

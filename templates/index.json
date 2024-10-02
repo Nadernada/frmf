@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/Frame_189.png",
             "overlay_opacity": 0,
-            "text_width": "wide",
+            "text_width": "normal",
             "text_position": "bottom-left",
             "text_alignment": "text-left",
             "text_color": "text-dark",

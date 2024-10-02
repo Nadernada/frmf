@@ -592,35 +592,41 @@
                   </div>
                 {%- endif -%}
             {%- endcase -%}
-            {%- liquid
-              assign featured_collection = ''
-              assign featured_collection = collections[block.settings.ft_collection]
-              assign heading = block.settings.collection_text
-              assign collection_title = featured_collection.title
-              assign button_collection_link = block.settings.button_collection_link
-              assign button_collection_text = block.settings.button_collection_text
-              assign button_collection_style = block.settings.button_collection_style
-              assign button_collection_color = block.settings.button_collection_color
-              assign button_collection_size = block.settings.button_collection_size
-              assign featured_image_desktop = block.settings.collection_image
-              
-              -%}
-              {%- if block.type == "collection" -%}
-              <div class="hero-featured-collection">
-                {%- render 'image-fill', is_background: true, image_desktop: featured_image_desktop, image_mobile: image_mobile, sizes: '100vw', classes: 'banner-image__image', loading: loading, fetchpriority: fetchpriority, preload: preload, placeholder_svg: 'lifestyle-1' -%}
-                <div class="featured-overlay"> </div>
-                <div class="hero-featured-content">
-                  <p class="hero-featured-text">{{ heading }}</p>
-                  <p class="hero-featured-heading">{{ collection_title }}</p>
-                  {%- if button_collection_text != blank -%}
-                    <div class="main-buttons__item">
-                      <a class="banner-image__btn btn {{ button_collection_style }} {{ button_collection_size }} {{ button_collection_color }}" href="{{ button_collection_link }}">{{ button_collection_text | escape }}</a>
-                    </div>
-                  {%- endif -%}
-                  </div>
-                </div>
-              {%- endif -%}
+
           {%- endfor -%}
+          <div class="hero-featured-wrapper">
+            {%- for block in section.blocks -%}
+
+              {%- unless block.type != "collection" -%}
+                {%- liquid
+                  assign featured_collection = ''
+                  assign featured_collection = collections[block.settings.ft_collection]
+                  assign heading = block.settings.collection_text
+                  assign collection_title = featured_collection.title
+                  assign button_collection_link = block.settings.button_collection_link
+                  assign button_collection_text = block.settings.button_collection_text
+                  assign button_collection_style = block.settings.button_collection_style
+                  assign button_collection_color = block.settings.button_collection_color
+                  assign button_collection_size = block.settings.button_collection_size
+                  assign featured_image_desktop = block.settings.collection_image
+                  
+                  -%}
+                <div class="hero-featured-collection">
+                  {%- render 'image-fill', is_background: true, image_desktop: featured_image_desktop, image_mobile: image_mobile, sizes: '100vw', classes: 'banner-image__image', loading: loading, fetchpriority: fetchpriority, preload: preload, placeholder_svg: 'lifestyle-1' -%}
+                  <div class="featured-overlay"> </div>
+                  <div class="hero-featured-content">
+                    <p class="hero-featured-text">{{ heading }}</p>
+                    <p class="hero-featured-heading">{{ collection_title }}</p>
+                    {%- if button_collection_text != blank -%}
+                      <div class="main-buttons__item">
+                        <a class="banner-image__btn btn {{ button_collection_style }} {{ button_collection_size }} {{ button_collection_color }}" href="{{ button_collection_link }}">{{ button_collection_text | escape }}</a>
+                      </div>
+                    {%- endif -%}
+                    </div>
+                  </div>
+              {%- endunless -%}
+            {%- endfor -%}
+          </div>
         {%- else -%}
           {%- render 'no-blocks' -%}
         {%- endif -%}

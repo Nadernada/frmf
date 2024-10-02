@@ -9,57 +9,62 @@
 */
 {
   "sections": {
-    "section-slideshow-0": {
-      "type": "section-slideshow",
+    "section_banner_image_N7VULm": {
+      "type": "section-banner-image",
       "blocks": {
-        "section-slideshow-0-block-1": {
-          "type": "image",
+        "heading_Cyb4Vd": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/Frame_189.png",
-            "overlay_opacity": 0,
-            "text_width": "normal",
-            "text_position": "bottom-left",
-            "text_alignment": "text-left",
-            "text_color": "text-dark",
-            "subheading": "",
-            "title": "<p>Home jersey 2024</p>",
-            "heading_highlight_type": "circle",
-            "highlight_color": "#d43747",
-            "highlight_text_color": "#000000",
-            "text": "Our shop by Player collection is crafted for those who embody both passion and performance. From bold colors to standout designs, our collection seamlessly combines comfort with top-tier athletic fashion.",
+            "text": "<p>Home Jersey 2024</p>",
+            "size": 180,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#D43747",
+            "highlight_text_color": "#000"
+          }
+        },
+        "text_69LRbm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our shop by Player collection is crafted for those who embody both passion and performance. From bold colors to standout designs, our collection seamlessly combines comfort with top-tier athletic fashion.</p>",
+            "size": 120
+          }
+        },
+        "button_RpkN6n": {
+          "type": "button",
+          "settings": {
             "stacked_button": false,
             "button_1_text": "Shop Now",
             "button_1_link": "shopify://collections/all",
             "button_1_color": "btn--primary",
-            "button_1_style": "btn--solid",
+            "button_1_style": "btn--solid-border",
             "button_1_size": "btn--large",
             "button_2_text": "",
             "button_2_link": "",
-            "button_2_color": "btn--secondary",
+            "button_2_color": "btn--black",
             "button_2_style": "btn--solid",
-            "button_2_size": "btn--large",
-            "video_text": "",
-            "video_link": ""
+            "button_2_size": "btn--small"
           }
         }
       },
       "block_order": [
-        "section-slideshow-0-block-1"
+        "heading_Cyb4Vd",
+        "text_69LRbm",
+        "button_RpkN6n"
       ],
       "settings": {
-        "slide_height": "three-quarters-height",
-        "enable_mobile_height": true,
-        "mobile_slide_height": "seven-fifty-height-mobile",
-        "show_nav_dots": true,
-        "show_nav_arrows": false,
-        "show_arrow_down": false,
-        "autoplay": true,
-        "duration": 4,
+        "height": "six-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
+        "image": "shopify://shop_images/Frame_189.png",
+        "overlay_opacity": 10,
         "transition": "zoom-out",
         "enable_zoom_animation": true,
         "enable_card_scrolling": false,
         "increase_border_radius": true,
-        "heading_size": 180
+        "text_width": "narrow",
+        "text_position": "bottom-left",
+        "text_alignment": "text-left",
+        "text_color": "text-dark"
       }
     },
     "section_tab_collections_Wcpd4R": {
@@ -118,63 +123,6 @@
         "collection_button_style": "btn--solid",
         "collection_button_size": "btn--small",
         "bg_color_secondary": false,
-        "width": "wrapper--full-padded",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "section-collection-0": {
-      "type": "section-collection",
-      "blocks": {
-        "section-collection-0-block-0": {
-          "type": "promo",
-          "disabled": true,
-          "settings": {
-            "position": 1,
-            "width": "half",
-            "title": "<p>Promotion title</p>",
-            "heading_highlight_type": "circle",
-            "highlight_color": "rgba(0,0,0,0)",
-            "highlight_text_color": "#000000",
-            "heading_size": 100,
-            "content": "Advertise a promotion or a sale",
-            "text_size": 100,
-            "text_color": "text-dark",
-            "text_position": "bottom-left",
-            "layout": "stacked",
-            "overlay_opacity": 10,
-            "bg_color": "#f7f7f7",
-            "button_text": "",
-            "button_link": "",
-            "button_color": "btn--white",
-            "button_style": "btn--solid-border",
-            "button_size": "btn--small"
-          }
-        }
-      },
-      "block_order": [
-        "section-collection-0-block-0"
-      ],
-      "settings": {
-        "collection": "shop-by-player",
-        "products_layout": "carousel",
-        "number_of_products": 8,
-        "products_per_row_on_desktop": 4,
-        "columns_mobile": "2",
-        "text_alignment": "text-left",
-        "title": "<p>Shop By Player</p>",
-        "heading_highlight_type": "circle",
-        "highlight_color": "#d43747",
-        "highlight_text_color": "#000000",
-        "heading_size": 105,
-        "text": "",
-        "text_size": 100,
-        "button_text": "Men's Team",
-        "button_color": "btn--primary",
-        "button_style": "btn--solid",
-        "button_size": "btn--large",
-        "bg_color_secondary": false,
-        "enable_slider_mobile": true,
         "width": "wrapper--full-padded",
         "padding_top": 60,
         "padding_bottom": 60
@@ -826,9 +774,8 @@
     }
   },
   "order": [
-    "section-slideshow-0",
+    "section_banner_image_N7VULm",
     "section_tab_collections_Wcpd4R",
-    "section-collection-0",
     "section-overlapping-images-0",
     "section-grid-0",
     "section-marquee-2",

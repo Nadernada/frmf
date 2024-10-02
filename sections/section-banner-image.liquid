@@ -542,7 +542,7 @@
                 {%- endstyle -%}
 
                 {%- if text != blank -%}
-                  <div id="BannerText--{{ block_id }}" class="banner-image__content text__content"
+                  <div id="BannerText--{{ block_id }}" class="banner-image__content text__content half-width"
                     {% if animations_enabled %}
                       data-aos="hero"
                       data-aos-anchor="{{ animation_anchor }}"
@@ -592,6 +592,17 @@
                   </div>
                 {%- endif -%}
             {%- endcase -%}
+            <div>
+              {%- liquid
+                    assign featured_collections = collections[block.settings.tab_collection]
+              -%}
+
+              {%- for collection in featured_collections -%}
+                <a>
+                  {{ collection.name }}
+                </a>
+              {%- endfor -%}
+            </div>
           {%- endfor -%}
         {%- else -%}
           {%- render 'no-blocks' -%}
@@ -1036,6 +1047,22 @@
               { "label": "Medium", "value": "btn--medium" },
               { "label": "Small", "value": "btn--small" }
             ]
+          }
+        ]
+      },
+      {
+        "type": "collection",
+        "name": "tab_collection",
+        "settings": [
+          {
+            "type": "text",
+            "id": "collection-text",
+            "label": "Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "collection-image",
+            "label": "Pick an image"
           }
         ]
       },

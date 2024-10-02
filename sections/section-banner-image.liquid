@@ -594,7 +594,7 @@
             {%- endcase -%}
             <div>
               {%- liquid
-                assign featured_collection = collections[block.settings.Collection]
+                assign featured_collection = collections[block.settings.ft_collection]
                 assign heading = block.settings.collection_text
                 assign featured_button_text = block.settings.collection_button_text
 
@@ -1069,7 +1069,7 @@
         "settings": [
           {
             "type": "collection",
-            "id": "tab_collection",
+            "id": "ft_collection",
             "label": "Collection"
           },
           {

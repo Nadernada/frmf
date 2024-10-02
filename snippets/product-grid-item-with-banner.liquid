@@ -563,7 +563,7 @@
   </div>
 
   {%- comment -%} Product info {%- endcomment -%}
-  <div class="product-grid-item__info{% unless settings.content_alignment == 'center' %}{{ product_alignment_class }}{% endunless %}"
+  <div class="product-grid-item__info_wrapper product-grid-item__info{% unless settings.content_alignment == 'center' %}{{ product_alignment_class }}{% endunless %}"
     {% if animations_enabled %}
       data-aos="{{ entry_animation }}"
       {% if aos_anchor %}
@@ -574,6 +574,13 @@
       {% endif %}
       data-aos-delay="{{ aos_delay }}"
     {% endif %}>
+    {%- liquid
+      assign button_product_link = block.settings.button_product_link
+      assign button_product_text = block.settings.button_product_text
+      assign button_product_style = block.settings.button_product_style
+      assign button_product_color = block.settings.button_product_color
+      assign button_product_size = block.settings.button_product_size
+    -%}
 
     {%- unless alignment_inline -%}
       {% comment %} Title {% endcomment %}
@@ -581,7 +588,9 @@
     {%- else -%}
       {% comment %} Title - Price {% endcomment %}
       <div class="product-grid-item__info-content">
-        {{ product_title }} {{ info_separator }} {{ product_info_price }}
+        {{ product_title }}  
+        <a class="btn {{ button_product_style }} {{ button_product_size }} {{ button_product_color }}" href="{{ button_product_link }}">{{ button_product_text | escape }}</a>
+
       </div>
     {%- endunless -%}
 

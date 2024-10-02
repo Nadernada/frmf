@@ -394,7 +394,7 @@
                           endif
                           assign items_animation_delay = product_index
 
-                          render 'product-grid-item', product: product, carousel: true, columns_mobile: columns_mobile, block_id: block.id, animation_anchor: aos_anchor_body, animation_delay: items_animation_delay, image_aspect_ratio_setting: image_aspect_ratio, sizes: sizes
+                          render 'product-grid-item-with-banner', product: product, carousel: true, columns_mobile: columns_mobile, block_id: block.id, animation_anchor: aos_anchor_body, animation_delay: items_animation_delay, image_aspect_ratio_setting: image_aspect_ratio, sizes: sizes
                         endfor
                       -%}
                     {%- else -%}

@@ -610,8 +610,8 @@
                 {%- render 'image-fill', is_background: true, image_desktop: featured_image_desktop, image_mobile: image_mobile, sizes: '100vw', classes: 'banner-image__image', loading: loading, fetchpriority: fetchpriority, preload: preload, placeholder_svg: 'lifestyle-1' -%}
                 <div class="featured-overlay"> </div>
                 <div class="hero-featured-content">
-                  <p class="hero-featured-text">{{ collection_title }}</p>
-                  <p class="hero-featured-heading">{{ heading }}</p>
+                  <p class="hero-featured-text">{{ heading }}</p>
+                  <p class="hero-featured-heading">{{ collection_title }}</p>
                   {%- if button_collection_text != blank -%}
                     <div class="main-buttons__item">
                       <a class="banner-image__btn btn {{ button_collection_style }} {{ button_collection_size }} {{ button_collection_color }}" href="{{ button_collection_link }}">{{ button_collection_text | escape }}</a>

@@ -594,25 +594,27 @@
             {%- endcase -%}
             <div>
               {%- liquid
-                assign featured_collections = collections[block.settings.tab_collection]
+                assign featured_collection = collections[block.settings.tab_collection]
+                assign heading = block.settings.collection_text
+                assign featured_button_text = block.settings.collection_button_text
+
               -%}
 
-              {%- for collection in featured_collections -%}
                 <a class="hero-featured-collection">
                   {%- render 'image-fill', is_background: true, image_desktop: image_desktop, image_mobile: image_mobile, sizes: '100vw', classes: 'banner-image__image', loading: loading, fetchpriority: fetchpriority, preload: preload, placeholder_svg: 'lifestyle-1' -%}
-                  {{ collection.collection-text }}
-                  {%- if collection.collection_button_text != blank -%}
+                  {{ heading }}
+                  {%- if featured_button_text != blank -%}
                     <div class="main-buttons__item"
                       {% if animations_enabled %}
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="1"
                       {% endif %}>
-                      <a class="banner-image__btn btn {{ button_1_style }} {{ button_1_size }} {{ button_1_color }}" href="{{ button_1_link }}">{{ collection.collection_button_text | escape }}</a>
+                      <p>{{ featured_collection.name }}</p>
+                      <a class="banner-image__btn btn {{ button_1_style }} {{ button_1_size }} {{ button_1_color }}" href="{{ button_1_link }}">{{ featured_button_text | escape }}</a>
                     </div>
                   {%- endif -%}
                 </a>
-              {%- endfor -%}
             </div>
           {%- endfor -%}
         {%- else -%}
@@ -1067,12 +1069,12 @@
         "settings": [
           {
             "type": "text",
-            "id": "collection-text",
+            "id": "collection_text",
             "label": "Text"
           },
           {
             "type": "image_picker",
-            "id": "collection-image",
+            "id": "collection_image",
             "label": "Pick an image"
           },
           {

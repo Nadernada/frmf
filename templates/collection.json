@@ -160,7 +160,11 @@
         "filter_mode": "default",
         "bg_color": "",
         "padding_top": 30,
-        "padding_bottom": 60
+        "padding_bottom": 60,
+        "collection_button_text": "Shop Now",
+        "collection_button_color": "btn--primary",
+        "collection_button_style": "btn--solid",
+        "collection_button_size": "btn--small"
       }
     }
   },

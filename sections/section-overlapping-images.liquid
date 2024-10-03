@@ -272,10 +272,18 @@
   #OverlappingImages--{{ section.id }} .main-heading { --adjust-heading: calc(var(--FONT-ADJUST-HEADING) * {{ heading_size }}); }
 {%- endstyle -%}
 
-<section id="OverlappingImages--{{ section.id }}" class="section-padding overlapping-images{% if bg_color_secondary %} bg-secondary{% endif %}{%- render 'button-fallback-classes', primary_color: button_color, bg_color_secondary: bg_color_secondary -%}" data-section-id="{{ section.id }}" data-section-type="overlapping-images">
+<section id="gray-bg OverlappingImages--{{ section.id }}" class="section-padding overlapping-images{% if bg_color_secondary %} bg-secondary{% endif %}{%- render 'button-fallback-classes', primary_color: button_color, bg_color_secondary: bg_color_secondary -%}" data-section-id="{{ section.id }}" data-section-type="overlapping-images">
+  {%- liquid
+        assign section_image_2 = section.settings.section_bg_img
+   -%}
+  <div calss="overlapping-bg">
+    {% comment %} {%- capture section_image_bg -%} {% endcomment %}
+      {%- render 'image-fill', img_object: section_image_2, sizes: sizes, classes: 'overlapping-images__image-bg' -%}
+    {% comment %} {%- endcapture -%} {% endcomment %}
+  </div>
   <div class="{{ section_width }}">
     <div class="overlapping-images__block{% if text_position == 'left' %} overlapping-images__block--reverse{% endif %}">
-      <div class="overlapping-images__images{% if hide_image_2 %} overlapping-images__images--single-mobile{% endif %}" style="max-width: {{ images_width }}px;">
+      <div class="overlapping-images__images{% if hide_image_2 %} overlapping-images__images--single-mobile{% endif %}">
         <div class="overlapping-images__images-inner{% if single_image %} overlapping-images__images-inner--single{% endif %}"{{ parallax_attributes }}>
           {%- unless image_1 == blank -%}
             {%- capture image_bg -%}
@@ -303,12 +311,12 @@
             </div>
           {%- endunless -%}
 
-          {%- unless image_2 == blank -%}
-            {%- capture image_bg -%}
-              {%- render 'image-fill', img_object: image_2, sizes: sizes, classes: 'overlapping-images__image-bg' -%}
-            {%- endcapture -%}
+          {% comment %} {%- unless image_2 == blank -%} {% endcomment %}
+            {% comment %} {%- capture image_bg -%} {% endcomment %}
+              {% comment %} {%- render 'image-fill', img_object: image_2, sizes: sizes, classes: 'overlapping-images__image-bg' -%} {% endcomment %}
+            {% comment %} {%- endcapture -%} {% endcomment %}
 
-            <div class="overlapping-images__image{% if image_1 != blank %} overlapping-images__image--secondary{% endif %}{% if image_link_2 != blank %} hover-scale{% endif %}"
+            <div class="overlapping-images__image overlapping-content {% if image_1 != blank %} overlapping-images__image--secondary{% endif %}{% if image_link_2 != blank %} hover-scale{% endif %}"
               {% if animations_enabled %}
                 {% if single_image %}
                   data-aos="fade-up"
@@ -319,15 +327,32 @@
                 data-aos-delay="{{ animation_delay }}"
                 {%- assign animation_delay = animation_delay | plus: 150 -%}
               {% endif %}>
-              {%- if image_link_2 != blank -%}
+              {% comment %} {%- if image_link_2 != blank -%}
                 <a href="{{ image_link_2 }}" aria-label="{{ image_2.alt | strip_html | escape }}">
                   {{- image_bg -}}
                 </a>
               {%- else -%}
                 {{- image_bg -}}
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
+
+              {%- liquid
+                  assign subheading = section.settings.subheading_text
+                  assign collection = collections[section.settings.collection]
+                  assign button_collection_link = section.settings.button_collection_link
+                  assign button_collection_text = section.settings.button_collection_text
+                  assign button_collection_style = section.settings.button_collection_style
+                  assign button_collection_color = section.settings.button_collection_color
+                  assign button_collection_size = section.settings.button_collection_size
+              -%}
+
+              <p class="overlapping-subheading">{{ subheading }}</p>
+              <h2 class="h2">{{ collection.title }}</h2>
+              <p class="overlapping-text">{{ collection.description }}</p>
+
+              <a class="btn {{ button_collection_style }} {{ button_collection_size }} {{ button_collection_color }}" href="{{ button_collection_link }}">{{ button_collection_text | escape }}</a>
+
             </div>
-          {%- endunless -%}
+          {% comment %} {%- endunless -%} {% endcomment %}
 
           {%- if image_1 == blank and image_2 == blank -%}
             {%- capture image_placeholder_1 -%}
@@ -377,131 +402,7 @@
         </div>
       </div>
 
-      <div class="overlapping-images__content text-{{ text_alignment }}">
-        {%- if video_text != blank or video_link != blank -%}
-          <div class="overlapping-images__buttons main-buttons main-buttons--video">{%- liquid
-  assign video_link_downcase = video_link | downcase
-  assign video_type = ''
-  assign video_id = ''
-  assign video_parent_id = 'item-video-' | append: unique
-
-  if video_link contains "vimeo.com"
-    assign video_type = "vimeo"
-  elsif video_link contains "youtube.com"
-    assign video_type = "youtube"
-  elsif video_link contains "youtu.be"
-    assign video_type = "youtube"
-    assign youtubeShortlink = true
-  elsif video_link_downcase contains ".mp4"
-    assign video_type = "native"
-  endif
-
-  assign link_array = video_link | split: '/'
-  assign id_with_params = link_array | last
-
-  if video_type == "vimeo" or youtubeShortlink
-  comment
-    https://vimeo.com/[ID]?foo=bar&baz=boo
-    https://youtu.be/[ID]?foo=bar&baz=boo
-  endcomment
-    assign starts_with_id = id_with_params | split: '?'
-    assign video_id = starts_with_id | first
-  elsif video_type == "youtube" 
-  comment
-    https://youtube.com/watch?v=[ID]?foo=bar&baz=boo
-  endcomment
-    assign first_param = id_with_params | split: '&' | first
-    assign watch_then_id = first_param | split: '?'
-    assign equals_id = watch_then_id[1]
-    assign ends_with_id = equals_id | split: '='
-    assign video_id = ends_with_id | last
-  endif
-
-  if video_type == 'youtube'
-    capture video_link
-      echo 'https://www.youtube.com/watch?v=' | append: video_id
-    endcapture
-  elsif video_type == 'vimeo'
-    capture video_link
-      echo 'https://vimeo.com/' | append: video_id
-    endcapture
-  endif
--%}<div class="main-buttons__item"
-              {% if animations_enabled %}
-                data-aos="fade-up"
-                data-aos-delay="{{ animation_delay }}"
-                data-aos-anchor="{{ animation_anchor }}"
-                {%- assign animation_delay = animation_delay | plus: 150 -%}
-              {% endif %}>
-              <a class="video-text-link" href="{{ video_link | default: '#!' }}"
-                {% unless video_link == blank %}
-                  data-video-play="{%- render 'photoswipe-video-html' item_link: video_link , item_link_type: video_type, item_link_id: video_id, item_id: video_parent_id -%}"
-                {% endunless %}
-              >
-                {%- render 'icon-play' -%}
-
-                {%- if video_text != blank -%}
-                  <span>{{ video_text }}</span>
-                {%- endif -%}
-              </a>
-            </div>
-          </div>
-        {%- endif -%}
-
-        {%- if title != blank -%}
-          {%- capture title_attributes -%}
-            class="h2 overlapping-images__heading main-heading{% if has_text_highlight %} {{ text_highlight_wrapper_class }}{% endif %}"
-            {% if animations_enabled %}
-              data-aos="fade-up"
-              data-aos-delay="{{ animation_delay }}"
-              data-aos-anchor="{{ animation_anchor }}"
-            {% endif %}
-          {%- endcapture -%}
-
-          {% render 'title-text-reveal-and-highlights',
-            title: title,
-            title_attributes: title_attributes,
-            has_text_highlight: has_text_highlight
-          %}
-
-          {%- assign animation_delay = animation_delay | plus: 150 -%}
-
-          {%- if settings.show_spacer_lines -%}
-            <hr{% if animations_enabled %}
-              data-aos="fade-up"
-              data-aos-delay="{{ animation_delay }}"
-              data-aos-anchor="{{ animation_anchor }}"
-            {% endif %}>
-            {%- assign animation_delay = animation_delay | plus: 150 -%}
-          {%- endif -%}
-        {%- endif -%}
-
-        {%- if description != blank -%}
-          <div class="overlapping-images__text main-text rte"
-            {% if animations_enabled %}
-              data-aos="fade-up"
-              data-aos-delay="{{ animation_delay }}"
-              data-aos-anchor="{{ animation_anchor }}"
-              {%- assign animation_delay = animation_delay | plus: 150 -%}
-            {% endif %}>
-            {{- description -}}
-          </div>
-        {%- endif -%}
-
-        {%- if button_text != blank -%}
-          <div class="overlapping-images__buttons main-buttons">
-            <div class="main-buttons__item"
-              {% if animations_enabled %}
-                data-aos="fade-up"
-                data-aos-delay="{{ animation_delay }}"
-                data-aos-anchor="{{ animation_anchor }}"
-                {%- assign animation_delay = animation_delay | plus: 150 -%}
-              {% endif %}>
-              <a href="{{ button_link }}" class="btn {{ button_style }} {{ button_size }} {{ button_color }}">{{ button_text }}</a>
-            </div>
-          </div>
-        {%- endif -%}
-      </div>
+ 
     </div>
   </div>
 </section>
@@ -532,6 +433,65 @@
       "options": [
         { "label": "Center", "value": "center" },
         { "label": "Left", "value": "left" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Collection"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "button_collection_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "button_collection_link",
+      "label": "Link"
+    },
+    {
+      "type": "select",
+      "id": "button_collection_color",
+      "label": "Second button color",
+      "default": "btn--black",
+      "options": [
+        { "label": "Primary", "value": "btn--primary" },
+        { "label": "Secondary", "value": "btn--secondary" },
+        { "label": "White", "value": "btn--white" },
+        { "label": "Black", "value": "btn--black" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_collection_style",
+      "label": "Second button style",
+      "default": "btn--solid",
+      "options": [
+        { "label": "Solid", "value": "btn--solid" },
+        { "label": "Outline", "value": "btn--outline" },
+        { "label": "Solid with border", "value": "btn--solid-border" },
+        { "label": "Text", "value": "btn--text" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "subheading_text",
+      "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "button_collection_size",
+      "label": "Second button size",
+      "default": "btn--small",
+      "options": [
+        { "label": "Large", "value": "btn--large" },
+        { "label": "Medium", "value": "btn--medium" },
+        { "label": "Small", "value": "btn--small" }
       ]
     },
     {

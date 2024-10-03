@@ -28,7 +28,9 @@
   {% endif %}
 >
   <div class="{{ section_width }}">
-    {%- render 'product' product: product, unique: section.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
+    <div class="featured-product-wrapper">
+      {%- render 'product' product: product, unique: section.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
+    </div>
   </div>
 </section>
 

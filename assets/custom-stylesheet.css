@@ -25,7 +25,7 @@
   justify-content: end;
 }
 
-.tabs__link {
+.tabs__link-custom {
   padding: .6rem 1.2rem;
   font-weight: 600;
   color: #CC0A16;
@@ -34,7 +34,7 @@
   margin-right: 15px;
 }
 
-.tabs__link.current {
+.tabs__link-custom.current {
   background-color: var(--accent);
   border-color: var(--accent);
   color: white;
@@ -125,7 +125,7 @@
   border-radius: var(--RADIUS);
 }
 
-.overlapping-images__block {
+.overlapping-images__block-custom {
   display: grid;
   grid-template-columns: 1fr;
 }

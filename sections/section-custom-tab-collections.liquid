@@ -194,7 +194,7 @@
       {%- capture tabs_navigation -%}
         {{ tabs_navigation }}
 
-        <li class="tabs__link{% if forloop.first %} current{% endif %}"
+        <li class="tabs__link-custom tabs__link{% if forloop.first %} current{% endif %}"
           data-tabs-link="{{ forloop.index0 }}"
           data-block-id="{{ block.id }}"
           tabindex="0"

@@ -299,8 +299,8 @@
         "hide_image_2": false,
         "title": "<p>Our Story, Our Promise</p>",
         "heading_highlight_type": "circle",
-        "highlight_color": "#D43747",
-        "highlight_text_color": "#000",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#000000",
         "description": "<p>Use this text to describe a product, promotion, or your company.</p>",
         "heading_size": 100,
         "button_text": "",
@@ -346,27 +346,9 @@
             "padding_bottom": 20
           }
         },
-        "icon_row_7Jkwnz": {
-          "type": "icon_row",
+        "complementary_products_JrUGPY": {
+          "type": "complementary-products",
           "settings": {
-            "icon_name_1": "truck",
-            "icon_color_1": "",
-            "icon_width_1": 20,
-            "icon_text_1": "Free shipping",
-            "icon_name_2": "check",
-            "icon_color_2": "",
-            "icon_width_2": 20,
-            "icon_text_2": "Free Returns",
-            "icon_name_3": "heart",
-            "icon_color_3": "",
-            "icon_width_3": 20,
-            "icon_text_3": "1% Donated Annually",
-            "icon_name_4": "clock",
-            "icon_color_4": "",
-            "icon_width_4": 20,
-            "icon_text_4": "Feature",
-            "alignment": "center",
-            "bg_color": "#ffffff",
             "padding_bottom": 20
           }
         }
@@ -375,12 +357,12 @@
         "title_4jbaJV",
         "form_8BMHTj",
         "description_FxP4jJ",
-        "icon_row_7Jkwnz"
+        "complementary_products_JrUGPY"
       ],
       "settings": {
-        "product": "",
+        "product": "limited-edition",
         "product_sticky_enable": true,
-        "image_layout": "carousel",
+        "image_layout": "stacked",
         "image_width": "standard",
         "hide_product_thumbnails": false,
         "product_image_aspect_ratio": false,
@@ -454,12 +436,33 @@
             "video_link": "",
             "video_text": ""
           }
+        },
+        "slide_7Y4iB7": {
+          "type": "slide",
+          "settings": {
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
+            "subheading": "",
+            "title": "<p>Everything's on sale</p>",
+            "heading_size": 130,
+            "content": "<p>Share details about a promotion, welcome customers, describe a product, or talk about your brand.</p>",
+            "text_size": 130,
+            "button_text": "Button text",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "video_text": ""
+          }
         }
       },
       "block_order": [
         "section-sticky-images-and-text-0-block-0",
         "section-sticky-images-and-text-0-block-1",
-        "section-sticky-images-and-text-0-block-2"
+        "section-sticky-images-and-text-0-block-2",
+        "slide_7Y4iB7"
       ],
       "settings": {
         "scroll_direction": "horizontal",

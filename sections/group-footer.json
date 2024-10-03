@@ -14,52 +14,79 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "logo_WXUr37": {
+          "type": "logo",
+          "settings": {
+            "alignment": "text-left",
+            "image": "{{ shop.brand.logo }}",
+            "logo_width": 100,
+            "show_shop_name": false,
+            "text": "",
+            "column_width": "20"
+          }
+        },
+        "text_HLTtcJ": {
+          "type": "text",
+          "settings": {
+            "alignment": "text-left",
+            "title": "FEDERATION ROYALE  MOROCAINE DE FOOTBALL",
+            "footer_text": "<p>We have a simple promise. Build the best Morocco fan items possible. To this day, we do just that.</p>",
+            "column_width": "30"
+          }
+        },
         "footer-block-0": {
           "type": "link",
           "settings": {
+            "alignment": "text-left",
             "menu": "main-menu",
-            "title": "Shop"
+            "title": "Shop",
+            "column_width": "20"
           }
         },
         "footer-block-1": {
           "type": "link",
           "settings": {
+            "alignment": "text-left",
             "menu": "footer",
-            "title": "Helpful Links"
+            "title": "Info",
+            "column_width": "20"
           }
         },
-        "footer-block-2": {
-          "type": "text",
+        "link_iMa8Ka": {
+          "type": "link",
           "settings": {
-            "title": "Our Mission",
-            "footer_text": "<p>Leave your customers with a final message about your brand in this rich text block.<\/p>"
-          }
-        },
-        "footer-block-3": {
-          "type": "newsletter",
-          "settings": {
-            "title": "Newsletter",
-            "text": "<p>Stay up to date with the new collections, products and exclusive offers.<\/p>"
+            "alignment": "text-left",
+            "menu": "footer",
+            "title": "Company",
+            "column_width": "20"
           }
         }
       },
       "block_order": [
+        "logo_WXUr37",
+        "text_HLTtcJ",
         "footer-block-0",
         "footer-block-1",
-        "footer-block-2",
-        "footer-block-3"
+        "link_iMa8Ka"
       ],
       "settings": {
-        "width": "wrapper",
         "show_footer_wave": false,
+        "enable_footer_parallax": true,
+        "increase_border_radius": true,
+        "bottom_bar_alignment": "text-left",
         "show_social_links": true,
+        "enable_follow_on_shop": true,
         "show_payment_icons": true,
         "bottom_menu": "",
         "color_text": "#ffffff",
         "color_bg": "#000000",
         "color_border": "#ffffff",
         "show_locale_selector": true,
-        "show_country_selector": true
+        "show_country_selector": true,
+        "show_country_flag": false,
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },

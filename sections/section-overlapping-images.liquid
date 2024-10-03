@@ -338,16 +338,17 @@
               {%- liquid
                 assign subheading = section.settings.subheading_text
                 assign collection = collections[section.settings.collection]
-                assign button_collection_link = section.settings.button_collection_link
+                assign button_collection_link = collection.url
                 assign button_collection_text = section.settings.button_collection_text
                 assign button_collection_style = section.settings.button_collection_style
                 assign button_collection_color = section.settings.button_collection_color
                 assign button_collection_size = section.settings.button_collection_size
+                assign description = section.settings.collection_description
             -%}
 
             <p class="overlapping-subheading">{{ subheading }}</p>
             <h2 class="h2">{{ collection.title }}</h2>
-            <p class="overlapping-text">{{ collection.description }}</p>
+            <p class="overlapping-text">{{ description }}</p>
 
             <a class="btn {{ button_collection_style }} {{ button_collection_size }} {{ button_collection_color }}" href="{{ button_collection_link }}">{{ button_collection_text | escape }}</a>
 
@@ -458,6 +459,11 @@
       "type": "collection",
       "id": "collection",
       "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_description",
+      "label": "Text"
     },
     {
       "type": "text",

@@ -162,6 +162,15 @@
   left: 0;
 }
 
+.overlapping-subheading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.overlapping-text {
+  font-size: 1.1rem;
+}
+
 @media only screen and (min-width: 1024px) {
 
   

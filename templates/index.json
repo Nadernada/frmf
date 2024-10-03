@@ -101,7 +101,7 @@
         "collection_wGRJik": {
           "type": "collection",
           "settings": {
-            "title": "Men's",
+            "title": "Men's Team",
             "tab_collection": "shop-by-player",
             "number_of_products": 6,
             "show_image": false,
@@ -113,7 +113,7 @@
         "collection_Y6rDrJ": {
           "type": "collection",
           "settings": {
-            "title": "Women's",
+            "title": "Women's Team",
             "tab_collection": "shop-by-player",
             "number_of_products": 6,
             "show_image": false,

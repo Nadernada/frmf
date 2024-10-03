@@ -366,7 +366,7 @@
         "image_width": "standard",
         "hide_product_thumbnails": false,
         "product_image_aspect_ratio": false,
-        "enable_zoom": true,
+        "enable_zoom": false,
         "enable_video_looping": false,
         "bg_color_secondary": false,
         "width": "wrapper--full-padded",

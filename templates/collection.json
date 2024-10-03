@@ -161,10 +161,11 @@
         "bg_color": "",
         "padding_top": 30,
         "padding_bottom": 60,
-        "collection_button_text": "Shop Now",
-        "collection_button_color": "btn--primary",
-        "collection_button_style": "btn--solid",
-        "collection_button_size": "btn--small"
+        "button_product_text": "Shop Now",
+        "button_product_link": "",
+        "button_product_color": "btn--primary",
+        "button_product_style": "btn--solid",
+        "button_product_size": "btn--small"
       }
     }
   },

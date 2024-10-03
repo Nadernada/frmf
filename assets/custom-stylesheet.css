@@ -175,15 +175,15 @@
 @media only screen and (min-width: 1024px) {
 
   
-  .mosaic__item--1 {
+  .mosaic__custom__item--1 {
     margin-bottom: 3rem;
   }
   
-  .mosaic__item--2 {
-    margin-top: 4rem;
+  .mosaic__custom__item--2 {
+    margin-top: 3rem;
   }
   
-  .mosaic__item--3 {
+  .mosaic__custom__item--3 {
     transform: translateY(-3rem);
   }
 

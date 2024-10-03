@@ -321,7 +321,7 @@
 
           {%- capture item_attributes -%}
             id="{{ block_id }}"
-            class="mosaic__item mosaic__item--{{ forloop.index }}{% if has_image %} mosaic__item--with-image{% endif %} {{ overlay_text_color }} {{ desktop_height }}{% if enable_mobile_height %} {{ mobile_height }}{% endif %} {{ size_mobile }}{{ shimmer_item_class }}{{ hover_scale }}"
+            class="mosaic__item mosaic__custom__item--{{ forloop.index }} mosaic__item--{{ forloop.index }}{% if has_image %} mosaic__item--with-image{% endif %} {{ overlay_text_color }} {{ desktop_height }}{% if enable_mobile_height %} {{ mobile_height }}{% endif %} {{ size_mobile }}{{ shimmer_item_class }}{{ hover_scale }}"
             data-item
             {% if animations_enabled %}
               data-aos="image-in"

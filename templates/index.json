@@ -131,8 +131,8 @@
         "columns_mobile": "1",
         "image_aspect_ratio": 1.3,
         "text_alignment": "text-center",
-        "title": "Best Sellers",
-        "text": "Our favorite picks for the season",
+        "title": "Shop By Player",
+        "text": "",
         "type_style": "subheading-text",
         "tab_heading_size": 120,
         "show_buttons": true,
@@ -154,67 +154,6 @@
         "button_product_color": "btn--primary",
         "button_product_style": "btn--solid",
         "button_product_size": "btn--small"
-      }
-    },
-    "section_tab_collections_Wcpd4R": {
-      "type": "section-tab-collections",
-      "blocks": {
-        "collection_JVqbPX": {
-          "type": "collection",
-          "settings": {
-            "title": "Men's Team",
-            "tab_collection": "shop-by-player",
-            "number_of_products": 6,
-            "show_image": false,
-            "overlay_opacity": 10,
-            "heading": "",
-            "text_color": "text-light",
-            "button_text": "View All",
-            "button_link": "",
-            "button_color": "btn--white",
-            "button_style": "btn--solid-border",
-            "button_size": "btn--small"
-          }
-        },
-        "collection_7TdbxJ": {
-          "type": "collection",
-          "settings": {
-            "title": "Women's Team",
-            "tab_collection": "shop-by-player",
-            "number_of_products": 6,
-            "show_image": false,
-            "overlay_opacity": 10,
-            "heading": "",
-            "text_color": "text-light",
-            "button_text": "View All",
-            "button_link": "",
-            "button_color": "btn--white",
-            "button_style": "btn--solid-border",
-            "button_size": "btn--small"
-          }
-        }
-      },
-      "block_order": [
-        "collection_JVqbPX",
-        "collection_7TdbxJ"
-      ],
-      "settings": {
-        "columns_mobile": "1",
-        "image_aspect_ratio": 1.3,
-        "text_alignment": "text-left",
-        "title": "Shop By Player",
-        "text": "",
-        "type_style": "subheading-text",
-        "tab_heading_size": 100,
-        "show_buttons": false,
-        "collection_button_text": "Shop Now",
-        "collection_button_color": "btn--black",
-        "collection_button_style": "btn--solid",
-        "collection_button_size": "btn--small",
-        "bg_color_secondary": false,
-        "width": "wrapper--full-padded",
-        "padding_top": 60,
-        "padding_bottom": 60
       }
     },
     "section_grid_AXV7pe": {
@@ -517,7 +456,6 @@
   "order": [
     "section_banner_image_N7VULm",
     "section_custom_tab_collections_M9BMUD",
-    "section_tab_collections_Wcpd4R",
     "section_grid_AXV7pe",
     "section_collection_GpAxjQ",
     "section_custom_overlapping_images_PwVhti",

@@ -120,43 +120,6 @@
       {%- endfor -%}
     </div>
 
-    <div class="press__logos press__logos--{{ blocks_count }}{% if no_text %} press__logos--no-text{% endif %}{% if show_rounded_corners %} press__logos--rounded-corners{% endif %}"
-      {% if animations_enabled %}
-        data-aos="fade-up"
-        data-aos-anchor="{{ animation_anchor }}"
-        data-aos-delay="{{ animation_delay }}"
-      {% endif %}>
-      <div class="press__logos-slider" data-logo-slider>
-        {%- for block in section.blocks -%}
-          {%- liquid
-            assign text = block.settings.text
-            assign image = block.settings.press_logo
-            assign image_width = block.settings.logo_width
-            assign retina_size = image_width | times: 2
-            assign image_height = image_width
-
-            unless image == blank
-              assign image_height = image_width | divided_by: image.aspect_ratio
-              assign image_widths = image_width | append: ', ' | append: retina_size
-              assign sizes = image_width | append: 'px'
-            endunless
-          -%}
-
-          <div class="press__logos-slide{% if text != blank %} has-text{% endif %}" data-logo-slide data-logo-index="{{ forloop.index0 }}">
-            <div class="press__logo" style="--image-width: {{ image_width }}px; --image-height: {{ image_height }}px;">
-              {%- liquid
-                assign image_class = 'press__logo-image lazy-image__simple'
-                unless image != blank
-                  assign image_class = image_class | append: ' press__logo-image--placeholder'
-                endunless
-
-                render 'image', image: image, width: retina_size, widths: image_widths, sizes: sizes, classes: image_class, placeholder_svg: 'logo', placeholder_svg_tag: 'placeholder-svg', cover: false
-              -%}
-            </div>
-          </div>
-        {%- endfor -%}
-      </div>
-    </div>
   {%- else -%}
     {%- comment -%} Onboarding items {%- endcomment -%}
     <div class="press__items press__items--onboarding"

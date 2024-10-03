@@ -13453,6 +13453,7 @@ body:not(.no-outline) .selector-wrapper--swatches .radio__fieldset:focus-within,
   --text-gap: 16px;
   --scale: 1;
   position: relative;
+  height: 120vh;
 }
 
 .banner-image__inner {
@@ -13480,6 +13481,7 @@ body:not(.no-outline) .selector-wrapper--swatches .radio__fieldset:focus-within,
 
 .banner-image__image-container {
   padding-top: var(--container-padding-top, 0);
+  height: 120vh;
 }
 
 .banner-image .overlay,

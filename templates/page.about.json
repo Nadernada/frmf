@@ -27,42 +27,13 @@
         "text_color": "text-light"
       }
     },
-    "cdb3be2a-9d5e-47f0-9431-04f739f3c7cc": {
-      "type": "section-image-with-text",
-      "settings": {
-        "section_height": "six-fifty-height",
-        "layout": "inline",
-        "image_location": "left",
-        "image_width": "standard",
-        "subheading": "",
-        "title": "<p>Everything's on sale</p>",
-        "heading_highlight_type": "circle",
-        "highlight_color": "#d43747",
-        "highlight_text_color": "#000",
-        "heading_size": 130,
-        "content": "<p>Share details about a promotion, welcome customers, describe a product, or talk about your brand.</p>",
-        "text_alignment": "left",
-        "button_text": "Button text",
-        "button_link": "",
-        "button_color": "btn--black",
-        "button_style": "btn--solid",
-        "button_size": "btn--small",
-        "video_link": "",
-        "text_color": "text-dark",
-        "bg_color": "",
-        "gradient": "",
-        "section_width": "wrapper",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "text": {
       "type": "section-text",
       "blocks": {
         "subheading": {
           "type": "subheading",
           "settings": {
-            "text": "<p>Subheading</p>",
+            "text": "<p>About</p>",
             "size": 100,
             "margin_bottom": 16
           }
@@ -70,36 +41,25 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "text": "<p>Our Story</p>",
-            "size": 100,
+            "text": "<p><strong>Our Story</strong></p>",
+            "size": 175,
             "heading_highlight_type": "italics",
             "highlight_color": "#d43747",
-            "highlight_text_color": "#000"
+            "highlight_text_color": "#000000"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Our shop by Player collection is crafted for those who embody both passion and performance. From bold colors to standout designs, our collection seamlessly combines comfort with top-tier athletic fashion.</p>",
             "size": 100
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_text": "Read More",
-            "button_link": "",
-            "button_color": "btn--black",
-            "button_style": "btn--solid",
-            "button_size": "btn--small"
           }
         }
       },
       "block_order": [
         "subheading",
         "heading",
-        "text",
-        "button"
+        "text"
       ],
       "settings": {
         "text_position": "center",
@@ -110,207 +70,129 @@
         "padding_bottom": 60
       }
     },
-    "columns": {
-      "type": "section-columns",
-      "blocks": {
-        "column-0": {
-          "type": "text_block",
-          "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "button_text": "",
-            "button_link": "",
-            "button_color": "btn--black",
-            "button_style": "btn--text",
-            "button_size": "btn--small",
-            "video_link_popup": "",
-            "video_link_color": "text-dark"
-          }
-        },
-        "column-1": {
-          "type": "text_block",
-          "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "button_text": "",
-            "button_link": "",
-            "button_color": "btn--black",
-            "button_style": "btn--text",
-            "button_size": "btn--small",
-            "video_link_popup": "",
-            "video_link_color": "text-dark"
-          }
-        },
-        "column-2": {
-          "type": "text_block",
-          "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "button_text": "",
-            "button_link": "",
-            "button_color": "btn--black",
-            "button_style": "btn--text",
-            "button_size": "btn--small",
-            "video_link_popup": "",
-            "video_link_color": "text-dark"
-          }
-        },
-        "column-3": {
-          "type": "text_block",
-          "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "button_text": "",
-            "button_link": "",
-            "button_color": "btn--black",
-            "button_style": "btn--text",
-            "button_size": "btn--small",
-            "video_link_popup": "",
-            "video_link_color": "text-dark"
-          }
-        }
-      },
-      "block_order": [
-        "column-0",
-        "column-1",
-        "column-2",
-        "column-3"
-      ],
+    "section_overlapping_images_rdYtf7": {
+      "type": "section-overlapping-images",
       "settings": {
-        "title": "",
-        "align_text": "text-left",
-        "columns": 3,
-        "columns_mobile": "1",
-        "show_images": true,
-        "show_borders": false,
-        "equalize_height": true,
-        "desktop_aspect_ratio": 0.8,
-        "mobile_aspect_ratio": 0.8,
-        "heading_size": 120,
-        "text_size": 100,
-        "bg_color_secondary": false,
-        "color_borders": "#000",
-        "layout_mobile": "carousel",
-        "width": "wrapper",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "909772ff-e663-4f4f-9da8-7ede957325bf": {
-      "type": "section-image-with-text",
-      "settings": {
-        "section_height": "six-fifty-height",
-        "layout": "inline",
-        "image_location": "right",
-        "image_width": "standard",
-        "subheading": "",
-        "title": "<p>Everything's on sale</p>",
-        "heading_highlight_type": "circle",
-        "highlight_color": "#d43747",
-        "highlight_text_color": "#000",
-        "heading_size": 130,
-        "content": "<p>Share details about a promotion, welcome customers, describe a product, or talk about your brand.</p>",
-        "text_alignment": "left",
-        "button_text": "Button text",
-        "button_link": "",
-        "button_color": "btn--black",
-        "button_style": "btn--solid",
-        "button_size": "btn--small",
-        "video_link": "",
-        "text_color": "text-dark",
-        "bg_color": "",
-        "gradient": "",
-        "section_width": "wrapper",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "f9132c5c-9f15-4676-8086-613d0304f488": {
-      "type": "section-collection",
-      "settings": {
-        "collection": "",
-        "products_layout": "carousel",
-        "number_of_products": 8,
-        "products_per_row_on_desktop": 4,
-        "columns_mobile": "2",
-        "text_alignment": "text-left",
-        "title": "<p>Best Sellers</p>",
+        "text_position": "right",
+        "text_alignment": "center",
+        "images_width": 750,
+        "images_offset": 60,
+        "image_1": "shopify://shop_images/Rectangle_399.png",
+        "image_link_1": "",
+        "image_2": "shopify://shop_images/Rectangle_398.png",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "title": "<p>Our Vision Elevate Everyday</p>",
         "heading_highlight_type": "circle",
         "highlight_color": "#D43747",
         "highlight_text_color": "#000",
+        "description": "<p>Our mission is to help you elevate everyday moments with our innovative solutions and high-quality products. Whether you're enhancing your daily routine, pursuing new challenges, or simply seeking a touch of inspiration, we are here to support you every step of the way.</p>",
         "heading_size": 100,
-        "text": "<p>Use this text to share information about your collection with your customers.</p>",
-        "text_size": 100,
-        "button_text": "",
-        "button_color": "btn--black",
-        "button_style": "btn--text",
-        "button_size": "btn--large",
-        "button_product_text": "",
-        "button_product_link": "",
-        "button_product_color": "btn--black",
-        "button_product_style": "btn--solid",
-        "button_product_size": "btn--small",
+        "button_text": "Shop Now",
+        "button_link": "",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_text": "",
+        "video_link": "",
         "bg_color_secondary": false,
-        "enable_slider_mobile": true,
+        "gradient": "",
+        "animation": "horizontal",
+        "animation_intensity": 50,
         "width": "wrapper--full-padded",
         "padding_top": 60,
         "padding_bottom": 60
       }
     },
-    "51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5": {
-      "type": "section-icons-row",
+    "section_text_GMDYer": {
+      "type": "section-text",
       "blocks": {
-        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-0": {
-          "type": "text",
+        "heading_wN7GHi": {
+          "type": "heading",
           "settings": {
-            "icon_name": "truck",
-            "title": "Free Shipping",
-            "text": "<p>on all order over $99</p>"
+            "text": "<p><strong>Discover the Difference</strong></p>",
+            "size": 175,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000"
           }
         },
-        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-1": {
+        "text_4NRayR": {
           "type": "text",
           "settings": {
-            "icon_name": "check",
-            "title": "Free Returns",
-            "text": "<p>within 30 days of purchase</p>"
+            "text": "<p>Our curated kits and resources are designed to bring a new level of efficiency, comfort, and joy to your daily life. From practical tools to thoughtful innovations, each product is crafted to make a positive impact on your routine.</p>",
+            "size": 100
           }
         },
-        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-2": {
-          "type": "text",
+        "button_BWrcqx": {
+          "type": "button",
           "settings": {
-            "icon_name": "eco-friendly",
-            "title": "1% Donated Annually",
-            "text": "<p>to forest conservation</p>"
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
           }
         }
       },
       "block_order": [
-        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-0",
-        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-1",
-        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-2"
+        "heading_wN7GHi",
+        "text_4NRayR",
+        "button_BWrcqx"
       ],
       "settings": {
-        "heading": "",
-        "subheading": "",
-        "alignment": "center",
-        "columns": 3,
-        "icons_width": 30,
-        "show_vertical_borders": true,
-        "show_horizontal_borders": true,
-        "heading_size": 120,
-        "text_size": 100,
-        "bg_color": "",
-        "text_color": "#333333",
-        "box_color": "",
-        "color_border": "#333",
-        "button_text": "",
-        "button_link": "",
-        "button_color": "btn--black",
-        "button_style": "btn--solid",
-        "button_size": "btn--small",
-        "layout_mobile": "grid",
-        "width": "wrapper",
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_product_4E9pGa": {
+      "type": "section-product",
+      "blocks": {
+        "title_YMcaPc": {
+          "type": "title",
+          "settings": {
+            "subheading": "none",
+            "padding_bottom": 20
+          }
+        },
+        "form_qD8VnL": {
+          "type": "form",
+          "settings": {
+            "info_page": "",
+            "show_labels": true,
+            "show_quantity": false,
+            "show_payment_button": true,
+            "enable_subscriptions_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "description_Tt3TRb": {
+          "type": "description",
+          "settings": {
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title_YMcaPc",
+        "form_qD8VnL",
+        "description_Tt3TRb"
+      ],
+      "settings": {
+        "product": "limited-edition",
+        "product_sticky_enable": true,
+        "image_layout": "carousel",
+        "image_width": "standard",
+        "hide_product_thumbnails": false,
+        "product_image_aspect_ratio": false,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -328,12 +210,10 @@
   },
   "order": [
     "section_banner_image_4NnzQC",
-    "cdb3be2a-9d5e-47f0-9431-04f739f3c7cc",
     "text",
-    "columns",
-    "909772ff-e663-4f4f-9da8-7ede957325bf",
-    "f9132c5c-9f15-4676-8086-613d0304f488",
-    "51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5",
+    "section_overlapping_images_rdYtf7",
+    "section_text_GMDYer",
+    "section_product_4E9pGa",
     "main"
   ]
 }

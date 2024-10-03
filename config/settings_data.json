@@ -36,7 +36,7 @@
     "type_button_font": "heading",
     "button_font_weight": "bold",
     "button_style": "rounded",
-    "button_size": 90,
+    "button_size": 75,
     "button_letter_spacing": 50,
     "button_caps": true,
     "primary_buttons_color": "#008455",

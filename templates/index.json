@@ -386,7 +386,7 @@
         "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
         "extra_fields": "",
         "button_text": "",
-        "bg_color": "",
+        "bg_color": "#f4f4f4",
         "image_height": "three-fifty-height",
         "overlay_opacity": 10,
         "width": "wrapper",

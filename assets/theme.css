@@ -11550,13 +11550,13 @@ body:not(.no-outline) .selector-wrapper--swatches .radio__fieldset:focus-within,
 
 .swatch__button--rectangle .swatch__label {
   --adjust-size: calc(var(--swatch-width) - var(--BORDER-WIDTH));
-  border-radius: 0;
+  border-radius: calc(var(--RADIUS) / 2);
   width: var(--swatch-width);
   height: var(--swatch-height);
   color: var(--swatch);
 }
 .swatch__button--rectangle .swatch__label:before {
-  border-radius: 0;
+  border-radius: calc(var(--RADIUS) / 2);
   width: calc(var(--swatch-width) - var(--inner-offset));
   height: calc(var(--swatch-height) - var(--inner-offset));
 }

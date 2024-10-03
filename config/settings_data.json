@@ -53,7 +53,7 @@
     "product_grid_hover_animation": "fade-in",
     "show_product_gray_bg": true,
     "variants_style": "boxes",
-    "atc_button_color": "btn--black",
+    "atc_button_color": "btn--primary",
     "buynow_btn_color": "btn--white",
     "buynow_btn_style": "btn--solid-border",
     "show_quantity": false,

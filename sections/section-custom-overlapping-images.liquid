@@ -282,7 +282,7 @@
     {% comment %} {%- endcapture -%} {% endcomment %}
   </div>
   <div class="{{ section_width }}">
-    <div class="overlapping-images__block{% if text_position == 'left' %} overlapping-images__block--reverse{% endif %}">
+    <div class="overlapping-images__block-custom overlapping-images__block{% if text_position == 'left' %} overlapping-images__block--reverse{% endif %}">
       <div class="overlapping-images__images{% if hide_image_2 %} overlapping-images__images--single-mobile{% endif %}">
         <div class="overlapping-images__images-inner{% if single_image %} overlapping-images__images-inner--single{% endif %}"{{ parallax_attributes }}>
           {%- unless image_1 == blank -%}

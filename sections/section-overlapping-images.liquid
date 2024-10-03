@@ -274,7 +274,7 @@
 
 <section id="OverlappingImages--{{ section.id }}" class="section-padding overlapping-images{% if bg_color_secondary %} bg-secondary{% endif %}{%- render 'button-fallback-classes', primary_color: button_color, bg_color_secondary: bg_color_secondary -%}" data-section-id="{{ section.id }}" data-section-type="overlapping-images">
   <div class="{{ section_width }}">
-    <div class="overlapping-images__block-custom overlapping-images__block{% if text_position == 'left' %} overlapping-images__block--reverse{% endif %}">
+    <div class="overlapping-images__block{% if text_position == 'left' %} overlapping-images__block--reverse{% endif %}">
       <div class="overlapping-images__images{% if hide_image_2 %} overlapping-images__images--single-mobile{% endif %}" style="max-width: {{ images_width }}px;">
         <div class="overlapping-images__images-inner{% if single_image %} overlapping-images__images-inner--single{% endif %}"{{ parallax_attributes }}>
           {%- unless image_1 == blank -%}

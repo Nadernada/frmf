@@ -39,7 +39,8 @@
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
           }
         }
       },
@@ -48,6 +49,8 @@
       ],
       "settings": {
         "desktop_height": "three-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
         "heading_size": 130,
         "button_1_color": "btn--white",
         "button_1_style": "btn--text",
@@ -57,6 +60,8 @@
         "button_2_size": "btn--small",
         "bg_color_secondary": false,
         "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "overlay_text": true,
         "width": "wrapper--full-padded",
         "add_gutter": true,
         "padding_top": 0,
@@ -72,8 +77,8 @@
             "text": "<p>{{ collection.title }}</p>",
             "size": 100,
             "heading_highlight_type": "italics",
-            "highlight_color": "#D43747",
-            "highlight_text_color": "#000"
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000"
           }
         },
         "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1": {
@@ -126,7 +131,7 @@
             "title": "<p>Promotion title</p>",
             "heading_highlight_type": "circle",
             "highlight_color": "#fbcaff",
-            "highlight_text_color": "#FFFFFF",
+            "highlight_text_color": "#ffffff",
             "heading_size": 100,
             "content": "Advertise a promotion or a sale",
             "text_size": 100,

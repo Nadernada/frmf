@@ -93,7 +93,7 @@
         "header_icons_as_text": false,
         "highlight_item": "Sale",
         "highlight_item_color": "#d02e2e",
-        "header_transparent": false,
+        "header_transparent": true,
         "header_text_color": "white",
         "header_gradient": true
       }

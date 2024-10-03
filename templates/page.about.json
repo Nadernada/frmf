@@ -9,49 +9,22 @@
 */
 {
   "sections": {
-    "slideshow": {
-      "type": "section-slideshow",
-      "blocks": {
-        "slideshow-0": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 10,
-            "text_width": "normal",
-            "text_position": "center",
-            "text_color": "text-light",
-            "subheading": "",
-            "title": "<p>Our Story</p>",
-            "text": "Add more info or delete this text",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_color": "btn--white",
-            "button_1_style": "btn--solid-border",
-            "button_1_size": "btn--large",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_color": "btn--black",
-            "button_2_style": "btn--solid",
-            "button_2_size": "btn--large",
-            "video_text": "",
-            "video_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slideshow-0"
-      ],
+    "section_banner_image_4NnzQC": {
+      "type": "section-banner-image",
       "settings": {
-        "slide_height": "six-fifty-height",
+        "height": "six-fifty-height",
         "enable_mobile_height": false,
-        "mobile_slide_height": "five-fifty-height-mobile",
-        "show_nav_dots": true,
-        "show_nav_arrows": true,
-        "show_arrow_down": false,
-        "autoplay": false,
-        "duration": 4,
-        "transition": "fade",
+        "mobile_height": "four-fifty-height-mobile",
+        "image": "shopify://shop_images/abaout_banner.png",
+        "overlay_opacity": 10,
+        "transition": "zoom-out",
         "enable_zoom_animation": true,
-        "heading_size": 120
+        "enable_card_scrolling": false,
+        "increase_border_radius": true,
+        "text_width": "normal",
+        "text_position": "left",
+        "text_alignment": "text-left",
+        "text_color": "text-light"
       }
     },
     "cdb3be2a-9d5e-47f0-9431-04f739f3c7cc": {
@@ -64,7 +37,8 @@
         "subheading": "",
         "title": "<p>Everything's on sale</p>",
         "heading_highlight_type": "circle",
-        "highlight_color": "#D43747",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#000",
         "heading_size": 130,
         "content": "<p>Share details about a promotion, welcome customers, describe a product, or talk about your brand.</p>",
         "text_alignment": "left",
@@ -76,6 +50,7 @@
         "video_link": "",
         "text_color": "text-dark",
         "bg_color": "",
+        "gradient": "",
         "section_width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
@@ -98,7 +73,8 @@
             "text": "<p>Our Story</p>",
             "size": 100,
             "heading_highlight_type": "italics",
-            "highlight_color": "#D43747"
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000"
           }
         },
         "text": {
@@ -204,11 +180,17 @@
         "title": "",
         "align_text": "text-left",
         "columns": 3,
+        "columns_mobile": "1",
         "show_images": true,
+        "show_borders": false,
         "equalize_height": true,
+        "desktop_aspect_ratio": 0.8,
+        "mobile_aspect_ratio": 0.8,
         "heading_size": 120,
         "text_size": 100,
         "bg_color_secondary": false,
+        "color_borders": "#000",
+        "layout_mobile": "carousel",
         "width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
@@ -224,7 +206,8 @@
         "subheading": "",
         "title": "<p>Everything's on sale</p>",
         "heading_highlight_type": "circle",
-        "highlight_color": "#D43747",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#000",
         "heading_size": 130,
         "content": "<p>Share details about a promotion, welcome customers, describe a product, or talk about your brand.</p>",
         "text_alignment": "left",
@@ -236,6 +219,7 @@
         "video_link": "",
         "text_color": "text-dark",
         "bg_color": "",
+        "gradient": "",
         "section_width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
@@ -247,9 +231,13 @@
         "collection": "",
         "products_layout": "carousel",
         "number_of_products": 8,
+        "products_per_row_on_desktop": 4,
         "columns_mobile": "2",
         "text_alignment": "text-left",
         "title": "<p>Best Sellers</p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#D43747",
+        "highlight_text_color": "#000",
         "heading_size": 100,
         "text": "<p>Use this text to share information about your collection with your customers.</p>",
         "text_size": 100,
@@ -257,6 +245,11 @@
         "button_color": "btn--black",
         "button_style": "btn--text",
         "button_size": "btn--large",
+        "button_product_text": "",
+        "button_product_link": "",
+        "button_product_color": "btn--black",
+        "button_product_style": "btn--solid",
+        "button_product_size": "btn--small",
         "bg_color_secondary": false,
         "enable_slider_mobile": true,
         "width": "wrapper--full-padded",
@@ -303,14 +296,21 @@
         "alignment": "center",
         "columns": 3,
         "icons_width": 30,
+        "show_vertical_borders": true,
+        "show_horizontal_borders": true,
+        "heading_size": 120,
+        "text_size": 100,
         "bg_color": "",
-        "text_color": "#333",
+        "text_color": "#333333",
         "box_color": "",
+        "color_border": "#333",
         "button_text": "",
         "button_link": "",
         "button_color": "btn--black",
         "button_style": "btn--solid",
         "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -327,7 +327,7 @@
     }
   },
   "order": [
-    "slideshow",
+    "section_banner_image_4NnzQC",
     "cdb3be2a-9d5e-47f0-9431-04f739f3c7cc",
     "text",
     "columns",

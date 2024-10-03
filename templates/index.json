@@ -262,7 +262,7 @@
         "products_layout": "carousel",
         "number_of_products": 4,
         "products_per_row_on_desktop": 2,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "text_alignment": "text-left",
         "title": "<p>Best Sellers</p>",
         "heading_highlight_type": "circle",
@@ -282,6 +282,111 @@
         "button_product_size": "btn--small",
         "bg_color_secondary": false,
         "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_overlapping_images_dDU9dm": {
+      "type": "section-overlapping-images",
+      "settings": {
+        "text_position": "right",
+        "text_alignment": "center",
+        "images_width": 750,
+        "images_offset": 60,
+        "image_link_1": "",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "title": "<p>Our Story, Our Promise</p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#D43747",
+        "highlight_text_color": "#000",
+        "description": "<p>Use this text to describe a product, promotion, or your company.</p>",
+        "heading_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_text": "",
+        "video_link": "",
+        "bg_color_secondary": false,
+        "gradient": "",
+        "animation": "horizontal",
+        "animation_intensity": 50,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_product_WMLBMk": {
+      "type": "section-product",
+      "blocks": {
+        "title_4jbaJV": {
+          "type": "title",
+          "settings": {
+            "subheading": "none",
+            "padding_bottom": 20
+          }
+        },
+        "form_8BMHTj": {
+          "type": "form",
+          "settings": {
+            "info_page": "",
+            "show_labels": true,
+            "show_quantity": false,
+            "show_payment_button": true,
+            "enable_subscriptions_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "description_FxP4jJ": {
+          "type": "description",
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "icon_row_7Jkwnz": {
+          "type": "icon_row",
+          "settings": {
+            "icon_name_1": "truck",
+            "icon_color_1": "",
+            "icon_width_1": 20,
+            "icon_text_1": "Free shipping",
+            "icon_name_2": "check",
+            "icon_color_2": "",
+            "icon_width_2": 20,
+            "icon_text_2": "Free Returns",
+            "icon_name_3": "heart",
+            "icon_color_3": "",
+            "icon_width_3": 20,
+            "icon_text_3": "1% Donated Annually",
+            "icon_name_4": "clock",
+            "icon_color_4": "",
+            "icon_width_4": 20,
+            "icon_text_4": "Feature",
+            "alignment": "center",
+            "bg_color": "#ffffff",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title_4jbaJV",
+        "form_8BMHTj",
+        "description_FxP4jJ",
+        "icon_row_7Jkwnz"
+      ],
+      "settings": {
+        "product": "",
+        "product_sticky_enable": true,
+        "image_layout": "carousel",
+        "image_width": "standard",
+        "hide_product_thumbnails": false,
+        "product_image_aspect_ratio": false,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "bg_color_secondary": false,
         "width": "wrapper--full-padded",
         "padding_top": 60,
         "padding_bottom": 60
@@ -734,6 +839,8 @@
     "section_tab_collections_Wcpd4R",
     "section_grid_AXV7pe",
     "section_collection_GpAxjQ",
+    "section_overlapping_images_dDU9dm",
+    "section_product_WMLBMk",
     "section-sticky-images-and-text-0",
     "section-grid-1",
     "section-divider-0",

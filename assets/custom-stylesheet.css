@@ -132,7 +132,9 @@
 
 .overlapping-images__images-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .overlapping-content {
@@ -141,15 +143,15 @@
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
+  justify-content: center;
+  align-items: flex-start;
+  align-self: center;
 }
 
 .gray-bg {
   background-color: #EBEBEB;
   position: relative;
-  max-height: 80vh;
+  /* max-height: 80vh; */
 }
 
 .overlapping-bg {

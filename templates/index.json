@@ -380,89 +380,76 @@
     "section-newsletter-0": {
       "type": "section-newsletter",
       "settings": {
-        "flex_align": "align--middle-split",
+        "flex_align": "align--middle-center",
         "text_color": "text-dark",
-        "title": "Newsletter",
+        "title": "Stay In The Loop",
         "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
-        "extra_fields": "name",
+        "extra_fields": "",
         "button_text": "",
         "bg_color": "",
         "image_height": "three-fifty-height",
         "overlay_opacity": 10,
         "width": "wrapper",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 80,
+        "padding_bottom": 84
       }
     },
-    "section-columns-0": {
-      "type": "section-columns",
+    "section_icons_row_UqdBTV": {
+      "type": "section-icons-row",
       "blocks": {
-        "section-columns-0-block-0": {
-          "type": "text_block",
+        "text_bLmQTP": {
+          "type": "text",
           "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Use this text to describe products, share details on availability and style, etc</p>",
-            "button_text": "",
-            "button_link": "",
-            "button_color": "btn--black",
-            "button_style": "btn--text",
-            "button_size": "btn--small",
-            "video_link_popup": "",
-            "video_link_color": "text-dark"
+            "icon_name": "none",
+            "title": "New customers get 15% off",
+            "text": "<p>on your first purchase</p>"
           }
         },
-        "section-columns-0-block-1": {
-          "type": "text_block",
+        "text_mzBAWm": {
+          "type": "text",
           "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Use this text to describe products, share details on availability and style, etc</p>",
-            "button_text": "",
-            "button_link": "",
-            "button_color": "btn--black",
-            "button_style": "btn--text",
-            "button_size": "btn--small",
-            "video_link_popup": "",
-            "video_link_color": "text-dark"
+            "icon_name": "none",
+            "title": "Game-Ready Performance",
+            "text": "<p>Play with Morocco’s ultimate comfort and durability.</p>"
           }
         },
-        "section-columns-0-block-2": {
-          "type": "text_block",
+        "text_Kk3PGE": {
+          "type": "text",
           "settings": {
-            "title": "Add a title or tagline",
-            "text": "<p>Use this text to describe products, share details on availability and style, etc</p>",
-            "button_text": "",
-            "button_link": "",
-            "button_color": "btn--black",
-            "button_style": "btn--text",
-            "button_size": "btn--small",
-            "video_link_popup": "",
-            "video_link_color": "text-dark"
+            "icon_name": "none",
+            "title": "Pay on delivery",
+            "text": "<p>Convenient, secure payment when your order arrives.</p>"
           }
         }
       },
       "block_order": [
-        "section-columns-0-block-0",
-        "section-columns-0-block-1",
-        "section-columns-0-block-2"
+        "text_bLmQTP",
+        "text_mzBAWm",
+        "text_Kk3PGE"
       ],
       "settings": {
-        "title": "",
-        "align_text": "text-center",
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
         "columns": 3,
-        "columns_mobile": "1",
-        "show_images": false,
-        "show_borders": true,
-        "equalize_height": true,
-        "desktop_aspect_ratio": 0.8,
-        "mobile_aspect_ratio": 0.8,
-        "heading_size": 90,
-        "text_size": 80,
-        "bg_color_secondary": true,
-        "color_borders": "#000000",
-        "layout_mobile": "carousel",
+        "icons_width": 20,
+        "show_vertical_borders": true,
+        "show_horizontal_borders": true,
+        "heading_size": 70,
+        "text_size": 90,
+        "bg_color": "",
+        "text_color": "#333",
+        "box_color": "",
+        "color_border": "#333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "stacked",
         "width": "wrapper",
-        "padding_top": 12,
-        "padding_bottom": 12
+        "padding_top": 42,
+        "padding_bottom": 44
       }
     }
   },
@@ -474,6 +461,6 @@
     "section_custom_overlapping_images_PwVhti",
     "section_custom_product_8zxtme",
     "section-newsletter-0",
-    "section-columns-0"
+    "section_icons_row_UqdBTV"
   ]
 }

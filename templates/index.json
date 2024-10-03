@@ -345,7 +345,7 @@
             "info_page": "",
             "show_labels": true,
             "show_quantity": false,
-            "show_payment_button": true,
+            "show_payment_button": false,
             "enable_subscriptions_selectors": true,
             "padding_bottom": 20
           }
@@ -364,7 +364,7 @@
       ],
       "settings": {
         "product": "limited-edition",
-        "product_sticky_enable": true,
+        "product_sticky_enable": false,
         "image_layout": "carousel",
         "image_width": "standard",
         "hide_product_thumbnails": false,

@@ -287,8 +287,8 @@
         "padding_bottom": 60
       }
     },
-    "section_overlapping_images_dDU9dm": {
-      "type": "section-overlapping-images",
+    "section_custom_overlapping_images_PwVhti": {
+      "type": "section-custom-overlapping-images",
       "settings": {
         "text_position": "right",
         "text_alignment": "center",
@@ -309,8 +309,8 @@
         "hide_image_2": false,
         "title": "<p>Our Story, Our Promise</p>",
         "heading_highlight_type": "circle",
-        "highlight_color": "#d43747",
-        "highlight_text_color": "#000000",
+        "highlight_color": "#D43747",
+        "highlight_text_color": "#000",
         "description": "<p>Use this text to describe a product, promotion, or your company.</p>",
         "heading_size": 100,
         "button_text": "",
@@ -852,7 +852,7 @@
     "section_tab_collections_Wcpd4R",
     "section_grid_AXV7pe",
     "section_collection_GpAxjQ",
-    "section_overlapping_images_dDU9dm",
+    "section_custom_overlapping_images_PwVhti",
     "section_product_WMLBMk",
     "section-sticky-images-and-text-0",
     "section-grid-1",

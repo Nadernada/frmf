@@ -160,12 +160,250 @@
         "filter_mode": "default",
         "bg_color": "",
         "padding_top": 30,
-        "padding_bottom": 60,
-        "button_product_text": "Shop Now",
-        "button_product_link": "",
-        "button_product_color": "btn--primary",
-        "button_product_style": "btn--solid",
-        "button_product_size": "btn--small"
+        "padding_bottom": 60
+      }
+    },
+    "section_marquee_gJnUNj": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_XR67Vh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The best gear</p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#D43747",
+            "highlight_text_color": "#000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 44,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "custom_hpxbNn": {
+          "type": "custom",
+          "settings": {
+            "text": "<div style=\"width: 1.5rem; height: 3px; background-color: #007A46\"><div></div></div>",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_HwARpC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>guaranteed.</p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#D43747",
+            "highlight_text_color": "#000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_XR67Vh",
+        "custom_hpxbNn",
+        "text_HwARpC"
+      ],
+      "settings": {
+        "layout": "marquee-with-parallax",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 350,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#FFFFFF",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000",
+        "padding_top": 34,
+        "padding_bottom": 36
+      }
+    },
+    "section_grid_R4tgBM": {
+      "type": "section-grid",
+      "blocks": {
+        "collection_7HC8j3": {
+          "type": "collection",
+          "settings": {
+            "width": "50",
+            "collection": "best-sellers",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "",
+            "show_description": true,
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid",
+            "button_1_size": "btn--small",
+            "overlay_text_color": "text-dark"
+          }
+        },
+        "collection_igQMpN": {
+          "type": "collection",
+          "settings": {
+            "width": "50",
+            "collection": "official-training",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "",
+            "show_description": true,
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_color": "btn--primary",
+            "button_1_style": "btn--outline",
+            "button_1_size": "btn--small",
+            "overlay_text_color": "text-dark"
+          }
+        }
+      },
+      "block_order": [
+        "collection_7HC8j3",
+        "collection_igQMpN"
+      ],
+      "settings": {
+        "desktop_height": "five-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
+        "heading_size": 130,
+        "button_1_color": "btn--white",
+        "button_1_style": "btn--text",
+        "button_1_size": "btn--small",
+        "button_2_color": "btn--black",
+        "button_2_style": "btn--text",
+        "button_2_size": "btn--small",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "overlay_text": true,
+        "width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_w7ET4z": {
+      "type": "section-text",
+      "blocks": {
+        "text_yr9mfi": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>The Morocco kit features a striking design that embodies the nation's spirit, making every wearer feel a deep sense of pride and connection.</strong></p>",
+            "size": 225
+          }
+        },
+        "button_YaJH7W": {
+          "type": "button",
+          "settings": {
+            "button_text": "Read More",
+            "button_link": "",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "text_yr9mfi",
+        "button_YaJH7W"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_newsletter_b8r6Cy": {
+      "type": "section-newsletter",
+      "settings": {
+        "flex_align": "align--middle-center",
+        "text_color": "text-dark",
+        "title": "Stay In The Loop",
+        "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
+        "extra_fields": "",
+        "button_text": "",
+        "bg_color": "#f4f4f4",
+        "image_height": "three-fifty-height",
+        "overlay_opacity": 10,
+        "width": "wrapper",
+        "padding_top": 82,
+        "padding_bottom": 82
+      }
+    },
+    "section_icons_row_pU4t6M": {
+      "type": "section-icons-row",
+      "blocks": {
+        "text_CDktKz": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "New customers get 15% off",
+            "text": "<p>on your first purchase</p>"
+          }
+        },
+        "text_kyMjDF": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Game-Ready Performance",
+            "text": "<p>Play with Morocco’s ultimate comfort and durability.</p>"
+          }
+        },
+        "text_UipDxy": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Pay on delivery",
+            "text": "<p>Convenient, secure payment when your order arrives.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_CDktKz",
+        "text_kyMjDF",
+        "text_UipDxy"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 3,
+        "icons_width": 20,
+        "show_vertical_borders": true,
+        "show_horizontal_borders": true,
+        "heading_size": 70,
+        "text_size": 90,
+        "bg_color": "",
+        "text_color": "#333",
+        "box_color": "",
+        "color_border": "#333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "stacked",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
@@ -174,6 +412,11 @@
     "b5058786-b763-4ab8-b375-d96e3dbab791",
     "8d9a9dcc-b650-4240-8dbe-558bd59ba535",
     "subcollections",
-    "main"
+    "main",
+    "section_marquee_gJnUNj",
+    "section_grid_R4tgBM",
+    "section_text_w7ET4z",
+    "section_newsletter_b8r6Cy",
+    "section_icons_row_pU4t6M"
   ]
 }

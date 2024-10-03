@@ -84,8 +84,8 @@
         "hide_image_2": false,
         "title": "<p>Our Vision Elevate Everyday</p>",
         "heading_highlight_type": "circle",
-        "highlight_color": "#D43747",
-        "highlight_text_color": "#000",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#000000",
         "description": "<p>Our mission is to help you elevate everyday moments with our innovative solutions and high-quality products. Whether you're enhancing your daily routine, pursuing new challenges, or simply seeking a touch of inspiration, we are here to support you every step of the way.</p>",
         "heading_size": 100,
         "button_text": "Shop Now",
@@ -197,6 +197,67 @@
         "padding_bottom": 60
       }
     },
+    "section_tab_collections_4QDpzw": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_JU87Di": {
+          "type": "collection",
+          "settings": {
+            "title": "You May Also Like",
+            "tab_collection": "shop-by-player",
+            "number_of_products": 6,
+            "show_image": false,
+            "overlay_opacity": 10,
+            "heading": "",
+            "text_color": "text-light",
+            "button_text": "View All",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        },
+        "collection_LiCWhC": {
+          "type": "collection",
+          "settings": {
+            "title": "Recently Viewed",
+            "tab_collection": "shop-by-player",
+            "number_of_products": 6,
+            "show_image": false,
+            "overlay_opacity": 10,
+            "heading": "",
+            "text_color": "text-light",
+            "button_text": "View All",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "collection_JU87Di",
+        "collection_LiCWhC"
+      ],
+      "settings": {
+        "columns_mobile": "1",
+        "image_aspect_ratio": 1.3,
+        "text_alignment": "text-center",
+        "title": "",
+        "text": "",
+        "type_style": "subheading-text",
+        "tab_heading_size": 120,
+        "show_buttons": true,
+        "collection_button_text": "",
+        "collection_button_color": "btn--black",
+        "collection_button_style": "btn--solid",
+        "collection_button_size": "btn--small",
+        "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -214,6 +275,7 @@
     "section_overlapping_images_rdYtf7",
     "section_text_GMDYer",
     "section_product_4E9pGa",
+    "section_tab_collections_4QDpzw",
     "main"
   ]
 }

@@ -155,8 +155,8 @@
         "subheading": "Material",
         "title": "<p>Premium Material</p>",
         "heading_highlight_type": "circle",
-        "highlight_color": "#D43747",
-        "highlight_text_color": "#000",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#000000",
         "heading_size": 130,
         "content": "<p>Made from 100% recycled materials, excluding decorations & trim, for a first step towards a better future.We're committed to making a positive impact on the environment, and this product is a reflection of that commitment. Crafted entirely from 100% recycled materials (excluding decorations and trim), this item represents our first step towards a more sustainable future.</p>",
         "text_alignment": "left",
@@ -250,6 +250,7 @@
           "type": "image",
           "settings": {
             "width": "33.33",
+            "image": "shopify://shop_images/Rectangle_346.png",
             "overlay_opacity": 10,
             "text_position": "center",
             "subheading": "INSPIRE",
@@ -266,6 +267,7 @@
           "type": "image",
           "settings": {
             "width": "33.33",
+            "image": "shopify://shop_images/Rectangle_346.png",
             "overlay_opacity": 10,
             "text_position": "center",
             "subheading": "STEP UP YOUT PERFORMANCE",

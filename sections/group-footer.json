@@ -47,7 +47,7 @@
           "type": "link",
           "settings": {
             "alignment": "text-left",
-            "menu": "footer",
+            "menu": "info",
             "title": "Info",
             "column_width": "20"
           }
@@ -56,7 +56,7 @@
           "type": "link",
           "settings": {
             "alignment": "text-left",
-            "menu": "footer",
+            "menu": "company",
             "title": "Company",
             "column_width": "20"
           }

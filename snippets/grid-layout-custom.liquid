@@ -385,7 +385,7 @@
 
                   <div class="mosaic__item__content{% unless has_content %} no-content{% endunless %} {{ text_position_class }}{% if button_1_link == blank %} mosaic__item__content--nolink{% endif %}">
                     <div id="{{ content_inner_id }}"
-                      class="mosaic__item__content-inner"
+                      class="white-bg mosaic__item__content-inner"
                       {% if animations_enabled %}
                         data-aos="hero"
                         data-aos-anchor="{{ content_inner_anchor }}"
@@ -399,7 +399,7 @@
                       {%- endif -%}
 
                       {%- if heading != blank -%}
-                        <h3 class="mosaic__item__heading h2"
+                        <h3 class="mosaic__item__heading h3"
                         {% if animations_enabled %}
                           data-aos="heading"
                           data-aos-anchor="{{ content_inner_anchor }}"

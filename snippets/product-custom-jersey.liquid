@@ -795,6 +795,16 @@
     {%- unless product.has_only_default_variant -%}
       {%- assign selects_counter = 0 -%}
       <div class="product__selectors">
+        <div class="two-inputs-wrapper">
+          <div class="input-wrapper">
+            <label for="jersey-number" class="input__label label-typography">Add Jersey Number</label>
+            <input name="jersey-number" class="input__field" placeholder="Enter Your Jersey Number" />
+          </div>
+          <div class="input-wrapper">
+            <label for="jersey-name" class="input__label label-typography">Add Jersey Name</label>
+            <input name="jersey-name" class="input__field" placeholder="Enter Your Jersey Name" />
+          </div>
+        </div>
         {%- for option in product.options_with_values -%}
           {%- comment -%} Use select over radio for long inputs and mismatched lengths {%- endcomment -%}
 

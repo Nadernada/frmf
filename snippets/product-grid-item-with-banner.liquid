@@ -522,7 +522,7 @@
             {%- form 'product', product, data-product-form: '', data-quickbuy-form: '', id: unique, class: 'quick__form' -%}
               <input type="hidden" name="quantity" value="1">
               <input type="hidden" name="id" value="{{ current_variant.id }}">
-              <button type="submit" name="add" class="btn--quick {{ settings.button_style }}" data-add-to-cart data-atc-trigger{% if index > 1 %} tabindex="-1"{% endif %}>
+              {% comment %} <button type="submit" name="add" class="btn--quick {{ settings.button_style }}" data-add-to-cart data-atc-trigger{% if index > 1 %} tabindex="-1"{% endif %}>
                 <span class="btn__inner">
                   {{ cart_icon }}
                   <span class="btn__text">{{ 'products.product.quick_view' | t }}</span>
@@ -533,7 +533,7 @@
                     </svg>
                   </span>
                 </span>
-              </button>
+              </button> {% endcomment %}
 
               <div class="product-grid-item__error" role="alert" data-cart-errors-container></div>
             {%- endform -%}

@@ -53,17 +53,6 @@
             "border_color": ""
           }
         },
-        "button_rJAVWK": {
-          "type": "button",
-          "settings": {
-            "heading": "Button",
-            "button_link": "",
-            "overlay_opacity": 100,
-            "block_text_color": "",
-            "bg_color": "",
-            "border_color": ""
-          }
-        },
         "button_pQBTnN": {
           "type": "button",
           "settings": {
@@ -101,7 +90,6 @@
       "block_order": [
         "button_dkThBD",
         "button_dMALzB",
-        "button_rJAVWK",
         "button_pQBTnN",
         "button_jXB9EV",
         "button_DYdd3G"

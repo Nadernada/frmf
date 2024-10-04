@@ -73,7 +73,7 @@
         "enable_card_scrolling": false,
         "increase_border_radius": true,
         "text_width": "wide",
-        "text_position": "center",
+        "text_position": "right",
         "text_alignment": "text-center",
         "text_color": "text-light"
       }

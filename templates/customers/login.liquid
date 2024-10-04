@@ -4,7 +4,7 @@
     <div class="form-vertical-wrapper">
       <p class="text-left is-hidden" data-recover-success-text>{{ 'customer.recover_password.success' | t }}</p>
 
-      <div id="CustomerLoginForm" class="form-vertical is-hidden" data-login-form>
+      <div id="CustomerLoginForm" class="white-bg form-vertical is-hidden" data-login-form>
         {% form 'customer_login', id: 'CustomerLogin' %}
           <div class="note form-success" id="ResetSuccess" {% unless form.posted_successfully? %}style="display:none;"{% endunless %}>
             {{ 'customer.recover_password.success' | t }}

@@ -377,6 +377,38 @@
         "padding_bottom": 60
       }
     },
+    "section_collection_iMijfG": {
+      "type": "section-collection",
+      "settings": {
+        "collection": "retro",
+        "products_layout": "carousel",
+        "number_of_products": 8,
+        "products_per_row_on_desktop": 3,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Retro Collection</p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#D43747",
+        "highlight_text_color": "#000",
+        "heading_size": 100,
+        "text": "",
+        "text_size": 100,
+        "button_text": "",
+        "button_color": "btn--primary",
+        "button_style": "btn--text",
+        "button_size": "btn--large",
+        "button_product_text": "Shop Now",
+        "button_product_link": "",
+        "button_product_color": "btn--primary",
+        "button_product_style": "btn--solid",
+        "button_product_size": "btn--small",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "section-newsletter-0": {
       "type": "section-newsletter",
       "settings": {
@@ -460,6 +492,7 @@
     "section_collection_GpAxjQ",
     "section_custom_overlapping_images_PwVhti",
     "section_custom_product_8zxtme",
+    "section_collection_iMijfG",
     "section-newsletter-0",
     "section_icons_row_UqdBTV"
   ]

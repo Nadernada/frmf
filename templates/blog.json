@@ -21,7 +21,7 @@
         "show_author": true,
         "show_tags": true,
         "show_comments_count": false,
-        "tag_alignment": "center",
+        "tag_alignment": "left",
         "bg_color_secondary": false,
         "padding_top": 60,
         "padding_bottom": 60

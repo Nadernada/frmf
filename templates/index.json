@@ -409,6 +409,115 @@
         "padding_bottom": 60
       }
     },
+    "section_product_qpANgF": {
+      "type": "section-product",
+      "blocks": {
+        "inventory_countdown_dNMTNp": {
+          "type": "inventory_countdown",
+          "settings": {
+            "max_inventory": 10,
+            "hide_inventory_count": true,
+            "padding_bottom": 20
+          }
+        },
+        "title_UyaPXL": {
+          "type": "title",
+          "settings": {
+            "subheading": "none",
+            "padding_bottom": 20
+          }
+        },
+        "form_iUDg6J": {
+          "type": "form",
+          "settings": {
+            "info_page": "",
+            "show_labels": true,
+            "show_quantity": false,
+            "show_payment_button": false,
+            "enable_subscriptions_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "description_qjGBQd": {
+          "type": "description",
+          "settings": {
+            "padding_bottom": 42
+          }
+        },
+        "product_accordion_yxfJd7": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Materials and specs",
+            "heading_style": "font-body",
+            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_page": "",
+            "padding_bottom": 6
+          }
+        },
+        "product_accordion_rk4D4R": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Shipping and returns",
+            "heading_style": "font-body",
+            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "icon_RTkhyc": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "ethically-made",
+            "icon_color": "",
+            "icon_width": 20,
+            "icon_text": "Made in Morocco",
+            "text_size": 90,
+            "width": "full",
+            "text_alignment": "left",
+            "bg_color": "",
+            "padding_bottom": 8
+          }
+        },
+        "icon_cTERbL": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "recycle",
+            "icon_color": "",
+            "icon_width": 20,
+            "icon_text": "Recycled materials",
+            "text_size": 90,
+            "width": "full",
+            "text_alignment": "left",
+            "bg_color": "",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "inventory_countdown_dNMTNp",
+        "title_UyaPXL",
+        "form_iUDg6J",
+        "description_qjGBQd",
+        "product_accordion_yxfJd7",
+        "product_accordion_rk4D4R",
+        "icon_RTkhyc",
+        "icon_cTERbL"
+      ],
+      "settings": {
+        "product": "custom-morocco-jersey",
+        "product_sticky_enable": true,
+        "image_layout": "carousel",
+        "image_width": "standard",
+        "hide_product_thumbnails": false,
+        "product_image_aspect_ratio": false,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "section-newsletter-0": {
       "type": "section-newsletter",
       "settings": {
@@ -493,6 +602,7 @@
     "section_custom_overlapping_images_PwVhti",
     "section_custom_product_8zxtme",
     "section_collection_iMijfG",
+    "section_product_qpANgF",
     "section-newsletter-0",
     "section_icons_row_UqdBTV"
   ]

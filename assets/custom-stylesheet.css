@@ -154,7 +154,7 @@
 }
 
 .custom-jersey-section {
-  background-color: var(--accent);
+  background-color: #245848;
 }
 
 .gray-bg {
@@ -196,6 +196,7 @@
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 1024px) {

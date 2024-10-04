@@ -155,6 +155,8 @@
 
 .custom-jersey-section {
   background-color: #245848;
+  padding-top: var(--gutter);
+  padding-bottom: var(--gutter);
 }
 
 .gray-bg {

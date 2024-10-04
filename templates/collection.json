@@ -172,8 +172,8 @@
             "text": "<p>The best gear</p>",
             "text_color": "",
             "heading_highlight_type": "circle",
-            "highlight_color": "#D43747",
-            "highlight_text_color": "#000",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
             "icon_name": "none",
             "icon_color": "",
             "icon_width": 44,
@@ -197,8 +197,8 @@
             "text": "<p>guaranteed.</p>",
             "text_color": "",
             "heading_highlight_type": "circle",
-            "highlight_color": "#D43747",
-            "highlight_text_color": "#000",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
             "icon_name": "none",
             "icon_color": "",
             "icon_width": 25,
@@ -226,10 +226,10 @@
         "text_size": 350,
         "letter_spacing": 0,
         "message_spacing": 10,
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "gradient": "",
         "color": "#000000",
-        "border_color": "#000",
+        "border_color": "#000000",
         "padding_top": 34,
         "padding_bottom": 36
       }
@@ -241,34 +241,26 @@
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "best-sellers",
+            "collection": "limited-editions",
             "overlay_opacity": 10,
             "text_position": "center",
             "subheading": "",
             "show_description": true,
             "button_1_text": "Shop Now",
-            "button_1_link": "",
-            "button_1_color": "btn--black",
-            "button_1_style": "btn--solid",
-            "button_1_size": "btn--small",
-            "overlay_text_color": "text-dark"
+            "overlay_text_color": "text-light"
           }
         },
         "collection_igQMpN": {
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "official-training",
+            "collection": "exclusive-offers",
             "overlay_opacity": 10,
             "text_position": "center",
             "subheading": "",
             "show_description": true,
             "button_1_text": "Shop Now",
-            "button_1_link": "",
-            "button_1_color": "btn--primary",
-            "button_1_style": "btn--outline",
-            "button_1_size": "btn--small",
-            "overlay_text_color": "text-dark"
+            "overlay_text_color": "text-light"
           }
         }
       },
@@ -293,7 +285,7 @@
         "overlay_text": true,
         "width": "wrapper",
         "add_gutter": true,
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 60
       }
     },
@@ -392,9 +384,9 @@
         "heading_size": 70,
         "text_size": 90,
         "bg_color": "",
-        "text_color": "#333",
+        "text_color": "#333333",
         "box_color": "",
-        "color_border": "#333",
+        "color_border": "#333333",
         "button_text": "",
         "button_link": "",
         "button_color": "btn--black",

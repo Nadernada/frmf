@@ -204,7 +204,7 @@
 .input__field::placeholder {
   color: #646464;
   font-weight: 400;
-  font-size: calc(1rem * var(--adjust-label));
+  font-size: calc(1.2rem * var(--adjust-label)) !important;
 }
 
 @media only screen and (min-width: 1024px) {

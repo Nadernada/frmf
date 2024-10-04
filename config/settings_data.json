@@ -83,7 +83,7 @@
     "upsells_button_style": "btn--text",
     "loading_image_width": 150,
     "show_spacer_lines": false,
-    "line_thickness": "bold",
+    "line_thickness": "normal",
     "show_rounded_corners": true,
     "mobile_menu_behaviour": "link",
     "sale_bg_color": "#e1ff00",

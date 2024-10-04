@@ -136,7 +136,7 @@
         "blog": "blogs",
         "blog_style": "photo",
         "image_aspect_ratio": 0.7,
-        "rows": 1,
+        "rows": 3,
         "columns": 2,
         "columns_mobile": "1",
         "show_tags": true,

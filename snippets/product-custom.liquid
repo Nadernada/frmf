@@ -1169,33 +1169,184 @@
       </div>
     {%- endunless -%}
   {%- endcapture -%}
-
-   <!-- Team Selection Dropdown -->
-   <label for="team-select">Select Team:</label>
-   <select id="team-select" name="team">
-     <option value="mens">Men's Team</option>
-     <option value="womens">Women's Team</option>
-   </select>
- 
-   <!-- Player Selection Dropdown -->
-   <label for="player-select">Select Player:</label>
-   <select id="player-select" name="player">
-     {% comment %} {% if Gender == "men's team" %} {% endcomment %}
-       {% assign mens_players = product.metafields.custom.men_team %}
-       {% for player in mens_players %}
-         <option value="{{ player }}">{{ player }}</option>
-       {% endfor %}
-     {% comment %} {% elsif team == 'womens' %} {% endcomment %}
-       {% comment %} {% assign womens_players = product.metafields.custom.women_team %}
-       {% for player in womens_players %}
-         <option value="{{ player }}">{{ player }}</option>
-       {% endfor %}
-     {% else %}
-       <option value="">Please select a team</option>
-     {% endif %} {% endcomment %}
-   </select>
-
+  
+  
+  
   {{- form_fields -}}
+  
+   <!-- Team Selection -->
+
+    <fieldset class="{{ radio_fieldset_class }}"{% if is_swatch_option or is_native_swatch_option %}{% unless color_swatch_variant_image and show_variant_image %} data-swatches-container{% endunless %}{% endif %} name="team">
+      <legend class="radio__legend"{% if is_swatch_option or is_native_swatch_option %}{% unless color_swatch_variant_image and show_variant_image %} data-swatches-label{% endunless %}{% endif %}>
+        <span class="radio__legend__label label-typography">{{ option.name | escape_once }}</span>
+        {%- if show_size_guide_as_label -%}{{- size_chart_button -}}{%- endif -%}
+      </legend>
+
+      <div class="radio__buttons" data-variant-buttons>
+        {% assign teams = product.metafields.custom.teams | replace: '[', '' | replace: ']', '' | replace: '"', '' | split: ',' %}
+        {%- for value in teams -%}
+          {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ value | escape_once }}-{{ value | handle }}{%- endcapture -%}
+
+          {%- capture options_markup -%}
+            {% comment %} radio button {% endcomment %}
+            <span class="radio__button"{% if has_variant_option_image %} data-variant-option-image{% endif %}>
+              <input
+                type="radio"
+                class="radio__input"
+                data-single-option-selector
+                data-index="{{ current_option_position }}"
+                name="options[teams]"
+                {% if value == "Men's Team" %}
+                value="mens"
+                {% elsif value == "Women's Team" %}
+                value="womens"
+                {% endif %}
+                id="{{ input_id }}"
+                {% if value == current_value %}checked{% endif %}>
+
+              <label for="{{ input_id }}" class="radio__label">
+                {%- if has_variant_option_image -%}
+                  {%- liquid
+                    if settings.button_style == 'pill'
+                      capture option_image_border_radius
+                        echo ' style="--RADIUS: 10px;"'
+                      endcapture
+                    endif
+                  -%}
+
+                  <span class="option-image"{{ option_image_border_radius }}>
+                    {%- assign variant_option_image_translation = 'products.product.variant_option_image' | t | handle -%}
+                    {%- assign option_name = option.name | handle -%}
+
+                    {%- if option_name == variant_option_image_translation -%}
+                      {%- assign option_image_found = false -%}
+
+                      {%- for variant in product.variants -%}
+                        {%- for option in variant.options -%}
+                          {%- if option == value -%}
+                            {%- assign variant_option_image = variant.featured_media.preview_image -%}
+
+                            {%- if variant_option_image -%}
+                              {%- capture srcset -%}
+                                {%- render 'image-srcset', image: variant_option_image, widths: '60, 90, 120, 150, 180' -%}
+                              {%- endcapture -%}
+
+                              {{ variant_option_image | image_url: height: 60 | image_tag: srcset: srcset, sizes: '180px' }}
+                            {%- else -%}
+
+                            {{- 'product-1' | placeholder_svg_tag: 'placeholder-svg-filled' -}}
+                            {%- endif -%}
+
+                            {%- assign option_image_found = true -%}
+                          {%- endif -%}
+
+                          {%- if option_image_found -%}
+                            {%- break -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+
+                        {%- if option_image_found -%}
+                          {%- break -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    {%- endif -%}
+                  </span>
+                {%- endif -%}
+
+                <span class="option-title">{{ value | escape_once }}</span>
+              </label>
+            </span>
+          {%- endcapture -%}
+
+          {%- if is_swatch_option or is_native_swatch_option -%}
+            {%- liquid
+              assign current_option_variants = product | map: 'variants' | where: current_option_position, value
+              assign current_option_variants_id = current_option_variants | map: 'id' | join: ','
+
+              unless show_variant_image and color_swatch_variant_image
+                if is_native_swatch_option
+                  if value.swatch.image
+                    assign image_url = value.swatch.image | image_url: width: 96
+                    assign swatch_value = 'url(' | append: image_url | append: ')'
+                  elsif value.swatch.color
+                    assign swatch_value = 'rgb(' | append: value.swatch.color.rgb | append: ')'
+                  else
+                    assign swatch_value = nil
+                  endif
+                else
+                  assign swatch_value = value | handle
+                endif
+
+                capture swatch_style
+                  if is_swatch_option
+                    echo '--swatch: var(--' | append: swatch_value | append: ');'
+                  elsif is_native_swatch_option
+                    echo '--swatch: ' | append: swatch_value
+                  endif
+                endcapture
+              endunless
+            -%}
+
+            {%- if show_variant_image and color_swatch_variant_image -%}
+              {{ options_markup }}
+            {%- else -%}
+              <span class="swatch__button swatch__button--{{ settings.color_swatches_product_style }}" data-swatches-button>
+                <input type="radio"
+                  class="swatch__input"
+                  data-single-option-selector
+                  data-index="{{ current_option_position }}"
+                  name="options[team]"
+                  {% if value == "Men's Team" %}
+                  value="mens"
+                  {% elsif value == "Women's Team" %}
+                  value="womens"
+                  {% endif %}
+                  id="{{ input_id }}"
+                  {% if value == current_value %}checked{% endif %}>
+                <label for="{{ input_id }}"
+                  class="swatch__label"
+                  data-swatch="{{ value | escape_once }}"
+                  data-tooltip="{{ value | escape_once }}"
+                  data-swatch-variant="{{ current_option_variants_id }}"
+                  style="{{ swatch_style }}">
+                  <span class="visually-hidden">{{ value | escape_once }}</span>
+                  <span class="icon icon-check"></span>
+                </label>
+              </span>
+            {%- endif -%}
+          {%- else -%}
+            {{ options_markup }}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </fieldset>
+
+
+<!-- Player Selection with Radio Buttons -->
+<fieldset class="{{ radio_fieldset_class }}" id="player-fieldset" name="player">
+  <legend class="radio__legend">
+    <span class="radio__legend__label label-typography">Select Player</span>
+  </legend>
+  <div class="radio__buttons" id="player-radio-buttons">
+    <!-- Player radio buttons will be dynamically inserted here -->
+  </div>
+</fieldset>
+
+<!-- Hidden metafield data for both teams -->
+<div id="mens-players" style="display:none;">
+  {% assign mens_players = product.metafields.custom.men_team | replace: '[', '' | replace: ']', '' | replace: '"', '' | split: ',' %}
+  {% for player in mens_players %}
+    <span class="mens-player" data-player="{{ player }}">{{ player }}</span>
+  {% endfor %}
+</div>
+
+<div id="womens-players" style="display:none;">
+  {% assign womens_players = product.metafields.custom.women_team | replace: '[', '' | replace: ']', '' | replace: '"', '' | split: ',' %}
+  {% for player in womens_players %}
+    <span class="womens-player" data-player="{{ player }}">{{ player }}</span>
+  {% endfor %}
+</div>
+
 
   <noscript>
     <select name="id" class="product__form__select" aria-label="{{ product.options_with_values | map: 'name' | uniq | join: ', ' }}">

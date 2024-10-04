@@ -172,6 +172,16 @@
   font-size: 1.1rem;
 }
 
+.radio__fieldset .radio__label:hover {
+  border-color: var(--accent);
+}
+
+.radio__fieldset .radio__input:checked ~ .radio__label {
+  border-color: var(--accent);
+  background-color: var(--accent);
+  color: white;
+}
+
 @media only screen and (min-width: 1024px) {
 
   

@@ -59,7 +59,7 @@
     "atc_button_color": "btn--primary",
     "buynow_btn_color": "btn--black",
     "buynow_btn_style": "btn--outline",
-    "quick_buy": "none",
+    "quick_buy": "quick_buy",
     "show_quantity": false,
     "show_remaining": true,
     "show_payment_button": true,

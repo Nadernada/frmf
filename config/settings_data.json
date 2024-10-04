@@ -10,7 +10,7 @@
 {
   "current": {
     "color_body_bg": "#ffffff",
-    "color_body_bg_secondary": "#000000",
+    "color_body_bg_secondary": "#0c0c0f",
     "color_headings": "#0c0c0f",
     "color_body_text": "#0c0c0f",
     "color_accent": "#008455",
@@ -53,9 +53,11 @@
     "product_grid_hover_animation": "fade-in",
     "show_product_gray_bg": true,
     "variants_style": "boxes",
+    "show_variant_image": false,
     "atc_button_color": "btn--primary",
     "buynow_btn_color": "btn--white",
     "buynow_btn_style": "btn--solid-border",
+    "quick_buy": "none",
     "show_quantity": false,
     "show_remaining": true,
     "show_payment_button": true,
@@ -79,6 +81,7 @@
     "upsells_button_style": "btn--text",
     "loading_image_width": 150,
     "show_spacer_lines": false,
+    "line_thickness": "bold",
     "show_rounded_corners": true,
     "mobile_menu_behaviour": "link",
     "sale_bg_color": "#e1ff00",

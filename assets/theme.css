@@ -9771,7 +9771,8 @@ body:has(.site-header[data-transparent=true]):has(.main-content > .supports-tran
   --text: var(--COLOR-TEXT);
   position: absolute;
   top: 100%;
-  background: #E9E9E9;
+  /* nav-dropdown-bg */
+  /* background: #E9E9E9; */
   line-height: 22px;
   margin: 0;
   text-align: left;

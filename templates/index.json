@@ -523,11 +523,11 @@
       "settings": {
         "flex_align": "align--middle-center",
         "text_color": "text-dark",
-        "title": "Stay In The Loop",
+        "title": "Sign up now and Get 10% OFF",
         "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
         "extra_fields": "",
         "button_text": "",
-        "bg_color": "#f4f4f4",
+        "bg_color": "#ffffff",
         "image_height": "three-fifty-height",
         "overlay_opacity": 10,
         "width": "wrapper",

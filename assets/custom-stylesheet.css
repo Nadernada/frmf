@@ -107,7 +107,7 @@
   background-color: white;
   width: 90%;
   padding: 1.2rem 1.5rem;
-  border-radius: calc(var(--RADIUS) / 2);
+  border-radius: calc(var(--RADIUS) / 1.5);
 }
 
 .product-grid-item__info-content {

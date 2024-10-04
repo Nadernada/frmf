@@ -1170,6 +1170,31 @@
     {%- endunless -%}
   {%- endcapture -%}
 
+   <!-- Team Selection Dropdown -->
+   <label for="team-select">Select Team:</label>
+   <select id="team-select" name="team">
+     <option value="mens">Men's Team</option>
+     <option value="womens">Women's Team</option>
+   </select>
+ 
+   <!-- Player Selection Dropdown -->
+   <label for="player-select">Select Player:</label>
+   <select id="player-select" name="player">
+     {% comment %} {% if Gender == "men's team" %} {% endcomment %}
+       {% assign mens_players = product.metafields.custom.men_team %}
+       {% for player in mens_players %}
+         <option value="{{ player }}">{{ player }}</option>
+       {% endfor %}
+     {% comment %} {% elsif team == 'womens' %} {% endcomment %}
+       {% comment %} {% assign womens_players = product.metafields.custom.women_team %}
+       {% for player in womens_players %}
+         <option value="{{ player }}">{{ player }}</option>
+       {% endfor %}
+     {% else %}
+       <option value="">Please select a team</option>
+     {% endif %} {% endcomment %}
+   </select>
+
   {{- form_fields -}}
 
   <noscript>
@@ -2997,6 +3022,7 @@
         </option>
       {%- endfor -%}
     </select>
+
   </noscript>
 
   {%- if gift_card_recipient_feature_active -%}

@@ -290,7 +290,7 @@
               {%- render 'image-fill', img_object: image_1, sizes: sizes, classes: 'overlapping-images__image-bg' -%}
             {%- endcapture -%}
 
-            <div class="overlapping-images__image{% if image_2 != blank %} overlapping-images__image--primary{% endif %}{% if image_link_1 != blank %} hover-scale{% endif %}"
+            <div class="custom-overlapping-images overlapping-first overlapping-images__image{% if image_2 != blank %} overlapping-images__image--primary{% endif %}{% if image_link_1 != blank %} hover-scale{% endif %}"
               {% if animations_enabled %}
                 {% if single_image %}
                   data-aos="fade-up"
@@ -316,7 +316,7 @@
               {% comment %} {%- render 'image-fill', img_object: image_2, sizes: sizes, classes: 'overlapping-images__image-bg' -%} {% endcomment %}
             {% comment %} {%- endcapture -%} {% endcomment %}
 
-            <div class="overlapping-images__image overlapping-content {% if image_1 != blank %} overlapping-images__image--secondary{% endif %}{% if image_link_2 != blank %} hover-scale{% endif %}"
+            <div class="custom-overlapping-images overlapping-images__image overlapping-content {% if image_1 != blank %} overlapping-images__image--secondary{% endif %}{% if image_link_2 != blank %} hover-scale{% endif %}"
               {% if animations_enabled %}
                 {% if single_image %}
                   data-aos="fade-up"

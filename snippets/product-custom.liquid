@@ -186,12 +186,12 @@
       <div class="product-single__media-slider{% if product.media.size == 1 %} product-single__media-slider--single{% endif %}" data-product-single-media-slider>
         {%- if product.media.size > 0 -%}
           {%- comment -%} Show Featured media first {%- endcomment -%}
-          {%- render 'media', unique: unique, current_variant: current_variant, media: featured_media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%}
+          {%- render 'media-custom', unique: unique, current_variant: current_variant, media: featured_media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%}
 
           {%- comment -%} Loop product media skipping the featured {%- endcomment -%}
           {%- for media in product.media -%}
             {%- if media.id != featured_media_id -%}
-              {%- render 'media', unique: unique, current_variant: current_variant, media: media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%}
+              {%- render 'media-custom', unique: unique, current_variant: current_variant, media: media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%}
             {%- endif -%}
           {%- endfor -%}
         {%- else -%}
@@ -206,7 +206,7 @@
             data-aspectratio="{{ media_aspect_ratio }}"
             data-product-single-media-wrapper>
             <div class="product-single__media product-single__media--image">
-              <div class="product-single__media--image-height" style="padding-top: {{ media_padding_top }}%;"></div>
+              <div class="product-single__media--image-height" style="padding-top: 55vh;"></div>
               {%- render 'image-fill', aspect_ratio: 1, is_background: true, img_object: '', alt: product_title, placeholder_svg: 'image' -%}
             </div>
           </div>
@@ -333,13 +333,17 @@
                     <nav class="breadcrumbs"><a href="{{ vendor | url_for_vendor }}">{{ vendor }}</a></nav>
                 {%- endcase -%}
 
-                <h1 class="product__title">
-                  {%- if template.name == 'product' and section_type != 'featured' -%}
-                    {{- product_title -}}
-                  {%- else -%}
-                    <a href="{{ product_url }}" title="{{ product_title }}">{{ product_title }}</a>
-                  {%- endif -%}
-                </h1>
+                <div class="limited-header-wrapper">
+                  <h1 class="product__title big-header">
+                    {%- if template.name == 'product' and section_type != 'featured' -%}
+                      {{- product_title -}}
+                      {%- else -%}
+                      <a href="{{ product_url }}" title="{{ product_title }}">{{ product_title }}</a>
+                    {%- endif -%}
+                  </h1>
+
+                  {% render 'signature' %}
+                </div>
               </div>{%- assign currency_code_enable = settings.currency_code_enable -%}
 
 <div class="product__block product__price-and-badge"
@@ -1173,6 +1177,30 @@
   
   
   {{- form_fields -}}
+
+  <!-- Size Selection with Radio Buttons -->
+<fieldset class="{{ radio_fieldset_class }}" id="size-fieldset" name="size">
+  <legend class="radio__legend">
+    <span class="radio__legend__label label-typography">Select Size</span>
+  </legend>
+  <div class="radio__buttons" id="size-radio-buttons">
+    <!-- Size radio buttons will be dynamically inserted here -->
+  </div>
+</fieldset>
+
+<!-- Hidden metafield data for all player-size variants -->
+<script id="variant-data" type="application/json">
+  [
+    {% for variant in product.variants %}
+      {
+        "player": "{{ variant.option2 }}",
+        "size": "{{ variant.option1 }}",
+        "variantId": "{{ variant.id }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+</script>
+
   
    <!-- Team Selection -->
 

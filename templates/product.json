@@ -316,7 +316,7 @@
         "button_2_style": "btn--text",
         "button_2_size": "btn--small",
         "bg_color_secondary": false,
-        "enable_slider_mobile": true,
+        "enable_slider_mobile": false,
         "columns_mobile": "1",
         "overlay_text": true,
         "width": "wrapper",

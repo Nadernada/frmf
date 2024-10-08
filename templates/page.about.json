@@ -13,8 +13,8 @@
       "type": "section-banner-image",
       "settings": {
         "height": "six-fifty-height",
-        "enable_mobile_height": false,
-        "mobile_height": "four-fifty-height-mobile",
+        "enable_mobile_height": true,
+        "mobile_height": "one-third-height-mobile",
         "image": "shopify://shop_images/abaout_banner.png",
         "overlay_opacity": 10,
         "transition": "zoom-out",

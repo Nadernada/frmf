@@ -25,17 +25,17 @@
         "heading_TBVh3W": {
           "type": "heading",
           "settings": {
-            "text": "<p>FAQ</p>",
-            "size": 180,
+            "text": "<p>FAQs</p>",
+            "size": 115,
             "heading_highlight_type": "italics",
-            "highlight_color": "#D43747",
-            "highlight_text_color": "#000"
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000"
           }
         },
         "text_M8pwKC": {
           "type": "text",
           "settings": {
-            "text": "<p>Here are the answers to some od our common questions.Still need a hand? <a href=\"/pages/contact\" title=\"Contact\">Get in touch</a>.</p>",
+            "text": "<p>Here are the answers to some of our common questions.</p><p>Still need a hand? <a href=\"/pages/contact\" title=\"Contact\">Get in touch</a>.</p>",
             "size": 100
           }
         }

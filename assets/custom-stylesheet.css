@@ -228,6 +228,25 @@
   background-color: transparent;
 }
 
+.banner-content-wrapper {
+  background-color: white;
+  border-radius: var(--RADIUS);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-right: 3rem;
+}
+
+.banner-content-wrapper .h1, .banner-content-wrapper .text__content {
+  width: 100%;
+}
+
+.custom-media-padding {
+  padding-top: 75vh;
+}
+
 
 
 
@@ -302,7 +321,7 @@
 }
 
 .banner-image__inner {
-  height: 145vh;
+  height: 80vh;
 }
 
 .tab-collections__head--has-button .tabs-scrollbar {
@@ -326,6 +345,18 @@
   padding: .7rem .7rem;
 }
 
+
+.banner-content-wrapper {
+  width: auto;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+
+.custom-media-padding {
+  padding-top: 140%;
+}
+
 }
 
 @media only screen and (max-width: 426px) {
@@ -344,7 +375,7 @@
   }
 
   .banner-image__inner {
-    height: 170vh;
+    height: 100vh;
   }
 
   .subheading-text {

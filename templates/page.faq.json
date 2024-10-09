@@ -19,51 +19,33 @@
         "padding_bottom": 30
       }
     },
-    "25dbd963-093c-4cc9-9cd4-7bde32b883ac": {
-      "type": "section-banner-image",
+    "section_custom_banner_image_KqF6kR": {
+      "type": "section-custom-banner-image",
       "blocks": {
-        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-1": {
+        "heading_TBVh3W": {
           "type": "heading",
           "settings": {
             "text": "<p>FAQ</p>",
             "size": 180,
             "heading_highlight_type": "italics",
-            "highlight_color": "rgba(0,0,0,0)",
+            "highlight_color": "#D43747",
             "highlight_text_color": "#000"
           }
         },
-        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-2": {
+        "text_M8pwKC": {
           "type": "text",
           "settings": {
             "text": "<p>Here are the answers to some od our common questions.Still need a hand? <a href=\"/pages/contact\" title=\"Contact\">Get in touch</a>.</p>",
             "size": 100
           }
-        },
-        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-3": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "stacked_button": false,
-            "button_1_text": "Shop All",
-            "button_1_link": "shopify://collections/all",
-            "button_1_color": "btn--white",
-            "button_1_style": "btn--solid-border",
-            "button_1_size": "btn--small",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_color": "btn--black",
-            "button_2_style": "btn--solid",
-            "button_2_size": "btn--small"
-          }
         }
       },
       "block_order": [
-        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-1",
-        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-2",
-        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-3"
+        "heading_TBVh3W",
+        "text_M8pwKC"
       ],
       "settings": {
-        "height": "one-third-height",
+        "height": "six-fifty-height",
         "enable_mobile_height": false,
         "mobile_height": "four-fifty-height-mobile",
         "image": "shopify://shop_images/faq_banner.png",
@@ -72,10 +54,10 @@
         "enable_zoom_animation": true,
         "enable_card_scrolling": false,
         "increase_border_radius": true,
-        "text_width": "wide",
+        "text_width": "normal",
         "text_position": "right",
-        "text_alignment": "text-center",
-        "text_color": "text-light"
+        "text_alignment": "text-left",
+        "text_color": "text-dark"
       }
     },
     "accordion-section-1": {
@@ -213,7 +195,7 @@
   },
   "order": [
     "main",
-    "25dbd963-093c-4cc9-9cd4-7bde32b883ac",
+    "section_custom_banner_image_KqF6kR",
     "accordion-section-1",
     "accordion-section-2",
     "accordion-section-4"

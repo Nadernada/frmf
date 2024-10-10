@@ -82,7 +82,7 @@
                 {%- endfor -%}
               {%- endunless -%}
               {%- liquid
-                echo line_item
+                echo line_item.variant.metafields
                 -%}
 
               {%- if line_item.selling_plan_allocation -%}

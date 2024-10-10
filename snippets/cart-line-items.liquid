@@ -68,6 +68,7 @@
 
             <div class="cart__item__meta">
               {%- if item.properties == empty -%}
+                <p>popo</p>
               {%- unless line_item.product.has_only_default_variant -%}
                 {%- for option in line_item.options_with_values -%}
                   <p class="cart__item__selected-options">

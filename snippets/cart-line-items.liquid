@@ -75,15 +75,6 @@
               {%- endfor -%}
               
               {%- if has_player -%}
-                {%- unless line_item.product.has_only_default_variant -%}
-                  {%- for option in line_item.options_with_values -%}
-                    <p class="cart__item__selected-options">
-                      <span>{{- option.name -}}:</span>
-                      <span>{{- option.value -}}</span>
-                    </p>
-                  {%- endfor -%}
-                {%- endunless -%}
-              {%- else -%}
                 {%- for property in item.properties -%}
                   <p>{{ property.first }}:</p>
                   {% if property.last contains '/uploads/' %}
@@ -92,6 +83,15 @@
                     {{ property.last }}
                   {% endif %}
                 {%- endfor -%}
+              {%- else -%}
+                {%- unless line_item.product.has_only_default_variant -%}
+                  {%- for option in line_item.options_with_values -%}
+                    <p class="cart__item__selected-options">
+                      <span>{{- option.name -}}:</span>
+                      <span>{{- option.value -}}</span>
+                    </p>
+                  {%- endfor -%}
+                {%- endunless -%}
               {%- endif -%}
               
 

@@ -74,16 +74,18 @@
                     <span>{{- option.value -}}</span>
                   </p>
                 {%- endfor -%}
-                {%- for option in line_item.variant.metafields -%}
-                  <p class="cart__item__selected-options">
-                    <span>{{- option.type -}}:</span>
-                    <span>{{- option.value -}}</span>
-                  </p>
-                {%- endfor -%}
               {%- endunless -%}
-              {% liquid
-                echo line_item.variant.metafields
-                %}
+
+              {%- if line_item.properties.size or line_item.properties.player -%}
+                <p class="cart__item__selected-options">
+                  <span>Player:</span>
+                  <span>{{ line_item.properties.player }}</span> <!-- Display selected player -->
+                </p>
+                <p class="cart__item__selected-options">
+                  <span>Size:</span>
+                  <span>{{ line_item.properties.size }}</span> <!-- Display selected size -->
+                </p>
+              {%- endif -%}
 
               {%- if line_item.selling_plan_allocation -%}
                 <p class="cart__item__selling-plan">

@@ -30,7 +30,7 @@
         const playerValue = player.getAttribute('data-player');
         const radioMarkup = `
           <span class="radio__button">
-            <input class="radio__input" type="radio" id="player-${playerValue}" name="options[player]" value="${playerValue}" ${index === 0 ? 'checked' : ''}>
+            <input class="radio__input" type="radio" id="player-${playerValue}" name="options[selected-player]" value="${playerValue}" ${index === 0 ? 'checked' : ''}>
             <label class="radio__label" for="player-${playerValue}">${playerValue}</label>
           </span>
         `;
@@ -62,7 +62,7 @@
       availableSizes.forEach(size => {
         const sizeMarkup = `
           <span class="radio__button">
-            <input class="radio__input" type="radio" id="size-${size}" name="options[size]" value="${size}">
+            <input class="radio__input" type="radio" id="size-${size}" name="options[selected-size]" value="${size}">
             <label class="radio__label" for="size-${size}">${size}</label>
           </span>
         `;

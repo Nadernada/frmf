@@ -71,6 +71,10 @@
     "enable_cart_notes": true,
     "enable_gift_notes": false,
     "enable_additional_buttons": false,
+    "empty_cart_collection_list": [
+      "mens-collection",
+      "limited-editions"
+    ],
     "empty_cart_buttons": "main-menu",
     "free_shipping_limit": "250",
     "cart_custom_message_color": "text-dark",
@@ -109,8 +113,8 @@
     "social_twitter_link": "",
     "social_pinterest_link": "",
     "social_youtube_link": "",
-    "currency_code_enable": false,
-    "favicon": "",
+    "currency_code_enable": true,
+    "favicon": "shopify://shop_images/Rectangle_235_3c4c6224-a028-47e9-931e-878a4b856e90.png",
     "checkout_header_image": "",
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",

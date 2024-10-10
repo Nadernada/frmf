@@ -67,6 +67,7 @@
             </p>
 
             <div class="cart__item__meta">
+              {%- if item.properties == empty -%}
               {%- unless line_item.product.has_only_default_variant -%}
                 {%- for option in line_item.options_with_values -%}
                   <p class="cart__item__selected-options">
@@ -75,7 +76,7 @@
                   </p>
                 {%- endfor -%}
               {%- endunless -%}
-              {% unless item.properties == empty %}
+            {%- else -%}
                 {% for property in item.properties %}
                   {{ property.first }}:
             
@@ -85,7 +86,7 @@
                     {{ property.last }}
                   {% endif %}
                 {% endfor %}
-              {% endunless %}
+            {%- endif -%}
 
               
 

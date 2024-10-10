@@ -26,15 +26,18 @@
       console.log(players);
   
       // Populate the fieldset with player radio buttons
-      players.forEach(player => {
+      players.forEach((player, index) => {
         const playerValue = player.getAttribute('data-player');
         const radioMarkup = `
           <span class="radio__button">
-            <input class="radio__input" type="radio" id="player-${playerValue}" name="player" value="${playerValue}">
+            <input class="radio__input" type="radio" id="player-${playerValue}" name="player" value="${playerValue}" ${index === 0 ? 'checked' : ''}>
             <label class="radio__label" for="player-${playerValue}">${playerValue}</label>
           </span>
         `;
         playerFieldset.insertAdjacentHTML('beforeend', radioMarkup);
+
+        const firstPlayer = players[0].getAttribute('data-player');
+        updateSizes(firstPlayer);
       });
   
       // Listen for player selection change to update sizes
@@ -69,12 +72,13 @@
   
     // Set initial players to Men's team on page load
     updatePlayers('mens');
-  
+    
     // Listen for team selection change
     teamRadios.forEach(radio => {
       radio.addEventListener('change', function() {
         const selectedTeam = document.querySelector('input[name="options[teams]"]:checked').value;
         updatePlayers(selectedTeam);
+        console.log(selectedTeam)
       });
     });
   });

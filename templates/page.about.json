@@ -11,6 +11,18 @@
   "sections": {
     "section_banner_image_4NnzQC": {
       "type": "section-banner-image",
+      "blocks": {
+        "subheading_zFC6Fn": {
+          "type": "subheading",
+          "settings": {
+            "text": "",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "subheading_zFC6Fn"
+      ],
       "settings": {
         "height": "six-fifty-height",
         "enable_mobile_height": true,

@@ -71,9 +71,12 @@
     },
     "subcollections": {
       "type": "subcollections",
+      "disabled": true,
       "settings": {
         "subcollections": [
-
+          "kids-collection",
+          "mens-collection",
+          "womens-collection"
         ],
         "limit": 8,
         "layout": "grid",
@@ -84,6 +87,109 @@
         "text_color": "text-light",
         "padding_top": 30,
         "padding_bottom": 14
+      }
+    },
+    "section_list_butttons_FMBGYM": {
+      "type": "section-list-butttons",
+      "blocks": {
+        "button_AhTzca": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_QJaqpp": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_eY7q4A": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_jB77wy": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_GzxtBg": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_DDkAhH": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_AhTzca",
+        "button_QJaqpp",
+        "button_eY7q4A",
+        "button_jB77wy",
+        "button_GzxtBg",
+        "button_DDkAhH"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": 100,
+        "layout": "carousel",
+        "alignment": "center",
+        "collections_per_row": 6,
+        "columns_mobile": "1",
+        "type_style": "button-typography",
+        "button_style": "rounded",
+        "text_size": 115,
+        "letter_spacing": 75,
+        "show_arrow": false,
+        "bg_color": "#fff",
+        "block_text_color": "#000",
+        "border_color": "#000",
+        "section_bg_color": "#F7F7F7",
+        "section_text_color": "",
+        "enable_slider_mobile": true,
+        "animations_enabled": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "main": {
@@ -398,6 +504,7 @@
     "hero",
     "b5058786-b763-4ab8-b375-d96e3dbab791",
     "subcollections",
+    "section_list_butttons_FMBGYM",
     "main",
     "section_marquee_gJnUNj",
     "section_grid_R4tgBM",

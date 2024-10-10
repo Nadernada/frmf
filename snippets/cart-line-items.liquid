@@ -75,14 +75,17 @@
                   </p>
                 {%- endfor -%}
               {%- endunless -%}
-              {%- unless line_item.product.has_only_default_variant -%}
-                {%- for option in line_item.variant.options -%}
-                  <p class="cart__item__selected-options">
-                    <span>{{- option.name -}}:</span>
-                    <span>{{- option.value -}}</span>
-                  </p>
-                {%- endfor -%}
-              {%- endunless -%}
+              {% unless item.properties == empty %}
+                {% for property in item.properties %}
+                  {{ property.first }}:
+            
+                  {% if property.last contains '/uploads/' %}
+                    <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
+                  {% else %}
+                    {{ property.last }}
+                  {% endif %}
+                {% endfor %}
+              {% endunless %}
 
               
 

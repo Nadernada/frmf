@@ -377,7 +377,7 @@
               aspect_ratio: aspect_ratio,
               classes: 'product__media__hover-img product__media__hover-img--visible product__media' -%}
 
-            {%- if has_colors -%}
+            {% comment %} {%- if has_colors -%}
               <template>
                 <div data-deferred-content>
                   {%- for variant in product.variants -%}
@@ -404,7 +404,7 @@
                   {%- endfor -%}
                 </div>
               </template>
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
           </deferred-loading>
         {%- endif -%}
       </a>{%- liquid
@@ -615,7 +615,7 @@
       {{ product_info_price }}
     {%- endunless -%}
 
-    {%- if has_colors -%}
+    {% comment %} {%- if has_colors -%}
       <product-grid-item-swatch class="product-grid-item__swatch
         {%- if settings.color_swatches_product_style == 'rectangle' %} product-grid__swatch--rectangle{% endif %}"
         data-swatch-handle="{{ product.handle }}"
@@ -670,6 +670,6 @@
           <button type="button" class="swatch__text-more" data-swatches-more>{{ 'general.swatches.more_colors' | t: number: more_colors }}</button>
         {%- endif -%}
       </product-grid-item-swatch>
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
   </div>
 </div>

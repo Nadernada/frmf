@@ -75,6 +75,9 @@
                   </p>
                 {%- endfor -%}
               {%- endunless -%}
+              {%- liquid
+                echo line_item
+                -%}
 
               {%- if line_item.selling_plan_allocation -%}
                 <p class="cart__item__selling-plan">

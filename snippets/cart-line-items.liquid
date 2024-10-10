@@ -74,12 +74,12 @@
                     <span>{{- option.value -}}</span>
                   </p>
                 {%- endfor -%}
-                {% comment %} {%- for option in line_item.variant -%} {% endcomment %}
+                {%- for option in line_item.variant.metafields -%}
                   <p class="cart__item__selected-options">
-                    <span>{{- line_item.variant.title -}}:</span>
-                    {% comment %} <span>{{- option.value -}}</span> {% endcomment %}
+                    <span>{{- option.type -}}:</span>
+                    <span>{{- option.value -}}</span>
                   </p>
-                {% comment %} {%- endfor -%} {% endcomment %}
+                {%- endfor -%}
               {%- endunless -%}
               {%- liquid
                 echo line_item

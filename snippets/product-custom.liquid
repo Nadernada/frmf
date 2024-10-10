@@ -795,7 +795,7 @@
     </div>
   {%- endcapture -%}
 
-  {%- capture form_fields -%}
+  {% comment %} {%- capture form_fields -%}
     {%- unless product.has_only_default_variant -%}
       {%- assign selects_counter = 0 -%}
       <div class="product__selectors">
@@ -1172,11 +1172,11 @@
         {%- endfor -%}
       </div>
     {%- endunless -%}
-  {%- endcapture -%}
+  {%- endcapture -%} {% endcomment %}
   
   
   
-  {% comment %} {{- form_fields -}} {% endcomment %}
+  {{- form_fields -}}
 
   <!-- Size Selection with Radio Buttons -->
 <fieldset class="{{ radio_fieldset_class }}" id="size-fieldset" name="size">

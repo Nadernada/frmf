@@ -83,7 +83,7 @@
                     {{ property.last }}
                   {% endif %}
                 {%- endfor -%}
-              {% comment %} {%- else -%}
+              {%- else -%}
                 {%- unless line_item.product.has_only_default_variant -%}
                   {%- for option in line_item.options_with_values -%}
                     <p class="cart__item__selected-options">
@@ -91,7 +91,7 @@
                       <span>{{- option.value -}}</span>
                     </p>
                   {%- endfor -%}
-                {%- endunless -%} {% endcomment %}
+                {%- endunless -%}
               {%- endif -%}
               
 

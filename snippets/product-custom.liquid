@@ -795,7 +795,7 @@
     </div>
   {%- endcapture -%}
 
-  {% comment %} {%- capture form_fields -%}
+  {%- capture form_fields -%}
     {%- unless product.has_only_default_variant -%}
       {%- assign selects_counter = 0 -%}
       <div class="product__selectors">
@@ -1005,7 +1005,7 @@
 
                     {%- capture options_markup -%}
                       {% comment %} radio button {% endcomment %}
-                      <span class="radio__button"{% if has_variant_option_image %} data-variant-option-image{% endif %}>
+                      {% comment %} <span class="radio__button"{% if has_variant_option_image %} data-variant-option-image{% endif %}>
                         <input
                           type="radio"
                           class="radio__input"
@@ -1066,7 +1066,7 @@
 
                           <span class="option-title">{{ value | escape_once }}</span>
                         </label>
-                      </span>
+                      </span> {% endcomment %}
                     {%- endcapture -%}
 
                     {%- if is_swatch_option or is_native_swatch_option -%}
@@ -1101,7 +1101,7 @@
                       {%- if show_variant_image and color_swatch_variant_image -%}
                         {{ options_markup }}
                       {%- else -%}
-                        <span class="swatch__button swatch__button--{{ settings.color_swatches_product_style }}" data-swatches-button>
+                        {% comment %} <span class="swatch__button swatch__button--{{ settings.color_swatches_product_style }}" data-swatches-button>
                           <input type="radio"
                             class="swatch__input"
                             data-single-option-selector
@@ -1119,7 +1119,7 @@
                             <span class="visually-hidden">{{ value | escape_once }}</span>
                             <span class="icon icon-check"></span>
                           </label>
-                        </span>
+                        </span> {% endcomment %}
                       {%- endif -%}
                     {%- else -%}
                       {{ options_markup }}
@@ -1164,7 +1164,7 @@
                       {%- endfor -%}
                     </ul>
                   </div>
-                  <input type="hidden" name="options[{{ option.name | escape_once }}]" id="{{ input_id }}" value="{{ option.selected_value | escape_once }}" data-popout-input data-single-option-selector data-index="option{{ option.position }}"/>
+                  {% comment %} <input type="hidden" name="options[{{ option.name | escape_once }}]" id="{{ input_id }}" value="{{ option.selected_value | escape_once }}" data-popout-input data-single-option-selector data-index="option{{ option.position }}"/> {% endcomment %}
                 </div>
               </div>
             {%- endif -%}
@@ -1172,7 +1172,7 @@
         {%- endfor -%}
       </div>
     {%- endunless -%}
-  {%- endcapture -%} {% endcomment %}
+  {%- endcapture -%}
   
   
   
@@ -3021,7 +3021,7 @@
 
                     {%- capture options_markup -%}
                       {% comment %} radio button {% endcomment %}
-                      <span class="radio__button"{% if has_variant_option_image %} data-variant-option-image{% endif %}>
+                      {% comment %} <span class="radio__button"{% if has_variant_option_image %} data-variant-option-image{% endif %}>
                         <input
                           type="radio"
                           class="radio__input"
@@ -3081,7 +3081,7 @@
 
                           <span class="option-title">{{ value | escape_once }}</span>
                         </label>
-                      </span>
+                      </span> {% endcomment %}
                     {%- endcapture -%}
 
                     {%- if is_swatch_option or is_native_swatch_option -%}
@@ -3116,7 +3116,7 @@
                       {%- if show_variant_image and color_swatch_variant_image -%}
                         {{ options_markup }}
                       {%- else -%}
-                        <span class="swatch__button swatch__button--{{ settings.color_swatches_product_style }}" data-swatches-button>
+                        {% comment %} <span class="swatch__button swatch__button--{{ settings.color_swatches_product_style }}" data-swatches-button>
                           <input type="radio"
                             class="swatch__input"
                             data-single-option-selector
@@ -3134,7 +3134,7 @@
                             <span class="visually-hidden">{{ value | escape_once }}</span>
                             <span class="icon icon-check"></span>
                           </label>
-                        </span>
+                        </span> {% endcomment %}
                       {%- endif -%}
                     {%- else -%}
                       {{ options_markup }}
@@ -3179,7 +3179,7 @@
                       {%- endfor -%}
                     </ul>
                   </div>
-                  <input type="hidden" name="options[{{ option.name | escape_once }}]" id="{{ input_id }}" value="{{ option.selected_value | escape_once }}" data-popout-input data-single-option-selector data-index="option{{ option.position }}"/>
+                  {% comment %} <input type="hidden" name="options[{{ option.name | escape_once }}]" id="{{ input_id }}" value="{{ option.selected_value | escape_once }}" data-popout-input data-single-option-selector data-index="option{{ option.position }}"/> {% endcomment %}
                 </div>
               </div>
             {%- endif -%}

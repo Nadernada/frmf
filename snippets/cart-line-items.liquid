@@ -68,10 +68,10 @@
 
             <div class="cart__item__meta">
               {%- unless line_item.product.has_only_default_variant -%}
-                {%- for metafields in line_item.variant -%}
+                {%- for option in line_item.options_with_values -%}
                   <p class="cart__item__selected-options">
-                    <span>{{- metafields.type -}}:</span>
-                    <span>{{- metafields.value -}}</span>
+                    <span>{{- option.name -}}:</span>
+                    <span>{{- option.value -}}</span>
                   </p>
                 {%- endfor -%}
               {%- endunless -%}

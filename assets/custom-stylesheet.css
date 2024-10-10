@@ -248,6 +248,43 @@
 }
 
 
+.btn {
+  transition: all ease 0.5s;
+}
+
+.btn--primary {
+  border: 2px transparent solid;
+}
+
+.btn--primary:hover {
+  background-color: transparent;
+  border: 2px var(--accent) solid;
+  color: var(--accent);
+}
+
+.btn--white:hover {
+  background-color: var(--btn-border);
+  color: var(--heading);
+}
+
+.btn--black:hover {
+  background-color: var(--accent);
+  border: 1px var(--accent) solid;
+  color: white;
+}
+
+.shopify-payment-button__button--unbranded:hover {
+  background-color: var(--btn-border) !important;
+  color: white !important;
+}
+
+.btn--black:has(> .shopify-payment-button):hover {
+  background-color: transparent;
+  border: none;
+}
+
+
+
 
 
 

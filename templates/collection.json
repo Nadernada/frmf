@@ -93,30 +93,58 @@
           "type": "promo",
           "settings": {
             "collection": "",
-            "position": 5,
-            "width": "half",
-            "title": "<p>Promotion title</p>",
+            "image": "shopify://shop_images/23-Maroc-Homme_3_1.png",
+            "position": 4,
+            "width": "auto",
+            "title": "<p>New arrivals have landed</p>",
             "heading_highlight_type": "circle",
             "highlight_color": "#fbcaff",
             "highlight_text_color": "#ffffff",
             "heading_size": 100,
-            "content": "Advertise a promotion or a sale",
+            "content": "",
             "text_size": 100,
             "text_color": "text-light",
-            "text_position": "bottom-left",
+            "text_position": "center",
             "layout": "stacked",
             "overlay_opacity": 10,
             "bg_color": "#f5f4f1",
-            "button_text": "",
+            "button_text": "Shop Now",
             "button_link": "",
-            "button_color": "btn--white",
-            "button_style": "btn--solid-border",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "promo_wFHbhN": {
+          "type": "promo",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/image_8.png",
+            "position": 9,
+            "width": "half",
+            "title": "<p>2024's women's collection</p>",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#D43747",
+            "highlight_text_color": "#FFFFFF",
+            "heading_size": 100,
+            "content": "",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "center",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#D3D3D3",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
             "button_size": "btn--small"
           }
         }
       },
       "block_order": [
-        "96343c36-f832-4740-8cd6-2a90dcf9e4d9"
+        "96343c36-f832-4740-8cd6-2a90dcf9e4d9",
+        "promo_wFHbhN"
       ],
       "settings": {
         "show_breadcrumbs": true,

@@ -113,7 +113,7 @@
     "social_twitter_link": "",
     "social_pinterest_link": "",
     "social_youtube_link": "",
-    "currency_code_enable": true,
+    "currency_code_enable": false,
     "favicon": "shopify://shop_images/Rectangle_235_3c4c6224-a028-47e9-931e-878a4b856e90.png",
     "checkout_header_image": "",
     "checkout_logo_position": "left",

@@ -1212,7 +1212,6 @@
 
       <div class="radio__buttons" data-variant-buttons>
         {% assign teams = product.metafields.custom.teams | replace: '[', '' | replace: ']', '' | replace: '"', '' | split: ',' %}
-        <span class="radio__legend__label label-typography">Team:</span>
         {%- for value in teams -%}
           {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ value | escape_once }}-{{ value | handle }}{%- endcapture -%}
 

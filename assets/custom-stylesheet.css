@@ -288,6 +288,20 @@
   height: 4rem;
 }
 
+.cart__message--custom {
+  background-color: transparent;
+}
+
+.cart__checkout.btn {
+  background-color: var(--accent);
+  border: 2px var(--accent) solid;
+  color: white;
+}
+.cart__checkout.btn:hover {
+  background-color: transparent;
+  border: 2px var(--accent) solid;
+  color: var(--accent);
+}
 
 
 

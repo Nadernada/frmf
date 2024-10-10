@@ -1176,12 +1176,12 @@
   
   
   
-  {{- form_fields -}}
+  {% comment %} {{- form_fields -}} {% endcomment %}
 
   <!-- Size Selection with Radio Buttons -->
 <fieldset class="{{ radio_fieldset_class }}" id="size-fieldset" name="size">
   <legend class="radio__legend">
-    <span class="radio__legend__label label-typography">Select Size</span>
+    <span class="radio__legend__label label-typography">Size:</span>
   </legend>
   <div class="radio__buttons" id="size-radio-buttons">
     <!-- Size radio buttons will be dynamically inserted here -->
@@ -1212,6 +1212,7 @@
 
       <div class="radio__buttons" data-variant-buttons>
         {% assign teams = product.metafields.custom.teams | replace: '[', '' | replace: ']', '' | replace: '"', '' | split: ',' %}
+        <span class="radio__legend__label label-typography">Team:</span>
         {%- for value in teams -%}
           {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ value | escape_once }}-{{ value | handle }}{%- endcapture -%}
 

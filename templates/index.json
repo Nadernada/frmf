@@ -486,6 +486,92 @@
         "padding_bottom": 60
       }
     },
+    "section_sticky_images_and_text_zxzDgN": {
+      "type": "section-sticky-images-and-text",
+      "blocks": {
+        "slide_NyQize": {
+          "type": "slide",
+          "settings": {
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
+            "subheading": "New this month",
+            "title": "<p>Our latest obsessions.</p>",
+            "heading_size": 130,
+            "content": "<p>We believe that fashion should be stylish, affordable and accessible to everyone. </p>",
+            "text_size": 125,
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_text": "Play video"
+          }
+        },
+        "slide_PhkNBY": {
+          "type": "slide",
+          "settings": {
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
+            "subheading": "",
+            "title": "<p>Sustainable trends you'll love!</p>",
+            "heading_size": 130,
+            "content": "<p>Our mission is to empower people through sustainable fashion.</p>",
+            "text_size": 125,
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "video_text": ""
+          }
+        },
+        "slide_wrccb6": {
+          "type": "slide",
+          "settings": {
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
+            "subheading": "Lookbooks",
+            "title": "<p>Summer 2024</p>",
+            "heading_size": 130,
+            "content": "<p>Our latest lookbook has dropped and is now ready to shop. Tailored to elevate your style</p>",
+            "text_size": 125,
+            "button_text": "View lookbook",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "video_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_NyQize",
+        "slide_PhkNBY",
+        "slide_wrccb6"
+      ],
+      "settings": {
+        "scroll_direction": "horizontal",
+        "text_alignment": "left",
+        "image_position": "",
+        "space_around_images": true,
+        "image_width": "standard",
+        "aspect_ratio_desktop": 1.5,
+        "aspect_ratio_mobile": 1.5,
+        "show_single_text": false,
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 3%, rgba(223, 223, 223, 1) 100%)",
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_collection_iMijfG": {
       "type": "section-collection",
       "settings": {
@@ -602,6 +688,7 @@
     "section_custom_product_8zxtme",
     "section_custom_overlapping_images_PwVhti",
     "section_custom_jersey_product_aftNLd",
+    "section_sticky_images_and_text_zxzDgN",
     "section_collection_iMijfG",
     "section-newsletter-0",
     "section_icons_row_UqdBTV"

@@ -313,12 +313,19 @@
           "settings": {
             "padding_bottom": 20
           }
+        },
+        "complementary_products_MRDGgd": {
+          "type": "complementary-products",
+          "settings": {
+            "padding_bottom": 20
+          }
         }
       },
       "block_order": [
         "title_nKRxiA",
         "form_DLDjfx",
-        "description_FQFYHF"
+        "description_FQFYHF",
+        "complementary_products_MRDGgd"
       ],
       "settings": {
         "product": "limited-edition",
@@ -598,10 +605,10 @@
     "section_banner_image_N7VULm",
     "section_custom_tab_collections_M9BMUD",
     "section_custom_grid_WYVgaV",
+    "section_custom_jersey_product_aftNLd",
     "section_collection_GpAxjQ",
     "section_custom_product_8zxtme",
     "section_custom_overlapping_images_PwVhti",
-    "section_custom_jersey_product_aftNLd",
     "section_collection_iMijfG",
     "section-newsletter-0",
     "section_icons_row_UqdBTV"

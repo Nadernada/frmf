@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color_body_bg": "#ffffff",
@@ -81,7 +81,7 @@
     "enable_accept_terms": false,
     "upsells_height": 130,
     "upsells_image_width": 30,
-    "upsells_bg_color": "#000000",
+    "upsells_bg_color": "#008455",
     "upsells_text_color": "#ffffff",
     "upsells_button_color": "btn--white",
     "upsells_button_style": "btn--text",

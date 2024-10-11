@@ -423,12 +423,6 @@
             "padding_bottom": 20
           }
         },
-        "complementary_products_MRDGgd": {
-          "type": "complementary-products",
-          "settings": {
-            "padding_bottom": 20
-          }
-        },
         "siblings_CaJF9j": {
           "type": "siblings",
           "settings": {
@@ -446,7 +440,6 @@
         "title_nKRxiA",
         "form_DLDjfx",
         "description_FQFYHF",
-        "complementary_products_MRDGgd",
         "siblings_CaJF9j"
       ],
       "settings": {

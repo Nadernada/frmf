@@ -14945,7 +14945,7 @@
 
         if (this.flkty[sliderId] === undefined || !this.flkty[sliderId].isActive) {
           this.flkty[sliderId] = new Flickity(slider, {
-            pageDots: false,
+            pageDots: true,
             cellSelector: selectors$n.sliderItem,
             cellAlign: 'left',
             groupCells: true,

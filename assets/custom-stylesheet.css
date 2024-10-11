@@ -306,6 +306,8 @@
 .custom-swatch {
   width: 3rem;
   aspect-ratio: 1 / 1.2;
+  --swatch-size: 160px;
+    --rectangle-ratio: calc(var(--swatch-size) / .8);
 }
 
 

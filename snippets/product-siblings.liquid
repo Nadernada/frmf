@@ -78,7 +78,7 @@
         -%}
 
         <a href="{{ sib_product.url }}"
-          class="{{ sib_swatch_class }}"
+          class="custom-swatch {{ sib_swatch_class }}"
           {% if is_current_product %}aria-current="true"{%- endif -%}>
           <div class="siblings__button" data-tooltip="{{ color_name }}" data-swatch="{{ color_name }}">
             {%- if show_siblings_images -%}
@@ -87,8 +87,8 @@
                 assign image_widths = '44, 88'
                 assign sizes = '44px'
                 if settings.color_swatches_product_style == 'rectangle'
-                  assign image_widths = '56, 112'
-                  assign sizes = '56px'
+                  assign image_widths = '156, 212'
+                  assign sizes = '156px'
                 endif
                 assign placeholder_svg = 'product-' | append: forloop.index
 
@@ -114,7 +114,7 @@
             assign placeholder_svg = 'product-' | append: forloop.index
           -%}
 
-          <a href="#!" class="{{ swatch_class }}" {% if forloop.first %}aria-current="true"{%- endif -%}>
+          <a href="#!" class="custom-swatch {{ swatch_class }}" {% if forloop.first %}aria-current="true"{%- endif -%}>
             <div class="siblings__button" data-tooltip="{{ value }}" data-swatch="{{ value }}">
               {%- if show_siblings_images -%}
                 {%- render 'image', placeholder_svg: placeholder_svg, cover: true -%}

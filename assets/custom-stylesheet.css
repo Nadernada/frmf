@@ -303,6 +303,10 @@
   color: var(--accent);
 }
 
+.custom-swatch {
+  width: 3rem;
+  aspect-ratio: 1 / 1.2;
+}
 
 
 

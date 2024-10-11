@@ -255,135 +255,6 @@
         "padding_bottom": 60
       }
     },
-    "section_collection_GpAxjQ": {
-      "type": "section-collection",
-      "settings": {
-        "collection": "best-sellers",
-        "products_layout": "carousel",
-        "number_of_products": 4,
-        "products_per_row_on_desktop": 2,
-        "columns_mobile": "1",
-        "text_alignment": "text-left",
-        "title": "<p>Best Sellers</p>",
-        "heading_highlight_type": "circle",
-        "highlight_color": "#d43747",
-        "highlight_text_color": "#000000",
-        "heading_size": 100,
-        "text": "",
-        "text_size": 100,
-        "button_text": "",
-        "button_color": "btn--black",
-        "button_style": "btn--text",
-        "button_size": "btn--large",
-        "button_product_text": "Shop Now",
-        "button_product_link": "",
-        "button_product_color": "btn--primary",
-        "button_product_style": "btn--solid",
-        "button_product_size": "btn--small",
-        "bg_color_secondary": false,
-        "enable_slider_mobile": true,
-        "width": "wrapper--full-padded",
-        "padding_top": 60,
-        "padding_bottom": 16
-      }
-    },
-    "section_custom_product_8zxtme": {
-      "type": "section-custom-product",
-      "blocks": {
-        "title_nKRxiA": {
-          "type": "title",
-          "settings": {
-            "subheading": "none",
-            "padding_bottom": 20
-          }
-        },
-        "form_DLDjfx": {
-          "type": "form",
-          "settings": {
-            "info_page": "",
-            "show_labels": true,
-            "show_quantity": false,
-            "show_payment_button": false,
-            "enable_subscriptions_selectors": true,
-            "padding_bottom": 20
-          }
-        },
-        "description_FQFYHF": {
-          "type": "description",
-          "settings": {
-            "padding_bottom": 20
-          }
-        },
-        "complementary_products_MRDGgd": {
-          "type": "complementary-products",
-          "settings": {
-            "padding_bottom": 20
-          }
-        }
-      },
-      "block_order": [
-        "title_nKRxiA",
-        "form_DLDjfx",
-        "description_FQFYHF",
-        "complementary_products_MRDGgd"
-      ],
-      "settings": {
-        "product": "limited-edition",
-        "product_sticky_enable": false,
-        "image_layout": "stacked",
-        "image_width": "standard",
-        "hide_product_thumbnails": true,
-        "product_image_aspect_ratio": true,
-        "enable_zoom": true,
-        "enable_video_looping": false,
-        "bg_color_secondary": false,
-        "width": "wrapper--full-padded",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "section_custom_overlapping_images_PwVhti": {
-      "type": "section-custom-overlapping-images",
-      "settings": {
-        "text_position": "right",
-        "text_alignment": "center",
-        "section_bg_img": "shopify://shop_images/overlapping_mosaic.svg",
-        "collection": "achraf-hakimi-collection",
-        "collection_description": "Our shop by Player collection is crafted for those who embody both passion and performance. From bold colors to standout designs, our collection seamlessly combines comfort with top-tier athletic fashion.",
-        "button_collection_text": "Shop Now",
-        "button_collection_link": "",
-        "button_collection_color": "btn--primary",
-        "button_collection_style": "btn--solid",
-        "subheading_text": "New This Month",
-        "button_collection_size": "btn--small",
-        "images_width": 750,
-        "images_offset": 60,
-        "image_1": "shopify://shop_images/hakimi_collection.png",
-        "image_link_1": "",
-        "image_link_2": "",
-        "hide_image_2": false,
-        "title": "<p>Our Story, Our Promise</p>",
-        "heading_highlight_type": "circle",
-        "highlight_color": "#d43747",
-        "highlight_text_color": "#000000",
-        "description": "<p>Use this text to describe a product, promotion, or your company.</p>",
-        "heading_size": 100,
-        "button_text": "",
-        "button_link": "",
-        "button_color": "btn--black",
-        "button_style": "btn--solid",
-        "button_size": "btn--small",
-        "video_text": "",
-        "video_link": "",
-        "bg_color_secondary": false,
-        "gradient": "",
-        "animation": "horizontal",
-        "animation_intensity": 50,
-        "width": "wrapper--full-padded",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "section_custom_jersey_product_aftNLd": {
       "type": "section-custom-jersey-product",
       "blocks": {
@@ -488,6 +359,148 @@
         "enable_zoom": true,
         "enable_video_looping": false,
         "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_collection_GpAxjQ": {
+      "type": "section-collection",
+      "settings": {
+        "collection": "best-sellers",
+        "products_layout": "carousel",
+        "number_of_products": 4,
+        "products_per_row_on_desktop": 2,
+        "columns_mobile": "1",
+        "text_alignment": "text-left",
+        "title": "<p>Best Sellers</p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#000000",
+        "heading_size": 100,
+        "text": "",
+        "text_size": 100,
+        "button_text": "",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--large",
+        "button_product_text": "Shop Now",
+        "button_product_link": "",
+        "button_product_color": "btn--primary",
+        "button_product_style": "btn--solid",
+        "button_product_size": "btn--small",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 16
+      }
+    },
+    "section_custom_product_8zxtme": {
+      "type": "section-custom-product",
+      "blocks": {
+        "title_nKRxiA": {
+          "type": "title",
+          "settings": {
+            "subheading": "none",
+            "padding_bottom": 20
+          }
+        },
+        "form_DLDjfx": {
+          "type": "form",
+          "settings": {
+            "info_page": "",
+            "show_labels": true,
+            "show_quantity": false,
+            "show_payment_button": false,
+            "enable_subscriptions_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "description_FQFYHF": {
+          "type": "description",
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "complementary_products_MRDGgd": {
+          "type": "complementary-products",
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "siblings_CaJF9j": {
+          "type": "siblings",
+          "settings": {
+            "text": "",
+            "siblings_product_list": [
+              "limited-edition-copy",
+              "limited-edition-copy-1"
+            ],
+            "show_siblings_images": true,
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title_nKRxiA",
+        "form_DLDjfx",
+        "description_FQFYHF",
+        "complementary_products_MRDGgd",
+        "siblings_CaJF9j"
+      ],
+      "settings": {
+        "product": "limited-edition",
+        "product_sticky_enable": false,
+        "image_layout": "stacked",
+        "image_width": "standard",
+        "hide_product_thumbnails": true,
+        "product_image_aspect_ratio": true,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_custom_overlapping_images_PwVhti": {
+      "type": "section-custom-overlapping-images",
+      "settings": {
+        "text_position": "right",
+        "text_alignment": "center",
+        "section_bg_img": "shopify://shop_images/overlapping_mosaic.svg",
+        "collection": "achraf-hakimi-collection",
+        "collection_description": "Our shop by Player collection is crafted for those who embody both passion and performance. From bold colors to standout designs, our collection seamlessly combines comfort with top-tier athletic fashion.",
+        "button_collection_text": "Shop Now",
+        "button_collection_link": "",
+        "button_collection_color": "btn--primary",
+        "button_collection_style": "btn--solid",
+        "subheading_text": "New This Month",
+        "button_collection_size": "btn--small",
+        "images_width": 750,
+        "images_offset": 60,
+        "image_1": "shopify://shop_images/hakimi_collection.png",
+        "image_link_1": "",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "title": "<p>Our Story, Our Promise</p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#000000",
+        "description": "<p>Use this text to describe a product, promotion, or your company.</p>",
+        "heading_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_text": "",
+        "video_link": "",
+        "bg_color_secondary": false,
+        "gradient": "",
+        "animation": "horizontal",
+        "animation_intensity": 50,
         "width": "wrapper--full-padded",
         "padding_top": 60,
         "padding_bottom": 60

@@ -537,7 +537,7 @@
 
               <div class="product-grid-item__error" role="alert" data-cart-errors-container></div>
             {%- endform -%}
-          {%- else -%}
+          {% comment %} {%- else -%}
             <a class="btn--quick {{ settings.button_style }}"
               href="{{ product.url | within: collection }}"
               aria-label="{{ 'products.product.quick_view' | t }}"
@@ -555,7 +555,7 @@
                   </svg>
                 </span>
               </span>
-            </a>
+            </a> {% endcomment %}
           {%- endif -%}
         </div>
       {%- endunless -%}

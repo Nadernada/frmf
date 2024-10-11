@@ -39,9 +39,9 @@
 {%- if has_siblings or show_onboarding -%}
   <div class="product__block" style="--PBB: {{ padding_bottom }}px;" {{ animation_attributes }} {{ block.shopify_attributes }}>
     <fieldset class="siblings">
-      <legend class="radio__legend siblings__legend">
+      {% comment %} <legend class="radio__legend siblings__legend">
         <span class="radio__legend__label label-typography">{{ block_label }}</span>
-      </legend>
+      </legend> {% endcomment %}
 
       {%- for sib_product in siblings_product_list limit: 50 -%}
         {%- liquid

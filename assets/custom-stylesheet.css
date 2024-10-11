@@ -304,10 +304,14 @@
 }
 
 .custom-swatch {
-  width: 3rem;
+  width: 10rem;
   aspect-ratio: 1 / 1.2;
   --swatch-size: 160px;
     --rectangle-ratio: calc(var(--swatch-size) / .8);
+}
+
+.siblings {
+  justify-content: flex-end;
 }
 
 

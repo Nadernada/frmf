@@ -28,6 +28,12 @@
   {% endif %}
 >
   <div class="{{ section_width }} custom-jersey-section">
+    <h2 style="color: white; text-align: center;">Customize your jersey</h2>
+    <div class="custom-jersey-btns-wrapper">
+      <button class="btn btn--white btn--outline btn--medium">Men</button>
+      <button class="btn btn--white btn--outline btn--medium">Women</button>
+      <button class="btn btn--white btn--outline btn--medium">Kids</button>
+    </div>
     <div class="featured-product-wrapper custom-jersey-wrapper">
       {%- render 'product-custom-jersey' product: product, unique: section.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
     </div>

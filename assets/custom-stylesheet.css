@@ -314,6 +314,16 @@
   justify-content: flex-end;
 }
 
+.custom-jersey-btns-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
 
 
 

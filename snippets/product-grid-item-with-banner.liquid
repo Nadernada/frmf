@@ -26,7 +26,6 @@
   assign counter_second_tablet = tablet_counter | plus: 1 | modulo: 3
   assign counter_third_tablet = tablet_counter | modulo: 3
   assign item_column = item_index | plus: 1 | modulo: columns
-  assign collection = product.collections.first
   if item_column == 0
     assign item_column = columns
   endif
@@ -176,7 +175,7 @@
     data-aos-intersection="{{ intersection_ratio }}"
   {% endif %}
   {% if product.published_at == nil %} data-unpublished{% endif %}
-  id="main-product-container" data-collection-handle="{{ collection.handle }}">
+  id="{{ item_unique }}">
   {%- comment -%} Image {%- endcomment -%}
   <div class="product-grid-item__image"
     {% if animations_enabled %}

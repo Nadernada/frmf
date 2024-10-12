@@ -110,7 +110,7 @@
       const doc = parser.parseFromString(html, 'text/html');
       
       // Select the specific element that contains the product content
-      const productContent = doc.querySelector('.product-grid-item');
+      const productContent = doc.querySelector('.featured-product-wrapper');
       console.log(productContent)
 
       if (productContent) {

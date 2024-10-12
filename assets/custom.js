@@ -96,7 +96,7 @@
       const productImage = siblingProduct.querySelector('.sibling-image').getAttribute('src');
   
       // Update the main product display
-      document.getElementById('main-custom-img').src = productImage;
+      document.getElementById('main-custom-img').setAttribute('src', productImage);
   
       // Optionally, update the product variant or any other relevant data here
     }

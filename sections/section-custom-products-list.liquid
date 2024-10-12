@@ -45,16 +45,12 @@
   #ProductsList--{{ section.id }} .products-list__nav__button { --adjust-heading: calc(var(--FONT-ADJUST-HEADING) * {{ heading_size }} * 0.01); }
 {%- endstyle -%}
 
-<section
-  id="{{ section.id }}"
-  class="section-padding featured-product{% if product == blank %} featured-product--onboarding{% endif %} product--{{ section.id }} product-single{% if bg_color_secondary %} bg-secondary{% endif %}{%- render 'button-fallback-classes', primary_color: settings.atc_button_color, secondary_color: settings.buynow_btn_color, bg_color_secondary: bg_color_secondary -%}"
-  data-enable-history-state="false"
+<section id="ProductsList--{{ section.id }}"
+  class="section-padding products-list-section{% if bg_color_secondary %} bg-secondary{% endif %}{%- render 'button-fallback-classes', primary_color: button_color, bg_color_secondary: bg_color_secondary -%}"
   data-section-id="{{ section.id }}"
-  data-section-type="featured-product"
-  data-sticky-enabled="{{ section.settings.product_sticky_enable }}"
-  data-tall-layout="{% if section.settings.image_layout == 'carousel' %}false{% else %}true{% endif %}"
-  {% if settings.animations_enabled %}
-    data-aos-intersection="0.01"
+  data-section-type="products-list"
+  {% if animations_enabled %}
+    data-aos-intersection="0.3"
   {% endif %}
 >
 
@@ -86,8 +82,12 @@
           </div>
         {%- endif -%}
         {%- for block in section.blocks -%}
+          {%- liquid
+            assign product_handle = block.settings.product
+            assign product = all_products[product_handle]
+          -%}
           <div class="featured-product-wrapper custom-jersey-wrapper products-list__item{% if forloop.first %} products-list__item--active{% endif %}" id="ProductsListItem--{{ section.id }}-{{ forloop.index }}" data-section-id="{{ section.id }}" data-autoplay-video="true" data-tab-item>
-            {%- render 'product-custom-jersey' product: block.settings.product, unique: section.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
+            {%- render 'product-custom-jersey' product: product, unique: section.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
           </div>
         {%- endfor -%}
       </div>

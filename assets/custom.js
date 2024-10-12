@@ -118,6 +118,8 @@
         // Clear the main product container and replace it with new content
         mainProductContainer.innerHTML = ''; // Or update only a part of the section if needed
         mainProductContainer.appendChild(productContent);
+        mainProductContainer.offsetHeight; // This forces a reflow
+
       } else {
         console.error('Product content not found in the response');
       }

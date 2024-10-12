@@ -100,6 +100,7 @@
   // Function to replace the main product display with the selected sibling
   function replaceMainProduct(productId) {
 
+    console.log(collectionHandle)
 
   // Use AJAX to fetch and render the selected product dynamically
   fetch(`/collections/${collectionHandle}/products/${productId}`)
@@ -130,6 +131,7 @@
   siblingProducts.forEach(product => {
     product.addEventListener('click', function() {
       const productId = this.getAttribute('data-product-id');
+      console.log(productId)
       replaceMainProduct(productId);
     });
   });

@@ -346,7 +346,30 @@
             "circle_text": "New Arrival ~ New Arrival ~",
             "circle_word_spacing": 3,
             "circle_size": 150,
-            "btn__product-text": "Men"
+            "btn__product-text": "Men",
+            "accordion_heading": "Materials and specs",
+            "heading_style": "font-body",
+            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_page": "",
+            "padding_bottom": 20,
+            "icon_name_1": "truck",
+            "icon_color_1": "",
+            "icon_width_1": 20,
+            "icon_text_1": "Free shipping",
+            "icon_name_2": "check",
+            "icon_color_2": "",
+            "icon_width_2": 20,
+            "icon_text_2": "Free Returns",
+            "icon_name_3": "heart",
+            "icon_color_3": "",
+            "icon_width_3": 20,
+            "icon_text_3": "1% Donated Annually",
+            "icon_name_4": "clock",
+            "icon_color_4": "",
+            "icon_width_4": 20,
+            "icon_text_4": "Feature",
+            "alignment": "center",
+            "bg_color": "#ffffff"
           }
         },
         "product_BBphUp": {
@@ -364,7 +387,30 @@
             "circle_text": "New Arrival ~ New Arrival ~",
             "circle_word_spacing": 3,
             "circle_size": 150,
-            "btn__product-text": "Women"
+            "btn__product-text": "Women",
+            "accordion_heading": "Materials and specs",
+            "heading_style": "font-body",
+            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_page": "",
+            "padding_bottom": 20,
+            "icon_name_1": "truck",
+            "icon_color_1": "",
+            "icon_width_1": 20,
+            "icon_text_1": "Free shipping",
+            "icon_name_2": "check",
+            "icon_color_2": "",
+            "icon_width_2": 20,
+            "icon_text_2": "Free Returns",
+            "icon_name_3": "heart",
+            "icon_color_3": "",
+            "icon_width_3": 20,
+            "icon_text_3": "1% Donated Annually",
+            "icon_name_4": "clock",
+            "icon_color_4": "",
+            "icon_width_4": 20,
+            "icon_text_4": "Feature",
+            "alignment": "center",
+            "bg_color": "#ffffff"
           }
         },
         "product_4fdjeG": {
@@ -382,7 +428,30 @@
             "circle_text": "New Arrival ~ New Arrival ~",
             "circle_word_spacing": 3,
             "circle_size": 150,
-            "btn__product-text": "Kids"
+            "btn__product-text": "Kids",
+            "accordion_heading": "Materials and specs",
+            "heading_style": "font-body",
+            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_page": "",
+            "padding_bottom": 20,
+            "icon_name_1": "truck",
+            "icon_color_1": "",
+            "icon_width_1": 20,
+            "icon_text_1": "Free shipping",
+            "icon_name_2": "check",
+            "icon_color_2": "",
+            "icon_width_2": 20,
+            "icon_text_2": "Free Returns",
+            "icon_name_3": "heart",
+            "icon_color_3": "",
+            "icon_width_3": 20,
+            "icon_text_3": "1% Donated Annually",
+            "icon_name_4": "clock",
+            "icon_color_4": "",
+            "icon_width_4": 20,
+            "icon_text_4": "Feature",
+            "alignment": "center",
+            "bg_color": "#ffffff"
           }
         }
       },
@@ -404,25 +473,17 @@
         "padding_bottom": 60
       }
     },
-    "section_custom_jersey_product_aftNLd": {
+    "section_custom_jersey_product_zTpmgk": {
       "type": "section-custom-jersey-product",
       "blocks": {
-        "inventory_countdown_gKX63P": {
-          "type": "inventory_countdown",
-          "settings": {
-            "max_inventory": 10,
-            "hide_inventory_count": true,
-            "padding_bottom": 20
-          }
-        },
-        "title_nGwAAU": {
+        "title_npCVqE": {
           "type": "title",
           "settings": {
             "subheading": "none",
             "padding_bottom": 20
           }
         },
-        "form_g3hPxp": {
+        "form_JUaX6J": {
           "type": "form",
           "settings": {
             "info_page": "",
@@ -433,70 +494,42 @@
             "padding_bottom": 20
           }
         },
-        "description_RxDhKC": {
+        "description_cp3Umy": {
           "type": "description",
           "settings": {
             "padding_bottom": 20
           }
         },
-        "product_accordion_T87mHA": {
-          "type": "product_accordion",
+        "icon_row_4DWwJT": {
+          "type": "icon_row",
           "settings": {
-            "accordion_heading": "Materials and specs",
-            "heading_style": "font-body",
-            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
-            "accordion_page": "",
-            "padding_bottom": 20
-          }
-        },
-        "product_accordion_BRVMJw": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "Shipping and returns",
-            "heading_style": "font-body",
-            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
-            "accordion_page": "",
-            "padding_bottom": 20
-          }
-        },
-        "icon_D87FPi": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "ethically-made",
-            "icon_color": "",
-            "icon_width": 20,
-            "icon_text": "Made in Morocco",
-            "text_size": 90,
-            "width": "full",
-            "text_alignment": "left",
-            "bg_color": "",
-            "padding_bottom": 20
-          }
-        },
-        "icon_e3hXr9": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "recycle",
-            "icon_color": "",
-            "icon_width": 20,
-            "icon_text": "Recycled materials",
-            "text_size": 90,
-            "width": "full",
-            "text_alignment": "left",
-            "bg_color": "",
+            "icon_name_1": "truck",
+            "icon_color_1": "",
+            "icon_width_1": 20,
+            "icon_text_1": "Free shipping",
+            "icon_name_2": "check",
+            "icon_color_2": "",
+            "icon_width_2": 20,
+            "icon_text_2": "Free Returns",
+            "icon_name_3": "heart",
+            "icon_color_3": "",
+            "icon_width_3": 20,
+            "icon_text_3": "1% Donated Annually",
+            "icon_name_4": "clock",
+            "icon_color_4": "",
+            "icon_width_4": 20,
+            "icon_text_4": "Feature",
+            "alignment": "center",
+            "bg_color": "#ffffff",
             "padding_bottom": 20
           }
         }
       },
       "block_order": [
-        "inventory_countdown_gKX63P",
-        "title_nGwAAU",
-        "form_g3hPxp",
-        "description_RxDhKC",
-        "product_accordion_T87mHA",
-        "product_accordion_BRVMJw",
-        "icon_D87FPi",
-        "icon_e3hXr9"
+        "title_npCVqE",
+        "form_JUaX6J",
+        "description_cp3Umy",
+        "icon_row_4DWwJT"
       ],
       "settings": {
         "product": "custom-morocco-jersey",
@@ -504,7 +537,7 @@
         "image_layout": "carousel",
         "image_width": "standard",
         "hide_product_thumbnails": false,
-        "product_image_aspect_ratio": true,
+        "product_image_aspect_ratio": false,
         "enable_zoom": true,
         "enable_video_looping": false,
         "bg_color_secondary": false,
@@ -762,7 +795,7 @@
     "section_custom_grid_WYVgaV",
     "section_products_list_h7Winh",
     "section_custom_products_list_KGQghF",
-    "section_custom_jersey_product_aftNLd",
+    "section_custom_jersey_product_zTpmgk",
     "section_collection_GpAxjQ",
     "section_custom_product_8zxtme",
     "section_custom_overlapping_images_PwVhti",

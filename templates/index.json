@@ -255,10 +255,10 @@
         "padding_bottom": 60
       }
     },
-    "section_products_list_aXF7Ft": {
-      "type": "section-products-list",
+    "section_custom_products_list_KGQghF": {
+      "type": "section-custom-products-list",
       "blocks": {
-        "product_xCHNwF": {
+        "product_ccyVFf": {
           "type": "product",
           "settings": {
             "product": "custom-morocco-jersey",
@@ -275,7 +275,7 @@
             "circle_size": 150
           }
         },
-        "product_tkC4y8": {
+        "product_BBphUp": {
           "type": "product",
           "settings": {
             "product": "custom-morocco-jersey-copy",
@@ -292,7 +292,7 @@
             "circle_size": 150
           }
         },
-        "product_B4GmUh": {
+        "product_4fdjeG": {
           "type": "product",
           "settings": {
             "product": "custom-morocco-jersey-copy-1",
@@ -311,9 +311,9 @@
         }
       },
       "block_order": [
-        "product_xCHNwF",
-        "product_tkC4y8",
-        "product_B4GmUh"
+        "product_ccyVFf",
+        "product_BBphUp",
+        "product_4fdjeG"
       ],
       "settings": {
         "title": "",
@@ -684,7 +684,7 @@
     "section_banner_image_N7VULm",
     "section_custom_tab_collections_M9BMUD",
     "section_custom_grid_WYVgaV",
-    "section_products_list_aXF7Ft",
+    "section_custom_products_list_KGQghF",
     "section_custom_jersey_product_aftNLd",
     "section_collection_GpAxjQ",
     "section_custom_product_8zxtme",

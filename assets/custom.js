@@ -88,66 +88,65 @@
       });
     }
   
-    // Function to update the main product display with sibling products
-    function updateMainProduct(productId) {
-      // Replace the current main product display with the selected sibling product
-      const siblingProduct = document.querySelector(`.sibling-product[data-product-id="${productId}"]`);
-      // const productTitle = siblingProduct.querySelector('.sibling-title').textContent;
-      const productImage = siblingProduct.querySelector('.sibling-image').getAttribute('src');
-  
-      // Update the main product display
-      const mainImg = document.getElementById('main-custom-img');
-      if (mainImg) {
+  // Function to replace the main product display with the selected sibling
+  function replaceMainProduct(productId) {
+    const mainProductContainer = document.getElementById('main-product-container');
 
-        mainImg.setAttribute('src', productImage);
-      }
-  
-      // Optionally, update the product variant or any other relevant data here
-    }
-  
-    // Add event listeners for sibling product clicks
-    siblingProducts.forEach(product => {
-      product.addEventListener('click', function() {
-        const productId = this.getAttribute('data-product-id');
-        updateMainProduct(productId);
+    // Use AJAX to fetch and render the selected product dynamically
+    fetch(`/collections/${collection.handle}/products/${productId}`)
+      .then(response => response.text())
+      .then(html => {
+        const productHtml = new DOMParser().parseFromString(html, 'text/html');
+        const productContent = productHtml.querySelector('.grid-item-custom');
+
+        // Replace the current product content with the new one
+        mainProductContainer.innerHTML = '';
+        mainProductContainer.appendChild(productContent);
       });
+  }
+
+  // Add event listeners for sibling product clicks
+  siblingProducts.forEach(product => {
+    product.addEventListener('click', function() {
+      const productId = this.getAttribute('data-product-id');
+      replaceMainProduct(productId);
     });
+  });
   
     // Add to Cart functionality
     if(addToCartButton) {
-
-    addToCartButton.addEventListener('click', function() {
-      const formData = {
-        items: [{
-          id: '{{ product.variants.first.id }}', // Replace with actual variant ID
-          quantity: 1,
-          properties: {
-            'Player': selectedPlayer,
-            'Size': selectedSize
-          }
-        }]
-      };
-  
-      fetch('/cart/add.js', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      }).then(response => {
-        return response.json();
-      }).then(data => {
-        // Handle success
-        console.log('Added to cart:', data);
-      }).catch(error => {
-        console.error('Error adding to cart:', error);
+      
+      addToCartButton.addEventListener('click', function() {
+        const formData = {
+          items: [{
+            id: '{{ product.variants.first.id }}', // Replace with actual variant ID
+            quantity: 1,
+            properties: {
+              'Player': selectedPlayer,
+              'Size': selectedSize
+            }
+          }]
+        };
+        
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        }).then(response => {
+          return response.json();
+        }).then(data => {
+          // Handle success
+          console.log('Added to cart:', data);
+        }).catch(error => {
+          console.error('Error adding to cart:', error);
+        });
       });
-    });
-  }
-
-  
-    // Initialize the section with the Men's team
-    updatePlayers('mens');
+    }
+      
+      // Initialize the section with the Men's team
+      updatePlayers('mens');
   
     // Listen for team selection change
     teamRadios.forEach(radio => {

@@ -54,11 +54,8 @@
   {% endif %}
 >
 
-  <div class="{{ section_width }}" data-overflow-container>
-    <div>
 
-
-      <div class="{{ section_width }} custom-jersey-section">
+      <div class="wrapper--full-padded custom-jersey-section">
         <h2 style="color: white; text-align: center;">Customize your jersey</h2>
         {%- if section.blocks.size > 0 -%}
 
@@ -753,8 +750,7 @@
       {%- else -%}
         {%- render 'no-blocks' -%}
       {%- endif -%}
-    </div>
-  </div>
+
 </section>
 
 {% schema %}

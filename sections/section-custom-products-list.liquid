@@ -45,31 +45,61 @@
   #ProductsList--{{ section.id }} .products-list__nav__button { --adjust-heading: calc(var(--FONT-ADJUST-HEADING) * {{ heading_size }} * 0.01); }
 {%- endstyle -%}
 
-<section id="ProductsList--{{ section.id }}"
-  class="section-padding products-list-section{% if bg_color_secondary %} bg-secondary{% endif %}{%- render 'button-fallback-classes', primary_color: button_color, bg_color_secondary: bg_color_secondary -%}"
+<section
+  id="{{ section.id }}"
+  class="section-padding featured-product{% if product == blank %} featured-product--onboarding{% endif %} product--{{ section.id }} product-single{% if bg_color_secondary %} bg-secondary{% endif %}{%- render 'button-fallback-classes', primary_color: settings.atc_button_color, secondary_color: settings.buynow_btn_color, bg_color_secondary: bg_color_secondary -%}"
+  data-enable-history-state="false"
   data-section-id="{{ section.id }}"
-  data-section-type="products-list"
-  {% if animations_enabled %}
-    data-aos-intersection="0.3"
+  data-section-type="featured-product"
+  data-sticky-enabled="{{ section.settings.product_sticky_enable }}"
+  data-tall-layout="{% if section.settings.image_layout == 'carousel' %}false{% else %}true{% endif %}"
+  {% if settings.animations_enabled %}
+    data-aos-intersection="0.01"
   {% endif %}
 >
 
   <div class="{{ section_width }}" data-overflow-container>
-    <div class="products-list__container" data-overflow-frame>
-      {%- unless section.settings.title == blank -%}
-        <h2 class="products-list__heading subheading-text"
-          {% if animations_enabled %}
-            data-aos="fade-up"
-            data-aos-anchor="{{ animation_anchor }}"
-            data-aos-delay="{{ animation_delay }}"
-            {%- assign animation_delay = animation_delay | plus: 150 -%}
-          {% endif %}>{{ section.settings.title }}</h2>
-      {%- endunless -%}
+    <div>
+
+
+      <div class="{{ section_width }} custom-jersey-section">
+        <h2 style="color: white; text-align: center;">Customize your jersey</h2>
+        {%- if section.blocks.size > 0 -%}
+
+          <div class="custom-jersey-btns-wrapper">
+            {%- for block in section.blocks -%}
+              {%- liquid
+                  assign btn_text = block.settings.btn__product-text
+                  assign button_link = '#ProductsListItem--' | append: section.id | append: '-' | append: forloop.index
+              -%}
+              <a 
+                href="{{ button_link }}"
+                {{ block.shopify_attributes }}
+                {% if animations_enabled %}
+                  data-aos="fade-up"
+                  data-aos-anchor="{{ animation_anchor }}"
+                  data-aos-delay="{{ animation_delay }}"
+                  {%- assign animation_delay = animation_delay | plus: 50 -%}
+                {% endif %}
+                class="btn btn--white btn--outline btn--medium {% if forloop.first %} custom-products-list__nav__button--active{% endif %}">{{ btn_text }}</a>
+            {%-  endfor -%}
+          </div>
+        {%- endif -%}
+        {%- for block in section.blocks -%}
+          <div class="featured-product-wrapper custom-jersey-wrapper products-list__item{% if forloop.first %} products-list__item--active{% endif %}" id="ProductsListItem--{{ section.id }}-{{ forloop.index }}" data-section-id="{{ section.id }}" data-autoplay-video="true" data-tab-item>
+            {%- render 'product-custom-jersey' product: block.settings.product, unique: section.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
+          </div>
+        {%- endfor -%}
+      </div>
 
       {%- if section.blocks.size > 0 -%}
-        <div class="products-list__nav__wrapper">
+        {% comment %} <div class="products-list__nav__wrapper">
           <div class="products-list__nav" data-tabs-nav>
             {%- for block in section.blocks -%}
+              {%- liquid
+                assign product_handle = block.settings.product
+                assign product = all_products[product_handle]
+                -%}
               {%- liquid
                 assign button_link = '#ProductsListItem--' | append: section.id | append: '-' | append: forloop.index
 
@@ -130,9 +160,9 @@
               </a>
             {%- endfor -%}
           </div>
-        </div>
+        </div> {% endcomment %}
 
-        {%- for block in section.blocks -%}
+        {% comment %} {%- for block in section.blocks -%}
           {%- liquid
             assign animation_delay = 150
             assign image_1 = block.settings.image_1
@@ -718,7 +748,7 @@
                 {%- endif -%}
               </div>
           {%- endcase -%}
-        {%- endfor -%}
+        {%- endfor -%} {% endcomment %}
       {%- else -%}
         {%- render 'no-blocks' -%}
       {%- endif -%}
@@ -937,6 +967,15 @@
           "id": "circle_image",
           "label": "Custom image",
           "info": "Overrides the above text setting"
+        },
+        {
+        "type": "header",
+        "content": "Tab Button"
+        },
+        {
+          "type": "text",
+          "id": "btn__product-text",
+          "label": "tab button text"
         }
       ]
     },

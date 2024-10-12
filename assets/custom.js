@@ -102,8 +102,8 @@
 
 
     // Use AJAX to fetch and render the selected product dynamically
-    fetch(`/collections/${collection.handle}/products/${productId}`)
-      .then(response => response.text())
+    fetch(`/collections/${collectionHandle}/products/${productId}`)
+    .then(response => response.text())
       .then(html => {
         const productHtml = new DOMParser().parseFromString(html, 'text/html');
         const productContent = productHtml.querySelector('.grid-item-custom');

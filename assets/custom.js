@@ -96,7 +96,11 @@
       const productImage = siblingProduct.querySelector('.sibling-image').getAttribute('src');
   
       // Update the main product display
-      document.getElementById('main-custom-img').setAttribute('src', productImage);
+      const mainImg = document.getElementById('main-custom-img');
+      if (mainImg) {
+
+        mainImg.setAttribute('src', productImage);
+      }
   
       // Optionally, update the product variant or any other relevant data here
     }
@@ -110,6 +114,8 @@
     });
   
     // Add to Cart functionality
+    if(addToCartButton) {
+
     addToCartButton.addEventListener('click', function() {
       const formData = {
         items: [{
@@ -137,6 +143,8 @@
         console.error('Error adding to cart:', error);
       });
     });
+  }
+
   
     // Initialize the section with the Men's team
     updatePlayers('mens');

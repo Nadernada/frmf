@@ -16,6 +16,12 @@
     const sizeFieldset = document.getElementById('size-radio-buttons');
     const siblingProducts = document.querySelectorAll('.sibling-product');
     const addToCartButton = document.getElementById('add-to-cart-btn');
+    const collectionHandle = mainProductContainer.getAttribute('data-collection-handle');
+
+    if (!collectionHandle) {
+      console.error('Collection handle is not defined');
+      return;
+    }
     
     let selectedPlayer = '';
     let selectedSize = '';

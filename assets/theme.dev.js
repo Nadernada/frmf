@@ -5081,7 +5081,7 @@
                 contain: true,
                 wrapAround: true,
                 imagesLoaded: true,
-                pageDots: false,
+                pageDots: true,
                 prevNextButtons: false,
                 adaptiveHeight: false,
                 pauseAutoPlayOnHover: false,
@@ -18128,7 +18128,7 @@
 
           const flktyImages = new Flickity(sliderImages, {
             fade: true,
-            pageDots: false,
+            pageDots: true,
             prevNextButtons: true,
             wrapAround: true,
             adaptiveHeight: true,
@@ -18160,7 +18160,7 @@
         this.slidersContents.forEach((sliderContent) => {
           const flktyContent = new Flickity(sliderContent, {
             fade: true,
-            pageDots: false,
+            pageDots: true,
             prevNextButtons: false,
             wrapAround: true,
             adaptiveHeight: true,

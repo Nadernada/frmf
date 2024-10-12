@@ -191,7 +191,10 @@
           {%- comment -%} Loop product media skipping the featured {%- endcomment -%}
           {%- for media in product.media -%}
             {%- if media.id != featured_media_id -%}
-              {%- render 'media-custom', unique: unique, current_variant: current_variant, media: media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%}
+              {% comment %} {%- render 'media-custom', unique: unique, current_variant: current_variant, media: media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%} {% endcomment %}
+              <div id="product-image">
+                <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}" id="main-custom-img">
+              </div>
             {%- endif -%}
           {%- endfor -%}
         {%- else -%}
@@ -463,7 +466,7 @@
               -%}
 
               {%- unless product == blank -%}
-                <div class="product__block product__form__wrapper{{ hide_labels_class }}{% if sold_out %} variant--soldout{% endif %}{% if enable_half_width_btn and atc_show_product_price == false %} btn--half{% endif %}"
+                <div  id="featured-product-section" class="product__block product__form__wrapper{{ hide_labels_class }}{% if sold_out %} variant--soldout{% endif %}{% if enable_half_width_btn and atc_show_product_price == false %} btn--half{% endif %}"
                   data-form-wrapper
                   {{ block_style }}
                   {{ block.shopify_attributes }}>
@@ -3282,7 +3285,7 @@
       <button
         type="submit"
         name="add"
-        id="AddToCart--{{ unique }}"
+        id="add-to-cart-btn"
         class="btn {{ atc_button_color }} {{ atc_button_style }} btn--large btn--submit product__submit__add"
         data-add-to-cart>
         <span data-add-to-cart-text{% if settings.atc_show_product_price %} data-price-wrapper data-atc-button{% endif %}>

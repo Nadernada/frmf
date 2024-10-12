@@ -111,6 +111,7 @@
       
       // Select the specific element that contains the product content
       const productContent = doc.querySelector('.product-grid-item');
+      console.log(productContent)
 
       if (productContent) {
         // Clear the main product container and replace it with new content

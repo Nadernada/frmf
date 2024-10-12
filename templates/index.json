@@ -255,6 +255,79 @@
         "padding_bottom": 60
       }
     },
+    "section_products_list_h7Winh": {
+      "type": "section-products-list",
+      "blocks": {
+        "product_tRcGBi": {
+          "type": "product",
+          "settings": {
+            "product": "custom-morocco-jersey",
+            "title": "",
+            "product_description": "",
+            "button_text": "View Product",
+            "show_second_image": true,
+            "show_circle": true,
+            "hide_on_mobile": false,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "New Arrival ~ New Arrival ~",
+            "circle_word_spacing": 3,
+            "circle_size": 150
+          }
+        },
+        "product_hnPqNX": {
+          "type": "product",
+          "settings": {
+            "product": "custom-morocco-jersey-copy",
+            "title": "",
+            "product_description": "",
+            "button_text": "View Product",
+            "show_second_image": true,
+            "show_circle": true,
+            "hide_on_mobile": false,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "New Arrival ~ New Arrival ~",
+            "circle_word_spacing": 3,
+            "circle_size": 150
+          }
+        },
+        "product_YiWnMh": {
+          "type": "product",
+          "settings": {
+            "product": "custom-morocco-jersey-copy-1",
+            "title": "",
+            "product_description": "",
+            "button_text": "View Product",
+            "show_second_image": true,
+            "show_circle": true,
+            "hide_on_mobile": false,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "New Arrival ~ New Arrival ~",
+            "circle_word_spacing": 3,
+            "circle_size": 150
+          }
+        }
+      },
+      "block_order": [
+        "product_tRcGBi",
+        "product_hnPqNX",
+        "product_YiWnMh"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 100,
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "image_aspect_ratio": 1,
+        "bg_color_secondary": false,
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "section_custom_products_list_KGQghF": {
       "type": "section-custom-products-list",
       "blocks": {
@@ -687,6 +760,7 @@
     "section_banner_image_N7VULm",
     "section_custom_tab_collections_M9BMUD",
     "section_custom_grid_WYVgaV",
+    "section_products_list_h7Winh",
     "section_custom_products_list_KGQghF",
     "section_custom_jersey_product_aftNLd",
     "section_collection_GpAxjQ",

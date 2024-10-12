@@ -103,7 +103,7 @@
     console.log(collectionHandle)
 
   // Use AJAX to fetch and render the selected product dynamically
-  fetch(`/collections/${collectionHandle}/products/${productId}`)
+  fetch(`/collections/limited-editions/products/${productId}`)
     .then(response => response.text())
     .then(html => {
       // Parse the returned HTML into a document

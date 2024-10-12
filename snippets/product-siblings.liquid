@@ -83,7 +83,7 @@
           {% if is_current_product %}aria-current="true"{%- endif -%}>
           <div class="siblings__button" data-tooltip="{{ color_name }}" data-swatch="{{ color_name }}">
             {%- if show_siblings_images -%}
-              {%- liquid
+              {% comment %} {%- liquid
                 assign image = sib_product.featured_media.preview_image
                 assign image_widths = '44, 88'
                 assign sizes = '44px'
@@ -94,7 +94,8 @@
                 assign placeholder_svg = 'product-' | append: forloop.index
 
                 render 'image', image: image, widths: image_widths, sizes: sizes, cover: true, placeholder_svg: placeholder_svg, preload: true
-              -%}
+              -%} {% endcomment %}
+              <img class="sibling-image" src="{{ sib_product.featured_media.preview_image | img_url: 'large' }}"  />
             {%- else -%}
               {%- if is_current_product and sib_product.available -%}
                 <span class="icon icon-check"></span>

@@ -1269,19 +1269,6 @@ endif
   {%- render 'product-accordions', block_settings: block.settings, block_id: block.id -%}
 </div>
 
-<div class="product__block product__accordions"
-  id="Block--{{ block.id }}"
-  {% if animations_enabled %}
-    data-aos="hero"
-    data-aos-anchor="{{ animation_anchor }}"
-    data-aos-order="{{ animation_order }}"
-    {%- assign animation_order = animation_order | plus: 1 -%}
-  {% endif %}
-  {{ block_style }}
-  {{ block.shopify_attributes }}>
-
-  {%- render 'product-accordions', block_settings: block.settings, block_id: block.id -%}
-</div>
 
 {%- assign bg_color = block.settings.bg_color -%}
 {%- assign alignment = block.settings.alignment -%}

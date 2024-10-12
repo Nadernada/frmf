@@ -272,7 +272,8 @@
             "circle_rotate_animation": "rotate-on-scroll",
             "circle_text": "New Arrival ~ New Arrival ~",
             "circle_word_spacing": 3,
-            "circle_size": 150
+            "circle_size": 150,
+            "btn__product-text": "Men"
           }
         },
         "product_BBphUp": {
@@ -289,7 +290,8 @@
             "circle_rotate_animation": "rotate-on-scroll",
             "circle_text": "New Arrival ~ New Arrival ~",
             "circle_word_spacing": 3,
-            "circle_size": 150
+            "circle_size": 150,
+            "btn__product-text": "Women"
           }
         },
         "product_4fdjeG": {
@@ -306,7 +308,8 @@
             "circle_rotate_animation": "rotate-on-scroll",
             "circle_text": "New Arrival ~ New Arrival ~",
             "circle_word_spacing": 3,
-            "circle_size": 150
+            "circle_size": 150,
+            "btn__product-text": "Kids"
           }
         }
       },

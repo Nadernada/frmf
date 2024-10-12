@@ -175,7 +175,7 @@
     data-aos-intersection="{{ intersection_ratio }}"
   {% endif %}
   {% if product.published_at == nil %} data-unpublished{% endif %}
-  id="main-product-container">
+  id="main-product-container" data-collection-handle="{{ collection.handle }}">
   {%- comment -%} Image {%- endcomment -%}
   <div class="product-grid-item__image"
     {% if animations_enabled %}

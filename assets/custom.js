@@ -16,6 +16,7 @@
     const sizeFieldset = document.getElementById('size-radio-buttons');
     const siblingProducts = document.querySelectorAll('.sibling-product');
     const addToCartButton = document.getElementById('add-to-cart-btn');
+    const mainProductContainer = document.getElementById('main-product-container');
     const collectionHandle = mainProductContainer.getAttribute('data-collection-handle');
 
     if (!collectionHandle) {
@@ -96,7 +97,7 @@
   
   // Function to replace the main product display with the selected sibling
   function replaceMainProduct(productId) {
-    const mainProductContainer = document.getElementById('main-product-container');
+
 
     // Use AJAX to fetch and render the selected product dynamically
     fetch(`/collections/${collection.handle}/products/${productId}`)

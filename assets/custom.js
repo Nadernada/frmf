@@ -101,17 +101,28 @@
   function replaceMainProduct(productId) {
 
 
-    // Use AJAX to fetch and render the selected product dynamically
-    fetch(`/collections/${collectionHandle}/products/${productId}`)
+  // Use AJAX to fetch and render the selected product dynamically
+  fetch(`/collections/${collectionHandle}/products/${productId}`)
     .then(response => response.text())
-      .then(html => {
-        const productHtml = new DOMParser().parseFromString(html, 'text/html');
-        const productContent = productHtml.querySelector('.grid-item-custom');
+    .then(html => {
+      // Parse the returned HTML into a document
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      
+      // Select the specific element that contains the product content
+      const productContent = doc.querySelector('.product-grid-item');
 
-        // Replace the current product content with the new one
-        mainProductContainer.innerHTML = '';
+      if (productContent) {
+        // Clear the main product container and replace it with new content
+        mainProductContainer.innerHTML = ''; // Or update only a part of the section if needed
         mainProductContainer.appendChild(productContent);
-      });
+      } else {
+        console.error('Product content not found in the response');
+      }
+    })
+    .catch(error => {
+      console.error('Error fetching product:', error);
+    });
   }
 
   // Add event listeners for sibling product clicks

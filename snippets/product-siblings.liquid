@@ -77,9 +77,8 @@
           endunless
         -%}
 
-        {% comment %} <div href="{{ sib_product.url }}" {% endcomment %}
-        <div  data-product-id="{{ sib_product.handle }}"
-          class="custom-swatch sibling-product {{ sib_swatch_class }}"
+        <a href="{{ sib_product.url }}"
+          class="custom-swatch {{ sib_swatch_class }}"
           {% if is_current_product %}aria-current="true"{%- endif -%}>
           <div class="siblings__button" data-tooltip="{{ color_name }}" data-swatch="{{ color_name }}">
             {%- if show_siblings_images -%}
@@ -103,7 +102,7 @@
 
             <span class="visually-hidden">{{ color_name }}</span>
           </div>
-        </div>
+        </a>
       {%- endfor -%}
 
       {%- if show_onboarding -%}

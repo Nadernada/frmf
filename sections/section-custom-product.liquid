@@ -6,7 +6,6 @@
   assign section_id = 'featuredProduct--' | append: section.id
   assign selector_id = '#' | append: section_id
   assign animation_anchor = selector_id
-  assign collection = product.collections.first
 -%}
 
 {%- style -%}
@@ -29,7 +28,7 @@
   {% endif %}
 >
   <div class="{{ section_width }}">
-    <div class="featured-product-wrapper" id="main-product-container" data-collection-handle="{{ collection.handle }}">
+    <div class="featured-product-wrapper">
       {%- render 'product-custom' product: product, unique: section.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
     </div>
   </div>

@@ -11,24 +11,11 @@
 (function() {
   // Add custom code below this line
   document.addEventListener('DOMContentLoaded', function() {
+    // Get the team radio buttons and player fieldset
     const teamRadios = document.querySelectorAll('input[name="options[teams]"]');
     const playerFieldset = document.getElementById('player-radio-buttons');
-    const sizeFieldset = document.getElementById('size-radio-buttons');
-    const siblingProducts = document.querySelectorAll('.sibling-product');
-    const addToCartButton = document.getElementById('add-to-cart-btn');
-    const mainProductContainer = document.getElementById('main-product-container');
-    if(mainProductContainer) {
-
-    const collectionHandle = mainProductContainer.getAttribute('data-collection-handle');
-
-    if (!collectionHandle) {
-      console.error('Collection handle is not defined');
-      return;
-    }
+    const sizeFieldset = document.getElementById('size-radio-buttons'); // Assuming you have a size fieldset
     
-    let selectedPlayer = '';
-    let selectedSize = '';
-  
     // Function to update player options based on selected team
     function updatePlayers(team) {
       // Clear existing player options
@@ -36,6 +23,7 @@
   
       // Get the corresponding players based on the selected team
       const players = document.querySelectorAll(`#${team}-players span`);
+      console.log(players);
   
       // Populate the fieldset with player radio buttons
       players.forEach((player, index) => {
@@ -47,17 +35,15 @@
           </span>
         `;
         playerFieldset.insertAdjacentHTML('beforeend', radioMarkup);
+
+        const firstPlayer = players[0].getAttribute('data-player');
+        updateSizes(firstPlayer);
       });
   
-      // Set the first player and update sizes for the selected player
-      const firstPlayer = players[0].getAttribute('data-player');
-      selectedPlayer = firstPlayer;
-      updateSizes(firstPlayer);
-  
-      // Add event listeners for player selection changes
-      document.querySelectorAll('input[name="properties[player]"]').forEach(radio => {
+      // Listen for player selection change to update sizes
+      document.querySelectorAll('input[name="player"]').forEach(radio => {
         radio.addEventListener('change', function() {
-          const selectedPlayer = document.querySelector('input[name="properties[player]"]:checked').value;
+          const selectedPlayer = document.querySelector('input[name="player"]:checked').value;
           updateSizes(selectedPlayer);
         });
       });
@@ -82,113 +68,38 @@
         `;
         sizeFieldset.insertAdjacentHTML('beforeend', sizeMarkup);
       });
-  
-      // Update the selected size
-      if (availableSizes.length > 0) {
-        selectedSize = availableSizes[0];
-        document.querySelector(`input[name="properties[size]"]`).checked = true;
-      }
-  
-      // Add event listener to update selectedSize on size selection change
-      document.querySelectorAll('input[name="properties[size]"]').forEach(radio => {
-        radio.addEventListener('change', function() {
-          selectedSize = document.querySelector('input[name="properties[size]"]:checked').value;
-        });
-      });
     }
   
-  // Function to replace the main product display with the selected sibling
-  function replaceMainProduct(productId) {
-
-    console.log(collectionHandle)
-
-  // Use AJAX to fetch and render the selected product dynamically
-  fetch(`/collections/limited-editions/products/${productId}`)
-    .then(response => response.text())
-    .then(html => {
-      // Parse the returned HTML into a document
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      
-      // Select the specific element that contains the product content
-      const productContent = doc.querySelector('.product-single__wrapper');
-      console.log(productContent)
-
-      if (productContent) {
-        // Clear the main product container and replace it with new content
-        mainProductContainer.innerHTML = ''; // Or update only a part of the section if needed
-        mainProductContainer.appendChild(productContent);
-        mainProductContainer.offsetHeight; // This forces a reflow
-
-      } else {
-        console.error('Product content not found in the response');
-      }
-    })
-    .catch(error => {
-      console.error('Error fetching product:', error);
-    });
-  }
-
-  // Add event listeners for sibling product clicks
-  siblingProducts.forEach(product => {
-    product.addEventListener('click', function() {
-      const productId = this.getAttribute('data-product-id');
-      console.log(productId)
-      replaceMainProduct(productId);
-    });
-  });
-  
-    // Add to Cart functionality
-    if(addToCartButton) {
-      
-      addToCartButton.addEventListener('click', function() {
-        const formData = {
-          items: [{
-            id: '{{ product.variants.first.id }}', // Replace with actual variant ID
-            quantity: 1,
-            properties: {
-              'Player': selectedPlayer,
-              'Size': selectedSize
-            }
-          }]
-        };
-        
-        fetch('/cart/add.js', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        }).then(response => {
-          return response.json();
-        }).then(data => {
-          // Handle success
-          console.log('Added to cart:', data);
-        }).catch(error => {
-          console.error('Error adding to cart:', error);
-        });
-      });
-    }
-  }
-
-      
-      // Initialize the section with the Men's team
-      updatePlayers('mens');
-  
+    // Set initial players to Men's team on page load
+    updatePlayers('mens');
+    
     // Listen for team selection change
     teamRadios.forEach(radio => {
       radio.addEventListener('change', function() {
         const selectedTeam = document.querySelector('input[name="options[teams]"]:checked').value;
         updatePlayers(selectedTeam);
+        console.log(selectedTeam)
       });
     });
   });
-  
-  
 
 
 
 
+
+
+  // Retro Slider
+  // var elem = document.querySelector('.main-carousel');
+  // var flkty = new Flickity( elem, {
+  //   // options
+  //   cellAlign: 'left',
+  //   contain: true,
+  //   draggable: true,
+  //   groupCells: 3,
+  //   pageDots: true,
+  //   contain: true,
+  //   cellAlign: 'left'
+  // });
   
 
 

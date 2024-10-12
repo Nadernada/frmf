@@ -111,7 +111,7 @@
       const doc = parser.parseFromString(html, 'text/html');
       
       // Select the specific element that contains the product content
-      const productContent = doc.querySelector('.featured-product-wrapper');
+      const productContent = doc.querySelector('.product-single__wrapper');
       console.log(productContent)
 
       if (productContent) {

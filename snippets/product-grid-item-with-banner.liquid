@@ -26,6 +26,7 @@
   assign counter_second_tablet = tablet_counter | plus: 1 | modulo: 3
   assign counter_third_tablet = tablet_counter | modulo: 3
   assign item_column = item_index | plus: 1 | modulo: columns
+  assign collection = product.collections.first
   if item_column == 0
     assign item_column = columns
   endif

@@ -17,6 +17,8 @@
     const siblingProducts = document.querySelectorAll('.sibling-product');
     const addToCartButton = document.getElementById('add-to-cart-btn');
     const mainProductContainer = document.getElementById('main-product-container');
+    if(mainProductContainer) {
+
     const collectionHandle = mainProductContainer.getAttribute('data-collection-handle');
 
     if (!collectionHandle) {
@@ -151,6 +153,8 @@
         });
       });
     }
+  }
+
       
       // Initialize the section with the Men's team
       updatePlayers('mens');

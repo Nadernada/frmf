@@ -17711,6 +17711,7 @@
       resizeFlickityNav() {
         if (this.flktyNav !== null) {
           this.flktyNav.resize();
+          this.flkty.resize();
         }
       }
 
@@ -18106,8 +18107,17 @@
 
               tabButton.classList.add(classes$7.tabButtonActive);
               currentTab.classList.add(classes$7.tabItemActive);
-
+              this.sliderResizeEvent();
+              
               document.dispatchEvent(new CustomEvent('theme:resize')); // Trigger theme:resize event to refresh the slider height
+              const productInstance = this.container.querySelectorAll('.custom-jersey-product');
+              if (productInstance) {
+                productInstance.forEach(itemSlider => {
+                  const product = new Product({ container: itemSlider });
+                  document.dispatchEvent(new CustomEvent('theme:resize:width')); // Trigger theme:resize event to refresh the slider height
+
+                })
+              }
 
               if (currentCircleText) {
                 currentCircleText.classList.remove(classes$7.isDisabled);
@@ -18304,7 +18314,7 @@
       },
     };
 
-    register('products-list', [productsListSection, parallaxSection]);
+    register('products-list', [productsListSection, parallaxSection, productFormSection, productSection, swatchSection, swatchesContainer, shareButton, collapsible, tooltip, popoutSection, drawer, productStickySection]);
 
     const selectors$6 = {
       product: '[data-product-block]',

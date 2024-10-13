@@ -75,7 +75,7 @@
                   data-aos-delay="{{ animation_delay }}"
                   {%- assign animation_delay = animation_delay | plus: 50 -%}
                 {% endif %}
-                class="btn btn--white btn--outline btn--medium {% if forloop.first %} custom-products-list__nav__button--active{% endif %}">{{ btn_text }}</a>
+                class="btn btn--white btn--outline btn--medium tab-button {% if forloop.first %} products-list__nav__button--active{% endif %}">{{ btn_text }}</a>
             {%-  endfor -%}
           </div>
         {%- endif -%}
@@ -84,9 +84,9 @@
             assign product_handle = block.settings.product
             assign product = all_products[product_handle]
           -%}
-          <div class="featured-product-wrapper custom-jersey-wrapper products-list__item{% if forloop.first %} products-list__item--active{% endif %}" id="ProductsListItem--{{ section.id }}-{{ forloop.index }}" data-section-id="{{ section.id }}" data-autoplay-video="true" data-tab-item>
-            {%- render 'product-custom-jersey' product: product, unique: section.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
-          </div>
+          <div class="featured-product-wrapper custom-jersey-wrapper    products-list__item{% if forloop.first %} products-list__item--active{% endif %}" id="ProductsListItem--{{ section.id }}-{{ forloop.index }}"    data-autoplay-video="true" data-tab-item>
+              {%- render 'product-custom-jersey' product: product, unique: section.id, section: section, animation_anchor: animation_anchor -%}
+            </div>
         {%- endfor -%}
       </div>
 

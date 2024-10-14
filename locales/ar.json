@@ -135,5 +135,283 @@
         "phone_placeholder": "هاتف"
       }
     }
+  },
+  "customer_accounts": {
+    "address_form": {
+      "loading_finished_accessibility_message": "تم تحميل نموذج العنوان",
+      "save": "يحفظ",
+      "save_accessibility_label": "حفظ العنوان {{address}}",
+      "section_title_accessibility_label": "إضافة عنوان",
+      "update_success_notification": "تم تحديث العنوان"
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "اسم الشركة",
+        "company_card_section_accessibility_label": "شركة"
+      },
+      "locations": {
+        "contact_email": "بريد إلكتروني",
+        "contact_list_title": "الناس",
+        "contact_name": "اسم",
+        "contact_permissions": "الأذونات",
+        "contact_phone_number": "رقم التليفون",
+        "location_picker_label": "اسم الموقع",
+        "location_picker_accessibility_label": "اسم الموقع: {{locationName}}",
+        "net_payment_terms_description": "{{name}} : المدفوعات المستحقة خلال {{numberOfDays}} يومًا",
+        "deposit_percentage": "وديعة {{percentage}}",
+        "own_role_contact_name": "أنت",
+        "pagination": {
+          "load_more": "تحميل المزيد",
+          "load_more_accessibility_label": "تحميل المزيد من المواقع"
+        },
+        "payment_details_title": "تفاصيل الدفع",
+        "payment_terms": "شروط الدفع",
+        "permissions_label": "أذوناتك",
+        "permissions_title": "الأذونات",
+        "section_title": "موقع",
+        "shipping_address_required": "أضف عنوان الشحن إلى هذا الموقع لبدء تقديم الطلبات.",
+        "staff_and_permissions_title": "الموظفين والأذونات",
+        "tax_details_title": "تفاصيل الضريبة",
+        "tax_id": "رقم التعريف الضريبي",
+        "tax_exemptions": "الإعفاءات الضريبية",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} المزيد",
+        "multiple_tax_exemptions_and": "و",
+        "tax_exemptions_modal_close": "يغلق",
+        "taxes_none": "لا أحد",
+        "tax_exemption_not_applicable": "غير متاح",
+        "tax_exemptions_modal_button_accessibility_label": "عرض جميع الإعفاءات الضريبية"
+      },
+      "location_selection": {
+        "continue_to_store": "متابعة التخزين",
+        "description": "إذا كان لديك بالفعل عناصر في عربة التسوق الخاصة بك، فقد يؤثر تغيير المواقع على أسعار عربة التسوق وكمياتها.",
+        "list_accessibility_label": "قائمة المواقع",
+        "list_item_without_address_accessibility_label": "{{name}} : لا يوجد عنوان",
+        "list_loading_accessibility_message": "جاري تحميل قائمة المواقع",
+        "list_loading_address_accessibility_message": "عنوان التحميل لـ {{locationName}}",
+        "list_loading_finished_accessibility_message": "تم تحميل قائمة المواقع",
+        "loading_store_accessibility_message": "الذهاب إلى المتجر",
+        "no_location_title": "الطلبات الشخصية فقط",
+        "no_location_description": "لم يعد لديك إذن بتقديم طلبات لشركة {{company}} . لا يزال بإمكانك تقديم طلبات شخصية.",
+        "no_locations_found": "لم يتم العثور على مواقع",
+        "search": "البحث عن موقع",
+        "search_location_title": "حدد موقعا",
+        "selection_cancel_button": "يلغي",
+        "selection_confirmation_button": "اختر الموقع",
+        "title": "ما هو الموقع الذي تشتريه؟",
+        "clear_search": "مسح البحث",
+        "try_new_search": "حاول البحث الجديد"
+      },
+      "addresses": {
+        "add_billing_address_button": "إضافة عنوان الفاتورة",
+        "add_billing_address_section_accessibility_label": "إضافة عنوان الفاتورة",
+        "add_shipping_address_button": "إضافة عنوان الشحن",
+        "add_shipping_address_section_accessibility_label": "إضافة عنوان الشحن",
+        "billing_address_card_title": "عنوان الفاتورة",
+        "cancel_adding_billing_address_accessibility_label": "إلغاء إضافة عنوان الفاتورة",
+        "cancel_adding_shipping_address_accessibility_label": "إلغاء إضافة عنوان الشحن",
+        "save_new_billing_address_accessibility_label": "حفظ عنوان الفاتورة",
+        "save_new_shipping_address_accessibility_label": "حفظ عنوان الشحن",
+        "shipping_address_card_title": "عنوان الشحن"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "إخفاء الكل",
+          "show_all": "إظهار الكل",
+          "hide_all_accessibility_label": "إخفاء جميع الطلبات في المراجعة",
+          "show_all_accessibility_label": "إظهار جميع الطلبات في المراجعة",
+          "show_all_orders_in_review": "إظهار جميع الطلبات في المراجعة",
+          "show_less_orders_in_review": "إظهار عدد أقل من الطلبات في المراجعة",
+          "title": "قيد الانتظار",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "ليس لديك أي طلبات معلقة",
+            "pending_orders": {
+              "one": "لديك {{count}} طلب معلق",
+              "other": "لديك {{count}} طلب معلق"
+            },
+            "more_than_pagination_length": "لديك أكثر من {{count}} من الطلبات المعلقة"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "أزرار التنقل الخاصة بالطلبات قيد المراجعة"
+          }
+        },
+        "order_list_column_headers_location": "موقع",
+        "removed_company_contact_tooltip": "تم إزالته من الشركة"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "تم التأكيد بتاريخ {{date}} من الطلب {{draftOrderName}}",
+        "loading": "جاري تحميل تفاصيل الطلب",
+        "loading_finished_accessibility_message": "تم تحميل تفاصيل الطلب",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "تأخرت عملية الدفع الخاصة بك لمدة {{count}} يومًا",
+              "other": "تأخرت عملية الدفع الخاصة بك لمدة {{count}} يومًا"
+            },
+            "banner_due": {
+              "one": "يجب أن يتم سداد الدفعة الخاصة بك في غضون {{count}} يوم",
+              "other": "سيتم استحقاق الدفع الخاص بك خلال {{count}} يومًا"
+            },
+            "banner_due_today": "يجب أن يتم سداد الدفعة اليوم",
+            "title": "الدفع المستحق",
+            "title_with_date": "تاريخ الدفع هو {{date}}",
+            "title_due_on_receipt": "الدفع لم يتم استحقاقه بعد",
+            "title_due_on_fulfillment": "الدفع المستحق عند التنفيذ",
+            "description_overdue": "لقد تأخر الدفع الخاص بك.",
+            "description_partially_paid": "تم سداد هذا الطلب جزئيًا. لديك رصيد متبقي.",
+            "description_authorized": "سيتم تحصيل الرسوم من طريقة الدفع الخاصة بك في تاريخ الاستحقاق، أو يمكنك الدفع الآن.",
+            "description_waiting_for_manual_payment": "يوجد دفع معلق لهذا الطلب. سيتم تحديث الرصيد عند استلام الدفع.",
+            "description_due_on_receipt": "سوف تتلقى فاتورة عندما يحين موعد الدفع.",
+            "description_due_on_receipt_partially_paid": "تم سداد هذا الطلب جزئيًا. لديك رصيد متبقي. ستتلقى فاتورة عند استحقاق الدفع.",
+            "description_due_on_fulfillment": "يجب أن يتم الدفع بمجرد استيفاء جميع العناصر في هذا الطلب.",
+            "description_due_on_fulfillment_partially_paid": "تم سداد هذا الطلب جزئيًا. لديك رصيد متبقي. يجب سداد الدفعة بمجرد استيفاء جميع العناصر في هذا الطلب."
+          },
+          "draft": {
+            "description": "يتم تحديد تفاصيل الدفع عند تأكيد الطلب.",
+            "title": "الدفع لم يتم استحقاقه بعد"
+          }
+        }
+      }
+    }
+  },
+  "customer": {
+    "addresses": {
+      "province": "مقاطعة",
+      "zip": "الرمز البريدي",
+      "phone": "هاتف",
+      "set_default": "تعيين كعنوان افتراضي",
+      "add": "إضافة عنوان",
+      "update": "تحديث العنوان",
+      "cancel": "يلغي",
+      "edit": "يحرر",
+      "delete": "يمسح",
+      "delete_confirm": "هل أنت متأكد أنك تريد حذف هذا العنوان؟"
+    },
+    "login": {
+      "title": "تسجيل الدخول",
+      "email": "بريد إلكتروني",
+      "password": "كلمة المرور",
+      "forgot_password": "نسيت كلمة السر؟",
+      "sign_in": "تسجيل الدخول",
+      "cancel": "العودة إلى المتجر",
+      "guest_title": "متابعة كضيف",
+      "guest_continue": "يكمل",
+      "create_account_prompt": "ليس لديك حساب؟",
+      "create_account_cta": "سجل هنا."
+    },
+    "orders": {
+      "title": "سجل الطلبات",
+      "order_number": "طلب",
+      "date": "تاريخ",
+      "payment_status": "حالة الدفع",
+      "fulfillment_status": "حالة الإنجاز",
+      "total": "المجموع",
+      "none": "لم تقم بوضع أي طلبات بعد."
+    },
+    "order": {
+      "title": "الطلب {{ name }}",
+      "date": "تم وضعه في {{ date }}",
+      "cancelled": "تم إلغاء الطلب في {{ date }}",
+      "cancelled_reason": "السبب: {{ reason }}",
+      "billing_address": "عنوان الفاتورة",
+      "payment_status": "حالة الدفع",
+      "shipping_address": "عنوان الشحن",
+      "fulfillment_status": "حالة الإنجاز",
+      "discount": "تخفيض",
+      "shipping": "شحن",
+      "tax": "ضريبة",
+      "product": "منتج",
+      "sku": "رقم المنتج",
+      "price": "سعر",
+      "quantity": "كمية",
+      "total": "المجموع",
+      "fulfilled_at": "تم تنفيذه {{ date }}",
+      "subtotal": "المجموع الفرعي"
+    },
+    "recover_password": {
+      "title": "إعادة تعيين كلمة المرور الخاصة بك",
+      "email": "بريد إلكتروني",
+      "submit": "يُقدِّم",
+      "cancel": "يلغي",
+      "subtext": "سنرسل لك بريدًا إلكترونيًا لإعادة تعيين كلمة المرور الخاصة بك.",
+      "success": "لقد أرسلنا لك رسالة بريد إلكتروني تحتوي على رابط لتحديث كلمة المرور الخاصة بك."
+    },
+    "reset_password": {
+      "title": "إعادة تعيين كلمة مرور الحساب",
+      "subtext": "أدخل كلمة مرور جديدة لـ {{ email }}",
+      "password": "كلمة المرور",
+      "password_confirm": "تأكيد كلمة المرور",
+      "submit": "إعادة تعيين كلمة المرور"
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "first_name": "الاسم الأول",
+      "last_name": "اسم العائلة",
+      "email": "بريد إلكتروني",
+      "password": "كلمة المرور",
+      "submit": "يخلق",
+      "cancel": "العودة إلى المتجر"
+    }
+  },
+  "password": {
+    "page": {
+      "title": "الافتتاح قريبا"
+    },
+    "form": {
+      "success": "شكرا لك على الاشتراك!",
+      "newsletter_title": "اشترك للحصول على التحديثات",
+      "placeholder": "البريد الإلكتروني@example.com",
+      "login": "كلمة المرور"
+    },
+    "buttons": {
+      "sign_up": "اشتراك",
+      "store_login": "تسجيل الدخول للمتجر",
+      "newsletter_signup": "الاشتراك في النشرة الإخبارية",
+      "login": "تسجيل الدخول"
+    }
+  },
+  "homepage": {
+    "onboarding": {
+      "popup_title": "تقريبا هناك...",
+      "no_products_html": "اختر مجموعة لعرضها في هذا القسم. إذا لم يتم اختيار أي مجموعة، ستظهر جميع المنتجات. يمكنك تعطيل هذا القسم بالنقر فوق تخصيص السمة ثم \"الصفحة الرئيسية\".",
+      "add_product": "إضافة منتج",
+      "product_title": "عنوان المنتج",
+      "vendor": "شوبيفاي",
+      "no_collections_html": "ليس لديك أي مجموعات لعرضها هنا. <a href=\"/admin/custom_collections\">أضف بعض المجموعات</a> لتتوافق مع الصفحة الرئيسية الافتراضية.",
+      "add_collection": "إضافة مجموعة",
+      "collection_title": "مجموعة",
+      "single_product_title": "عرض منتج واحد",
+      "single_product_description": "بمجرد اختيار منتج، سيتم ملء وصفه هنا تلقائيًا.",
+      "single_collection_description": "بمجرد اختيار مجموعة، سيتم عرض وصفها هنا تلقائيًا.",
+      "single_collection_products_description": "بمجرد اختيار مجموعة، سيتم ملء أوصاف منتجاتها هنا تلقائيًا.",
+      "no_content": "لا يتضمن هذا القسم حاليًا أي محتوى. يمكنك إضافة محتوى إلى هذا القسم باستخدام الشريط الجانبي.",
+      "no_page_content": "لا تتضمن هذه الصفحة أي محتوى حاليًا.",
+      "slideshow": {
+        "heading": "مرحباً بكم في بالو ألتو",
+        "subheading": "يساعدك هذا العنوان الفرعي على توفير المزيد من التفاصيل للعنوان أعلاه.",
+        "button_text": "مرحباً",
+        "video_button_text": "شاهد هذا الفيديو"
+      },
+      "faq": {
+        "question": "سؤال",
+        "answer": "استخدم مربع الإجابة هذا لمناقشة بعض الأسئلة الشائعة التي اكتشفتها من خلال تفاعلات عملائك. يمكنك مناقشة تفاصيل المنتج أو المقاس المناسب أو سياسات الشحن أو أي شيء تعتقد أنه قد يساعد التجار في اتخاذ قرار مستنير بشأن منتجك أو مجموعتك. سيظهر هذا القسم عبر جميع المنتجات."
+      },
+      "blog": {
+        "title": "عنوان تدوينة المدونة",
+        "excerpt": "بمجرد إنشاء منشور مدونة أو اختيار مدونة، سيظهر محتواها هنا.",
+        "date": "15 فبراير",
+        "tag": "العلامة"
+      },
+      "locations": {
+        "address": "566 شارع إيمرسون، بالو ألتو، كاليفورنيا",
+        "working_hours_html": "الاثنين - الجمعة: 8 صباحًا - 5 مساءً<br> السبت: مغلق<br> الشمس: مغلقة"
+      },
+      "icons_row": {
+        "text": "Palo Alto هو موضوع Shopify قوي سيجعلك متميزًا عن الباقي بمجموعة متنوعة من الأقسام والميزات."
+      },
+      "testimonials": {
+        "testimonial": "استخدم هذه الشهادة كفرصة لعملائك لمناقشة علامتك التجارية وما يميزك عن المنافسة."
+      }
+    }
   }
 }

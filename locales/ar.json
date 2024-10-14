@@ -712,5 +712,141 @@
   },
   "video": {
     "play_bg_video": "تشغيل فيديو الخلفية"
+  },
+  "general": {
+    "accessibility": {
+      "product": "منتج",
+      "show_products": "عرض المنتجات",
+      "hide_products": "إخفاء المنتجات",
+      "dismiss": "رفض",
+      "close": "يغلق",
+      "close_drawer": "يغلق",
+      "close_search_bar": "إغلاق شريط البحث",
+      "open_search_bar": "فتح شريط البحث",
+      "submit_search_request": "أرسل طلب البحث الخاص بك",
+      "search-field": "حقل نص البحث",
+      "mobile_menu_toggle": "افتح قائمة التنقل",
+      "open_cart": "عربة التسوق المفتوحة",
+      "increase": "زيادة الكمية",
+      "decrease": "تقليل الكمية",
+      "submit_email": "يُقدِّم",
+      "subscribe_to_newsletter": "اشترك في النشرة الإخبارية لدينا",
+      "link_copied": "تم نسخ الرابط",
+      "logo_image": "صورة الشعار",
+      "unit_price_separator": "لكل",
+      "my_account": "حسابي",
+      "view": "منظر",
+      "product_image_lightbox": "فتح صندوق الصور الضوئية",
+      "close_form_message": "إغلاق رسالة الشكر",
+      "scroll_to_top": "انتقل إلى الأعلى",
+      "quick_tip": "نصيحة سريعة"
+    },
+    "meta": {
+      "tags": "تم وضع علامة \" {{ tags }} \"",
+      "page": "الصفحة {{ page }}"
+    },
+    "404": {
+      "subtext_html": "هذه الصفحة غير موجودة.",
+      "button_text": "العودة إلى الصفحة الرئيسية"
+    },
+    "newsletter_form": {
+      "heading": "النشرة الإخبارية",
+      "name": "اسمك",
+      "first_name": "الاسم الأول",
+      "last_name": "اسم العائلة",
+      "email": "بريدك الالكتروني",
+      "email_label": "يرجى إدخال بريدك الإلكتروني وسنقوم بإعلامك عندما يصبح العنصر المحدد متاحًا.",
+      "sign_up": "اشتراك",
+      "notify": "أعلمني",
+      "notification_success": "لقد تم استلام بريدك الإلكتروني.",
+      "newsletter_success": "شكرا لك على الاشتراك!",
+      "newsletter_error": "البريد الإلكتروني غير صالح أو تم استخدامه بالفعل.",
+      "newsletter_product_availability": "أعلمني عندما يصبح متاحًا"
+    },
+    "cookies": {
+      "title": "هل يمكننا تخزين ملفات تعريف الارتباط؟",
+      "cookies_link": "ملفات تعريف الارتباط",
+      "text_html": "يستخدم Palo Alto {{ cookies }} لتحسين تجربة التصفح الخاصة بك.",
+      "accept": "نعم",
+      "decline": "ًلا شكرا"
+    },
+    "search": {
+      "title": "ابحث عن المنتجات على موقعنا",
+      "search": "يبحث",
+      "no_results": "لا توجد نتائج لـ \" {{ terms }} \"",
+      "results_for": "نتائج البحث عن \" {{ terms }} \"",
+      "results_with_count": {
+        "one": "{{ count }} نتيجة",
+        "other": "{{ count }} نتائج"
+      },
+      "results_pages_and_blogs_with_count": {
+        "one": "{{ count }} صفحة",
+        "other": "{{ count }} صفحة ومنشورات مدونة"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} منتج",
+        "other": "{{ count }} منتجات"
+      },
+      "results_suggestions_with_count": {
+        "one": "اقتراح {{ count }}",
+        "other": "{{ count }} اقتراحات"
+      },
+      "submit": "يبحث",
+      "placeholder": "ابحث في متجرنا",
+      "view_all_results": "عرض جميع النتائج",
+      "quick_tip": "اضغط على Enter",
+      "browse_categories": "تصفح الفئات",
+      "popular_searches": "مصطلحات البحث المقترحة",
+      "products": "منتجات",
+      "pages": "الصفحات",
+      "suggestions": "اقتراحات",
+      "pages_and_blogs": "الصفحات والمشاركات في المدونة",
+      "search_actions": "إجراءات البحث"
+    },
+    "pagination": {
+      "previous": "الصفحة السابقة",
+      "next": "الصفحة التالية",
+      "current_page": "الصفحة {{ current }} من {{ total }}",
+      "shop_the_look_quick_view": "حاصل {{ current }} من {{ total }}"
+    },
+    "upsell": {
+      "out_of_stock": "إنتهى من المخزن",
+      "error_info": "حدد المنتجات من إعداد كتلة البيع الإضافي",
+      "error_no_product": "لم يتم تحديد منتج البيع الإضافي",
+      "pair_products": "اشتريه مع",
+      "quick_view": "شراء سريع",
+      "add_to_cart": "أضف إلى السلة"
+    },
+    "complementary": {
+      "products_title": "يتناسب بشكل جيد مع",
+      "pair_products": "تم شراؤها معا"
+    }
+  },
+  "blogs": {
+    "article": {
+      "by_author": "بقلم {{ author }}",
+      "older_post": "منشور قديم",
+      "newer_post": "أحدث مشاركة",
+      "tags": "العلامات",
+      "filter_by_tags": "تصفية حسب العلامات",
+      "clear_tags": "مسح الكل",
+      "read_more": "اقرأ المزيد",
+      "onboarding": {
+        "title": "عنوان تدوينة المدونة",
+        "excerpt": "بمجرد إنشاء منشور للمدونة، سيظهر المحتوى هنا.",
+        "tag": "العلامة",
+        "author": "اسم المؤلف"
+      }
+    },
+    "comments": {
+      "title": "اترك تعليقا",
+      "name": "اسم",
+      "email": "بريد إلكتروني",
+      "message": "رسالة",
+      "post_comment": "نشر التعليق",
+      "moderated": "يرجى ملاحظة أنه يجب الموافقة على التعليقات قبل نشرها",
+      "success_moderated": "تم نشر تعليقك بنجاح، وسنقوم بنشره بعد قليل، حيث أن مدونتنا تخضع للرقابة.",
+      "success": "لقد تم نشر تعليقك بنجاح! شكرا لك!"
+    }
   }
 }

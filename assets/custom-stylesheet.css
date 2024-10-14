@@ -381,7 +381,7 @@
 }
 
 #SiteFooter .footer-bottom {
-  --grid-columns: 3;
+  --grid-columns: 3 !important;
 }
 
 

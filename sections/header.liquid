@@ -292,6 +292,9 @@
       {%- render 'search-popdown', unique: 'desktop', in_header: true, classes: 'menu__item menu__item--icon', summary_classes: summary_classes, header_icons_as_text: header_icons_as_text -%}
     {%- endif -%}
 
+    {%- render 'cross-border' -%}
+
+
     {%- if shop.customer_accounts_enabled -%}
       <div class="menu__item menu__item--icon">
         <a href="{{ routes.account_url }}" class="navlink navlink--icon{% if settings.nav_caps_toplevel %} caps{% endif %}{% if link_hover_dot %} navlink--dot{% endif %}">
@@ -531,7 +534,24 @@
       "label": "Increase text transparency",
       "default": true,
       "info": "Add gradient when header is transparent"
-    }
+    },
+    {
+      "type": "header",
+      "content": "Country/Region selector",
+      "info": "To add a country/region, go to your [markets settings](/admin/settings/markets)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": "Show country selector",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_flag",
+      "label": "Show country flag",
+      "default": false
+    },
   ],
   "blocks": [
     {

@@ -380,6 +380,14 @@
   display: flex;
 }
 
+#SiteFooter .footer-bottom {
+  --grid-columns: 3;
+}
+
+
+.footer-bottom>:last-child:not(:only-child) .localization-form {
+  justify-content: center;
+}
 
 
 
@@ -501,6 +509,10 @@
 
 .custom-banner-content-wrapper > .featured-image__heading {
   text-align: center;
+}
+
+.footer-bottom>:last-child:not(:only-child) .localization-form {
+  justify-content: center;
 }
 
 }

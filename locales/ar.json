@@ -2170,7 +2170,18 @@
       "cancel": "يلغي",
       "edit": "يحرر",
       "delete": "يمسح",
-      "delete_confirm": "هل أنت متأكد أنك تريد حذف هذا العنوان؟"
+      "delete_confirm": "هل أنت متأكد أنك تريد حذف هذا العنوان؟",
+      "title": "عناوينك",
+      "default": "تقصير",
+      "add_new": "إضافة عنوان جديد",
+      "edit_address": "تعديل العنوان",
+      "first_name": "الاسم الأول",
+      "last_name": "اسم العائلة",
+      "company": "شركة",
+      "address1": "العنوان1",
+      "address2": "العنوان2",
+      "city": "مدينة",
+      "country": "دولة"
     },
     "login": {
       "title": "تسجيل الدخول",
@@ -2236,6 +2247,20 @@
       "password": "كلمة المرور",
       "submit": "يخلق",
       "cancel": "العودة إلى المتجر"
+    },
+    "account": {
+      "title": "حسابي",
+      "details": "تفاصيل الحساب",
+      "view_addresses": "عرض العناوين",
+      "return": "العودة إلى تفاصيل الحساب"
+    },
+    "activate_account": {
+      "title": "تفعيل الحساب",
+      "subtext": "قم بإنشاء كلمة المرور الخاصة بك لتفعيل حسابك.",
+      "password": "كلمة المرور",
+      "password_confirm": "تأكيد كلمة المرور",
+      "submit": "تفعيل الحساب",
+      "cancel": "رفض الدعوة"
     }
   },
   "password": {
@@ -2491,7 +2516,12 @@
       "post_comment": "نشر التعليق",
       "moderated": "يرجى ملاحظة أنه يجب الموافقة على التعليقات قبل نشرها",
       "success_moderated": "تم نشر تعليقك بنجاح، وسنقوم بنشره بعد قليل، حيث أن مدونتنا تخضع للرقابة.",
-      "success": "لقد تم نشر تعليقك بنجاح! شكرا لك!"
+      "success": "لقد تم نشر تعليقك بنجاح! شكرا لك!",
+      "unapproved": "عنوان البريد الإلكتروني المقدم غير معتمد لنشر التعليقات.",
+      "comments_with_count": {
+        "one": "{{ count }} تعليق",
+        "other": "{{ count }} تعليقات"
+      }
     }
   },
   "layout": {
@@ -2612,5 +2642,111 @@
   },
   "date_formats": {
     "month_day_year": "%ب %د، %ي"
+  },
+  "cart": {
+    "general": {
+      "title": "العربة",
+      "remove": "يزيل",
+      "note": "أضف ملاحظة للمستلم",
+      "discount_label": "أنت توفر {{ amount }} مع {{ title }}",
+      "subtotal": "المجموع الفرعي",
+      "subtotal_items": "أغراض",
+      "shipping_at_checkout": "يتم احتساب الشحن والضرائب عند الدفع",
+      "customer_note": "تعليمات خاصة للبائع",
+      "cart_notes_label": "إضافة ملاحظات الطلب",
+      "gift_notes_label": "هل هذه هدية؟ أضف ملاحظة.",
+      "gift_note_attribute": "مذكرة هدية",
+      "update": "تحديث العربة",
+      "checkout": "الدفع",
+      "empty": "سلة التسوق الخاصة بك فارغة حاليًا.",
+      "accept_terms": "يجب عليك قبول شروطنا وأحكامنا.",
+      "accepted_terms": "الشروط والأحكام المقبولة؟",
+      "zero_qty_error": "يجب أن تكون الكمية أكبر من 0.",
+      "limit_error": "عذراً، يبدو أننا لا نملك ما يكفي من هذا المنتج.",
+      "continue_shopping": "متابعة التسوق",
+      "close_cart": "إغلاق عربة التسوق",
+      "free_shipping_message_html": "أنفق <span data-free-shipping-amount=\"\">{{ amount }}</span> لتكون مؤهلاً للشحن المجاني",
+      "qualified_shipping_message": "سيتم تطبيق الشحن المجاني عند الدفع"
+    },
+    "label": {
+      "product": "منتج",
+      "price": "سعر",
+      "quantity": "كمية",
+      "items_with_count": {
+        "one": "{{ count }} عنصر",
+        "other": "{{ count }} عناصر"
+      },
+      "total": "المجموع"
+    }
+  },
+  "collection": {
+    "filters": {
+      "apply": "يتقدم",
+      "clear": "واضح",
+      "close": "إظهار نتائجي",
+      "empty": "لم يتم العثور على أي منتجات",
+      "from": "من",
+      "filter_and_sort": "الفلترة والفرز",
+      "filter_by_label": "تصفية حسب",
+      "filter_button": "فلتر",
+      "filters_selected": {
+        "one": "تم اختيار {{ count }}",
+        "other": "تم اختيار {{ count }}"
+      },
+      "max_price": "أعلى سعر هو {{ price }}",
+      "product_count": {
+        "one": "عرض {{ product_count }} من {{ count }} منتج",
+        "other": "عرض {{ product_count }} من {{ count }} منتجًا"
+      },
+      "reset": "إعادة ضبط",
+      "sort_button": "نوع",
+      "show_more": "عرض المزيد",
+      "show_less": "إظهار أقل",
+      "title": "مجموعة",
+      "to": "ل",
+      "use_fewer_filters_html": "استخدم عددًا أقل من المرشحات أو <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">امسح الكل</a>"
+    }
+  },
+  "collections": {
+    "general": {
+      "all_of_collection": "كل {{ collection }}",
+      "view_collection": "عرض المجموعة",
+      "no_matches": "عذراً، لا يوجد منتجات في هذه المجموعة.",
+      "no_matches_by_filter": "تم العثور على {{ products_count }} منتجًا بهذه الخيارات.",
+      "shop": "محل"
+    },
+    "sorting": {
+      "title": "فرز حسب",
+      "browse_by": "تصفح حسب",
+      "browse_all": "الجميع",
+      "featured": "مميز",
+      "az": "أبجديًا، أريزونا",
+      "za": "حسب الترتيب الأبجدي، ZA",
+      "price_ascending": "السعر من الأقل إلى الأعلى",
+      "price_descending": "السعر من الأعلى إلى الأدنى",
+      "date_descending": "التاريخ من الجديد إلى القديم",
+      "date_ascending": "التاريخ من القديم إلى الجديد"
+    },
+    "breadcrumbs": {
+      "home": "بيت",
+      "back_to_home": "العودة إلى الصفحة الرئيسية",
+      "default_collection": "جميع المنتجات",
+      "products": "منتجات"
+    },
+    "onboarding": {
+      "popup_title": "ستعرض هذه الصفحة جميع منتجات متجرك",
+      "no_products_html": "لا توجد منتجات حتى الآن، ولكن بمجرد البدء في إضافتها، ستظهر هنا بغض النظر عما إذا كانت موجودة في مجموعة أم لا.",
+      "add_product": "إضافة المنتج"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "اسم",
+      "email": "بريد إلكتروني",
+      "phone": "هاتف",
+      "message": "رسالة",
+      "send": "يرسل",
+      "post_success": "شكرًا لك على الاتصال بنا. سنرد عليك في أقرب وقت ممكن."
+    }
   }
 }

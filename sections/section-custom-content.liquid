@@ -149,9 +149,27 @@
   <div class="featured-image__content-inner{% if show_text_shadow %} backdrop--radial{% endif %}">
       {%- liquid
         assign content_img = block.settings.content_img
+        assign logo_width = 150
         -%}
-      <img src='{{ content_img | asset_url  }}' class="about-custom-content-img">
-    {%- if title != blank -%}
+        {%- style -%}
+        #{{ section.id }} .footer-block--logo { min-width: calc({{ logo_width }}px + calc(var(--gutter) / 2)); }
+        #{{ section.id }} .footer-block__logo-image { width: {{ logo_width }}px; }
+      {%- endstyle -%}
+      <div class="footer-block footer-block--logo {{ alignment }}"
+        style="{{ block_style }}"
+        {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}
+          <a href="{{ routes.root_url }}" class="footer-block__logo-image">
+            {%- liquid
+              assign retina_size = logo_width | times: 2
+              assign image_widths = logo_width | append: ', ' | append: retina_size
+              assign sizes = logo_width | append: 'px'
+              assign image_alt = block.settings.image.alt | strip_html | escape | default: shop.name
+
+              render 'image-fill', img_object: content_img, width: retina_size, widths: image_widths, sizes: sizes, classes: 'logo--footer', alt: image_alt
+            -%}
+          </a>
+        {%- endif -%}    {%- if title != blank -%}
       <h1 class="featured-image__heading main-heading"
         {% if animations_enabled %}
           data-aos="fade-up"
@@ -608,7 +626,7 @@
           {
             "type": "image_picker",
             "label": "Image Content",
-            "id": "content_image"
+            "id": "content_img"
           },
         ]
       },

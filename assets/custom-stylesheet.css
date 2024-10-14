@@ -344,7 +344,7 @@
   transition: all ease 0.5s;
 }
 
-.grid-item-custom.is-selected {
+.featured-product-wrapper .grid-item-custom.is-selected {
   width: calc((var(--wrapper-width) - var(--grid-gutter) * 2) / 2.5) !important;
 }
 
@@ -372,6 +372,12 @@
 
 .custom-banner-content-img > div > .background-size-cover {
   background: transparent !important;
+}
+
+.footer-copyright {
+  width: 100%;
+  justify-content: center;
+  display: flex;
 }
 
 

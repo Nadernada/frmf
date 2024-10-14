@@ -29,7 +29,7 @@
   assign show_newsletter = settings.show_newsletter
   assign product_wrapper_class = 'product-single__wrapper'
   assign product_wrapper_modifiers = ' ' | append: 'product-single__wrapper--carousel'
-  assign product_form_id = 'AddToCartForm--' | append: unique | append: '--{{ product.id }}'
+  assign product_form_id = 'AddToCartForm--' | append: unique
 
   case image_layout
     when 'grid'
@@ -172,7 +172,7 @@
 {%- capture product_gallery -%}
   {%- unless product == blank -%}
     <div class="{{ product_gallery_class }}{{ product_gallery_modifiers }}"
-      id="ProductPhoto--{{ unique }}--{{ product.id }}"
+      id="ProductPhoto--{{ unique }}"
       data-gallery="{{ enable_zoom }}"
       data-autoplay-video="false"
       data-product-single-media-group
@@ -186,12 +186,12 @@
       <div class="product-single__media-slider{% if product.media.size == 1 %} product-single__media-slider--single{% endif %}" data-product-single-media-slider>
         {%- if product.media.size > 0 -%}
           {%- comment -%} Show Featured media first {%- endcomment -%}
-          {%- render 'media', unique: '{{unique}}--{{ product.id }}', current_variant: current_variant, media: featured_media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%}
+          {%- render 'media', unique: '{{unique}}', current_variant: current_variant, media: featured_media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%}
 
           {%- comment -%} Loop product media skipping the featured {%- endcomment -%}
           {%- for media in product.media -%}
             {%- if media.id != featured_media_id -%}
-              {%- render 'media', unique: '{{unique}}--{{ product.id }}', current_variant: current_variant, media: media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%}
+              {%- render 'media', unique: '{{unique}}', current_variant: current_variant, media: media, featured_media: featured_media, image_width: image_size_desktop, enable_video_looping: enable_video_looping, enable_zoom: enable_zoom, section_type: section_type -%}
             {%- endif -%}
           {%- endfor -%}
         {%- else -%}
@@ -199,10 +199,10 @@
           {%- assign media_padding_top = 1 | divided_by: media_aspect_ratio | times: 100 | round: 1 -%}
 
           <div
-            id="FeaturedMedia-{{ unique }}--{{ product.id }}"
+            id="FeaturedMedia-{{ unique }}"
             class="product-single__media-slide{% unless featured_media == media %} media--hidden{% endunless %}"
-            data-id="{{ unique }}--{{ product.id }}"
-            data-media-id="{{ unique }}--{{ product.id }}"
+            data-id="{{ unique }}"
+            data-media-id="{{ unique }}"
             data-aspectratio="{{ media_aspect_ratio }}"
             data-product-single-media-wrapper>
             <div class="product-single__media product-single__media--image">
@@ -244,7 +244,7 @@
     </div>
   {%- else -%}
     {%- comment -%} Onboarding product media {%- endcomment -%}
-    <div id="ProductPhoto--{{ unique }}--{{ product.id }}"
+    <div id="ProductPhoto--{{ unique }}"
       class="featured-product__gallery"
       {% if animations_enabled %}
         data-aos="fade"
@@ -266,12 +266,13 @@
 {%- unless section_type == 'quickview' -%}
   <div
     class=" custom-jersey-product featured-product product-single"
-    data-section-id="{{ unique }}--{{ product.id }}"
+    data-section-id="{{ unique }}"
     data-section-type="featured-product"
     data-sticky-enabled="true"
     data-tall-layout="false"
+    data-product 
   >
-    <div class="{{ product_wrapper_class }}{{ product_wrapper_modifiers }}" data-product 
+    <div class="{{ product_wrapper_class }}{{ product_wrapper_modifiers }}" 
     >
       {%- comment -%} Product media {%- endcomment -%}
       {{ product_gallery }}
@@ -478,7 +479,7 @@
                 assign show_payment_button = false
                 endif
 
-                assign product_form_id = 'AddToCartForm--' | append: unique | append: '--{{ product.id }}'
+                assign product_form_id = 'AddToCartForm--' | append: unique
               -%}
               {%- comment -%}
               Size chart
@@ -803,7 +804,7 @@
                           {% endif %}
                         >
                           <label for="jersey-number" class="input__label label-typography">Add Jersey Number</label>
-                          <input name="properties[jersey-number]" class="input__field" placeholder="Enter Your Jersey Number" />
+                          <input name="properties[jersey-number]" class="input__field" placeholder="Enter Your Jersey Number" type="number" />
                         </div>
                         <div class="input-wrapper"
                           {% if animations_enabled %}
@@ -1385,5 +1386,8 @@
         </div>
       </div>
     </div>
+
+    <script type="application/json" id="ProductJson-{{ unique }}" data-product-json>{{ product | json }}</script>
+    <script type="application/json" id="ModelJson-{{ unique }}">{{ product.media | where: 'media_type', 'model' | json }}</script>
   </div>
 {%- endunless -%}

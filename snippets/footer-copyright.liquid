@@ -1,10 +1,10 @@
-{% capture powered_by_link %} {{ 'footer.powered_by' | t }} <a href="https://www.shopify.com/" rel="noopener" target="_blank" rel="nofollow">Shopify</a>.{% endcapture %}
+{% capture powered_by_link %} {{ 'footer.powered_by' | t }} <a href="https://www.webloo.com/" rel="noopener" target="_blank" rel="nofollow">Webloo</a>.{% endcapture %}
 {%- assign bottom_menu = section.settings.bottom_menu -%}
 
 <div class="footer-copyright">
   <div class="footer-copyright__content">
-    <span class="footer-copyright__copy">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}.</span>
-
+    <span class="footer-copyright__copy">&copy; {{ 'now' | date: "%Y" }} {{ 'Royal Moroccan Football Federation' | link_to: routes.root_url }}</span>
+    <span>  |  All rights reserved  | </span>
     <span class="footer-copyright__powered">{{ powered_by_link }}</span>
   </div>
 

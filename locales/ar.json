@@ -689,5 +689,28 @@
         "testimonial": "استخدم هذه الشهادة كفرصة لعملائك لمناقشة علامتك التجارية وما يميزك عن المنافسة."
       }
     }
+  },
+  "footer": {
+    "powered_by": "مدعوم بواسطة"
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "عرض معلومات المتجر",
+      "check_other_stores": "التحقق من التوافر في المتاجر الأخرى",
+      "pick_up_available": "متاح الاستلام",
+      "pick_up_currently_unavailable": "الاستلام غير متاح حاليا",
+      "pick_up_available_at_html": "الاستلام متاح في <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "الاستلام غير متاح حاليًا في <strong>{{ location_name }}</strong>",
+      "kilometers": "كم",
+      "miles": "مي"
+    }
+  },
+  "slideshow": {
+    "previous": "سابق",
+    "next": "التالي",
+    "scroll_down": "انتقل إلى الأسفل"
+  },
+  "video": {
+    "play_bg_video": "تشغيل فيديو الخلفية"
   }
 }

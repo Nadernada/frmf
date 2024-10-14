@@ -1396,7 +1396,8 @@
       },
       "not_found": "404 لم يتم العثور عليه",
       "challenge": "تحدي",
-      "checkpoint": "نقطة تفتيش"
+      "checkpoint": "نقطة تفتيش",
+      "collections": "المجموعات"
     },
     "cart": {
       "discounts_with_count": "تم تطبيق %{count} خصم"
@@ -1551,7 +1552,8 @@
           }
         },
         "order_list_column_headers_location": "موقع",
-        "removed_company_contact_tooltip": "تم إزالته من الشركة"
+        "removed_company_contact_tooltip": "تم إزالته من الشركة",
+        "order_list_column_headers_contact": "اتصال"
       },
       "draft_order_details": {
         "draft_order_subtitle": "تم التأكيد بتاريخ {{date}} من الطلب {{draftOrderName}}",
@@ -1999,7 +2001,8 @@
       },
       "vat_invoices": {
         "title": "فواتير ضريبة القيمة المضافة"
-      }
+      },
+      "contact": "اتصال"
     },
     "addresses": {
       "add_button": "إضافة عنوان",
@@ -2317,7 +2320,8 @@
         "working_hours_html": "الاثنين - الجمعة: 8 صباحًا - 5 مساءً<br> السبت: مغلق<br> الشمس: مغلقة"
       },
       "icons_row": {
-        "text": "Palo Alto هو موضوع Shopify قوي سيجعلك متميزًا عن الباقي بمجموعة متنوعة من الأقسام والميزات."
+        "text": "Palo Alto هو موضوع Shopify قوي سيجعلك متميزًا عن الباقي بمجموعة متنوعة من الأقسام والميزات.",
+        "title": "ميزة"
       },
       "testimonials": {
         "testimonial": "استخدم هذه الشهادة كفرصة لعملائك لمناقشة علامتك التجارية وما يميزك عن المنافسة.",
@@ -2327,7 +2331,8 @@
       },
       "shop_the_look": {
         "heading": "قصتنا",
-        "text": "استخدم هذا النص لمشاركة معلومات حول علامتك التجارية مع عملائك. وصف منتج أو مشاركة إعلانات أو الترحيب بالعملاء في متجرك."
+        "text": "استخدم هذا النص لمشاركة معلومات حول علامتك التجارية مع عملائك. وصف منتج أو مشاركة إعلانات أو الترحيب بالعملاء في متجرك.",
+        "button_text": "تسوق الآن"
       },
       "press": {
         "text": "قم بتقديم بعض المعلومات حول ما تعتقده الشركة أدناه بشأن علامتك التجارية.",
@@ -2335,6 +2340,11 @@
       },
       "banner_image": {
         "title": "بالو التو"
+      },
+      "color": "لون",
+      "size": "مقاس",
+      "products_with_image": {
+        "title": "أفضل المبيعات"
       }
     }
   },
@@ -2459,7 +2469,8 @@
       "pages": "الصفحات",
       "suggestions": "اقتراحات",
       "pages_and_blogs": "الصفحات والمشاركات في المدونة",
-      "search_actions": "إجراءات البحث"
+      "search_actions": "إجراءات البحث",
+      "articles": "المدونات"
     },
     "pagination": {
       "previous": "الصفحة السابقة",
@@ -2486,10 +2497,12 @@
       "more_colors": "+ {{ number }} المزيد"
     },
     "siblings": {
-      "swatches": "اللون، اللون"
+      "swatches": "اللون، اللون",
+      "label": "لون"
     },
     "size_chart": {
-      "button": "دليل المقاسات"
+      "button": "دليل المقاسات",
+      "size": "مقاس"
     }
   },
   "blogs": {
@@ -2600,7 +2613,8 @@
       "popup_missing": "حدد الصفحة من إعدادات الكتلة.",
       "popup_text_missing": "لم يتم إضافة أي نص في الصفحة المحددة",
       "show_more": "عرض المزيد",
-      "show_less": "إظهار أقل"
+      "show_less": "إظهار أقل",
+      "variant_option_image": "مقاس"
     }
   },
   "gift_cards": {
@@ -2713,7 +2727,8 @@
       "view_collection": "عرض المجموعة",
       "no_matches": "عذراً، لا يوجد منتجات في هذه المجموعة.",
       "no_matches_by_filter": "تم العثور على {{ products_count }} منتجًا بهذه الخيارات.",
-      "shop": "محل"
+      "shop": "محل",
+      "list_collections": "المجموعات"
     },
     "sorting": {
       "title": "فرز حسب",
@@ -2725,13 +2740,15 @@
       "price_ascending": "السعر من الأقل إلى الأعلى",
       "price_descending": "السعر من الأعلى إلى الأدنى",
       "date_descending": "التاريخ من الجديد إلى القديم",
-      "date_ascending": "التاريخ من القديم إلى الجديد"
+      "date_ascending": "التاريخ من القديم إلى الجديد",
+      "best_selling": "الأكثر مبيعا"
     },
     "breadcrumbs": {
       "home": "بيت",
       "back_to_home": "العودة إلى الصفحة الرئيسية",
       "default_collection": "جميع المنتجات",
-      "products": "منتجات"
+      "products": "منتجات",
+      "collections": "المجموعات"
     },
     "onboarding": {
       "popup_title": "ستعرض هذه الصفحة جميع منتجات متجرك",

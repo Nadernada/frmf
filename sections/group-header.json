@@ -95,7 +95,8 @@
         "highlight_item_color": "#d02e2e",
         "header_transparent": false,
         "header_text_color": "white",
-        "header_gradient": true
+        "header_gradient": true,
+        "show_locale_selector": true
       }
     }
   },

@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "Header",
@@ -84,7 +84,7 @@
         "header_border": false,
         "link_hover_effect": "line",
         "logo_not_home": "{{ shop.brand.logo }}",
-        "logo_max_width": 60,
+        "logo_max_width": 40,
         "main-menu": "main-menu",
         "main_menu_secondary": "",
         "show_images": true,

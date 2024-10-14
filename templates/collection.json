@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -32,7 +32,7 @@
           "settings": {
             "width": "100",
             "image": "shopify://shop_images/collections-hero.png",
-            "overlay_opacity": 5,
+            "overlay_opacity": 15,
             "text_position": "bottom-left",
             "subheading": "",
             "title": "{{ collection.title }}",
@@ -180,10 +180,10 @@
         "text_size": 115,
         "letter_spacing": 75,
         "show_arrow": false,
-        "bg_color": "#fff",
-        "block_text_color": "#000",
-        "border_color": "#000",
-        "section_bg_color": "#F7F7F7",
+        "bg_color": "#ffffff",
+        "block_text_color": "#000000",
+        "border_color": "#000000",
+        "section_bg_color": "#f7f7f7",
         "section_text_color": "",
         "enable_slider_mobile": true,
         "animations_enabled": true,
@@ -230,8 +230,8 @@
             "width": "half",
             "title": "<p>2024's women's collection</p>",
             "heading_highlight_type": "circle",
-            "highlight_color": "#D43747",
-            "highlight_text_color": "#FFFFFF",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#ffffff",
             "heading_size": 100,
             "content": "",
             "text_size": 100,
@@ -239,7 +239,7 @@
             "text_position": "center",
             "layout": "stacked",
             "overlay_opacity": 10,
-            "bg_color": "#D3D3D3",
+            "bg_color": "#d3d3d3",
             "button_text": "Shop Now",
             "button_link": "",
             "button_color": "btn--primary",
@@ -253,7 +253,7 @@
         "promo_wFHbhN"
       ],
       "settings": {
-        "show_breadcrumbs": true,
+        "show_breadcrumbs": false,
         "enable_sorting": true,
         "enable_filters": true,
         "filters_layout": "open",

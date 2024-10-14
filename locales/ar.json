@@ -1946,12 +1946,33 @@
         "text": "Palo Alto هو موضوع Shopify قوي سيجعلك متميزًا عن الباقي بمجموعة متنوعة من الأقسام والميزات."
       },
       "testimonials": {
-        "testimonial": "استخدم هذه الشهادة كفرصة لعملائك لمناقشة علامتك التجارية وما يميزك عن المنافسة."
+        "testimonial": "استخدم هذه الشهادة كفرصة لعملائك لمناقشة علامتك التجارية وما يميزك عن المنافسة.",
+        "customer_name_1": "شيرلوك هولمز",
+        "customer_name_2": "جون واتسون",
+        "customer_name_3": "مايكروفت هولمز"
+      },
+      "shop_the_look": {
+        "heading": "قصتنا",
+        "text": "استخدم هذا النص لمشاركة معلومات حول علامتك التجارية مع عملائك. وصف منتج أو مشاركة إعلانات أو الترحيب بالعملاء في متجرك."
+      },
+      "press": {
+        "text": "قم بتقديم بعض المعلومات حول ما تعتقده الشركة أدناه بشأن علامتك التجارية.",
+        "read_more": "اقرأ المزيد"
+      },
+      "banner_image": {
+        "title": "بالو التو"
       }
     }
   },
   "footer": {
-    "powered_by": "مدعوم بواسطة"
+    "powered_by": "مدعوم بواسطة",
+    "socials": {
+      "title": "عرض {{ shop_name }} على {{ social }}",
+      "rss": "آر إس إس"
+    },
+    "country": "دولة",
+    "language": "لغة",
+    "update": "تحديث"
   },
   "store_availability": {
     "general": {
@@ -2108,5 +2129,124 @@
       "success_moderated": "تم نشر تعليقك بنجاح، وسنقوم بنشره بعد قليل، حيث أن مدونتنا تخضع للرقابة.",
       "success": "لقد تم نشر تعليقك بنجاح! شكرا لك!"
     }
+  },
+  "layout": {
+    "navigation": {
+      "menu": "قائمة طعام",
+      "search": "يبحث",
+      "see_more": "شاهد المزيد"
+    },
+    "drawers": {
+      "browse": "تصفح",
+      "close_menu": "إغلاق القائمة"
+    },
+    "cart": {
+      "title": "العربة",
+      "items_count": {
+        "one": "غرض",
+        "other": "أغراض"
+      }
+    },
+    "customer": {
+      "account": "حساب",
+      "logged_in_as_html": "تم تسجيل الدخول باسم {{ first_name }}",
+      "log_out": "تسجيل الخروج",
+      "log_in": "تسجيل الدخول",
+      "create_account": "إنشاء حساب",
+      "my_account": "حسابي"
+    }
+  },
+  "products": {
+    "general": {
+      "catalog": "الكتالوج",
+      "previous_product_html": "← المنتج السابق",
+      "next_product_html": "المنتج التالي →",
+      "from_text_html": "من {{ price }}",
+      "sale_price": "سعر البيع",
+      "regular_price": "السعر العادي",
+      "description": "وصف",
+      "view_all_details": "عرض كافة التفاصيل",
+      "filters": "المرشحات",
+      "filter_by": "تصفية حسب",
+      "reset": "مسح المرشحات",
+      "clear_filters": "مسح الكل",
+      "close": "إغلاق المرشحات",
+      "products_with_count": {
+        "one": "{{ count }} منتج",
+        "other": "{{ count }} منتجات"
+      },
+      "see_all": "انظر الكل"
+    },
+    "product": {
+      "sold_out": "نفذ",
+      "sale": "أُوكَازيُون",
+      "preorder": "النظام السابق",
+      "one_time_purchase": "شراء لمرة واحدة",
+      "free": "حر",
+      "unavailable": "غير متاح",
+      "compare_at": "مقارنة في",
+      "quantity": "كمية",
+      "add_to_cart": "أضف إلى السلة",
+      "buy_it_now": "اشتر الآن",
+      "in_stock": "المنتج متوفر في المخزون",
+      "out_of_stock": "المنتج غير متوفر",
+      "item_unavailable": "العنصر غير متوفر",
+      "remaining_html": "متبقي فقط {{ inventory }} في المخزون",
+      "remaining_no_count": "اسرع! المخزون منخفض",
+      "on_sale": "أُوكَازيُون",
+      "save_badge_html": "وفر {{ discount }}",
+      "save_badge_up_to_html": "وفر حتى {{ discount }}",
+      "quick_view": "شراء سريع",
+      "checkout": "الدفع",
+      "view_in_space": "عرض في مساحتك",
+      "view_in_space_label": "عرض في مساحتك، وتحميل العنصر في نافذة الواقع المعزز",
+      "subscription": "الاشتراك",
+      "save": "يحفظ",
+      "unit_price_label": "سعر الوحدة",
+      "popup_missing": "حدد الصفحة من إعدادات الكتلة.",
+      "popup_text_missing": "لم يتم إضافة أي نص في الصفحة المحددة",
+      "show_more": "عرض المزيد",
+      "show_less": "إظهار أقل"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "إليك بطاقة الهدايا الخاصة بك {{ value }} {{ shop }} !",
+      "subtext": "هذه بطاقة الهدية الخاصة بك!",
+      "disabled": "عاجز",
+      "expired": "انتهت صلاحيتها في {{ expiry }}",
+      "active": "تنتهي صلاحيتها في {{ expiry }}",
+      "redeem": "استخدم هذا الكود عند الدفع لاسترداد بطاقة الهدية الخاصة بك",
+      "shop_link": "ابدأ التسوق",
+      "print": "مطبعة",
+      "add_to_apple_wallet": "أضف إلى Apple Wallet",
+      "gift_card": "بطاقة هدية"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "أريد أن أرسل هذا كهدية",
+      "email_label": "البريد الإلكتروني للمستلم",
+      "email": "البريد الإلكتروني للمستلم",
+      "name_label": "اسم المستلم (اختياري)",
+      "name": "اسم المستلم (اختياري)",
+      "message_label": "الرسالة (اختياري)",
+      "message": "الرسالة (اختياري)",
+      "max_characters": "{{ max_chars }} حرف كحد أقصى",
+      "error_heading": "يرجى تعديل ما يلي:",
+      "send_on": "س س س س-ش-ي",
+      "send_on_label": "أرسل على (اختياري)"
+    }
+  },
+  "countdown": {
+    "heading": "تسوق قبل أن ينتهي.",
+    "ends": "نهايات",
+    "days": "أيام",
+    "hours": "ساعات",
+    "minutes": "دقائق",
+    "seconds": "ثواني"
+  },
+  "date_formats": {
+    "month_day_year": "%ب %د، %ي"
   }
 }

@@ -340,10 +340,17 @@
   gap: 1rem;
 }
 
-.grid-item-custom.is-selected:first-child {
+.grid-item-custom {
+  transition: all ease 0.5s;
+}
+
+.grid-item-custom.is-selected {
   width: calc((var(--wrapper-width) - var(--grid-gutter) * 2) / 2.5) !important;
 }
 
+.flickity-page-dots .dot {
+  border-color: var(--accent);
+}
 
 
 

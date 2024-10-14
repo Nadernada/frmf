@@ -67,24 +67,8 @@
             </p>
 
             <div class="cart__item__meta">
-              {%- assign has_player = false -%}
-              {%- for property in item.properties -%}
-                {%- if property.first == 'player' -%}
-                  {%- assign has_player = true -%}
-                {%- endif -%}
-              {%- endfor -%}
-              
-              {%- if has_player -%}
-                {%- for property in item.properties -%}
-                  <p>{{ property.first }}:</p>
-                  {% if property.last contains '/uploads/' %}
-                    <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
-                  {% else %}
-                    {{ property.last }}
-                  {% endif %}
-                {%- endfor -%}
-              {%- else -%}
-                {%- unless line_item.product.has_only_default_variant -%}
+              {%- unless line_item.product.has_only_default_variant -%}
+                {%- unless line_item.product.handle == 'limited-edition' -%}
                   {%- for option in line_item.options_with_values -%}
                     <p class="cart__item__selected-options">
                       <span>{{- option.name -}}:</span>
@@ -92,10 +76,7 @@
                     </p>
                   {%- endfor -%}
                 {%- endunless -%}
-              {%- endif -%}
-              
-
-              
+              {%- endunless -%}
 
               {%- if line_item.selling_plan_allocation -%}
                 <p class="cart__item__selling-plan">

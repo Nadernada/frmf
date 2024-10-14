@@ -803,7 +803,7 @@
                           {% endif %}
                         >
                           <label for="jersey-number" class="input__label label-typography">Add Jersey Number</label>
-                          <input name="jersey-number" class="input__field" placeholder="Enter Your Jersey Number" />
+                          <input name="properties[jersey-number]" class="input__field" placeholder="Enter Your Jersey Number" />
                         </div>
                         <div class="input-wrapper"
                           {% if animations_enabled %}
@@ -814,7 +814,7 @@
                           {% endif %}
                         >
                           <label for="jersey-name" class="input__label label-typography">Add Jersey Name</label>
-                          <input name="jersey-name" class="input__field" placeholder="Enter Your Jersey Name" />
+                          <input name="properties[jersey-name]" class="input__field" placeholder="Enter Your Jersey Name" />
                         </div>
                       </div>
                       {%- for option in product.options_with_values -%}
@@ -1192,7 +1192,7 @@
                       <button
                         type="submit"
                         name="add"
-                        id="AddToCart--{{ unique }}--{{ product.id }}"
+                        id="AddToCart--{{ unique }}"
                         class="btn {{ atc_button_color }} {{ atc_button_style }} btn--large btn--submit product__submit__add"
                         data-add-to-cart
                       >

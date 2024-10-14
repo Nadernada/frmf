@@ -14948,7 +14948,7 @@
             pageDots: true,
             cellSelector: selectors$n.sliderItem,
             cellAlign: 'left',
-            groupCells: true,
+            groupCells: false,
             contain: true,
             wrapAround: false,
             adaptiveHeight: false,
@@ -14961,7 +14961,24 @@
               },
               change: () => {
                 this.changeTabIndex(slider);
-              },
+                setTimeout(() => {
+                  document.dispatchEvent(new CustomEvent('theme:resize:width')); // Trigger theme:resize event to refresh the slider height
+                      // this.flkty[sliderId].resize();
+                  
+                }, 50);
+                },
+                select: () => {
+                  setTimeout(() => {
+                    this.flkty[sliderId].resize();
+                  // document.dispatchEvent(new CustomEvent('theme:resize:width')); // Trigger theme:resize event to refresh the slider height
+                  }, 10);
+                },
+                settle: () => {
+                  setTimeout(() => {
+                    this.flkty[sliderId].resize();
+                  // document.dispatchEvent(new CustomEvent('theme:resize:width')); // Trigger theme:resize event to refresh the slider height
+                  }, 10);
+                },
             },
           });
 
@@ -15067,6 +15084,7 @@
       }
 
       handleLastSlideOverlayOnTablet(slider) {
+
         const sliderId = slider.getAttribute(attributes$g.sliderId);
 
         this.flkty[sliderId].on('select', () => {

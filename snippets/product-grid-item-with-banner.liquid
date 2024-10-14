@@ -168,7 +168,7 @@
   </a>
 {%- endcapture -%}
 
-<div class="product-grid-item grid-item-custom {% if carousel %}carousel__item{% else %}grid__item{% endif %} {{ size_desktop }} {{ size_mobile }}{% if tag %} has-tag{% endif %}{% if sold_out %} soldout{% endif %}{{ grid_item_class }}"
+<div class="product-grid-item grid-item-custom size-large {% if carousel %}carousel__item{% else %}grid__item{% endif %} {{ size_desktop }} {{ size_mobile }}{% if tag %} has-tag{% endif %}{% if sold_out %} soldout{% endif %}{{ grid_item_class }}"
   {% if carousel %} data-slide{% endif %}
   data-product-block
   {% if animations_enabled %}

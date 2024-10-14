@@ -147,6 +147,10 @@
 
 <div class="featured-image__content">
   <div class="featured-image__content-inner{% if show_text_shadow %} backdrop--radial{% endif %}">
+      {%- liquid
+        assign content_img = block.settings.content_img
+        -%}
+      <img src='{{ content_img | asset_url  }}' class="about-custom-content-img">
     {%- if title != blank -%}
       <h1 class="featured-image__heading main-heading"
         {% if animations_enabled %}
@@ -181,36 +185,36 @@
     {%- endif -%}
   </div>
 </div></div>
-
                   {%- when 'text' -%}
                     {%- liquid
                       assign top_image = block.settings.top_image
                       assign top_image_width = block.settings.top_image_width
                     -%}
-
-                    {%- render 'rich-text',
-                      block_id: block.id,
-                      text_position: text_position,
-                      top_image: top_image,
-                      top_image_width: top_image_width,
-                      subheading: subheading,
-                      heading: title,
-                      heading_size: heading_size,
-                      text: text,
-                      text_size: text_size,
-                      button_text: button_text,
-                      button_link: button_link,
-                      button_style: button_style,
-                      button_color: button_color,
-                      button_size: button_size,
-                      button_2_text: button_2_text,
-                      button_2_link: button_2_link,
-                      button_2_style: button_2_style,
-                      button_2_color: button_2_color,
-                      button_2_size: button_2_size,
-                      animation_anchor: animation_anchor,
-                      block_bg_color: block_bg_color
-                    -%}
+                    
+                        
+                        {%- render 'rich-text',
+                        block_id: block.id,
+                        text_position: text_position,
+                        top_image: top_image,
+                        top_image_width: top_image_width,
+                        subheading: subheading,
+                        heading: title,
+                        heading_size: heading_size,
+                        text: text,
+                        text_size: text_size,
+                        button_text: button_text,
+                        button_link: button_link,
+                        button_style: button_style,
+                        button_color: button_color,
+                        button_size: button_size,
+                        button_2_text: button_2_text,
+                        button_2_link: button_2_link,
+                        button_2_style: button_2_style,
+                        button_2_color: button_2_color,
+                        button_2_size: button_2_size,
+                        animation_anchor: animation_anchor,
+                        block_bg_color: block_bg_color
+                      -%}
 
                   {%- when 'newsletter' -%}
                     <div class="brick__newsletter">
@@ -840,6 +844,18 @@
           "id": "bg_color",
           "label": "Background"
         }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "name": "Content Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Image Content",
+          "id": "content_image"
+        },
       ]
     },
     {

@@ -1,42 +1,46 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "section_banner_image_4NnzQC": {
-      "type": "section-banner-image",
+    "section_custom_content_T34yBe": {
+      "type": "section-custom-content",
       "blocks": {
-        "subheading_zFC6Fn": {
-          "type": "subheading",
+        "image_ggUXNp": {
+          "type": "image",
           "settings": {
-            "text": "",
-            "size": 100
+            "text_position": "middle-center",
+            "image": "shopify://shop_images/about_hero_2.png",
+            "overlay_opacity": 0,
+            "text_color": "text-light",
+            "title": "FEDERATION ROYALE  MOROCAINE DE FOOTBALL",
+            "heading_size": 100,
+            "image_text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
           }
         }
       },
       "block_order": [
-        "subheading_zFC6Fn"
+        "image_ggUXNp"
       ],
       "settings": {
         "height": "six-fifty-height",
-        "enable_mobile_height": true,
-        "mobile_height": "one-third-height-mobile",
-        "image": "shopify://shop_images/abaout_banner.png",
-        "overlay_opacity": 10,
-        "transition": "zoom-out",
-        "enable_zoom_animation": true,
-        "enable_card_scrolling": false,
-        "increase_border_radius": true,
-        "text_width": "normal",
-        "text_position": "left",
-        "text_alignment": "text-left",
-        "text_color": "text-light"
+        "bg_color": "",
+        "reverse_blocks": false,
+        "width": "wrapper--full",
+        "add_gutter": false,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "text": {
@@ -282,7 +286,7 @@
     }
   },
   "order": [
-    "section_banner_image_4NnzQC",
+    "section_custom_content_T34yBe",
     "text",
     "section_overlapping_images_rdYtf7",
     "section_text_GMDYer",

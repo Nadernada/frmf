@@ -155,11 +155,9 @@
         #{{ section.id }} .footer-block--logo { min-width: calc({{ logo_width }}px + calc(var(--gutter) / 2)); }
         #{{ section.id }} .footer-block__logo-image { width: {{ logo_width }}px; }
       {%- endstyle -%}
-      <div class="footer-block footer-block--logo {{ alignment }}"
-        style="{{ block_style }}"
+      <div class="custom-banner-content-wrapper"
         {{ block.shopify_attributes }}>
-        {%- if block.settings.image != blank -%}
-          <a href="{{ routes.root_url }}" class="footer-block__logo-image">
+          <div class="custom-banner-content-img">
             {%- liquid
               assign retina_size = logo_width | times: 2
               assign image_widths = logo_width | append: ', ' | append: retina_size
@@ -168,8 +166,8 @@
 
               render 'image-fill', img_object: content_img, width: retina_size, widths: image_widths, sizes: sizes, classes: 'logo--footer', alt: image_alt
             -%}
-          </a>
-        {%- endif -%}    {%- if title != blank -%}
+          </div>
+           {%- if title != blank -%}
       <h1 class="featured-image__heading main-heading"
         {% if animations_enabled %}
           data-aos="fade-up"

@@ -14971,13 +14971,13 @@
                   setTimeout(() => {
                     this.flkty[sliderId].resize();
                   // document.dispatchEvent(new CustomEvent('theme:resize:width')); // Trigger theme:resize event to refresh the slider height
-                  }, 10);
+                  }, 0);
                 },
                 settle: () => {
                   setTimeout(() => {
                     this.flkty[sliderId].resize();
                   // document.dispatchEvent(new CustomEvent('theme:resize:width')); // Trigger theme:resize event to refresh the slider height
-                  }, 10);
+                  }, 0);
                 },
             },
           });

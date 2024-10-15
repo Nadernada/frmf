@@ -346,7 +346,7 @@
   transition: all ease 0.5s;
 }
 
-#FeaturedCollection--template--22574763704513__section_collection_iMijfG .grid-item-custom.is-selected {
+#FeaturedCollection--template--22574763704513__section_collection_iMijfG > div > div > div > div > div > .grid-item-custom.is-selected {
   width: calc((var(--wrapper-width) - var(--grid-gutter) * 2) / 2.5) !important;
 }
 

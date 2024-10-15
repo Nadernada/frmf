@@ -250,6 +250,8 @@
 
 .btn {
   transition: all ease 0.5s;
+  width: fit-content;
+
 }
 
 .btn--primary {
@@ -389,7 +391,14 @@
   justify-content: center;
 }
 
+.localization-form {
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
 
+.custom-localization {
+  transform: translate(-50%, 130%) !important;
+}
 
 
 
@@ -426,11 +435,46 @@
 
 
 
+@media only screen and (max-width: 1024px) {
+  .hero-featured-wrapper {
+    width: 70%;
+  }
+
+  .banner-image__image-container {
+    height: 95vh;
+}
+}
+
+
 
 
 
 
 @media only screen and (max-width: 796px) {
+
+.siblings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.overlapping-text {
+  font-size: .8rem;
+}
+
+.footer-copyright {
+  padding: 0 var(--gutter-mobile);
+}
+
+.sm-text p {
+  font-size: calc(.8rem* var(--adjust-body)) !important;
+}
+
+#BannerHeading--heading_Cyb4Vd.text__heading {
+
+  --adjust-heading: calc(var(--FONT-ADJUST-HEADING)* 1.53) !important;
+  font-size: 2.2rem !important;
+}
+
 
 
 .two-inputs-wrapper {
@@ -459,7 +503,7 @@
 }
 
 .banner-image__inner {
-  height: 80vh;
+  height: fit-content;
 }
 
 .tab-collections__head--has-button .tabs-scrollbar {
@@ -501,10 +545,12 @@
   grid-template-columns: 1fr;
   align-items: center;
   gap: 1rem;
+  justify-items: center;
 }
 
 .custom-banner-content-img {
   max-width: 150px;
+  width: 150px;
 }
 
 .custom-banner-content-wrapper > .featured-image__heading {

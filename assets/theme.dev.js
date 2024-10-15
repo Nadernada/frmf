@@ -13398,7 +13398,7 @@
       },
     };
 
-    register('header', [headerSection, hoverDisclosure, drawer]);
+    register('header', [headerSection, hoverDisclosure, drawer, popoutSection]);
 
     const selectors$z = {
       trigger: '[data-collapsible-trigger]',

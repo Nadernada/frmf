@@ -89,7 +89,7 @@
             {%- render 'icon-select' -%}
           </button>
 
-          <div id="lang-list-{{ section.id }}" class="select-popout__list" data-popout-list>
+          <div id="lang-list-{{ section.id }}" class="select-popout__list custom-localization" data-popout-list>
             <ul class="select-popout__list__scroll">
               {%- for language in localization.available_languages -%}
                 <li class="select-popout__item{% if language.iso_code == localization.language.iso_code %} select-popout__item--current{% endif %}">

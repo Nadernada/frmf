@@ -412,6 +412,16 @@
   transform: translate(-50%, 130%) !important;
 }
 
+.custom-swatch {
+  border: 2px transparent solid;
+  transform: all ease .5s;
+  border-radius: var(--RADIUS);
+}
+
+.custom-swatch:hover {
+  border: 2px var(--accent) solid;
+}
+
 
 
 

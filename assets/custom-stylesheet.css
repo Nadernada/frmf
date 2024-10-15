@@ -350,14 +350,14 @@
   width: calc((var(--wrapper-width) - var(--grid-gutter) * 2) / 2.7) !important;
 }
 
-#FeaturedCollection--template--22575006286017__section_collection_iMijfG > div > div > div > div > div > .grid-item-custom {
+#FeaturedCollection--template--22574763704513__section_collection_iMijfG > div > div > div > div > div > .grid-item-custom {
   transform-origin: left;
   position: relative !important;
   transform: none !important;
   height: fit-content;
 }
 
-#FeaturedCollection--template--22575006286017__section_collection_iMijfG > div > div > div > div > .flickity-slider {
+#FeaturedCollection--template--22574763704513__section_collection_iMijfG > div > div > div > div > .flickity-slider {
   display: flex;
   position: relative;
 }

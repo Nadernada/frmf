@@ -576,7 +576,7 @@
         "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
         "extra_fields": "",
         "button_text": "",
-        "bg_color": "#ffffff",
+        "bg_color": "#f4f4f4",
         "image_height": "three-fifty-height",
         "overlay_opacity": 10,
         "width": "wrapper",
@@ -592,7 +592,7 @@
           "settings": {
             "icon_name": "none",
             "title": "New customers get 15% off",
-            "text": "<p>on your first purchase</p>"
+            "text": "<p>on their first purchase</p>"
           }
         },
         "text_mzBAWm": {
@@ -624,7 +624,7 @@
         "columns": 3,
         "icons_width": 20,
         "show_vertical_borders": true,
-        "show_horizontal_borders": true,
+        "show_horizontal_borders": false,
         "heading_size": 70,
         "text_size": 90,
         "bg_color": "",

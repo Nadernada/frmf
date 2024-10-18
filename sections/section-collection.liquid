@@ -1243,7 +1243,7 @@
 {%- endcapture -%}
 
 {%- capture collection_container -%}
-  <div class="featured-collection__container {% if carousel %}carousel__container{% else %}grid__container{% endif %}">
+  <div class="featured-collection__container custom-carousel {% if carousel %}carousel__container{% else %}grid__container{% endif %}">
     <div class="{% if carousel %}carousel{% else %}grid{% endif %}{{ mobile_class }}{% if products.size == 0 %} featured-collection--empty{% endif %}"
       {% if carousel %}
         data-slider

@@ -132,90 +132,6 @@
         {%- render 'cart-line-items', part: 'line-items', aos_anchor: '#cartItemsHolder' -%}
       </div>
 
-      <div class="cart__widgets"
-        {% if animations_enabled %}
-          data-aos="fade"
-          {%- assign animation_delay = animation_delay | plus: 150 -%}
-          data-aos-delay="{{ animation_delay }}"
-          {%- assign animation_delay = animation_delay | plus: 50 -%}
-        {% endif %}>
-        <div id="cartUpsellHolder" class="cart__pair" data-cart-widget data-pair-products-holder
-          {% if animations_enabled %}
-            data-aos="fade"
-            data-aos-delay="{{ animation_delay }}"
-            {%- assign animation_delay = animation_delay | plus: 50 -%}
-          {% endif %}>
-          {%- render 'cart-line-items', part: 'upsell-items', aos_anchor: '#cartUpsellHolder' -%}
-        </div>
-
-        <div class="cart-notes{% if cart_items_size == 0 %} hidden{% endif %}" data-cart-notes-holder>
-          {%- if settings.enable_cart_notes or settings.enable_gift_notes -%}
-            <div class="cart__widget__wrapper" data-collapsible-single>
-              {%- if settings.enable_cart_notes -%}
-                <div class="cart__widget" data-cart-widget
-                  {% if animations_enabled %}
-                    data-aos="fade"
-                    data-aos-delay="{{ animation_delay }}"
-                    {%- assign animation_delay = animation_delay | plus: 50 -%}
-                  {% endif %}>
-                  <button
-                    class="cart__widget__title"
-                    type="button"
-                    data-collapsible-trigger
-                    aria-expanded="false"
-                    aria-controls="notes">
-                    {{- 'cart.general.cart_notes_label' | t -}}
-                    {%- render 'icon-toggle-plus' -%}
-                    {%- render 'icon-toggle-minus' -%}
-                  </button>
-
-                  <div id="notes" aria-expanded="false" data-collapsible-container>
-                    <div class="cart__widget__content" data-collapsible-content>
-                      <label for="note">{{ 'cart.general.customer_note' | t }}</label>
-
-                      <textarea id="note" name="note" form="cartDrawerCheckoutForm" class="cart__field cart__field--textarea" aria-label="{{ 'cart.general.customer_note' | t }}">{{- cart.note -}}</textarea>
-                    </div>
-                  </div>
-                </div>
-              {%- endif -%}
-
-              {%- if settings.enable_gift_notes -%}
-                <div class="cart__widget" data-cart-widget
-                  {% if animations_enabled %}
-                    data-aos="fade"
-                    data-aos-delay="{{ animation_delay }}"
-                    {%- assign animation_delay = animation_delay | plus: 50 -%}
-                  {% endif %}>
-                  <button
-                    class="cart__widget__title"
-                    type="button"
-                    data-collapsible-trigger
-                    aria-expanded="false"
-                    aria-controls="gift-notes">
-                    {{- 'cart.general.gift_notes_label' | t -}}
-                    {%- render 'icon-toggle-plus' -%}
-                    {%- render 'icon-toggle-minus' -%}
-                  </button>
-
-                  <div id="gift-notes" aria-expanded="false" data-collapsible-container>
-                    <div class="cart__widget__content" data-collapsible-content>
-                      {%- liquid
-                        assign gift_note_attribute_default = 'Gift note'
-                        assign gift_note_attribute_string = 'cart.general.gift_note_attribute' | t
-                        assign gift_note_attribute = gift_note_attribute_string | default: gift_note_attribute_default
-                      -%}
-
-                      <label for="gift-note">{{ 'cart.general.note' | t }}</label>
-
-                      <textarea id="gift-note" name="attributes[{{ gift_note_attribute }}]" form="cartDrawerCheckoutForm" class="cart__field cart__field--textarea" aria-label="{{ 'cart.general.note' | t }}">{{ cart.attributes[gift_note_attribute] }}</textarea>
-                    </div>
-                  </div>
-                </div>
-              {%- endif -%}
-            </div>
-          {%- endif -%}
-        </div>
-      </div>
 
       <div id="cartDrawerEmptyMessage" class="cart-drawer__empty-message{% if cart_items_size > 0 %} hidden{% endif %}" data-empty-message>
         {%- assign aos_anchor = '#cartDrawerEmptyMessage' -%}{%- liquid
@@ -322,6 +238,91 @@
         data-aos-delay="{{ animation_delay }}"
         {%- assign animation_delay = animation_delay | plus: 50 -%}
       {% endif %}>
+
+      <div class="cart__widgets"
+        {% if animations_enabled %}
+          data-aos="fade"
+          {%- assign animation_delay = animation_delay | plus: 150 -%}
+          data-aos-delay="{{ animation_delay }}"
+          {%- assign animation_delay = animation_delay | plus: 50 -%}
+        {% endif %}>
+        <div id="cartUpsellHolder" class="cart__pair" data-cart-widget data-pair-products-holder
+          {% if animations_enabled %}
+            data-aos="fade"
+            data-aos-delay="{{ animation_delay }}"
+            {%- assign animation_delay = animation_delay | plus: 50 -%}
+          {% endif %}>
+          {%- render 'cart-line-items', part: 'upsell-items', aos_anchor: '#cartUpsellHolder' -%}
+        </div>
+
+        <div class="cart-notes{% if cart_items_size == 0 %} hidden{% endif %}" data-cart-notes-holder>
+          {%- if settings.enable_cart_notes or settings.enable_gift_notes -%}
+            <div class="cart__widget__wrapper" data-collapsible-single>
+              {%- if settings.enable_cart_notes -%}
+                <div class="cart__widget" data-cart-widget
+                  {% if animations_enabled %}
+                    data-aos="fade"
+                    data-aos-delay="{{ animation_delay }}"
+                    {%- assign animation_delay = animation_delay | plus: 50 -%}
+                  {% endif %}>
+                  <button
+                    class="cart__widget__title"
+                    type="button"
+                    data-collapsible-trigger
+                    aria-expanded="false"
+                    aria-controls="notes">
+                    {{- 'cart.general.cart_notes_label' | t -}}
+                    {%- render 'icon-toggle-plus' -%}
+                    {%- render 'icon-toggle-minus' -%}
+                  </button>
+
+                  <div id="notes" aria-expanded="false" data-collapsible-container>
+                    <div class="cart__widget__content" data-collapsible-content>
+                      <label for="note">{{ 'cart.general.customer_note' | t }}</label>
+
+                      <textarea id="note" name="note" form="cartDrawerCheckoutForm" class="cart__field cart__field--textarea" aria-label="{{ 'cart.general.customer_note' | t }}">{{- cart.note -}}</textarea>
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}
+
+              {%- if settings.enable_gift_notes -%}
+                <div class="cart__widget" data-cart-widget
+                  {% if animations_enabled %}
+                    data-aos="fade"
+                    data-aos-delay="{{ animation_delay }}"
+                    {%- assign animation_delay = animation_delay | plus: 50 -%}
+                  {% endif %}>
+                  <button
+                    class="cart__widget__title"
+                    type="button"
+                    data-collapsible-trigger
+                    aria-expanded="false"
+                    aria-controls="gift-notes">
+                    {{- 'cart.general.gift_notes_label' | t -}}
+                    {%- render 'icon-toggle-plus' -%}
+                    {%- render 'icon-toggle-minus' -%}
+                  </button>
+
+                  <div id="gift-notes" aria-expanded="false" data-collapsible-container>
+                    <div class="cart__widget__content" data-collapsible-content>
+                      {%- liquid
+                        assign gift_note_attribute_default = 'Gift note'
+                        assign gift_note_attribute_string = 'cart.general.gift_note_attribute' | t
+                        assign gift_note_attribute = gift_note_attribute_string | default: gift_note_attribute_default
+                      -%}
+
+                      <label for="gift-note">{{ 'cart.general.note' | t }}</label>
+
+                      <textarea id="gift-note" name="attributes[{{ gift_note_attribute }}]" form="cartDrawerCheckoutForm" class="cart__field cart__field--textarea" aria-label="{{ 'cart.general.note' | t }}">{{ cart.attributes[gift_note_attribute] }}</textarea>
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
       <form id="cartDrawerCheckoutForm"{% if cart_items_size == 0 %} class="hidden"{% endif %} action="{{ routes.cart_url }}" method="post" novalidate data-cart-form>
         <div class="cart__foot-inner">
 

@@ -794,30 +794,7 @@
                   {%- unless product.has_only_default_variant -%}
                     {%- assign selects_counter = 0 -%}
                     <div class="product__selectors">
-                      <div class="two-inputs-wrapper">
-                        <div class="input-wrapper"
-                          {% if animations_enabled %}
-                            data-aos="hero"
-                            data-aos-anchor="{{ animation_anchor }}"
-                            data-aos-order="{{ animation_order }}"
-                            {%- assign animation_order = animation_order | plus: 1 -%}
-                          {% endif %}
-                        >
-                          <label for="jersey-number" class="input__label label-typography">Add Jersey Number</label>
-                          <input name="properties[jersey-number]" class="input__field" placeholder="Enter Your Jersey Number" type="number" />
-                        </div>
-                        <div class="input-wrapper"
-                          {% if animations_enabled %}
-                            data-aos="hero"
-                            data-aos-anchor="{{ animation_anchor }}"
-                            data-aos-order="{{ animation_order }}"
-                            {%- assign animation_order = animation_order | plus: 1 -%}
-                          {% endif %}
-                        >
-                          <label for="jersey-name" class="input__label label-typography">Add Jersey Name</label>
-                          <input name="properties[jersey-name]" class="input__field" placeholder="Enter Your Jersey Name" />
-                        </div>
-                      </div>
+
                       {%- for option in product.options_with_values -%}
                         {%- comment -%} Use select over radio for long inputs and mismatched lengths {%- endcomment -%}
 
@@ -1016,9 +993,10 @@
                               endcapture
                             -%}
               
-                            <fieldset class="{{ radio_fieldset_class }}"{% if is_swatch_option or is_native_swatch_option %}{% unless color_swatch_variant_image and show_variant_image %} data-swatches-container{% endunless %}{% endif %}>
+                            <div class="{{ radio_fieldset_class }}"{% if is_swatch_option or is_native_swatch_option %}{% unless color_swatch_variant_image and show_variant_image %} data-swatches-container{% endunless %}{% endif %}>
+
                               <legend class="radio__legend"{% if is_swatch_option or is_native_swatch_option %}{% unless color_swatch_variant_image and show_variant_image %} data-swatches-label{% endunless %}{% endif %}>
-                                <span class="radio__legend__label label-typography">{{ option.name | escape_once }}</span>
+                                <span class="radio__legend__label label-typography">{{ option.name | escape_once }} :</span>
                                 {%- if show_size_guide_as_label -%}{{- size_chart_button -}}{%- endif -%}
                               </legend>
               
@@ -1150,7 +1128,8 @@
                                   {%- endif -%}
                                 {%- endfor -%}
                               </div>
-                            </fieldset>
+
+                            </div>
                             {%- if is_swatch_option or is_native_swatch_option -%}
                               <button type="button" class="btn btn--text swatch__more" aria-expanded="false" aria-controls="CollectionFilterActions--product-type" data-swatches-more>
                                 <span>{{ 'products.product.show_more' | t }}</span>
@@ -1160,6 +1139,30 @@
                           {%- endif -%}
                         </div>
                       {%- endfor -%}
+                        <div class="two-inputs-wrapper">
+                          <div class="input-wrapper"
+                            {% if animations_enabled %}
+                              data-aos="hero"
+                              data-aos-anchor="{{ animation_anchor }}"
+                              data-aos-order="{{ animation_order }}"
+                              {%- assign animation_order = animation_order | plus: 1 -%}
+                            {% endif %}
+                          >
+                            <label for="jersey-number" class="input__label label-typography">Add Jersey Number :</label>
+                            <input name="properties[jersey-number]" class="input__field" placeholder="Enter Your Jersey Number" type="number" />
+                          </div>
+                          <div class="input-wrapper"
+                            {% if animations_enabled %}
+                              data-aos="hero"
+                              data-aos-anchor="{{ animation_anchor }}"
+                              data-aos-order="{{ animation_order }}"
+                              {%- assign animation_order = animation_order | plus: 1 -%}
+                            {% endif %}
+                          >
+                            <label for="jersey-name" class="input__label label-typography">Add Jersey Name :</label>
+                            <input name="properties[jersey-name]" class="input__field" placeholder="Enter Your Jersey Name" />
+                          </div>
+                        </div>
                     </div>
                   {%- endunless -%}
                 {%- endcapture -%}
@@ -1259,57 +1262,60 @@
                 {%- endunless -%}
               </div>
 
-              <div class="product__block product__accordions"
-                id="Block--{{ product.id }}-1"
-                {% if animations_enabled %}
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="{{ animation_order }}"
-                  {%- assign animation_order = animation_order | plus: 1 -%}
-                {% endif %}
-                {{ block_style }}
-                {{ block.shopify_attributes }}
-              >
+              <div class="accordions-wrapper">
+                <div class="product__block product__accordions"
+                  id="Block--{{ product.id }}-1"
+                  {% if animations_enabled %}
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="{{ animation_order }}"
+                    {%- assign animation_order = animation_order | plus: 1 -%}
+                  {% endif %}
+                  {{ block_style }}
+                  {{ block.shopify_attributes }}
+                >
 
-                <div class="product__accordion">
-                  <button class="product__accordion__title {{ heading_style }}" aria-controls="ProductAccordion--page-{{ 'Materials and specs' | handle }}--{{ section.id }}--{{ product.id }}-1" data-collapsible-trigger>
-                    Materials and specs
-                    {%- render 'icon-toggle-plus' -%}
-                    {%- render 'icon-toggle-minus' -%}
-                  </button>
-                  <div class="product__accordion__content" id="ProductAccordion--page-{{ 'Materials and specs' | handle }}--{{ section.id }}--{{ product.id }}-1" data-collapsible-container>
-                    <div class="product__accordion__inner rte" data-collapsible-content>
-                      Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies
+                  <div class="product__accordion">
+                    <button class="product__accordion__title {{ heading_style }}" aria-controls="ProductAccordion--page-{{ 'Materials and specs' | handle }}--{{ section.id }}--{{ product.id }}-1" data-collapsible-trigger>
+                      Materials and specs
+                      {%- render 'icon-toggle-plus' -%}
+                      {%- render 'icon-toggle-minus' -%}
+                    </button>
+                    <div class="product__accordion__content" id="ProductAccordion--page-{{ 'Materials and specs' | handle }}--{{ section.id }}--{{ product.id }}-1" data-collapsible-container>
+                      <div class="product__accordion__inner rte" data-collapsible-content>
+                        Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="product__block product__accordions"
-                id="Block--{{ product.id }}-2"
-                {% if animations_enabled %}
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="{{ animation_order }}"
-                  {%- assign animation_order = animation_order | plus: 1 -%}
-                {% endif %}
-                {{ block_style }}
-                {{ block.shopify_attributes }}
-              >
+                <div class="product__block product__accordions"
+                  id="Block--{{ product.id }}-2"
+                  {% if animations_enabled %}
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="{{ animation_order }}"
+                    {%- assign animation_order = animation_order | plus: 1 -%}
+                  {% endif %}
+                  {{ block_style }}
+                  {{ block.shopify_attributes }}
+                >
 
-                <div class="product__accordion">
-                  <button class="product__accordion__title" aria-controls="ProductAccordion--page-{{ "Shipping and returns" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-trigger
-                  >
-                    Shipping and returns
-                    {%- render 'icon-toggle-plus' -%}
-                    {%- render 'icon-toggle-minus' -%}
-                  </button>
-                  <div class="product__accordion__content" id="ProductAccordion--page-{{ "Shipping and returns" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-container>
-                    <div class="product__accordion__inner rte" data-collapsible-content>
-                      Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies
+                  <div class="product__accordion">
+                    <button class="product__accordion__title" aria-controls="ProductAccordion--page-{{ "Shipping and returns" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-trigger
+                    >
+                      Shipping and returns
+                      {%- render 'icon-toggle-plus' -%}
+                      {%- render 'icon-toggle-minus' -%}
+                    </button>
+                    <div class="product__accordion__content" id="ProductAccordion--page-{{ "Shipping and returns" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-container>
+                      <div class="product__accordion__inner rte" data-collapsible-content>
+                        Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies
+                      </div>
                     </div>
                   </div>
                 </div>
+
               </div>
 
               {%- liquid
@@ -1346,41 +1352,50 @@
                 --adjust-body: calc(var(--FONT-ADJUST-BODY) * {{ text_size }});
               {%- endcapture -%}
 
-              <div class="product__block{% if width == 'half' %} product__block--half{% endif %}"
-                {% if animations_enabled %}
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="{{ animation_order }}"
-                  {%- assign animation_order = animation_order | plus: 1 -%}
-                {% endif %}
-                {{ block.shopify_attributes }}
-              >
-                <div class="product__icon__row{% if text_alignment == 'center' %} product__icon__row--center{% endif %}" style="{{ text_style }} {{ background_style }}">
-                    <div class="product__icon icon-stroke" style="20px">
-                        {%- render 'icons', icon: 'ethically-made' -%}
-                    </div>
+              <div class="accordions-wrapper">
 
-                    <div class="product__icon__text">Material Specs</div>
+
+                <div class="product__block{% if width == 'half' %} product__block--half{% endif %}"
+                  {% if animations_enabled %}
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="{{ animation_order }}"
+                    {%- assign animation_order = animation_order | plus: 1 -%}
+                  {% endif %}
+                  {{ block.shopify_attributes }}
+                >
+                  <div class="product__icon__row{% if text_alignment == 'center' %} product__icon__row--center{% endif %}" style="{{ text_style }} {{ background_style }}">
+                      <div class="product__icon icon-stroke" style="20px">
+                          {%- render 'icons', icon: 'ethically-made' -%}
+                      </div>
+
+                      <div class="product__icon__text">Official Merchandise of the Federation of Morocco</div>
+                  </div>
                 </div>
+
+                <div class="product__block{% if width == 'half' %} product__block--half{% endif %}"
+                  {% if animations_enabled %}
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="{{ animation_order }}"
+                    {%- assign animation_order = animation_order | plus: 1 -%}
+                  {% endif %}
+                  {{ block.shopify_attributes }}
+                >
+                  <div class="product__icon__row{% if text_alignment == 'center' %} product__icon__row--center{% endif %}" style="{{ text_style }} {{ background_style }}">
+                      <div class="product__icon icon-stroke" style="20px">
+                          {%- render 'icons', icon: 'recycle' -%}
+                      </div>
+
+                      <div class="product__icon__text">Recycled materials</div>
+                  </div>
+                </div>
+
               </div>
 
-              <div class="product__block{% if width == 'half' %} product__block--half{% endif %}"
-                {% if animations_enabled %}
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="{{ animation_order }}"
-                  {%- assign animation_order = animation_order | plus: 1 -%}
-                {% endif %}
-                {{ block.shopify_attributes }}
-              >
-                <div class="product__icon__row{% if text_alignment == 'center' %} product__icon__row--center{% endif %}" style="{{ text_style }} {{ background_style }}">
-                    <div class="product__icon icon-stroke" style="20px">
-                        {%- render 'icons', icon: 'recycle' -%}
-                    </div>
-
-                    <div class="product__icon__text">Recycled materials</div>
-                </div>
-              </div>
+              <a href="#">
+                <p class="warranty-text">Learn more about our warranty</p>
+              </a>
             </div>
           {%- endunless -%}
         </div>

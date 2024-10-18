@@ -200,11 +200,21 @@
 
 .two-inputs-wrapper {
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: center;
+  grid-column: span 2;
   /* flex-wrap: wrap; */
+}
+
+.two-inputs-wrapper .input-wrapper input {
+  width: 100%;
+}
+
+
+.product__selectors {
+  width: 100%;
 }
 
 .input__field::placeholder {
@@ -244,7 +254,11 @@
 }
 
 .custom-media-padding {
-  padding-top: 75vh;
+  padding-top: 100%;
+}
+
+.product-single__media img {
+  object-fit: cover;
 }
 
 
@@ -346,18 +360,18 @@
   transition: all ease 0.5s;
 }
 
-#FeaturedCollection--template--22574763704513__section_collection_iMijfG > div > div > div > div > div > .grid-item-custom.is-selected {
+.custom-carousel > div > div > div > .grid-item-custom.is-selected {
   width: calc((var(--wrapper-width) - var(--grid-gutter) * 2) / 2.7) !important;
 }
 
-#FeaturedCollection--template--22574763704513__section_collection_iMijfG > div > div > div > div > div > .grid-item-custom {
+.custom-carousel > div > div > div > .grid-item-custom {
   transform-origin: left;
   position: relative !important;
   transform: none !important;
   height: fit-content;
 }
 
-#FeaturedCollection--template--22574763704513__section_collection_iMijfG > div > div > div > div > .flickity-slider {
+.custom-carousel > div > div > .flickity-slider {
   display: flex;
   position: relative;
 }
@@ -422,7 +436,46 @@
   border: 2px var(--accent) solid;
 }
 
+.cart__checkout.btn {
+  width: 100%;
+}
 
+.cart-drawer__head h3 {
+  font-size: calc(1.3rem* var(--adjust-heading));
+}
+
+.cart-drawer__foot {
+  border-top: none;
+  box-shadow: none;
+}
+
+.cart-drawer__head, .cart-drawer .cart-drawer__message {
+  border-bottom: none;
+}
+
+
+.accordions-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  margin-bottom: 1rem;
+}
+
+.warranty-text {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.radio__fieldset {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+}
+
+.radio__legend {
+  width: auto;
+  margin: 0 12px 12px 0;
+}
 
 
 @media only screen and (min-width: 1024px) {
@@ -465,6 +518,14 @@
   .banner-image__image-container {
     height: 95vh;
 }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .product-single__details .form__wrapper {
+      max-width: 590px;
+      margin: 0 auto;
+  }
 }
 
 

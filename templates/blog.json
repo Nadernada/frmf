@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -28,96 +28,6 @@
         "padding_bottom": 60
       }
     },
-    "section_list_butttons_kfH6bq": {
-      "type": "section-list-butttons",
-      "blocks": {
-        "button_dkThBD": {
-          "type": "button",
-          "settings": {
-            "heading": "Button",
-            "button_link": "",
-            "overlay_opacity": 100,
-            "block_text_color": "",
-            "bg_color": "",
-            "border_color": ""
-          }
-        },
-        "button_dMALzB": {
-          "type": "button",
-          "settings": {
-            "heading": "Button",
-            "button_link": "",
-            "overlay_opacity": 100,
-            "block_text_color": "",
-            "bg_color": "",
-            "border_color": ""
-          }
-        },
-        "button_pQBTnN": {
-          "type": "button",
-          "settings": {
-            "heading": "Button",
-            "button_link": "",
-            "overlay_opacity": 100,
-            "block_text_color": "",
-            "bg_color": "",
-            "border_color": ""
-          }
-        },
-        "button_jXB9EV": {
-          "type": "button",
-          "settings": {
-            "heading": "Button",
-            "button_link": "",
-            "overlay_opacity": 100,
-            "block_text_color": "",
-            "bg_color": "",
-            "border_color": ""
-          }
-        },
-        "button_DYdd3G": {
-          "type": "button",
-          "settings": {
-            "heading": "Button",
-            "button_link": "",
-            "overlay_opacity": 100,
-            "block_text_color": "",
-            "bg_color": "",
-            "border_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "button_dkThBD",
-        "button_dMALzB",
-        "button_pQBTnN",
-        "button_jXB9EV",
-        "button_DYdd3G"
-      ],
-      "settings": {
-        "title": "Blogs",
-        "heading_size": 100,
-        "layout": "carousel",
-        "alignment": "center",
-        "collections_per_row": 6,
-        "columns_mobile": "2",
-        "type_style": "button-typography",
-        "button_style": "rounded",
-        "text_size": 90,
-        "letter_spacing": 75,
-        "show_arrow": false,
-        "bg_color": "#ffffff",
-        "block_text_color": "#000000",
-        "border_color": "#000000",
-        "section_bg_color": "#ffffff",
-        "section_text_color": "",
-        "enable_slider_mobile": false,
-        "animations_enabled": true,
-        "width": "wrapper--full-padded",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "section_blog_eycL4X": {
       "type": "section-blog",
       "settings": {
@@ -132,7 +42,7 @@
         "show_date": false,
         "show_comments_count": false,
         "default_color": "accent",
-        "heading": "",
+        "heading": "Blogs",
         "button_text": "",
         "button_color": "btn--black",
         "button_style": "btn--solid",
@@ -147,7 +57,6 @@
   },
   "order": [
     "main",
-    "section_list_butttons_kfH6bq",
     "section_blog_eycL4X"
   ]
 }

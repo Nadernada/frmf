@@ -125,7 +125,7 @@
   <div class="{{ section_width }}">
     {%- if heading != '' -%}
       <div class="section__header">
-        <h2 class="section__heading h3"
+        <h2 class="section__heading h2"
           {% if animations_enabled %}
             data-aos="fade-up"
             data-aos-anchor="{{ animation_anchor }}"
@@ -145,25 +145,37 @@
       </div>
     {%- endif -%}
 
+    {%- if section.settings.blog != blank -%}
+      <div class="blogs-filters-wrapper">
+        {%- for tag in blog.all_tags -%}
+          <a href="?filter={{ tag }}" class="btn btn--black btn--outline">{{ tag }}</a>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
     <div class="featured-blog__container">
-      <div class="grid carousel--mobile">
+      <div class="grid custom-blog-grid">
         {%- if section.settings.blog != blank -%}
+          {% assign selected_tag = request.params.filter %}
+
           {%- for article in blog.articles limit: articles_count -%}
             {%- assign animation_delay = 150 | times: forloop.index -%}
-            {%- render 'blog-post-grid-item',
-              article: article,
-              article_style: blog_style,
-              img_sizes: sizes,
-              classes: classes,
-              animation_anchor: animation_anchor,
-              animation_delay: animation_delay,
-              default_color: default_color,
-              default_image: default_image,
-              show_author: show_author,
-              show_date: show_date,
-              show_tags: show_tags,
-              show_comments_count: show_comments_count,
-              onboarding: false -%}
+              {% if selected_tag == blank or article.tags contains selected_tag %}
+                {%- render 'blog-post-grid-item',
+                  article: article,
+                  article_style: blog_style,
+                  img_sizes: sizes,
+                  classes: classes,
+                  animation_anchor: animation_anchor,
+                  animation_delay: animation_delay,
+                  default_color: default_color,
+                  default_image: default_image,
+                  show_author: show_author,
+                  show_date: show_date,
+                  show_tags: show_tags,
+                  show_comments_count: show_comments_count,
+                  onboarding: false -%}
+              {%- endif -%}
           {%- endfor -%}
         {%- else -%}
           {%- for i in (1..articles_count) -%}

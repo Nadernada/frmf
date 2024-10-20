@@ -322,7 +322,7 @@
 
               <div class="filter__price__fields">
                 <div class="filter__price__field filter__price__from">
-                  <span>{{ cart.currency.symbol }}</span>
+                  <span>{{ cart.currency.iso_code }}</span>
 
                   <input
                     data-field-price-min
@@ -339,7 +339,7 @@
                   <label for="filter-price-{{ filter.label | escape }}-GTE">{{ 'collection.filters.from' | t }}</label>
                 </div>
                 <div class="filter__price__field filter__price__to">
-                  <span>{{ cart.currency.symbol }}</span>
+                  <span>{{ cart.currency.iso_code }}</span>
 
                   <input
                     data-field-price-max

@@ -148,7 +148,9 @@
     {%- if section.settings.blog != blank -%}
       <div class="blogs-filters-wrapper">
         {%- for tag in blog.all_tags -%}
-          <a href="?filter={{ tag }}" class="btn btn--black btn--outline">{{ tag }}</a>
+          <div class="btn btn--black btn--outline">
+            {{- tag | link_to_tag: tag }}
+          </div>
         {%- endfor -%}
       </div>
     {%- endif -%}
@@ -156,11 +158,9 @@
     <div class="featured-blog__container">
       <div class="grid custom-blog-grid">
         {%- if section.settings.blog != blank -%}
-          {% assign selected_tag = request.params.filter %}
 
           {%- for article in blog.articles limit: articles_count -%}
             {%- assign animation_delay = 150 | times: forloop.index -%}
-              {% if selected_tag == blank or article.tags contains selected_tag %}
                 {%- render 'blog-post-grid-item',
                   article: article,
                   article_style: blog_style,
@@ -175,7 +175,6 @@
                   show_tags: show_tags,
                   show_comments_count: show_comments_count,
                   onboarding: false -%}
-              {%- endif -%}
           {%- endfor -%}
         {%- else -%}
           {%- for i in (1..articles_count) -%}

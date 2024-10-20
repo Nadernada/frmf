@@ -32,7 +32,7 @@
           "settings": {
             "width": "100",
             "image": "shopify://shop_images/collections-hero.png",
-            "overlay_opacity": 15,
+            "overlay_opacity": 5,
             "text_position": "bottom-left",
             "subheading": "",
             "title": "{{ collection.title }}",

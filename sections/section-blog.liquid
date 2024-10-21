@@ -145,10 +145,15 @@
       </div>
     {%- endif -%}
 
+    {% assign selected_tag = request.path | split: '/' | last | default: 'all' %}
     {%- if section.settings.blog != blank -%}
       <div class="blogs-filters-wrapper">
+          <div class="btn {% if selected_tag == 'blogs' %} btn--primary{% else %} btn--black btn--outline {% endif %}">
+            <a href="{{ request.origin }}/blogs/blogs">All</a>
+          </div>
         {%- for tag in blog.all_tags -%}
-          <div class="btn btn--black btn--outline">
+          {%- assign tag_handle = tag | handle -%}
+          <div class="btn {% if selected_tag == tag_handle %} btn--primary {% else %} btn--black btn--outline {% endif %}">
             {{- tag | link_to_tag: tag }}
           </div>
         {%- endfor -%}
@@ -158,9 +163,12 @@
     <div class="featured-blog__container">
       <div class="grid custom-blog-grid">
         {%- if section.settings.blog != blank -%}
-
+          
           {%- for article in blog.articles limit: articles_count -%}
             {%- assign animation_delay = 150 | times: forloop.index -%}
+            {%- assign article_tag = article.tags[0] | handle -%}
+            {% if selected_tag == 'blogs' or article_tag == selected_tag %}
+
                 {%- render 'blog-post-grid-item',
                   article: article,
                   article_style: blog_style,
@@ -175,6 +183,7 @@
                   show_tags: show_tags,
                   show_comments_count: show_comments_count,
                   onboarding: false -%}
+            {%- endif -%}
           {%- endfor -%}
         {%- else -%}
           {%- for i in (1..articles_count) -%}

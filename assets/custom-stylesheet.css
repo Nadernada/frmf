@@ -528,6 +528,13 @@
   padding: 2rem !important;
 }
 
+.image-with-text__items.custom-image-with-text.image-with-text__items--inline-right .image-with-text__image {
+  order: 1;
+}
+
+.form__item input::placeholder, .form__item textarea::placeholder {
+  color: #b4b4b4;
+}
 
 
 
@@ -736,6 +743,17 @@
 .custom-3col-grid .column-item {
   width: 100%;
   padding: 1.5rem;
+}
+
+
+.custom-image-with-text {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+
+.form__item .btn {
+  width: 100%;
 }
 
 }

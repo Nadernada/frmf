@@ -19,8 +19,8 @@
         "padding_bottom": 60
       }
     },
-    "section_image_with_text_G6KCkH": {
-      "type": "section-image-with-text",
+    "section_custom_image_with_text_TkWww6": {
+      "type": "section-custom-image-with-text",
       "settings": {
         "section_height": "six-fifty-height",
         "layout": "inline",
@@ -32,8 +32,8 @@
         "heading_highlight_type": "circle",
         "highlight_color": "#D43747",
         "highlight_text_color": "#000",
-        "heading_size": 110,
-        "content": "<p>Here are the answers to some od our common questions.Still need a hand? <strong>Get in touch.</strong></p>",
+        "heading_size": 130,
+        "content": "<p>Here are the answers to some of our common questions.Still need a hand? <strong>Get in touch.</strong></p>",
         "text_alignment": "center",
         "button_text": "",
         "button_link": "",
@@ -42,7 +42,7 @@
         "button_size": "btn--small",
         "video_link": "",
         "text_color": "text-dark",
-        "bg_color": "#ffffff",
+        "bg_color": "",
         "gradient": "",
         "section_width": "wrapper",
         "padding_top": 60,
@@ -179,6 +179,36 @@
         "subheading": "",
         "title": "<p>Shop Now</p>",
         "heading_highlight_type": "circle",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#000000",
+        "heading_size": 130,
+        "content": "<p>Shop our newest Official Training collection right away.<br/>Want more? <a href=\"/collections\" title=\"All collections\"><strong>View other collections</strong></a></p>",
+        "text_alignment": "center",
+        "button_text": "View Shop",
+        "button_link": "/",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_custom_image_with_text_8UMwzm": {
+      "type": "section-custom-image-with-text",
+      "settings": {
+        "section_height": "six-fifty-height",
+        "layout": "inline",
+        "image_location": "right",
+        "image_width": "standard",
+        "image": "shopify://shop_images/official_training.png",
+        "subheading": "",
+        "title": "<p>Shop Now</p>",
+        "heading_highlight_type": "circle",
         "highlight_color": "#D43747",
         "highlight_text_color": "#000",
         "heading_size": 130,
@@ -201,9 +231,10 @@
   },
   "order": [
     "main",
-    "section_image_with_text_G6KCkH",
+    "section_custom_image_with_text_TkWww6",
     "contact-form",
     "section_accordions_zrFNnC",
-    "section_image_with_text_APi3wK"
+    "section_image_with_text_APi3wK",
+    "section_custom_image_with_text_8UMwzm"
   ]
 }

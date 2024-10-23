@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "product",
+      "type": "product-custom",
       "blocks": {
         "inventory_countdown": {
           "type": "inventory_countdown",

@@ -86,7 +86,7 @@
         "logo_not_home": "{{ shop.brand.logo }}",
         "logo_max_width": 40,
         "main-menu": "main-menu",
-        "main_menu_secondary": "company",
+        "main_menu_secondary": "",
         "show_images": true,
         "image_aspect_ratio": 1,
         "menu_alignment": "right",

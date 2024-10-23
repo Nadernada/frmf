@@ -12,10 +12,259 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "show_page_title": true,
+        "bg_color_secondary": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_custom_banner_image_AyTDzd": {
+      "type": "section-custom-banner-image",
+      "blocks": {
+        "heading_4qxjhW": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Help Center</p>",
+            "size": 85,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#D43747",
+            "highlight_text_color": "#000"
+          }
+        },
+        "text_dmKq3W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In this section you can quickly answer any questions you may have. Consult the answers to the FAQ of our users and obtain useful information about our FRMF Store.</p>",
+            "size": 80
+          }
+        }
+      },
+      "block_order": [
+        "heading_4qxjhW",
+        "text_dmKq3W"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
+        "image": "shopify://shop_images/help.png",
+        "overlay_opacity": 0,
+        "transition": "zoom-out",
+        "enable_zoom_animation": true,
+        "enable_card_scrolling": false,
+        "increase_border_radius": true,
+        "text_width": "normal",
+        "text_position": "right",
+        "text_alignment": "text-left",
+        "text_color": "text-dark"
+      }
+    },
+    "section_columns_marmwE": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_c9W7zi": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_39517.png",
+            "title": "Member and supporters",
+            "text": "<p>Do I get any benefits at the FRMF Official Store  as an FRMF Member? <br/><br/>Do I get any benefits at the FRMF Official Store as a member of an FRMF Supporter's Club?</p>",
+            "button_text": "View All Questions",
+            "button_link": "shopify://pages/faq",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_QR8hkK": {
+          "type": "text_block",
+          "settings": {
+            "title": "Orders",
+            "text": "<p>How do I place and order?<br/><br/>How can I see what I have in my basket? <br/><br/>How can I track my order?</p>",
+            "button_text": "View All Questions",
+            "button_link": "shopify://pages/faq",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_XDYXAa": {
+          "type": "text_block",
+          "settings": {
+            "title": "Shipping & delivery",
+            "text": "<p>What are the delivery options?<br/><br/>How long will delivery of my order take?<br/><br/>Can I change my shipping details after the purchase has been made?</p>",
+            "button_text": "View All Questions",
+            "button_link": "shopify://pages/faq",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_zXhaCM": {
+          "type": "text_block",
+          "settings": {
+            "title": "Payment methods",
+            "text": "<p>When will the amount be charged?<br/><br/>How can I pay for my order?<br/><br/>Is it safe to use my creadit card to pay for my order?</p>",
+            "button_text": "View All Questions",
+            "button_link": "shopify://pages/faq",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_GPHzpz": {
+          "type": "text_block",
+          "settings": {
+            "title": "Returns",
+            "text": "<p>What is the latest timeframe for a return to be processed?<br/><br/>What are the requirements for returns?<br/><br/>What products cannot be returned?</p>",
+            "button_text": "View All Questions",
+            "button_link": "shopify://pages/faq",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_7U8iUh": {
+          "type": "text_block",
+          "settings": {
+            "title": "My Account",
+            "text": "<p>Do I receive any benefits for registering with FRMF Official Store?<br/><br/>How can I register with FRMF Official Store?<br/><br/>How can I change my preferences?</p>",
+            "button_text": "View All Questions",
+            "button_link": "shopify://pages/faq",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_c9W7zi",
+        "text_block_QR8hkK",
+        "text_block_XDYXAa",
+        "text_block_zXhaCM",
+        "text_block_GPHzpz",
+        "text_block_7U8iUh"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "text-left",
+        "columns": 3,
+        "columns_mobile": "1",
+        "show_images": false,
+        "show_borders": false,
+        "equalize_height": true,
+        "desktop_aspect_ratio": 0.8,
+        "mobile_aspect_ratio": 0.8,
+        "heading_size": 120,
+        "text_size": 100,
+        "bg_color_secondary": false,
+        "color_borders": "#000",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_GFwUxD": {
+      "type": "section-text",
+      "blocks": {
+        "heading_eWAWHV": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><strong>Can't find what you're looking for?</strong></p>",
+            "size": 80,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#D43747",
+            "highlight_text_color": "#000"
+          }
+        },
+        "text_UHn3qg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Contact us here or call us on +34 934 32 60 72 and we will help you solve your doubts.</p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_eWAWHV",
+        "text_UHn3qg"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "section_icons_row_DaFVAj": {
+      "type": "section-icons-row",
+      "blocks": {
+        "text_Ri7q6T": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Contact telephone number",
+            "text": "<p>Monday to Friday from 09:00 - 18:00 h</p>"
+          }
+        },
+        "text_iDkzi8": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Send us an email",
+            "text": "<p>Write to us at contact@store.frmf.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Ri7q6T",
+        "text_iDkzi8"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 3,
+        "icons_width": 20,
+        "show_vertical_borders": true,
+        "show_horizontal_borders": true,
+        "heading_size": 70,
+        "text_size": 80,
+        "bg_color": "",
+        "text_color": "#333",
+        "box_color": "",
+        "color_border": "#333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 16
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_custom_banner_image_AyTDzd",
+    "section_columns_marmwE",
+    "section_text_GFwUxD",
+    "section_icons_row_DaFVAj"
   ]
 }

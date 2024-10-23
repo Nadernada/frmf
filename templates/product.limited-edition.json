@@ -1,0 +1,398 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "inventory_countdown": {
+          "type": "inventory_countdown",
+          "settings": {
+            "max_inventory": 10,
+            "hide_inventory_count": true,
+            "padding_bottom": 20
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading": "breadcrumbs",
+            "padding_bottom": 20
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "show_labels": true,
+            "show_quantity": false,
+            "show_payment_button": true,
+            "enable_subscriptions_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Materials and specs",
+            "heading_style": "font-body",
+            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_page": "",
+            "padding_bottom": 10
+          }
+        },
+        "9927e90d-2ecb-4104-af67-0dadf75b2a0a": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Shipping and returns",
+            "heading_style": "font-body",
+            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_page": "",
+            "padding_bottom": 38
+          }
+        },
+        "7ddd2db6-1d92-43ee-a7d9-e786662f9ced": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "eco-friendly",
+            "icon_color": "",
+            "icon_width": 20,
+            "icon_text": "Official Merchandise of the Federation of Morocco",
+            "text_size": 90,
+            "width": "full",
+            "text_alignment": "left",
+            "bg_color": "",
+            "padding_bottom": 20
+          }
+        },
+        "icon_qziME4": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "recycle",
+            "icon_color": "",
+            "icon_width": 20,
+            "icon_text": "Recycled materials",
+            "text_size": 90,
+            "width": "full",
+            "text_alignment": "left",
+            "bg_color": "",
+            "padding_bottom": 20
+          }
+        },
+        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon_name": "support",
+            "icon_width": 25,
+            "title": "Need help with sizing?",
+            "text": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
+            "bg_color": "#f7f9fa",
+            "text_color": "#000000",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "inventory_countdown",
+        "title",
+        "form",
+        "description",
+        "product_accordion",
+        "9927e90d-2ecb-4104-af67-0dadf75b2a0a",
+        "7ddd2db6-1d92-43ee-a7d9-e786662f9ced",
+        "icon_qziME4",
+        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "carousel",
+        "image_width": "large",
+        "product_image_aspect_ratio": true,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_image_kBg8ga": {
+      "type": "section-image",
+      "settings": {
+        "image": "shopify://shop_images/Rectangle327.png",
+        "height": "original-height",
+        "enable_mobile_height": false,
+        "mobile_height": "original-height-mobile",
+        "enable_stretch": true,
+        "image_position": "center",
+        "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_image_with_text_Fkxeen": {
+      "type": "section-image-with-text",
+      "settings": {
+        "section_height": "six-fifty-height",
+        "layout": "inline",
+        "image_location": "right",
+        "image_width": "standard",
+        "image": "shopify://shop_images/material.png",
+        "subheading": "Material",
+        "title": "<p>Premium Material</p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#000000",
+        "heading_size": 130,
+        "content": "<p>Made from 100% recycled materials, excluding decorations & trim, for a first step towards a better future.We're committed to making a positive impact on the environment, and this product is a reflection of that commitment. Crafted entirely from 100% recycled materials (excluding decorations and trim), this item represents our first step towards a more sustainable future.</p>",
+        "text_alignment": "left",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "tabs": {
+      "type": "section-accordions",
+      "blocks": {
+        "acordion-0": {
+          "type": "text",
+          "settings": {
+            "title": "What specific items are included in the product kit?",
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+          }
+        },
+        "acordion-1": {
+          "type": "text",
+          "settings": {
+            "title": "Are the components of the product kit sustainably sourced?",
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+          }
+        },
+        "acordion-2": {
+          "type": "text",
+          "settings": {
+            "title": "How does this product kit enhance my daily routine or lifestyle?",
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+          }
+        },
+        "d0defd0d-94c3-403c-bd36-dc2f140a104f": {
+          "type": "text",
+          "settings": {
+            "title": "Can the product kit be customized or tailored to individual preferences?",
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "acordion-0",
+        "acordion-1",
+        "acordion-2",
+        "d0defd0d-94c3-403c-bd36-dc2f140a104f"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "FAQ",
+        "subheading": "",
+        "text": "<p>Popular questions from our customers</p>",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_grid_pBKqMD": {
+      "type": "section-grid",
+      "blocks": {
+        "image_H83Tzj": {
+          "type": "image",
+          "settings": {
+            "width": "66.66",
+            "image": "shopify://shop_images/HQ_materials.png",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "",
+            "title": "High-Quality Materials",
+            "text": "Portable and Compact:",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        },
+        "image_7ezLgQ": {
+          "type": "image",
+          "settings": {
+            "width": "33.33",
+            "image": "shopify://shop_images/Rectangle_346.png",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "INSPIRE",
+            "title": "Inspire Greatness",
+            "text": "Empower",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        },
+        "image_ajePpb": {
+          "type": "image",
+          "settings": {
+            "width": "33.33",
+            "image": "shopify://shop_images/Rectangle_346.png",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "STEP UP YOUT PERFORMANCE",
+            "title": "Elevate the Game",
+            "text": "Your favorite activities",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        },
+        "image_gXHrQe": {
+          "type": "image",
+          "settings": {
+            "width": "66.66",
+            "image": "shopify://shop_images/Maximum_effor.png",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "EXPERIENCE",
+            "title": "Maximum Comfort",
+            "text": "Every time",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "image_H83Tzj",
+        "image_7ezLgQ",
+        "image_ajePpb",
+        "image_gXHrQe"
+      ],
+      "settings": {
+        "desktop_height": "two-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
+        "heading_size": 120,
+        "button_1_color": "btn--white",
+        "button_1_style": "btn--text",
+        "button_1_size": "btn--small",
+        "button_2_color": "btn--black",
+        "button_2_style": "btn--text",
+        "button_2_size": "btn--small",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "overlay_text": true,
+        "width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_press_qP7gEU": {
+      "type": "section-press",
+      "blocks": {
+        "press_PViAJ6": {
+          "type": "press",
+          "settings": {
+            "text": "<p>Our kit is designed with your ultimate comfort in mind, providing you with a seamless and enjoyable experience every time. From luxurious materials to thoughtful design, every element is crafted to ensure you feel relaxed and at ease, so you can focus on what matters most.</p>",
+            "link": "",
+            "logo_width": 70
+          }
+        }
+      },
+      "block_order": [
+        "press_PViAJ6"
+      ],
+      "settings": {
+        "title": "",
+        "show_quotations": true,
+        "show_rounded_corners": false,
+        "autoplay": true,
+        "duration": 4,
+        "bg_color_secondary": false,
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "related": {
+      "type": "related-products",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "title": "You May Also Like",
+            "product_recommendations_limit": 4
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "title": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "columns_mobile": "1",
+        "type_style": "subheading-text",
+        "tab_heading_size": 120,
+        "bg_color": "",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_image_kBg8ga",
+    "section_image_with_text_Fkxeen",
+    "tabs",
+    "section_grid_pBKqMD",
+    "section_press_qP7gEU",
+    "related"
+  ]
+}

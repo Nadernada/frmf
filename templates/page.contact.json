@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -19,100 +19,32 @@
         "padding_bottom": 60
       }
     },
-    "59699d9d-c66c-4bd5-a248-64f1b1587cd5": {
-      "type": "section-banner-image",
-      "blocks": {
-        "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "<p>Welcome to<\/p>",
-            "size": 100
-          }
-        },
-        "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-1": {
-          "type": "heading",
-          "settings": {
-            "text": "<p>Contact<\/p>",
-            "size": 180,
-            "heading_highlight_type": "italics",
-            "highlight_color": "rgba(0,0,0,0)"
-          }
-        },
-        "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand, describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "size": 100
-          }
-        },
-        "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-3": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_1_text": "Shop All",
-            "button_1_link": "shopify:\/\/collections\/all",
-            "button_1_color": "btn--white",
-            "button_1_style": "btn--solid-border",
-            "button_1_size": "btn--small",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_color": "btn--black",
-            "button_2_style": "btn--solid",
-            "button_2_size": "btn--small"
-          }
-        }
-      },
-      "block_order": [
-        "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-0",
-        "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-1",
-        "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-2",
-        "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-3"
-      ],
+    "section_image_with_text_G6KCkH": {
+      "type": "section-image-with-text",
       "settings": {
-        "height": "one-third-height",
-        "enable_mobile_height": false,
-        "mobile_height": "four-fifty-height-mobile",
-        "overlay_opacity": 10,
-        "enable_zoom_animation": true,
-        "text_width": "normal",
-        "text_position": "center",
-        "text_color": "text-light"
-      }
-    },
-    "locations": {
-      "type": "section-locations",
-      "blocks": {
-        "locations-0": {
-          "type": "locations",
-          "settings": {
-            "title": "566 Emerson Street Palo Alto, California",
-            "working_time": "<p>Mon - Fri: 8am - 5pm<\/p><p>Sat: Closed<\/p><p>Sun: Closed<\/p>"
-          }
-        },
-        "locations-1": {
-          "type": "locations",
-          "settings": {
-            "title": "566 Emerson Street Palo Alto, California",
-            "working_time": "<p>Mon - Fri: 8am - 5pm<\/p><p>Sat: Closed<\/p><p>Sun: Closed<\/p>"
-          }
-        },
-        "locations-2": {
-          "type": "locations",
-          "settings": {
-            "title": "566 Emerson Street Palo Alto, California",
-            "working_time": "<p>Mon - Fri: 8am - 5pm<\/p><p>Sat: Closed<\/p><p>Sun: Closed<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "locations-0",
-        "locations-1",
-        "locations-2"
-      ],
-      "settings": {
-        "subheading": "Our stores",
-        "title": "Locations & hours",
-        "bg_color_secondary": false,
+        "section_height": "six-fifty-height",
+        "layout": "inline",
+        "image_location": "left",
+        "image_width": "standard",
+        "image": "shopify://shop_images/contact.png",
+        "subheading": "",
+        "title": "<p>Contact Us</p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#D43747",
+        "highlight_text_color": "#000",
+        "heading_size": 110,
+        "content": "<p>Here are the answers to some od our common questions.Still need a hand? <strong>Get in touch.</strong></p>",
+        "text_alignment": "center",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "section_width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -123,7 +55,7 @@
         "contact-form-0": {
           "type": "heading",
           "settings": {
-            "title": "Contact us"
+            "title": "Fill out the form"
           }
         },
         "contact-form-1": {
@@ -140,11 +72,30 @@
             "required": true
           }
         },
+        "select_aTdAYe": {
+          "type": "select",
+          "settings": {
+            "title": "Select an option",
+            "label-one": "Select option one",
+            "label-two": "Select option two",
+            "label-three": "Select option three",
+            "label-four": "Select option four",
+            "label-five": "Select option five",
+            "label-six": "Select option six"
+          }
+        },
         "contact-form-3": {
           "type": "body",
           "settings": {
             "title": "Message",
             "required": true
+          }
+        },
+        "checkbox_a4yHzj": {
+          "type": "checkbox",
+          "settings": {
+            "title": "Yes, I would like to receive Marketing newsletters",
+            "required": false
           }
         }
       },
@@ -152,13 +103,97 @@
         "contact-form-0",
         "contact-form-1",
         "contact-form-2",
-        "contact-form-3"
+        "select_aTdAYe",
+        "contact-form-3",
+        "checkbox_a4yHzj"
       ],
       "settings": {
-        "button_color": "btn--black",
+        "button_color": "btn--primary",
         "button_style": "btn--solid",
         "button_size": "btn--large",
         "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_accordions_zrFNnC": {
+      "type": "section-accordions",
+      "blocks": {
+        "text_Kj3Nmm": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take to get my products?",
+            "text": "<p>Domestic shipping can take up to 5 business days.<br/><br/>Foreign shipping could take up to 14 business days.<br/><br/>Due to global supply chain challenges, shipping times could be longer than usual.</p>"
+          }
+        },
+        "text_LHxKHp": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer warranty for your products?",
+            "text": "<p>All our products are subject to quality control.<br/><br/>Our warranty provides a guarantee against manufacturer defects.<br/><br/>The guarantee covers any manufacturing, design, or material defect. Please notify us within 2 months of noticing any defects.<br/><br/>It does not cover blows, improper use, or other issues that are not attributable to a manufacturer defects.</p>"
+          }
+        },
+        "text_gVEBL3": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer refunds?",
+            "text": "<p>Yes, we offer full and partial refunds.<br/><br/>Please enquire for more information about our Refund policy.</p>"
+          }
+        },
+        "text_Nd4XE3": {
+          "type": "text",
+          "settings": {
+            "title": "What shipping methods do you offer?",
+            "text": "<p>We use all major carriers, and local courier partners. Use the shipping estimator in the cart to check your shipping rates.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Kj3Nmm",
+        "text_LHxKHp",
+        "text_gVEBL3",
+        "text_Nd4XE3"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "Frequently Asked Questions",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_image_with_text_APi3wK": {
+      "type": "section-image-with-text",
+      "settings": {
+        "section_height": "six-fifty-height",
+        "layout": "inline",
+        "image_location": "right",
+        "image_width": "standard",
+        "image": "shopify://shop_images/official_training.png",
+        "subheading": "",
+        "title": "<p>Shop Now</p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#D43747",
+        "highlight_text_color": "#000",
+        "heading_size": 130,
+        "content": "<p>Shop our newest Official Training collection right away.<br/>Want more? <a href=\"/collections\" title=\"All collections\"><strong>View other collections</strong></a></p>",
+        "text_alignment": "center",
+        "button_text": "View Shop",
+        "button_link": "/",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -166,8 +201,9 @@
   },
   "order": [
     "main",
-    "59699d9d-c66c-4bd5-a248-64f1b1587cd5",
-    "locations",
-    "contact-form"
+    "section_image_with_text_G6KCkH",
+    "contact-form",
+    "section_accordions_zrFNnC",
+    "section_image_with_text_APi3wK"
   ]
 }

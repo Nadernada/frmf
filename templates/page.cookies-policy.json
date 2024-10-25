@@ -48,7 +48,7 @@
         "text_position": "left",
         "bg_color_secondary": false,
         "text_color": "text-dark",
-        "width": "wrapper--full-padded",
+        "width": "wrapper--narrow",
         "padding_top": 60,
         "padding_bottom": 100
       }

@@ -3,8 +3,9 @@
 
 <div class="footer-copyright">
   <div class="footer-copyright__content">
-    <span class="footer-copyright__copy">&copy; {{ 'now' | date: "%Y" }} {{ 'Royal Moroccan Football Federation' | link_to: routes.root_url }}</span>
-    <span>  |  All rights reserved  | </span>
+    {%- assign store_name = 'custom.frmf' | t -%}
+    <span class="footer-copyright__copy">&copy; {{ 'now' | date: "%Y" }} {{ store_name | link_to: routes.root_url }}</span>
+    <span>  |  {{ 'custom.all_rights_reserved' | t }}  | </span>
     <span class="footer-copyright__powered">{{ powered_by_link }}</span>
   </div>
 

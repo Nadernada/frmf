@@ -1277,13 +1277,13 @@
 
                   <div class="product__accordion">
                     <button class="product__accordion__title {{ heading_style }}" aria-controls="ProductAccordion--page-{{ 'Materials and specs' | handle }}--{{ section.id }}--{{ product.id }}-1" data-collapsible-trigger>
-                      Materials and specs
+                      {{  'custom.materials_and_specs' | t}}
                       {%- render 'icon-toggle-plus' -%}
                       {%- render 'icon-toggle-minus' -%}
                     </button>
                     <div class="product__accordion__content" id="ProductAccordion--page-{{ 'Materials and specs' | handle }}--{{ section.id }}--{{ product.id }}-1" data-collapsible-container>
                       <div class="product__accordion__inner rte" data-collapsible-content>
-                        Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies
+                        {{ 'custom.accordion_body' | t }}
                       </div>
                     </div>
                   </div>
@@ -1304,13 +1304,13 @@
                   <div class="product__accordion">
                     <button class="product__accordion__title" aria-controls="ProductAccordion--page-{{ "Shipping and returns" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-trigger
                     >
-                      Shipping and returns
+                      {{ 'custom.shipping_and_returns' | t }}
                       {%- render 'icon-toggle-plus' -%}
                       {%- render 'icon-toggle-minus' -%}
                     </button>
                     <div class="product__accordion__content" id="ProductAccordion--page-{{ "Shipping and returns" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-container>
                       <div class="product__accordion__inner rte" data-collapsible-content>
-                        Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies
+                        {{ 'custom.accordion_body' | t }}
                       </div>
                     </div>
                   </div>
@@ -1369,7 +1369,7 @@
                           {%- render 'icons', icon: 'ethically-made' -%}
                       </div>
 
-                      <div class="product__icon__text">Official Merchandise of the Federation of Morocco</div>
+                      <div class="product__icon__text">{{ 'custom.official_merchandise' | t }}</div>
                   </div>
                 </div>
 
@@ -1387,14 +1387,14 @@
                           {%- render 'icons', icon: 'recycle' -%}
                       </div>
 
-                      <div class="product__icon__text">Recycled materials</div>
+                      <div class="product__icon__text">{{ 'custom.recycled_materials' | t }}</div>
                   </div>
                 </div>
 
               </div>
 
               <a href="#">
-                <p class="warranty-text">Learn more about our warranty</p>
+                <p class="warranty-text">{{ 'custom.more_about-warranty' | t }}</p>
               </a>
             </div>
           {%- endunless -%}

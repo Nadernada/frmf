@@ -620,5 +620,13 @@
     "add_jersey_name" : "Add Jersey Name",
     "enter_your_jersey-number": "Enter Your Jersey Number",
     "enter_your_jersey-name": "Enter Your Jersey Name",
+    "materials_and_specs": "Materials and specs",
+    "accordion_body": "Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies",
+    "shipping_and_returns": "Shipping and returns",
+    "official_merchandise": "Official Merchandise of the Federation of Morocco",
+    "recycled_materials": "Recycled materials",
+    "more_about-warranty": "Learn more about our warranty",
+    "all_rights_reserved": "All rights reserved",
+    "frmf": "Royal Moroccan Football Federation"
   }
 }

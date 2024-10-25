@@ -734,7 +734,10 @@
           "zero": "لا توجد طرق أخرى متاحة",
           "one": "%{count} طريقة أخرى متاحة في",
           "other": "%{count} طرق أخرى متاحة تبدأ من"
-        }
+        },
+        "split_shipping_option_free": "ًالشحن مجانا",
+        "split_shipping_option_lowest_price": "أقل سعر",
+        "split_shipping_option_recommended": "مُستَحسَن"
       },
       "payment": {
         "paypal_label": "باي بال",
@@ -869,8 +872,103 @@
           "delete": "يمسح"
         },
         "edit_credit_card_modal": {
-          "title": "تعديل البطاقة"
-        }
+          "title": "تعديل البطاقة",
+          "done": "منتهي",
+          "cancel": "يلغي",
+          "description": "يمكنك فقط تعديل عنوان إرسال الفاتورة الخاص ببطاقتك.",
+          "fields": {
+            "default": "تعيين كإعداد افتراضي",
+            "card_number": "رقم البطاقة",
+            "expiry": "تاريخ انتهاء الصلاحية",
+            "security_code": "رمز الأمان",
+            "name": "الاسم على البطاقة",
+            "billing": "مشروع قانون ل"
+          }
+        },
+        "expired_cards_info": {
+          "one": "هناك %{count} بطاقة منتهية الصلاحية، يمكنك عرضها وتعديلها في حسابك.",
+          "other": "هناك %{count} بطاقات منتهية الصلاحية، ويمكنك عرضها وتعديلها في حسابك."
+        },
+        "local_payment_method_receiver_notice": "بعد تقديم طلبك، ستتلقى تفاصيل الدفع. قم بالدفع في ماكينة الصراف الآلي أو عبر الإنترنت خلال {{dueDays}} يومًا.",
+        "order_edit_banner_title": "مطلوب دفع مبلغ {{amount_owed}}",
+        "order_edit_banner_subtitle": "تم تحديث طلبك {{order_number}} . راجع هذه التغييرات، ثم ادفع لتأكيد طلبك.",
+        "order_edit_banner_items_added": {
+          "one": "تمت الإضافة",
+          "other": "تمت إضافة %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "تمت الإزالة",
+          "with_quantities": "تمت إزالة {{delta}} من {{quantity}}"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "تم إرجاع {{quantity}}",
+          "with_quantities": "تم إرجاع {{delta}} من {{quantity}}"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "تمت إزالته من العودة",
+          "with_quantities": "تمت إزالة {{delta}} من الإرجاع"
+        },
+        "order_edit_banner_single_item_added": "تمت الإضافة",
+        "order_edit_banner_multiple_items_added": "تمت إضافة {{amount}}",
+        "order_edit_banner_single_item_removed": "تمت الإزالة",
+        "order_edit_banner_multiple_items_removed": "تمت إزالة {{amount}}",
+        "order_edit_banner_single_item_returned": "عاد",
+        "order_edit_banner_multiple_items_returned": "تم إرجاع {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "تمت إزالته من العودة",
+        "order_edit_banner_multiple_items_return_line_item_removed": "تمت إزالة {{amount}} من الإرجاع",
+        "order_edit_banner_updated_order_label": "تم تحديث الطلب",
+        "gift_card_wrapper": {
+          "heading": "بطاقة هدية",
+          "apply_gift_card_label": "تطبيق بطاقة هدية",
+          "apply_another_gift_card_label": "تطبيق بطاقة هدية أخرى",
+          "gift_card_label": "بطاقة الهدايا %{identifier}",
+          "payment_tag": "بطاقة هدية",
+          "add_label": "أضف بطاقة هدية",
+          "manage_label": "إدارة بطاقات الهدايا"
+        },
+        "gift_card_store_credit": {
+          "add_label": "أضف بطاقة هدايا أو رصيد متجر",
+          "manage_label": "إدارة بطاقات الهدايا أو رصيد المتجر"
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "تأكيد الدفع المخصص في الموقع"
+        },
+        "markets_pro_disclaimer_label": "بالنقر أدناه وإكمال طلبك، فإنك توافق على شراء منتجك/منتجاتك من Global-e باعتبارك تاجرًا مسجلاً لهذه المعاملة، وفقًا لشروط %{markets_pro_terms} و%{privacy_policy} الخاصة بـ Global-e. تعد Global-e موفرًا دوليًا لخدمات الإيفاء لـ %{shop_name}",
+        "markets_pro_disclaimer_terms_and_conditions": "الشروط والأحكام",
+        "markets_pro_disclaimer_privacy_policy": "سياسة الخصوصية",
+        "markets_pro_disclaimer_terms_and_conditions_title": "شروط وأحكام تاجر السجل",
+        "markets_pro_disclaimer_privacy_policy_title": "سياسة الخصوصية الخاصة بتاجر السجلات",
+        "purchase_order_number": {
+          "title": "رقم الطلب",
+          "label": "رقم الطلب (اختياري)"
+        },
+        "alternative_payment_currency_total_notice": "ملاحظة: سيتم تحصيل رسوم %{amount_due} منك.",
+        "alternative_payment_currency_total_manual_payment_notice": "ملحوظة: إجمالي المبلغ المحول هو %{amount_due}.",
+        "waiting_on_taxes_message": "إذا لم يتم حساب الضرائب الخاصة بك خلال الثواني القليلة القادمة، قم بتحديث الصفحة.",
+        "waiting_on_taxes_notice": "حساب الضرائب",
+        "payment_method": "طريقة الدفع",
+        "expired_payment_method": "انتهت صلاحية طريقة الدفع المحددة",
+        "payment_method_update_failed": "فشل تحديث طريقة الدفع.",
+        "proposed_gateway_unavailable": "بوابة الدفع المقترحة غير متاحة",
+        "pay_in_installments_split_pay_short": "4 دفعات بقيمة %{amount}",
+        "gift_cards_unavailable": "لم يعد من الممكن تطبيق بطاقة الهدية الخاصة بك على هذا الطلب وتم إزالتها",
+        "payment_flexibility_terms_id_mismatch": "شروط مرونة الدفع عدم تطابق المعرف",
+        "amazon_payments_label": "أمازون باي",
+        "amount_left_to_pay_label": "الدفع المستحق:",
+        "gift_card_code_label": "كود بطاقة الهدية",
+        "card_number_label": "رقم البطاقة",
+        "card_number_placeholder": "رقم البطاقة",
+        "name_on_card_label": "الاسم على البطاقة",
+        "name_on_card_placeholder": "الاسم على البطاقة",
+        "credit_card_start_month": "شهر البداية",
+        "credit_card_start_year": "سنة البداية",
+        "delete_customer_mandate_modal_confirm": "إزالة البطاقة",
+        "card_verification_value_label": "رمز الأمان",
+        "card_verification_value_placeholder": "رمز الأمان",
+        "card_issue_number_label": "رقم الإصدار",
+        "card_issue_number_placeholder": "رقم الإصدار",
+        "card_update_label": "تحديث البطاقة",
+        "paypal_disconnect": "قطع الاتصال"
       },
       "thank_you": {
         "order_status_confirmed_order_with_email_pick_up": "سوف تتلقى رسالة بريد إلكتروني عندما يكون طلبك جاهزًا للاستلام.",
@@ -1057,7 +1155,24 @@
         "order_status_confirmed_order_with_email_and_phone": "سوف تتلقى رسالة بريد إلكتروني عندما يكون طلبك جاهزًا.",
         "order_status_confirmed_order_with_email_payment": "لقد قمت بالدفع على طلبك بتاريخ %{date}.",
         "order_status_confirmed_order_with_phone_payment": "لقد قمت بالدفع على طلبك بتاريخ %{date}.",
-        "order_status_confirmed_order_with_email_and_phone_payment": "لقد قمت بالدفع على طلبك بتاريخ %{date}."
+        "order_status_confirmed_order_with_email_and_phone_payment": "لقد قمت بالدفع على طلبك بتاريخ %{date}.",
+        "fulfillment": {
+          "product_image_label": "صورة المنتج",
+          "description_label": "وصف"
+        },
+        "track_shipment": "تتبع الشحنة",
+        "other_options": "خيارات أخرى",
+        "view_business_customer_account": "عرض الحساب",
+        "missing_shipping_address_banner": {
+          "contact_us": "اتصل بنا"
+        },
+        "subscriptions_management": {
+          "title": "الاشتراك"
+        },
+        "resend_gift_cards_by_email": "إعادة إرسال البريد الإلكتروني",
+        "vat_invoices": {
+          "title": "فواتير ضريبة القيمة المضافة"
+        }
       },
       "pickup_point": {
         "no_business_hours": "لا تتوفر ساعات عمل",
@@ -1102,7 +1217,8 @@
             "permission_not_allowed": "السماح بمشاركة موقعك.",
             "permission_denied": "لم نتمكن من الحصول على موقعك. حاول مرة أخرى."
           }
-        }
+        },
+        "business_hours": "ساعات العمل"
       },
       "error_page": {
         "terminal": {
@@ -1220,6 +1336,9 @@
           "unsupported": {
             "address": "لا يمكن للتاجر التسليم إلى هذا العنوان",
             "wallet_is_unavailable": "لا يمكن استخدام {{walletName}} مع هذا العنوان. حدد عنوانًا مختلفًا أو أغلق {{walletName}} لإكمال عملية الشراء"
+          },
+          "missing": {
+            "city": "أدخل المدينة"
           }
         }
       },
@@ -1294,7 +1413,37 @@
             "other": "%{count} عناصر"
           }
         },
-        "alternative_payment_currency_total": "تم تحصيل الرسوم كـ %{amount_due}"
+        "alternative_payment_currency_total": "تم تحصيل الرسوم كـ %{amount_due}",
+        "title": "ملخص الطلب",
+        "number_items": {
+          "one": "%{count} عنصر",
+          "other": "%{count} عناصر"
+        },
+        "more_items_modal": {
+          "clear_search": "مسح البحث"
+        },
+        "order_name_label": "الطلب %{name}",
+        "shopping_cart_label": "عربة التسوق",
+        "discount_order_stacking": {
+          "one": "خصم الطلب"
+        },
+        "discount_label": "كود الخصم",
+        "discount_placeholder": "كود الخصم",
+        "return_restocking_fee_label": "رسوم إعادة التخزين",
+        "free_shipping_discount_label": "ًالشحن مجانا",
+        "calculating_shipping": "جاري الحساب…",
+        "calculating": "جاري الحساب…",
+        "shipping_policy_link": "تكاليف الشحن",
+        "order_total_label": "إجمالي الطلب",
+        "total_savings": "مجموع المدخرات",
+        "total_outstanding_label": "المبلغ المطلوب دفعه",
+        "payment_due_label": "الدفع المستحق",
+        "cost_table_title": "ملخص التكلفة",
+        "description_label": "وصف",
+        "price_per_item": {
+          "label": "%{السعر}/للقطعة"
+        },
+        "product_image_label": "صورة المنتج"
       },
       "delivery_options": {
         "free_total_label": "حر",
@@ -1410,6 +1559,137 @@
       },
       "address_management": {
         "confirm_address_deletion": "هل أنت متأكد أنك تريد حذف العنوان {{address}} ؟"
+      },
+      "billing": {
+        "billing_address_title": "مشروع قانون ل",
+        "same_as_shipping": "نفس عنوان الشحن",
+        "add_address": "استخدم عنوان مختلف",
+        "edit": "يحرر",
+        "delete": "يمسح",
+        "address_more": "مزيد من الإجراءات لهذا العنوان",
+        "address_edit": "تعديل العنوان",
+        "address_delete": "حذف العنوان",
+        "address_confirm": "هل أنت متأكد أنك تريد حذف هذا العنوان من حسابك؟",
+        "address_form": {
+          "add_address": "إضافة عنوان",
+          "save": "يحفظ",
+          "cancel": "يلغي"
+        }
+      },
+      "company_location": {
+        "location_title": "موقع"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "الرصيد الحالي %{amount}",
+        "credit_card_expires_on_notice": "تنتهي صلاحيتها في %{month}/%{year}",
+        "express_payment_gateway_label": "يعبر",
+        "manual_payment_gateway_label": "يدوي",
+        "billing_address_title": "عنوان الفاتورة",
+        "free_label": "حر"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "أدخل رقم هاتف صالح",
+        "handle_email_invalid": "أدخل بريد إلكتروني صالح",
+        "email_invalid": "أدخل بريد إلكتروني صالح",
+        "email_or_phone_blank": "أدخل البريد الإلكتروني أو رقم الهاتف",
+        "email_or_phone_invalid": "أدخل بريدًا إلكترونيًا صالحًا أو رقم هاتف محمول",
+        "address_first_name_blank": "أدخل الاسم الأول",
+        "address_first_name_too_long": "الاسم الأول طويل جدًا (الحد الأقصى هو 255 حرفًا)",
+        "address_first_name_contains_emojis": "لا يمكن أن يحتوي الاسم الأول على رموز تعبيرية",
+        "address_first_name_contains_html_tags": "لا يمكن أن يحتوي الاسم الأول على علامات HTML.",
+        "address_first_name_contains_url": "لا يمكن أن يحتوي الاسم الأول على عنوان URL",
+        "address_first_name_contains_mathematical_symbols": "لا يجوز أن يحتوي الاسم الأول على رموز رياضية",
+        "address_last_name_blank": "أدخل اسم العائلة",
+        "address_last_name_too_long": "اللقب طويل جدًا (الحد الأقصى هو 255 حرفًا)",
+        "address_last_name_contains_emojis": "لا يمكن أن يحتوي الاسم الأخير على رموز تعبيرية",
+        "address_last_name_contains_html_tags": "لا يمكن أن يحتوي الاسم الأخير على علامات HTML.",
+        "address_last_name_contains_url": "لا يمكن أن يحتوي الاسم الأخير على عنوان URL",
+        "address_last_name_contains_mathematical_symbols": "لا يمكن أن يحتوي الاسم الأخير على رموز رياضية",
+        "address_address1_blank": "أدخل عنوانا",
+        "address_address1_too_long": "سطر العنوان الأول طويل جدًا (الحد الأقصى هو 255 حرفًا)",
+        "address_address1_contains_emojis": "لا يمكن أن يحتوي العنوان 1 على رموز تعبيرية",
+        "address_address1_contains_html_tags": "لا يمكن أن يحتوي العنوان 1 على علامات HTML.",
+        "address_address1_contains_mathematical_symbols": "لا يمكن لسطر العنوان الأول أن يحتوي على رموز رياضية",
+        "address_city_blank": "أدخل المدينة",
+        "address_generic_blank": "حقل مطلوب",
+        "address_generic_invalid": "إدخال غير صالح",
+        "address_generic_error": "خطأ في الحقل",
+        "email_blank": "أدخل البريد الإلكتروني"
+      },
+      "contextual_availability": {
+        "unavailable_label": "غير متاح"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "label": "لا يوجد تسليم"
+        }
+      },
+      "review": {
+        "review_title": "المراجعة والدفع",
+        "blocks": {
+          "payment_method_title": "طريقة الدفع",
+          "no_address": "(لا يوجد عنوان)",
+          "no_purchase_order_number": "(لا يوجد رقم طلب شراء)"
+        },
+        "item_header": {
+          "change_value": "تغيير القيمة"
+        }
+      },
+      "marketing": {
+        "disclaimer": {
+          "privacy_policy": "سياسة الخصوصية"
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "سياسة الخصوصية"
+          }
+        }
+      },
+      "shop_policies": {
+        "refund_policy": "سياسة الاسترجاع",
+        "privacy_policy": "سياسة الخصوصية",
+        "legal_notice": "إشعار قانوني",
+        "terms_of_sale": "شروط البيع"
+      },
+      "notifications": {
+        "title": "إشعارات"
+      },
+      "order_payment_collection": {
+        "changes_summary": {
+          "added": {
+            "other": "تمت إضافة %{count}"
+          }
+        }
+      },
+      "change_currency": {
+        "payment_total_label": "إجمالي الدفع"
+      },
+      "tips": {
+        "custom_label": "نصيحة مخصصة",
+        "update_tip": "نصيحة التحديث"
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "other": "%{count} يوم"
+          },
+          "week": {
+            "other": "%{count} أسابيع"
+          },
+          "year": {
+            "other": "%{count} سنة"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "update_card_button_label": "تحديث البطاقة"
+      },
+      "throttle": {
+        "inventory": {
+          "sold_out": {
+            "link": "العودة إلى المتجر"
+          }
+        }
       }
     },
     "notices": {
@@ -1679,11 +1959,31 @@
             "shopify_support_link_text": "دعم شوبيفاي"
           }
         }
-      }
+      },
+      "blank": "لا يمكن أن يكون فارغا",
+      "empty": "لا يمكن أن يكون فارغا",
+      "invalid": "غير صالح",
+      "invalid_for_card_type": "ليست صالحة"
     },
     "sentence": {
       "two_words_connector": " و ",
       "last_word_connector": "، و "
+    },
+    "links": {
+      "learn_more": "يتعلم أكثر"
+    },
+    "attributes": {
+      "first_name": "الاسم الأول"
+    },
+    "addresses": {
+      "postal_code": "رمز بريدي",
+      "prefecture": "المحافظة",
+      "governorate": "محافظة"
+    },
+    "collections": {
+      "sorting": {
+        "best_selling": "الأكثر مبيعا"
+      }
     }
   },
   "customer_accounts": {
@@ -2346,6 +2646,17 @@
         "details_modal": {
           "title": "رصيد المتجر قابل للانتهاء"
         }
+      },
+      "payment_details": {
+        "default_checkbox": "تعيين كإعداد افتراضي"
+      },
+      "card_fields": {
+        "card_number_label": "رقم البطاقة",
+        "card_number_placeholder": "رقم البطاقة",
+        "name_on_card_label": "الاسم على البطاقة",
+        "name_on_card_placeholder": "الاسم على البطاقة",
+        "card_verification_value_label": "رمز الأمان",
+        "card_verification_value_placeholder": "رمز الأمان"
       }
     },
     "date": {
@@ -2579,7 +2890,10 @@
       "applepay": "آبل باي",
       "googlepay": "جوجل باي",
       "paypal": "باي بال",
-      "storecredit": "رصيد المتجر"
+      "storecredit": "رصيد المتجر",
+      "mastercard": "ماستر كارد",
+      "dinersclub": "داينرز كلوب",
+      "visaelectron": "فيزا الكترون"
     },
     "shop_policies": {
       "legal_notice": "إشعار قانوني",

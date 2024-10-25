@@ -634,5 +634,10 @@
         "kcp_creditcard_label": "Carte de crédit KCP"
       }
     }
+  },
+  "custom": {
+    "customize_your_jersey": "Personnalisez votre maillot",
+    "add_jersey_number": "Ajouter un numéro de maillot",
+    "add_jersey_name": "Ajouter le nom du maillot"
   }
 }

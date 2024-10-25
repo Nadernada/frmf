@@ -1,5 +1,35 @@
-*[dir="rtl"] {
+.banner-image__text-wrapper[dir="rtl"] {
   direction: rtl;
+}
+
+.form__wrapper[dir="rtl"] {
+  direction: rtl;
+}
+
+.featured-collection__top[dir="rtl"] {
+  direction: rtl;
+}
+
+.form__wrapper[dir="rtl"] {
+  direction: rtl;
+}
+
+.product-grid-item__info-content[dir="rtl"] {
+  direction: rtl;
+}
+
+.custom-overlapping-images[dir="rtl"] {
+  direction: rtl;
+}
+
+.newsletter-section__entry[dir="rtl"] {
+  direction: rtl;
+}
+
+.product__price[dir="rtl"] {
+  direction: rtl;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 

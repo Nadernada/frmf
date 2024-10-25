@@ -618,5 +618,7 @@
     "customize_your_jersey" : "Customize Your Jersey",
     "add_jersey_number" : "Add Jersey Number",
     "add_jersey_name" : "Add Jersey Name",
+    "enter_your_jersey-number": "Enter Your Jersey Number",
+    "enter_your_jersey-name": "Enter Your Jersey Name",
   }
 }

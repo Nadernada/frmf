@@ -25,7 +25,7 @@
         "heading_kNAQrX": {
           "type": "heading",
           "settings": {
-            "text": "<h1><strong>Terms and Conditions of Sale and General Website Usage Conditions</strong></h1>",
+            "text": "<p>Terms and Conditions of Sale and General Website Usage Conditions</p>",
             "size": 100,
             "heading_highlight_type": "italics",
             "highlight_color": "#D43747",

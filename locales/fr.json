@@ -462,7 +462,10 @@
       "banner_image": {
         "title": "Palo Alto"
       }
-    }
+    },
+    "Customize_your_jersey": "Personnalisez votre maillot",
+    "Add_jersey_number": "Ajouter un numéro de maillot",
+    "Add_jersey_name": "Ajouter le nom du maillot"
   },
   "layout": {
     "navigation": {

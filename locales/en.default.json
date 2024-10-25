@@ -462,10 +462,7 @@
       "banner_image": {
         "title": "Palo Alto"
       }
-    },
-    "Customize_your_jersey" : "Customize Your Jersey",
-    "Add_jersey_number" : "Add Jersey Number",
-    "Add_jersey_name" : "Add Jersey Name",
+    }
   },
   "layout": {
     "navigation": {
@@ -616,5 +613,8 @@
   },
   "video": {
     "play_bg_video": "Play background video"
-  }
+  },
+  "Customize_your_jersey" : "Customize Your Jersey",
+  "Add_jersey_number" : "Add Jersey Number",
+  "Add_jersey_name" : "Add Jersey Name",
 }

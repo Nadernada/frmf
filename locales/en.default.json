@@ -614,7 +614,9 @@
   "video": {
     "play_bg_video": "Play background video"
   },
-  "Customize_your_jersey" : "Customize Your Jersey",
-  "Add_jersey_number" : "Add Jersey Number",
-  "Add_jersey_name" : "Add Jersey Name",
+  "custom" : {
+    "customize_your_jersey" : "Customize Your Jersey",
+    "add_jersey_number" : "Add Jersey Number",
+    "add_jersey_name" : "Add Jersey Name",
+  }
 }

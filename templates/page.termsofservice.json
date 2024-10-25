@@ -72,7 +72,7 @@
         "bg_color_secondary": false,
         "text_color": "text-dark",
         "width": "wrapper--narrow",
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 60
       }
     },
@@ -95,7 +95,7 @@
         "bg_color_secondary": false,
         "text_color": "text-dark",
         "width": "wrapper--narrow",
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 60
       }
     },
@@ -118,7 +118,7 @@
         "bg_color_secondary": false,
         "text_color": "text-dark",
         "width": "wrapper--narrow",
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 60
       }
     },
@@ -141,7 +141,7 @@
         "bg_color_secondary": false,
         "text_color": "text-dark",
         "width": "wrapper--narrow",
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 60
       }
     }

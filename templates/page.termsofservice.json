@@ -84,10 +84,58 @@
         "padding_top": 60,
         "padding_bottom": 100
       }
+    },
+    "section_text_VtHdGg": {
+      "type": "section-text",
+      "blocks": {
+        "text_ihHEGw": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>6. How to Modify, Cancel, or Return an Order</strong> </h4><p>6.1 Unless stated otherwise in Clause 5, it is not possible to modify your order once it is placed. If you wish to add products to your order, you must place a new order.</p><p>6.2 <strong>Order Changes</strong>:<br/>If you need to change your delivery address details, remove items from your order, or cancel it entirely, please contact our customer service team using the contact details provided.</p><p>6.3 <strong>Returns Portal</strong>:<br/>If the products you ordered have already been shipped, you must use our returns portal to send back unwanted items.</p><p>6.4 <strong>Return Fees</strong>:<br/>Unless the products are defective, damaged, or do not match the description upon delivery, you will bear the return fees, and neither your original delivery fees nor any handling fees will be refunded.</p><h4><strong><br/>7. What to Do If Products Are Damaged or Defective</strong> </h4><p>7.1 If your order arrives and the products are damaged, defective, or do not match the description, you may cancel the order, and we will refund the cost of the products, delivery fees, and return fees. The refund will be issued by the same payment method used for the order within 30 days of receiving the returned products.</p><p>7.2 These contract terms and conditions supplement the legal rights and remedies you hold under Moroccan law.</p><h4><strong><br/>8. When Will Products Be Delivered?</strong> </h4><p>8.1 Delivery times may vary based on destination, but we will endeavor to ensure all products are delivered within 30 days of contract completion with us. If there are delays in delivery (as confirmed in the shipment email), please contact our customer service team for assistance.</p><p>8.2 <strong>Split Deliveries</strong>:<br/>Depending on stock availability, we may split the delivery of your order into separate parts, which may be shipped individually. No additional charges will be applied for split deliveries.</p><p>8.3 <strong>Unforeseeable Delays</strong>:<br/>Delivery delays may occur due to factors beyond our control, such as material shortages, import delays, or unexpectedly high demand. Customs clearance processes may also cause delivery delays.</p><p>8.4 In the case of delays outside our control, we will make every effort to keep you informed. Adherence to delivery timelines is not essential for product delivery, but you retain all rights as provided by Moroccan law.</p><h4><strong><br/>9. What Are the Delivery and Handling Fees?</strong> </h4><p>9.1 During the payment process, and before you place your order, we will confirm all applicable fees, such as:</p><ul><li>9.1.1 <strong>Customs Duties or Calculation Method</strong>.</li><li>9.1.2 <strong>Applicable Taxes</strong> on delivery and handling fees, which depend on your country of residence.</li><li>9.1.3 <strong>Delivery Costs</strong>: Delivery methods may vary based on your location.</li><li>9.1.4 <strong>Handling Fees</strong>: These fees cover the management of your order.</li></ul><p>9.2 These fees will be disclosed to you before you finalize your order so that you can approve them.</p><h4><strong><br/>10. Payment Methods and Value Added Tax</strong> </h4><p>10.1 <strong>Accepted Payment Methods</strong>:<br/>We currently accept online payments through various credit/debit cards, including Visa, MasterCard, American Express, and others that may be added over time.</p><p>10.2 <strong>Currency Selection</strong>:<br/>Payment must be made in the currency you selected before confirming your order. Your bank or international credit card provider will determine the exchange rate. If payment is made in a currency different from your bank’s issued currency, additional fees may apply.</p><p>10.3 Delivery and handling fees will be displayed under \"shipping\" during the payment process and in the emails you receive after placing your order.</p><p>10.4 Our prices include VAT where applicable. Depending on your place of residence, additional taxes may apply that are not imposed by us.</p><h4><strong><br/>11. Customs Duties and Import Taxes</strong> </h4><p>11.1 Products delivered may be subject to taxes, duties, customs fees, or other charges due to local laws or customs formalities. The recipient of your order is responsible for all customs formalities related to the import of products and will be required to pay any additional charges for international delivery, including import duties, customs fees, taxes, levies, and other potential charges.</p><p>11.2 We, unfortunately, have no control over these charges and cannot predict their amounts. We advise you to check the applicable customs formalities and import fees in the delivery country before ordering.</p><p>11.3 You (or the recipient of the products if different) will be the official importer for all international product deliveries. Before placing an order, it is your responsibility to ensure that the products ordered comply with local, national, and federal import regulations and that there are no restrictions that may affect the receipt of your order.</p><h4><strong><br/>12. How Do We Use Your Personal Information?</strong></h4><p><strong><br/></strong>We will use your personal information in accordance with our Privacy Policy, which respects the laws and regulations in force.</p><h4><strong><br/>13. Our Responsibility in Case of Loss or Damage You May Suffer</strong> </h4><p>13.1 <strong>Liability for Foreseeable Losses</strong>:<br/>We are responsible for foreseeable losses or damages we cause you. If we do not comply with these terms and conditions, we are responsible for any foreseeable loss or damage resulting from our failure or negligence. A loss or damage is foreseeable if it is obvious or if, at the time of contract formation, both parties knew it could happen.</p><p>13.2 <strong>Non-Exclusion of Liability</strong>:<br/>We do not exclude or limit our liability to you for damages caused by our negligence or that of our employees, agents, or subcontractors; for fraud or fraudulent misrepresentation; or for violating your rights in relation to the products.</p><p>13.3 <strong>Website Use at Your Own Risk</strong>:<br/>With the exception of Clause 13.2, we disclaim any liability for indirect, consequential, or exemplary damages.</p><h4><strong><br/>14. Our Rights to Modify These Terms and Conditions</strong> </h4><p>14.1 We reserve the right to modify these terms and conditions from time to time, but changes will not affect orders already accepted.</p><p>14.2 Any changes to existing contracts must be signed by both parties to avoid ambiguity.</p><h4><strong><br/>15. Alternative Dispute Resolution</strong> </h4><p>15.1 If you have a complaint regarding your order, you have the right to seek alternative dispute resolution (mediation and arbitration) before initiating legal action.</p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_ihHEGw"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_4jb8VD": {
+      "type": "section-text",
+      "blocks": {
+        "text_LYfJkW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_LYfJkW"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
     "main",
-    "section_text_mCyFHb"
+    "section_text_mCyFHb",
+    "section_text_VtHdGg",
+    "section_text_4jb8VD"
   ]
 }

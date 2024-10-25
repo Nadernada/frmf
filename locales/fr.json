@@ -638,6 +638,12 @@
   "custom": {
     "customize_your_jersey": "Personnalisez votre maillot",
     "add_jersey_number": "Ajouter un numéro de maillot",
-    "add_jersey_name": "Ajouter le nom du maillot"
+    "add_jersey_name": "Ajouter le nom du maillot",
+    "enter_your_jersey-number": "Entrez votre numéro de maillot",
+    "enter_your_jersey-name": "Entrez le nom de votre maillot",
+    "accordion_body": "Utilisez cet accordéon pour ajouter des informations telles que les matériaux, les tailles, les fonctionnalités, les politiques d'expédition et de retour",
+    "more_about-warranty": "En savoir plus sur notre garantie",
+    "all_rights_reserved": "Tous droits réservés",
+    "frmf": "Fédération Royale Marocaine de Football"
   }
 }

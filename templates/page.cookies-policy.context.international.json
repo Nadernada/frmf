@@ -1,0 +1,26 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "page.cookies-policy.json",
+  "context": {
+    "market": "international"
+  },
+  "sections": {
+    "section_text_Cbqfaq": {
+      "blocks": {
+        "heading_MqxCjU": {
+          "settings": {
+            "text": "<h1>Politique de cookies et gestion de la Fédération royale marocaine de football (FRMF)</h1>"
+          }
+        }
+      }
+    }
+  }
+}

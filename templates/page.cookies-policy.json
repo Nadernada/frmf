@@ -11,11 +11,51 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_page_title": true,
+        "bg_color_secondary": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_Cbqfaq": {
+      "type": "section-text",
+      "blocks": {
+        "heading_MqxCjU": {
+          "type": "heading",
+          "settings": {
+            "text": "<h3><strong>Politique de Cookies de la Fédération Royale de Football Marocain (FRMF)</strong></h3>",
+            "size": 100,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#D43747",
+            "highlight_text_color": "#000"
+          }
+        },
+        "text_k8kwnq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Comme de nombreux sites web, nous utilisons des cookies sur notre site. Pour obtenir des informations spécifiques sur les cookies que nous utilisons pour faire fonctionner notre boutique avec <strong>Shopify</strong>, veuillez consulter la page suivante :<a href=\"https://www.shopify.com/legal/cookies\"> <span style=\"text-decoration:underline\">https://www.shopify.com/legal/cookies</span></a>.</p><p>Nous utilisons des cookies pour :</p><ul><li><strong>Faire fonctionner et améliorer notre site</strong> : Les cookies nous aident à mémoriser vos actions et préférences, et à assurer le bon fonctionnement de notre boutique en ligne.</li><li><strong>Analyser et comprendre l'interaction des utilisateurs avec nos services</strong> : Cela nous permet d’administrer, d’améliorer et d’optimiser notre site et ses fonctionnalités dans notre intérêt légitime.</li><li><strong>Personnalisation et publicité</strong> : Nous autorisons des tiers et des prestataires de services à utiliser des cookies sur notre site pour personnaliser les services, produits et publicités sur notre site ainsi que sur d’autres plateformes.</li></ul><h4><strong>Gestion des cookies</strong></h4><p>La plupart des navigateurs acceptent automatiquement les cookies par défaut. Toutefois, vous pouvez choisir de configurer votre navigateur pour qu'il supprime ou rejette les cookies. Veuillez noter que la suppression ou le blocage des cookies peut affecter votre expérience utilisateur et empêcher certaines fonctionnalités du site de fonctionner correctement. Cela peut également rendre certaines fonctionnalités générales indisponibles.</p><p>Veuillez noter que le blocage des cookies peut ne pas empêcher complètement le partage d’informations avec des tiers, tels que nos partenaires publicitaires. Nous vous recommandons donc de consulter les paramètres de votre navigateur pour gérer vos préférences de cookies.</p><h4><strong>Global Privacy Control (GPC)</strong></h4><p>Notre site web reconnaît également le signal <strong>Global Privacy Control (GPC)</strong>, qui vous permet de refuser certaines utilisations ou divulgations de vos informations personnelles. Si vous nous informez de votre préférence via GPC, nous traiterons ce signal comme une demande valide de refus du partage ou de la publicité ciblée pour le navigateur ou l'appareil utilisé. Si nous sommes en mesure d'associer l'appareil envoyant le signal à un compte Shopify, nous appliquerons également cette demande au compte en question.</p><p>Pour plus d'informations sur le <strong>Global Privacy Control (GPC)</strong>, vous pouvez consulter :<a href=\"https://globalprivacycontrol.org/\"> <span style=\"text-decoration:underline\">https://globalprivacycontrol.org/</span></a>.</p><p>En dehors du <strong>Global Privacy Control</strong>, nous ne reconnaissons pas d'autres signaux d'interdiction de suivi (tels que « Do Not Track ») pouvant être envoyés par votre navigateur ou appareil.</p>",
+            "size": 115
+          }
+        }
+      },
+      "block_order": [
+        "heading_MqxCjU",
+        "text_k8kwnq"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 100
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_text_Cbqfaq"
   ]
 }

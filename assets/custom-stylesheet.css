@@ -2,31 +2,31 @@ html:lang(ar) .banner-image__text-wrapper {
   direction: rtl !important;
 }
 
-.form__wrapper[dir="rtl"] {
+html:lang(ar) .form__wrapper {
   direction: rtl !important;
 }
 
-.featured-collection__top[dir="rtl"] {
+html:lang(ar) .featured-collection__top {
   direction: rtl !important;
 }
 
-.form__wrapper[dir="rtl"] {
+html:lang(ar) .form__wrapper {
   direction: rtl !important;
 }
 
-.product-grid-item__info-content[dir="rtl"] {
+html:lang(ar) .product-grid-item__info-content {
   direction: rtl !important;
 }
 
-.custom-overlapping-images[dir="rtl"] {
+html:lang(ar) .custom-overlapping-images {
   direction: rtl !important;
 }
 
-.newsletter-section__entry[dir="rtl"] {
+html:lang(ar) .newsletter-section__entry {
   direction: rtl !important;
 }
 
-.product__price[dir="rtl"] {
+html:lang(ar) .product__price {
   direction: rtl !important;
   margin-right: 0;
   padding-right: 0;

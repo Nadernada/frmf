@@ -1,4 +1,4 @@
-.banner-image__text-wrapper[dir="rtl"] {
+html:lang(ar) .banner-image__text-wrapper {
   direction: rtl !important;
 }
 

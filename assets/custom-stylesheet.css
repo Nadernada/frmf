@@ -22,15 +22,27 @@ html:lang(ar) .custom-overlapping-images {
   direction: rtl !important;
 }
 
-html:lang(ar) .newsletter-section__entry {
-  direction: rtl !important;
-}
 
 html:lang(ar) .product__price {
   direction: rtl !important;
   margin-right: 0;
   padding-right: 0;
 }
+
+html:lang(ar) .footer-block--menu {
+  direction: rtl !important;
+}
+
+html:lang(ar) .footer-block--menu > div > ul > li {
+  text-align: right;
+}
+
+html:lang(ar) .icons-row-item__text p, html:lang(ar) .newsletter-section__entry {
+  direction: rtl !important;
+  text-align: center !important;
+}
+
+
 
 
 .half-width {

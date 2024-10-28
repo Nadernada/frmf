@@ -1,33 +1,33 @@
 .banner-image__text-wrapper[dir="rtl"] {
-  direction: rtl;
+  direction: rtl !important;
 }
 
 .form__wrapper[dir="rtl"] {
-  direction: rtl;
+  direction: rtl !important;
 }
 
 .featured-collection__top[dir="rtl"] {
-  direction: rtl;
+  direction: rtl !important;
 }
 
 .form__wrapper[dir="rtl"] {
-  direction: rtl;
+  direction: rtl !important;
 }
 
 .product-grid-item__info-content[dir="rtl"] {
-  direction: rtl;
+  direction: rtl !important;
 }
 
 .custom-overlapping-images[dir="rtl"] {
-  direction: rtl;
+  direction: rtl !important;
 }
 
 .newsletter-section__entry[dir="rtl"] {
-  direction: rtl;
+  direction: rtl !important;
 }
 
 .product__price[dir="rtl"] {
-  direction: rtl;
+  direction: rtl !important;
   margin-right: 0;
   padding-right: 0;
 }

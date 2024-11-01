@@ -1624,7 +1624,8 @@
         "more_items_modal": {
           "clear_search": "مسح البحث",
           "empty_results": "لم يتم العثور على نتائج لـ \"%{searchText}\". تحقق من التهجئة أو استخدم كلمة أو عبارة مختلفة.",
-          "number_items_shown": "%{shownNumber} من %{totalNumber} عنصر"
+          "number_items_shown": "%{shownNumber} من %{totalNumber} عنصر",
+          "search_item": "البحث عن العنصر"
         },
         "order_name_label": "الطلب %{name}",
         "shopping_cart_label": "عربة التسوق",
@@ -3065,7 +3066,8 @@
               "no_longer_guaranteed_label": "لم تعد هذه العناصر مدعومة بضمان التسليم.",
               "claim_shop_cash_title": "مسح ضوئيًا للمطالبة {{amount}} في Shop Cash",
               "claim_shop_cash_description": "بإمكانك استخدام رصيد Shop Cash الخاص بك في عمليات الشراء المستقبلية في تطبيق Shop."
-            }
+            },
+            "delivery_guarantee_label": "ضمان التوصيل"
           },
           "promise_line": {
             "single_brand_label": "التسليم مدعوم من",
@@ -3187,12 +3189,30 @@
         },
         "delivery_promise_v2": {
           "promise_line": {
-            "modal_accessibility_button_label": "تفاصيل وعد التسليم"
+            "modal_accessibility_button_label": "تفاصيل وعد التسليم",
+            "shop_promise_brand_label": "التسليم مضمون من قبل",
+            "external_promise_brand_label": "التسليم عن طريق",
+            "not_delivered_by_label": "تم التسليم بعد {{date}}",
+            "delivery_guarantee_expired_label": "انتهت صلاحية ضمان التسليم",
+            "download_shop_app_button_label": "تنزيل المتجر للتتبع",
+            "track_with_shop_button_label": "تتبع مع المتجر",
+            "claim_shop_cash_button_label": "المطالبة بالنقد في المتجر"
           },
           "details_modal": {
             "active_delivery_guarantee_label": "التسليم بحلول {{date}}",
             "expired_badge_label": "منتهي الصلاحية",
-            "learn_more_button_label": "يتعلم أكثر"
+            "learn_more_button_label": "يتعلم أكثر",
+            "title": "ضمان التوصيل",
+            "expired_delivery_guarantee_description": "انتهت صلاحية ضمان Shop Promise لمدة 30 يومًا لهذا الطلب.",
+            "order_includes_guarantees_label": "يتضمن طلبك {{deliveryAgreementsCount}} ضمانًا",
+            "order_includes_guarantees_description": "يضمن لك Shop Promise تسليمًا سريعًا وموثوقًا به. اطلب Shop Cash إذا وصل طلبك بعد {{date}} .",
+            "delivered_after_label": "تم التسليم بعد {{date}}",
+            "delivered_after_description": "نظرًا لأن طلبك وصل متأخرًا، فأنت مؤهل للمطالبة {{amount}} نقدًا من المتجر.",
+            "claimed_shop_cash_description": "نظرًا لأن هذا الطلب وصل متأخرًا، فقد قمت بالمطالبة بـ {{amount}} نقدًا من المتجر.",
+            "eligible_to_claim_shop_cash_description": "نظرًا لأن طلبك وصل متأخرًا، فأنت مؤهل للمطالبة {{amount}} نقدًا من المتجر.",
+            "claim_shop_cash_button_label": "المطالبة بالنقد في المتجر",
+            "view_balance_in_shop_button_label": "عرض الرصيد في المتجر",
+            "scan_to_claim_shop_cash_label": "مسح ضوئيًا للمطالبة بأموال المتجر"
           }
         }
       },
@@ -3211,7 +3231,12 @@
         "other": "إذا لم يتم استلامها،"
       },
       "let_us_know": "أخبرنا",
-      "contact_us": "اتصل بنا."
+      "contact_us": "اتصل بنا.",
+      "list_title_with_pending_orders": "طلبات:",
+      "list_title_confirmed_orders_accessibility_label": "الطلبات: مؤكدة",
+      "list_title_pending_orders_accessibility_label": "الطلبات: معلقة",
+      "switch_order_type_pending_orders_accessibility_label": "تبديل نوع الطلب، وعرض الطلبات المعلقة حاليًا",
+      "switch_order_type_confirmed_orders_accessibility_label": "تبديل نوع الطلب، عرض الطلبات المؤكدة حاليًا"
     },
     "errors": {
       "address_deletion_error": {

@@ -1472,7 +1472,8 @@
           "try_again_later": "تحقق من اتصالك أو أغلق هذه النافذة وحاول مرة أخرى بعد بضع لحظات.",
           "checkout_has_expired": "انتهت صلاحية عملية الدفع الخاصة بك. أغلق هذه النافذة وحاول الدفع مرة أخرى من {{shopName}} ."
         },
-        "return_to_store": "العودة إلى {{shopName}}"
+        "return_to_store": "العودة إلى {{shopName}}",
+        "return_to_store_simple": "العودة إلى المتجر"
       },
       "wallets": {
         "return_to_store": "العودة إلى المتجر",
@@ -2746,7 +2747,8 @@
         },
         "order_list_column_headers_location": "موقع",
         "removed_company_contact_tooltip": "تم إزالته من الشركة",
-        "order_list_column_headers_contact": "اتصال"
+        "order_list_column_headers_contact": "اتصال",
+        "order_list_column_headers_status": "حالة"
       },
       "draft_order_details": {
         "draft_order_subtitle": "تم التأكيد بتاريخ {{date}} من الطلب {{draftOrderName}}",
@@ -2923,7 +2925,9 @@
         "column_headers": {
           "order": "طلب",
           "items": "أغراض",
-          "total": "المجموع"
+          "total": "المجموع",
+          "actions_accessibility_label": "الإجراءات",
+          "products_accessibility_label": "منتجات"
         },
         "delivered": "تم التسليم {{date}}",
         "empty_state_order_source_description": "سيتم عرض الطلبات المقدمة عبر {{email}} هنا فقط.",
@@ -3179,6 +3183,16 @@
           "order_tracking_link": {
             "text": "الإدارة مع أمازون",
             "new_window_disclaimer": "(يفتح نافذة جديدة)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "modal_accessibility_button_label": "تفاصيل وعد التسليم"
+          },
+          "details_modal": {
+            "active_delivery_guarantee_label": "التسليم بحلول {{date}}",
+            "expired_badge_label": "منتهي الصلاحية",
+            "learn_more_button_label": "يتعلم أكثر"
           }
         }
       },

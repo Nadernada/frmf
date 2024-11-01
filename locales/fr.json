@@ -649,5 +649,39 @@
     "shipping_and_returns": "Expédition et retours",
     "official_merchandise": "Marchandise officielle de la Fédération du Maroc",
     "recycled_materials": "Matériaux recyclés"
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "Livraison garantie par",
+            "external_promise_brand_label": "Livraison par",
+            "not_delivered_by_label": "Livré après {{date}}",
+            "delivery_guarantee_expired_label": "Garantie de livraison expirée",
+            "modal_accessibility_button_label": "Détails de la promesse de livraison",
+            "download_shop_app_button_label": "Téléchargez Shop pour suivre",
+            "track_with_shop_button_label": "Suivre avec Shop",
+            "claim_shop_cash_button_label": "Réclamer de l'argent en magasin"
+          },
+          "details_modal": {
+            "title": "Garantie de livraison",
+            "active_delivery_guarantee_label": "Livraison avant le {{date}}",
+            "expired_delivery_guarantee_description": "La garantie Shop Promise de 30 jours de cette commande a expiré.",
+            "expired_badge_label": "Expiré",
+            "order_includes_guarantees_label": "Votre commande comprend {{deliveryAgreementsCount}} garanties",
+            "order_includes_guarantees_description": "Shop Promise garantit une livraison rapide et fiable. Réclamez votre Shop Cash si votre commande arrive après {{date}} .",
+            "delivered_after_label": "Livré après {{date}}",
+            "delivered_after_description": "Étant donné que votre commande est arrivée en retard, vous avez droit à un remboursement de {{amount}} Shop Cash.",
+            "claimed_shop_cash_description": "Étant donné que cette commande est arrivée en retard, vous avez réclamé {{amount}} Shop Cash.",
+            "eligible_to_claim_shop_cash_description": "Étant donné que votre commande est arrivée en retard, vous avez droit à un remboursement de {{amount}} Shop Cash.",
+            "learn_more_button_label": "Apprendre encore plus",
+            "claim_shop_cash_button_label": "Réclamer de l'argent en magasin",
+            "view_balance_in_shop_button_label": "Afficher le solde dans la boutique",
+            "scan_to_claim_shop_cash_label": "Scannez pour réclamer le Shop Cash"
+          }
+        }
+      }
+    }
   }
 }

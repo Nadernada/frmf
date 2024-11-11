@@ -148,7 +148,7 @@
     {% assign selected_tag = request.path | split: '/' | last | default: 'all' %}
     {%- if section.settings.blog != blank -%}
       <div class="blogs-filters-wrapper">
-          <div class="btn {% if selected_tag == 'blogs' %} btn--primary{% else %} btn--black btn--outline {% endif %}">
+          <div class="btn {% if selected_tag == 'blogs' %} btn--primary text-white{% else %} btn--black btn--outline {% endif %}">
             <a href="{{ request.origin }}/blogs/blogs">All</a>
           </div>
         {%- for tag in blog.all_tags -%}

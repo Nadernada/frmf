@@ -627,6 +627,11 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 }
 
 
+.text-white {
+  color: white;
+}
+
+
 
 @media only screen and (min-width: 1024px) {
 

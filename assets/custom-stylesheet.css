@@ -530,6 +530,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   align-items: center;
   gap: 1rem;
   margin-bottom: 4rem;
+  flex-wrap: wrap;
 }
 
 .custom-3col-grid {
@@ -644,7 +645,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   }
 
   .banner-image__image-container {
-    height: 95vh;
+    height: 110vh;
 }
 
 
@@ -695,7 +696,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 #BannerHeading--heading_Cyb4Vd.text__heading {
 
   --adjust-heading: calc(var(--FONT-ADJUST-HEADING)* 1.53) !important;
-  font-size: 2.2rem !important;
+  font-size: 2.7rem !important;
 }
 
 
@@ -748,7 +749,19 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 }
 
 .btn {
-  padding: .7rem .7rem;
+  padding: .5rem .9rem;
+}
+
+.custom-jersey-btns-wrapper {
+  padding: 1rem;
+}
+
+.limited-header-wrapper {
+  flex-direction: column;
+}
+
+.payment-icon-list, .footer-bottom__content > form {
+  justify-content: center;
 }
 
 

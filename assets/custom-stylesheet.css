@@ -627,7 +627,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 }
 
 
-.text-white {
+.text-white > a {
   color: white;
 }
 

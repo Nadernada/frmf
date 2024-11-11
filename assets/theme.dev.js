@@ -7950,6 +7950,8 @@
         const buyItNow = this.container.querySelector(selectors$O.buyItNow);
         let addText = theme.strings.add_to_cart;
 
+
+
         if (theme.settings.atcButtonShowPrice) {
           addText = `${addText}<span data-product-price class="product__price--regular"></span>`; // Show price on ATC button
         }
@@ -13398,7 +13400,7 @@
       },
     };
 
-    register('header', [headerSection, hoverDisclosure, drawer, popoutSection]);
+    register('header', [headerSection, hoverDisclosure, drawer, popoutSection, cartDrawer]);
 
     const selectors$z = {
       trigger: '[data-collapsible-trigger]',

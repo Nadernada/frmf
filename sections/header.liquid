@@ -317,13 +317,10 @@
         {%- else -%}
           {{ cart_icon }}
         {%- endif -%}
+        <div class="cart-badge">
+          <p data-cart-items-qty>{{ cart_items_size | handle }}</p>
+        </div>
       </a>
-      <div class="cart-badge">
-        {% liquid
-          assign shop_items = cart.item_count
-        %}
-        <p data-cart-items-qty>{{ cart_items_size | handle }}</p>
-      </div>
     </div>
   </div>
 </nav>

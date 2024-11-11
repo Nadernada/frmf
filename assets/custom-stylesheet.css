@@ -699,6 +699,10 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   font-size: 2.7rem !important;
 }
 
+.blogs-filters-wrapper {
+  margin-bottom: 1rem;
+}
+
 
 
 .two-inputs-wrapper {

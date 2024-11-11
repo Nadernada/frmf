@@ -604,6 +604,25 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 }
 
 
+.cart-badge {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 100%;
+  padding: 8px;
+  z-index: 999;
+}
+
+
 
 @media only screen and (min-width: 1024px) {
 

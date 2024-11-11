@@ -4,6 +4,7 @@
   assign nav_alignment = section.settings.menu_alignment
   assign sticky_header = section.settings.sticky_header
   assign cart_animation = settings.enable_cart_animation
+  assign cart_items_size = cart.item_count | plus: 0
   assign animations_enabled = settings.animations_enabled
   assign header_id = 'SiteHeader'
   assign animation_anchor = '#' | append: header_id
@@ -317,6 +318,12 @@
           {{ cart_icon }}
         {%- endif -%}
       </a>
+      <div class="cart-badge">
+        {% liquid
+          assign shop_items = cart.item_count
+        %}
+        <p data-cart-items-qty>{{ cart_items_size | handle }}</p>
+      </div>
     </div>
   </div>
 </nav>

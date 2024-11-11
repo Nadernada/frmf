@@ -318,7 +318,7 @@
           {{ cart_icon }}
         {%- endif -%}
         <div class="cart-badge">
-          <p data-cart-items-qty>{{ cart_items_size | handle }}</p>
+          <span data-cart-items-qty data-cart-items-qty-bubble data-cart-item>{{ cart_items_size | handle }}</span>
         </div>
       </a>
     </div>
@@ -340,6 +340,9 @@
   >
     <span class="visually-hidden">{{ 'general.accessibility.open_cart' | t }}</span>
     {{ cart_icon }}
+    <div class="cart-badge">
+      <span data-cart-items-qty data-cart-items-qty-bubble data-cart-item>{{ cart_items_size | handle }}</span>
+    </div>
   </a>
 </div></div>
 

@@ -9784,6 +9784,7 @@
       cartCheckoutButton: '[data-cart-checkout-button]',
       cartItemRemove: '[data-item-remove]',
       cartItemsQty: '[data-cart-items-qty]',
+      cartItemsQtyBubble: '[data-cart-items-qty-bubble]',
       cartTotal: '[data-cart-total]',
       cartTotalPrice: '[data-cart-total-price]',
       cartMessage: '[data-cart-message]',
@@ -9952,6 +9953,7 @@
         this.buttonHolder = document.querySelector(selectors$J.buttonHolder);
         this.itemsHolder = document.querySelector(selectors$J.itemsHolder);
         this.cartItemsQty = document.querySelector(selectors$J.cartItemsQty);
+        this.cartItemsQtyBubble = document.querySelector(selectors$J.cartItemsQtyBubble);
         this.itemsWrapper = document.querySelector(selectors$J.itemsWrapper);
         this.items = document.querySelectorAll(selectors$J.item);
         this.cartTotal = document.querySelector(selectors$J.cartTotal);
@@ -11010,6 +11012,11 @@
         if (this.cartItemsQty) {
           this.cartItemsQty.textContent = itemsQty === 1 ? `${itemsQty} ${oneItemText}` : `${itemsQty} ${manyItemsText}`;
         }
+        if (this.cartItemsQtyBubble) {
+          console.log(this.cartItemsQtyBubble, 'bubble');
+          this.cartItemsQtyBubble.textContent = itemsQty;
+        }
+        console.log(this.cartItemsQtyBubble, 'bubble');
       }
 
       observeAdditionalCheckoutButtons() {
@@ -13110,6 +13117,31 @@
 
         document.body.addEventListener('touchstart', this.handleTouchstartEvent, {passive: true});
         this.updateHeaderHover();
+        this.initQuantity();
+      }
+
+      initQuantity() {
+        this.items = document.querySelectorAll('[data-cart-item]');
+        console.log(this.items, 'items');
+
+        this.items?.forEach((item) => {
+          const quantity = new QuantityCounter(item, true);
+
+          quantity.init();
+          this.cartUpdateEvent(item);
+        });
+      }
+
+      cartUpdateEvent(item) {
+        item.addEventListener('theme:cart:update', (event) => {
+          this.updateCart(
+            {
+              id: event.detail.id,
+              quantity: event.detail.quantity,
+            },
+            item
+          );
+        });
       }
 
       updateHeaderHover() {
@@ -13159,6 +13191,7 @@
         if (window.isHeaderTransparent) {
           this.header.classList.add(classes$s.headerTransparent);
         }
+        
       }
 
       // Switch to "compact" header on scroll

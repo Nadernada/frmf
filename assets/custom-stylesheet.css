@@ -585,6 +585,24 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 
 
+.payment-icon {
+  width: 50px;
+  height: 35px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: calc(var(--RADIUS) / 2);
+  padding: 8px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.payment-icon > svg {
+  max-width: 40px;
+  max-height: 30px;
+  object-fit: contain;
+}
+
+
 
 @media only screen and (min-width: 1024px) {
 

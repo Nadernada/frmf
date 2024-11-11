@@ -1,6 +1,6 @@
-{% unless shop.enabled_payment_types == empty %}
+{% comment %} {% unless shop.enabled_payment_types == empty %} {% endcomment %}
   <ul class="payment-icon-list">
-    {% for type in shop.enabled_payment_types %}
+    {% comment %} {% for type in shop.enabled_payment_types %} {% endcomment %}
       {%- liquid
         capture payment_icon
           echo type | payment_type_svg_tag: class: 'payment-icon'
@@ -12,7 +12,15 @@
         assign payment_icon = payment_icon | replace: payment_icon_label_old, payment_icon_label_new
       -%}
 
-      <li>{{ payment_icon }}</li>
-    {% endfor %}
+      <li class="payment-icon">
+        {%- render 'visa' -%}
+      </li>
+      <li class="payment-icon">
+        {%- render 'master' -%}
+      </li>
+      <li class="payment-icon">
+        {%- render 'maestro' -%}
+      </li>
+    {% comment %} {% endfor %} {% endcomment %}
   </ul>
-{% endunless %}
+{% comment %} {% endunless %} {% endcomment %}

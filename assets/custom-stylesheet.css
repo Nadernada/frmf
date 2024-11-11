@@ -98,6 +98,10 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   width: 45%;
 }
 
+.hero-featured-wrapper.mobile {
+  display: none;
+}
+
 .hero-featured-collection {
   width: 50%;
   height: auto;
@@ -664,7 +668,8 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   }
 
   .banner-image__image-container {
-    height: 110vh;
+    height: calc(100svh - var(--header-sticky-height));
+    --heading: white;
 }
 
 
@@ -694,6 +699,30 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 
 @media only screen and (max-width: 796px) {
+
+
+.hero-featured-wrapper.mobile {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.hero-featured-wrapper.desktop {
+  display: none;
+}
+
+  
+.hero-featured-collection {
+  width: 100%;
+  margin-top: .5rem;
+}
+
+.banner-image__text-wrapper > p > span > span, .banner-image__text-wrapper > div > p {
+  color: white;
+}
+
 
 .siblings {
   display: grid;
@@ -747,7 +776,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 }
 
 .half-width {
-  width: 70%;
+  width: 90%;
 }
 
 .banner-image__inner {

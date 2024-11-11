@@ -84,7 +84,7 @@
         "enable_mobile_height": false,
         "mobile_height": "four-fifty-height-mobile",
         "image": "shopify://shop_images/hero_image_1.png",
-        "image_mobile": "shopify://shop_images/mobile-hero.png",
+        "image_mobile": "shopify://shop_images/mobile-hero_ba3f509b-66aa-4978-a023-a5edd3666725.png",
         "overlay_opacity": 0,
         "transition": "zoom-out",
         "enable_zoom_animation": true,

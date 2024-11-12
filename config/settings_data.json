@@ -107,9 +107,9 @@
     "popular_searches_menu": "main-menu",
     "show_browse_categories_menu": false,
     "suggestions_terms_limit": 15,
-    "social_instagram_link": "https://www.instagram.com/shopify",
+    "social_instagram_link": "https://www.instagram.com/equipedumaroc/",
     "social_tiktok_link": "",
-    "social_facebook_link": "https://www.facebook.com/shopify",
+    "social_facebook_link": "https://www.facebook.com/ENMAROCofficiel/",
     "social_twitter_link": "",
     "social_pinterest_link": "",
     "social_youtube_link": "",
@@ -128,9 +128,7 @@
     "checkout_accent_color": "#004ac7",
     "checkout_button_color": "#004ac7",
     "checkout_error_color": "#d02e2e",
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Vibrant": {

@@ -748,6 +748,10 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   background-color: transparent;
 }
 
+.disabled-text {
+  color: rgba(122, 122, 122, 0.832);
+}
+
 
 
 @media only screen and (min-width: 1024px) {

@@ -647,7 +647,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   transform-origin: right;
 }
 
-.wrapper--narrow, .password-page__inner figure {
+.password-page__inner > figure, .password-page__inner {
   margin: 0 auto 0 0;
 }
 
@@ -739,15 +739,12 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 }
 
 .disabled-btn {
-  border-color: gray !important;
+  border-color: rgba(128, 128, 128, 0.282) !important;
   color: gray !important;
-  cursor: none;
+  cursor: default;
 }
 
 .disabled-btn:hover {
-  border-color: gray !important;
-  color: gray !important;
-  cursor: default;
   background-color: transparent;
 }
 

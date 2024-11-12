@@ -376,8 +376,12 @@
             <div {{ item_attributes }}>
               <div class="mosaic__item__inner">
                 {%- if image_link -%}
-                  <a href="{{ button_1_link }}" class="mosaic__item__image__link">
+                  <a 
+                      href="{{ button_1_link }}"
+                    class="mosaic__item__image__link"
+                  >
                 {%- endif -%}
+                
 
                   {%- if has_image -%}
                     {{ item_image }}

@@ -670,6 +670,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-bottom: 0;
 }
 
 .countdown__aside > p {

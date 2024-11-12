@@ -113,6 +113,7 @@
         },
         "collection_Y6rDrJ": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "title": "Women's Team",
             "tab_collection": "shop-by-player",

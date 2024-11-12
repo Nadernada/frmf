@@ -662,6 +662,49 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 }
 
 
+.countdown__content > p, .countdown__content > div > p {
+  color: black;
+}
+
+.countdown__aside  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.countdown__aside > p {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  align-self: flex-start;
+  margin-right: auto;
+  font-weight: 900;
+}
+
+.countdown-timer__item {
+  flex-direction: row;
+}
+
+.countdown-timer__item > span {
+  transform: rotate(-90deg);
+}
+
+.countdown-timer__item > .h1 {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.countdown-timer {
+  --gap: 0rem;
+  justify-content: flex-start;
+}
+
+.countdown-timer__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 
 @media only screen and (min-width: 1024px) {
 

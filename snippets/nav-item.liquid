@@ -89,9 +89,11 @@
   {% endif %}>
   <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel{{ link_hover_dot_class }}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}{% if settings.nav_caps_toplevel %} caps{% endif %}">
     <span class="navtext sm-r-margin">{{ link_title }}</span>
+    {%- if grandparent -%}
     <div class="navlink--highlight--icon">
       {%- render 'icon-chevron-down' -%}
     </div>
+  {%- endif -%}
   </a>
   {%- if expands -%}
     <div class="header__dropdown"

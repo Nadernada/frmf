@@ -642,6 +642,9 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   bottom: 0;
   right: 0;
   z-index: 999;
+  width: 50%;
+  height: auto;
+  transform-origin: right;
 }
 
 .wrapper--narrow, .password-page__inner figure {
@@ -722,6 +725,19 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   padding-left: 0;
 }
 
+.countdown__text-container {
+  width: 85%;
+}
+
+.newsletter-soon-wrapper {
+  width: fit-content;
+  margin-left: 7rem;
+}
+
+#CustomerSignup > p {
+  text-transform: uppercase;
+}
+
 
 @media only screen and (min-width: 1024px) {
 
@@ -757,6 +773,17 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 
 
+@media only screen and (max-width: 1448px) {
+  .hakimi-soon-img {
+    z-index: 2;
+    width: 75%;
+  }
+
+  .password-page__inner {
+    z-index: 999;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .hero-featured-wrapper {
     width: 70%;
@@ -766,6 +793,49 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
     height: calc(100svh - var(--header-sticky-height));
     --heading: white;
 }
+
+.hakimi-soon-img {
+  z-index: 2;
+  width: 55%;
+}
+
+
+.countdown__text-container {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+
+.password-page__inner {
+  justify-content: center;
+  margin: 0;
+}
+
+
+.newsletter-soon-wrapper {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.wrapper--narrow, .password-page__inner figure {
+  margin: 0 auto;
+}
+
+.countdown-timer__item > .h1 {
+  font-size: 4rem;
+}
+
+.countdown__aside {
+  padding: calc(var(--gutter) / 2) var(--gutter-mobile);
+  padding-bottom: 0 !important;
+}
+
+
+
 
 
 .custom-3col-grid {
@@ -794,6 +864,26 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 
 @media only screen and (max-width: 796px) {
+
+  .countdown-timer__wrapper {
+    display: inline-grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--gap);
+  }
+  
+  .countdown__aside {
+    
+    padding-left: 0 !important;
+  }
+
+
+.countdown-timer__item > .h1 {
+  font-size: 3rem;
+}
+
+.countdown-timer__item > span {
+  font-size: 0.65rem;
+}
 
 
 .hero-featured-wrapper.mobile {

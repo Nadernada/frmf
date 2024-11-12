@@ -424,15 +424,15 @@
                       {%- if button_1_text != blank or button_2_text != blank -%}
                         <div class="mosaic__item__buttons">
                           {%- if button_1_text != blank and button_1_link != blank -%}
-                            <a href="{{ button_1_link }}" class="mosaic__item__btn btn {{ button_1_style }} {{ button_1_size }} {{ button_1_color }}">{{ button_1_text }}</a>
+                            <a href="{{ button_1_link }}" class="mosaic__item__btn btn {%  if button_1_text == "Coming Soon" %} disabled-btn {% endif %}  {{ button_1_style }} {{ button_1_size }} {{ button_1_color }}">{{ button_1_text }}</a>
                           {%- elsif button_1_text != blank -%}
-                            <span class="mosaic__item__btn btn {{ button_1_style }} {{ button_1_size }} {{ button_1_color }}">{{ button_1_text }}</span>
+                            <span class="mosaic__item__btn btn {%  if button_1_text == "Coming Soon" %} disabled-btn {% endif %} {{ button_1_style }} {{ button_1_size }} {{ button_1_color }}">{{ button_1_text }}</span>
                           {%- endif -%}
 
                           {%- if button_2_text != blank and button_2_link != blank -%}
-                            <a href="{{ button_2_link }}" class="mosaic__item__btn btn {{ button_2_style }} {{ button_2_size }} {{ button_2_color }}">{{ button_2_text }}</a>
+                            <a href="{{ button_2_link }}" class="mosaic__item__btn btn {%  if button_2_text == "Coming Soon" %} disabled-btn {% endif %}  {{ button_2_style }} {{ button_2_size }} {{ button_2_color }}">{{ button_2_text }}</a>
                           {%- elsif button_2_text != blank -%}
-                            <span class="mosaic__item__btn btn {{ button_2_style }} {{ button_2_size }} {{ button_2_color }}">{{ button_2_text }}</span>
+                            <span class="mosaic__item__btn btn {%  if button_2_text == "Coming Soon" %} disabled-btn {% endif %} {{ button_2_style }} {{ button_2_size }} {{ button_2_color }}">{{ button_2_text }}</span>
                           {%- endif -%}
                         </div>
                       {%- endif -%}

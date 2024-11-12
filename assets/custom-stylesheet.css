@@ -738,6 +738,20 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   text-transform: uppercase;
 }
 
+.disabled-btn {
+  border-color: gray !important;
+  color: gray !important;
+  cursor: none;
+}
+
+.disabled-btn:hover {
+  border-color: gray !important;
+  color: gray !important;
+  cursor: default;
+  background-color: transparent;
+}
+
+
 
 @media only screen and (min-width: 1024px) {
 

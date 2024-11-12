@@ -183,7 +183,7 @@
           "settings": {
             "width": "50",
             "collection": "womens-collection",
-            "overlay_opacity": 10,
+            "overlay_opacity": 65,
             "text_position": "bottom-left",
             "subheading": "",
             "show_description": true,
@@ -200,7 +200,7 @@
           "settings": {
             "width": "50",
             "collection": "kids-collection",
-            "overlay_opacity": 10,
+            "overlay_opacity": 65,
             "text_position": "bottom-left",
             "subheading": "",
             "show_description": true,

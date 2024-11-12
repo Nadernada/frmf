@@ -16328,7 +16328,7 @@
       },
     };
 
-    register('password-template', passwordSection);
+    register('password-template', passwordSection, countdown, CountdownTimer, countdownTimerShowMessage);
 
     const selectors$e = {
       largePromo: '[data-large-promo]',

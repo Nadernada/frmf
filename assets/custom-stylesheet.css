@@ -648,6 +648,19 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   margin: 0 auto 0 0;
 }
 
+.countdown__text-container {
+  background-color: white;
+  border-radius: var(--RADIUS);
+  padding: 2rem;
+}
+
+.password-page__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
 
 
 @media only screen and (min-width: 1024px) {

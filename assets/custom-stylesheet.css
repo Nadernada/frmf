@@ -705,6 +705,14 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   gap: 1rem;
 }
 
+.countdown__content {
+  padding: 0;
+}
+
+.countdown__content > p {
+  text-align: left;
+}
+
 
 @media only screen and (min-width: 1024px) {
 

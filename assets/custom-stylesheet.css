@@ -713,6 +713,14 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   text-align: left;
 }
 
+.countdown__text-container {
+  justify-content: flex-start;
+}
+
+.countdown__aside {
+  padding-left: 0;
+}
+
 
 @media only screen and (min-width: 1024px) {
 

@@ -1206,17 +1206,19 @@
 
     <fieldset class="{{ radio_fieldset_class }}"{% if is_swatch_option or is_native_swatch_option %}{% unless color_swatch_variant_image and show_variant_image %} data-swatches-container{% endunless %}{% endif %} name="team">
       <legend class="radio__legend"{% if is_swatch_option or is_native_swatch_option %}{% unless color_swatch_variant_image and show_variant_image %} data-swatches-label{% endunless %}{% endif %}>
-        <span class="radio__legend__label label-typography">{{ option.name | escape_once }}</span>
+        <span class="radio__legend__label label-typography">Select Team:</span>
         {%- if show_size_guide_as_label -%}{{- size_chart_button -}}{%- endif -%}
       </legend>
 
       <div class="radio__buttons" data-variant-buttons>
         {% assign teams = product.metafields.custom.teams | replace: '[', '' | replace: ']', '' | replace: '"', '' | split: ',' %}
+
         {%- for value in teams -%}
           {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ value | escape_once }}-{{ value | handle }}{%- endcapture -%}
 
           {%- capture options_markup -%}
             {% comment %} radio button {% endcomment %}
+
             <span class="radio__button"{% if has_variant_option_image %} data-variant-option-image{% endif %}>
               <input
                 type="radio"
@@ -1319,6 +1321,8 @@
             {%- if show_variant_image and color_swatch_variant_image -%}
               {{ options_markup }}
             {%- else -%}
+              <span class="radio__legend__label label-typography">Select Team:</span>
+
               <span class="swatch__button swatch__button--{{ settings.color_swatches_product_style }}" data-swatches-button>
                 <input type="radio"
                   class="swatch__input"

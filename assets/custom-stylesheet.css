@@ -650,7 +650,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 .countdown__text-container {
   background-color: white;
-  border-radius: var(--RADIUS);
+  border-radius: calc(var(--RADIUS) * 2);
   padding: 2rem;
 }
 

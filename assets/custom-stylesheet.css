@@ -788,10 +788,10 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 
 
-@media only screen and (max-width: 1448px) {
+@media only screen and (max-width: 1439px) {
   .hakimi-soon-img {
     z-index: 2;
-    width: 75%;
+    /* width: 75%; */
   }
 
   .password-page__inner {
@@ -887,17 +887,45 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   }
   
   .countdown__aside {
-    
+    justify-content: center;
     padding-left: 0 !important;
+    text-align: center;
+  }
+  
+  .countdown__aside > p {
+    margin-right: auto;
+    margin-left: auto;
   }
 
+  .password-page__wrapper, .password-page__container {
+    height: auto;
+  }
+
+  .hakimi-soon-img {
+    display: none;
+  }
+
+  .newsletter-soon-wrapper > form > div > button {
+    width: 100%;
+  }
+
+  .signup-input, .password-input {
+    margin: 10px auto;
+    width: 100%;
+}
 
 .countdown-timer__item > .h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .countdown-timer__item > span {
-  font-size: 0.65rem;
+  font-size: 0.5rem;
+}
+
+
+.countdown__content > p > span {
+  font-size: 2rem;
+  text-align: center;
 }
 
 

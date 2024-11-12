@@ -632,6 +632,22 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   color: white !important;
 }
 
+.password-page__container {
+  position: relative;
+}
+
+
+.hakimi-soon-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.wrapper--narrow, .password-page__inner figure {
+  margin: 0 auto 0 0;
+}
+
 
 
 @media only screen and (min-width: 1024px) {

@@ -501,7 +501,6 @@
     },
     "section_custom_overlapping_images_PwVhti": {
       "type": "section-custom-overlapping-images",
-      "disabled": true,
       "settings": {
         "text_position": "right",
         "text_alignment": "center",

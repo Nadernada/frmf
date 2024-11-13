@@ -18,7 +18,7 @@
           "type": "logo",
           "settings": {
             "alignment": "text-left",
-            "image": "{{ shop.brand.logo }}",
+            "image": "shopify://shop_images/FRMF-logo.svg",
             "logo_width": 150,
             "show_shop_name": false,
             "text": "",

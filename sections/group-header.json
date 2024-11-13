@@ -83,7 +83,7 @@
         "sticky_header": true,
         "header_border": false,
         "link_hover_effect": "line",
-        "logo_not_home": "{{ shop.brand.logo }}",
+        "logo_not_home": "shopify://shop_images/FRMF-logo.svg",
         "logo_max_width": 40,
         "main-menu": "main-menu",
         "main_menu_secondary": "",

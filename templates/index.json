@@ -483,6 +483,7 @@
         "description_FQFYHF",
         "siblings_CaJF9j"
       ],
+      "disabled": true,
       "settings": {
         "product": "limited-edition",
         "product_sticky_enable": false,
@@ -500,6 +501,7 @@
     },
     "section_custom_overlapping_images_PwVhti": {
       "type": "section-custom-overlapping-images",
+      "disabled": true,
       "settings": {
         "text_position": "right",
         "text_alignment": "center",
@@ -549,7 +551,7 @@
         "products_per_row_on_desktop": 3,
         "columns_mobile": "1",
         "text_alignment": "text-left",
-        "title": "<p>Retro Collection</p>",
+        "title": "<p>Trending Now</p>",
         "heading_highlight_type": "circle",
         "highlight_color": "#d43747",
         "highlight_text_color": "#000000",

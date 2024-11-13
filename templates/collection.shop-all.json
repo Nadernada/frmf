@@ -1,0 +1,516 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-image-with-title",
+      "disabled": true,
+      "settings": {
+        "banner_height": "one-third-height",
+        "text_position": "bottom-left",
+        "show_image": true,
+        "text_color": "text-dark",
+        "overlay_opacity": 0,
+        "bg_color_secondary": false,
+        "banner_image": "shopify://shop_images/collections-hero.png",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b5058786-b763-4ab8-b375-d96e3dbab791": {
+      "type": "section-grid",
+      "blocks": {
+        "template--21524360200470__b5058786-b763-4ab8-b375-d96e3dbab791-image-1": {
+          "type": "image",
+          "settings": {
+            "width": "100",
+            "image": "shopify://shop_images/collections-hero.png",
+            "overlay_opacity": 5,
+            "text_position": "bottom-left",
+            "subheading": "",
+            "title": "{{ collection.title }}",
+            "text": "Our shop by Player collection is crafted for those who embody both passion and performance.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-dark"
+          }
+        }
+      },
+      "block_order": [
+        "template--21524360200470__b5058786-b763-4ab8-b375-d96e3dbab791-image-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_height": "three-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
+        "heading_size": 180,
+        "button_1_color": "btn--white",
+        "button_1_style": "btn--text",
+        "button_1_size": "btn--small",
+        "button_2_color": "btn--black",
+        "button_2_style": "btn--text",
+        "button_2_size": "btn--small",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "overlay_text": true,
+        "width": "wrapper--full",
+        "add_gutter": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "disabled": true,
+      "settings": {
+        "subcollections": [
+          "kids-collection",
+          "mens-collection",
+          "womens-collection"
+        ],
+        "limit": 8,
+        "layout": "grid",
+        "image_source": "collection",
+        "image_aspect_ratio": 0.6,
+        "image_overlay_opacity": 10,
+        "bg_color": "",
+        "text_color": "text-light",
+        "padding_top": 30,
+        "padding_bottom": 14
+      }
+    },
+    "section_list_butttons_FMBGYM": {
+      "type": "section-list-butttons",
+      "blocks": {
+        "button_AhTzca": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_QJaqpp": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_eY7q4A": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_jB77wy": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_GzxtBg": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_DDkAhH": {
+          "type": "button",
+          "settings": {
+            "heading": "Button",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_AhTzca",
+        "button_QJaqpp",
+        "button_eY7q4A",
+        "button_jB77wy",
+        "button_GzxtBg",
+        "button_DDkAhH"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": 100,
+        "layout": "carousel",
+        "alignment": "center",
+        "collections_per_row": 6,
+        "columns_mobile": "1",
+        "type_style": "button-typography",
+        "button_style": "rounded",
+        "text_size": 115,
+        "letter_spacing": 75,
+        "show_arrow": false,
+        "bg_color": "#ffffff",
+        "block_text_color": "#000000",
+        "border_color": "#000000",
+        "section_bg_color": "#f7f7f7",
+        "section_text_color": "",
+        "enable_slider_mobile": true,
+        "animations_enabled": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "96343c36-f832-4740-8cd6-2a90dcf9e4d9": {
+          "type": "promo",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/23-Maroc-Homme_3_1.png",
+            "position": 4,
+            "width": "auto",
+            "title": "<p>New arrivals have landed</p>",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#fbcaff",
+            "highlight_text_color": "#ffffff",
+            "heading_size": 100,
+            "content": "",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "center",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#f5f4f1",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "promo_wFHbhN": {
+          "type": "promo",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/image_8.png",
+            "position": 9,
+            "width": "half",
+            "title": "<p>2024's women's collection</p>",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#ffffff",
+            "heading_size": 100,
+            "content": "",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "center",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#d3d3d3",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "96343c36-f832-4740-8cd6-2a90dcf9e4d9",
+        "promo_wFHbhN"
+      ],
+      "settings": {
+        "show_breadcrumbs": false,
+        "enable_sorting": true,
+        "enable_filters": true,
+        "filters_layout": "open",
+        "show_more": true,
+        "filter_mode": "default",
+        "bg_color": "",
+        "padding_top": 30,
+        "padding_bottom": 60
+      }
+    },
+    "section_marquee_gJnUNj": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_XR67Vh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The best gear</p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 44,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "custom_hpxbNn": {
+          "type": "custom",
+          "settings": {
+            "text": "<div style=\"width: 1.5rem; height: 3px; background-color: #007A46\"><div></div></div>",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_HwARpC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>guaranteed.</p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_XR67Vh",
+        "custom_hpxbNn",
+        "text_HwARpC"
+      ],
+      "settings": {
+        "layout": "marquee-with-parallax",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 350,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 34,
+        "padding_bottom": 36
+      }
+    },
+    "section_grid_R4tgBM": {
+      "type": "section-grid",
+      "blocks": {
+        "collection_7HC8j3": {
+          "type": "collection",
+          "settings": {
+            "width": "50",
+            "collection": "limited-editions",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "",
+            "show_description": true,
+            "button_1_text": "Shop Now",
+            "overlay_text_color": "text-light"
+          }
+        },
+        "collection_igQMpN": {
+          "type": "collection",
+          "settings": {
+            "width": "50",
+            "collection": "exclusive-offers",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "",
+            "show_description": true,
+            "button_1_text": "Shop Now",
+            "overlay_text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "collection_7HC8j3",
+        "collection_igQMpN"
+      ],
+      "settings": {
+        "desktop_height": "five-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "two-fifty-height-mobile",
+        "heading_size": 130,
+        "button_1_color": "btn--white",
+        "button_1_style": "btn--text",
+        "button_1_size": "btn--small",
+        "button_2_color": "btn--black",
+        "button_2_style": "btn--text",
+        "button_2_size": "btn--small",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "overlay_text": true,
+        "width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_w7ET4z": {
+      "type": "section-text",
+      "blocks": {
+        "text_yr9mfi": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>The Morocco kit features a striking design that embodies the nation's spirit, making every wearer feel a deep sense of pride and connection.</strong></p>",
+            "size": 225
+          }
+        },
+        "button_YaJH7W": {
+          "type": "button",
+          "settings": {
+            "button_text": "Read More",
+            "button_link": "",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "text_yr9mfi",
+        "button_YaJH7W"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_newsletter_b8r6Cy": {
+      "type": "section-newsletter",
+      "settings": {
+        "flex_align": "align--middle-center",
+        "text_color": "text-dark",
+        "title": "Stay In The Loop",
+        "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
+        "extra_fields": "",
+        "button_text": "",
+        "bg_color": "#f4f4f4",
+        "image_height": "three-fifty-height",
+        "overlay_opacity": 10,
+        "width": "wrapper",
+        "padding_top": 82,
+        "padding_bottom": 82
+      }
+    },
+    "section_icons_row_pU4t6M": {
+      "type": "section-icons-row",
+      "blocks": {
+        "text_CDktKz": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "New customers get 15% off",
+            "text": "<p>on your first purchase</p>"
+          }
+        },
+        "text_kyMjDF": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Game-Ready Performance",
+            "text": "<p>Play with Morocco’s ultimate comfort and durability.</p>"
+          }
+        },
+        "text_UipDxy": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Pay on delivery",
+            "text": "<p>Convenient, secure payment when your order arrives.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_CDktKz",
+        "text_kyMjDF",
+        "text_UipDxy"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 3,
+        "icons_width": 20,
+        "show_vertical_borders": true,
+        "show_horizontal_borders": true,
+        "heading_size": 70,
+        "text_size": 90,
+        "bg_color": "",
+        "text_color": "#333333",
+        "box_color": "",
+        "color_border": "#333333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "stacked",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "b5058786-b763-4ab8-b375-d96e3dbab791",
+    "subcollections",
+    "section_list_butttons_FMBGYM",
+    "main",
+    "section_marquee_gJnUNj",
+    "section_grid_R4tgBM",
+    "section_text_w7ET4z",
+    "section_newsletter_b8r6Cy",
+    "section_icons_row_pU4t6M"
+  ]
+}

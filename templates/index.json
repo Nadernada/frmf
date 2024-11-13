@@ -180,6 +180,7 @@
         },
         "collection_rWFWya": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "width": "50",
             "collection": "womens-collection",
@@ -197,6 +198,7 @@
         },
         "collection_M4Kc8V": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "width": "50",
             "collection": "kids-collection",

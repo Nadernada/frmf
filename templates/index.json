@@ -545,7 +545,7 @@
     "section_collection_iMijfG": {
       "type": "section-collection",
       "settings": {
-        "collection": "retro",
+        "collection": "trending",
         "products_layout": "carousel",
         "number_of_products": 8,
         "products_per_row_on_desktop": 3,

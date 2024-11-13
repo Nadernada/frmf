@@ -37,7 +37,7 @@ html:lang(ar) .footer-block--menu > div > ul > li {
   text-align: right;
 }
 
-html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section__entry {
+html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section__entry p {
   direction: rtl !important;
   text-align: center !important;
 }

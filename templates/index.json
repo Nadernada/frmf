@@ -346,6 +346,7 @@
         },
         "product_4fdjeG": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "custom-morocco-jersey-copy-1",
             "title": "",

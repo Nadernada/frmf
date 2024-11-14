@@ -91,6 +91,7 @@
     "line_thickness": "normal",
     "show_rounded_corners": true,
     "mobile_menu_behaviour": "link",
+    "product_badges_size": 135,
     "sale_bg_color": "#e1ff00",
     "sale_text_color": "#000000",
     "custom_bg_color": "#f23000",

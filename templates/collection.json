@@ -24,6 +24,51 @@
         "padding_bottom": 0
       }
     },
+    "section_custom_grid_banner_3JKxPp": {
+      "type": "section-custom-grid-banner",
+      "blocks": {
+        "image_DzF8VW": {
+          "type": "image",
+          "settings": {
+            "width": "100",
+            "image": "{{ collection.metafields.custom.banner_image.value }}",
+            "overlay_opacity": 10,
+            "text_position": "left",
+            "subheading": "",
+            "title": "{{ collection.title }}",
+            "text": "Add more info or delete this text",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "image_DzF8VW"
+      ],
+      "settings": {
+        "desktop_height": "three-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
+        "heading_size": 130,
+        "button_1_color": "btn--white",
+        "button_1_style": "btn--text",
+        "button_1_size": "btn--small",
+        "button_2_color": "btn--black",
+        "button_2_style": "btn--text",
+        "button_2_size": "btn--small",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "overlay_text": true,
+        "width": "wrapper--full",
+        "add_gutter": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "b5058786-b763-4ab8-b375-d96e3dbab791": {
       "type": "section-grid",
       "blocks": {
@@ -502,6 +547,7 @@
   },
   "order": [
     "hero",
+    "section_custom_grid_banner_3JKxPp",
     "b5058786-b763-4ab8-b375-d96e3dbab791",
     "subcollections",
     "section_list_butttons_FMBGYM",

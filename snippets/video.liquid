@@ -51,7 +51,7 @@
 
   {%- if video_bg_show -%}
     <div class="video-background">
-      <div class="video__player is-loading"
+      <div class="video__player"
         data-video-player
         data-video-id="{{ unique }}-video-background">
         <template data-video-template>
@@ -128,7 +128,7 @@
     endcapture
   endif
 -%}{%- if video_type != '' -%}
-          <div class="main-buttons__item"
+          {% comment %} <div class="main-buttons__item"
             {% if animations_enabled %}
               data-aos="fade-up"
               data-aos-anchor="{{ animation_anchor }}"
@@ -140,13 +140,13 @@
               data-video-play="{% render 'photoswipe-video-html' item_link: video_link, item_link_type: video_type, item_link_id: video_id, item_id: video_parent_id %}">
                 {%- render 'icon-play' -%}
             </a>
-          </div>
+          </div> {% endcomment %}
         {%- endif -%}
       </div>
     {%- endif -%}
 
     {%- if video_bg_show -%}
-      <div class="main-buttons main-buttons--video main-buttons--video-bg align--{{ text_position }}">
+      {% comment %} <div class="main-buttons main-buttons--video main-buttons--video-bg align--{{ text_position }}">
         <div class="main-buttons__item"
           {% if animations_enabled %}
             data-aos="fade-up"
@@ -156,7 +156,7 @@
           {% endif %}>
           {{- additional_video_button -}}
         </div>
-      </div>
+      </div> {% endcomment %}
     {%- endif -%}
 
     {%- if title != blank -%}

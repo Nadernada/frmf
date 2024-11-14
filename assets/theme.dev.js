@@ -14569,8 +14569,8 @@
                 const videoMarkup = this.videoTemplate.innerHTML;
                 this.videoPlayer.innerHTML = videoMarkup;
                 this.video = this.container.querySelector(selectors$q.videoAutoplay);
-                this.videoPlayer.classList.remove(classes$j.loading);
-                this.container.classList.add(classes$j.paused);
+                // this.videoPlayer.classList.remove(classes$j.loading);
+                // this.container.classList.add(classes$j.paused);
 
                 this.listen();
 

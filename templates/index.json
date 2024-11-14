@@ -31,68 +31,6 @@
         "button_size": "btn--small"
       }
     },
-    "section_custom_tab_collections_M9BMUD": {
-      "type": "section-custom-tab-collections",
-      "blocks": {
-        "collection_wGRJik": {
-          "type": "collection",
-          "settings": {
-            "title": "Men's Team",
-            "tab_collection": "shop-by-player",
-            "number_of_products": 9,
-            "show_image": false,
-            "overlay_opacity": 10,
-            "heading": "",
-            "text_color": "text-light"
-          }
-        },
-        "collection_Y6rDrJ": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "title": "Women's Team",
-            "tab_collection": "shop-by-player",
-            "number_of_products": 6,
-            "show_image": false,
-            "overlay_opacity": 10,
-            "heading": "",
-            "text_color": "text-light"
-          }
-        }
-      },
-      "block_order": [
-        "collection_wGRJik",
-        "collection_Y6rDrJ"
-      ],
-      "settings": {
-        "columns_mobile": "1",
-        "image_aspect_ratio": 1.3,
-        "text_alignment": "text-center",
-        "title": "Shop By Player",
-        "text": "",
-        "type_style": "subheading-text",
-        "tab_heading_size": 120,
-        "show_buttons": false,
-        "collection_button_text": "Shop Now",
-        "collection_button_color": "btn--primary",
-        "collection_button_style": "btn--solid",
-        "collection_button_size": "btn--small",
-        "bg_color_secondary": false,
-        "width": "wrapper--full-padded",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "button_text": "View All",
-        "button_link": "",
-        "button_color": "btn--primary",
-        "button_style": "btn--solid-border",
-        "button_size": "btn--small",
-        "button_product_text": "Shop Now",
-        "button_product_link": "",
-        "button_product_color": "btn--primary",
-        "button_product_style": "btn--solid",
-        "button_product_size": "btn--small"
-      }
-    },
     "section_banner_image_N7VULm": {
       "type": "section-banner-image",
       "blocks": {
@@ -178,6 +116,68 @@
         "text_position": "bottom-left",
         "text_alignment": "text-left",
         "text_color": "text-dark"
+      }
+    },
+    "section_custom_tab_collections_M9BMUD": {
+      "type": "section-custom-tab-collections",
+      "blocks": {
+        "collection_wGRJik": {
+          "type": "collection",
+          "settings": {
+            "title": "Men's Team",
+            "tab_collection": "shop-by-player",
+            "number_of_products": 9,
+            "show_image": false,
+            "overlay_opacity": 10,
+            "heading": "",
+            "text_color": "text-light"
+          }
+        },
+        "collection_Y6rDrJ": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "title": "Women's Team",
+            "tab_collection": "shop-by-player",
+            "number_of_products": 6,
+            "show_image": false,
+            "overlay_opacity": 10,
+            "heading": "",
+            "text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "collection_wGRJik",
+        "collection_Y6rDrJ"
+      ],
+      "settings": {
+        "columns_mobile": "1",
+        "image_aspect_ratio": 1.3,
+        "text_alignment": "text-center",
+        "title": "Shop By Player",
+        "text": "",
+        "type_style": "subheading-text",
+        "tab_heading_size": 120,
+        "show_buttons": false,
+        "collection_button_text": "Shop Now",
+        "collection_button_color": "btn--primary",
+        "collection_button_style": "btn--solid",
+        "collection_button_size": "btn--small",
+        "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "button_text": "View All",
+        "button_link": "",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--small",
+        "button_product_text": "Shop Now",
+        "button_product_link": "",
+        "button_product_color": "btn--primary",
+        "button_product_style": "btn--solid",
+        "button_product_size": "btn--small"
       }
     },
     "section_custom_grid_WYVgaV": {
@@ -699,8 +699,8 @@
   },
   "order": [
     "section_video_NbXrh3",
-    "section_custom_tab_collections_M9BMUD",
     "section_banner_image_N7VULm",
+    "section_custom_tab_collections_M9BMUD",
     "section_custom_grid_WYVgaV",
     "section_custom_products_list_KGQghF",
     "section_collection_GpAxjQ",

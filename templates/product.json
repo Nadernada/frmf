@@ -32,7 +32,7 @@
           "settings": {
             "show_labels": true,
             "show_quantity": false,
-            "show_payment_button": true,
+            "show_payment_button": false,
             "enable_subscriptions_selectors": true,
             "padding_bottom": 20
           }

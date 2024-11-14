@@ -9,6 +9,28 @@
  */
 {
   "sections": {
+    "section_video_NbXrh3": {
+      "type": "section-video",
+      "settings": {
+        "video_height": "six-fifty-height",
+        "text_position": "middle-center",
+        "video_link_bg": "https://cdn.shopify.com/videos/c/o/v/85e996e186e843529fdda0e6b5b7ab18.mp4",
+        "video_link": "",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "<p>Morocco's Pride</p>",
+        "heading_highlight_type": "italics",
+        "highlight_color": "#D43747",
+        "highlight_text_color": "#000",
+        "text": "",
+        "heading_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--white",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--small"
+      }
+    },
     "section_banner_image_N7VULm": {
       "type": "section-banner-image",
       "blocks": {
@@ -676,6 +698,7 @@
     }
   },
   "order": [
+    "section_video_NbXrh3",
     "section_banner_image_N7VULm",
     "section_custom_tab_collections_M9BMUD",
     "section_custom_grid_WYVgaV",

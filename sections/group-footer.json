@@ -19,7 +19,7 @@
           "settings": {
             "alignment": "text-left",
             "image": "shopify://shop_images/FRMF-logo.svg",
-            "logo_width": 150,
+            "logo_width": 100,
             "show_shop_name": false,
             "text": "",
             "column_width": "10"
@@ -30,7 +30,7 @@
           "settings": {
             "alignment": "text-left",
             "title": "FEDERATION ROYALE  MOROCAINE DE FOOTBALL",
-            "footer_text": "<p>We have a simple promise. Build the best Morocco fan items possible. To this day, we do just that.</p>",
+            "footer_text": "",
             "column_width": "20"
           }
         },

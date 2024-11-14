@@ -44,6 +44,7 @@
   id="Newsletter--{{ unique }}"
   data-section-id="{{ unique }}"
   data-section-type="newsletter">
+  <div class="custom-newsletter-wrapper">
   {%- if image -%}
     {%- capture image_attributes -%}
       {%- if animations_enabled -%}
@@ -167,6 +168,7 @@
       </div>
     </div>
   </div>
+</div>
 </section>
 
 {% schema %}

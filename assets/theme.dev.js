@@ -12932,7 +12932,6 @@
       }
 
       showDisclosure() {
-        console.log('popopop');
         this.setBackgroundHeight();
         document.addEventListener('theme:resize', this.setBackgroundHeightEvent);
 
@@ -12945,14 +12944,16 @@
         }
 
         const language = document.querySelector('.select-lang-reverse');
-        const icons = document.querySelectorAll('.navitem-account-reversed');
-        console.log(icons);
+        const icons = document.querySelector('.navitem-account-reversed');
+        const cart = document.querySelectorAll('.navitem-cart-reversed');
 
-        icons.forEach((item) => {
-          item.style.filter = 'invert(0)';
+
+        icons.style.filter = 'invert(1)';
+        cart.forEach((item) => {
+          item.style.filter = 'invert(1)';
+
         })
         language.style.color = "#000000";
-        this.updateHeaderHover();
       }
 
       hideDisclosure() {
@@ -12965,14 +12966,6 @@
         this.body.classList.remove(classes$t.megamenuOpened);
 
 
-        const language = document.querySelector('.select-lang-reverse');
-        const icons = document.querySelectorAll('.navitem-account-reversed');
-        console.log(icons);
-
-        icons.forEach((item) => {
-          item.style.filter = 'invert(1)';
-        })
-        language.style.color = "#000000";
         this.updateHeaderHover();
       }
 
@@ -13206,14 +13199,6 @@
 
           if (isHovered && !hasHoveredClass) this.header.classList.add(classes$s.headerHovered);
 
-
-        //   const language = document.querySelector('.select-lang-reverse');
-        //   const icons = document.querySelectorAll('.navitem-account-reversed');
-
-        //   icons.forEach((item) => {
-        //     item.style.filter = 'invert(0)';
-        //   })
-        //   language.style.color = "#000000";
         });
       }
 
@@ -13247,6 +13232,8 @@
         const shouldShowCompactHeader = this.position === 'fixed' && !this.hasCollectionFilters;
         if (shouldShowCompactHeader) {
           this.headerState();
+        console.log('dfbsdfb');
+
           document.addEventListener('theme:scroll', this.headerStateEvent);
           return;
         }
@@ -13266,10 +13253,22 @@
         const pageOffset = headerHeight + announcementHeight;
         const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const scrollUp = event && event.detail && event.detail.up;
+        const language = document.querySelector('.select-lang-reverse');
+        const icons = document.querySelector('.navitem-account-reversed');
+        const cart = document.querySelectorAll('.navitem-cart-reversed');
 
         // Show compact header when scroll down
         this.hasScrolled = currentScrollTop > pageOffset;
         document.body.classList.toggle(classes$s.hasScrolled, this.hasScrolled);
+        console.log('dfbsdfb');
+          
+        icons.style.filter = 'invert(0)';
+        cart.forEach((item) => {
+          item.style.filter = 'invert(0)';
+
+        })
+        language.style.color = "#000000";
+
 
         // Hide compact header when scroll back to top
         const hideHeaderThreshold = pageOffset + window.stickyHeaderHeight;
@@ -13280,6 +13279,21 @@
         if (window.isHeaderTransparent) {
           const shouldShowTransparentHeader = !this.hasScrolled || shouldHideHeader;
           this.header.classList.toggle(classes$s.headerTransparent, shouldShowTransparentHeader);
+        }
+
+        if (!this.hasScrolled) {
+
+        // Show compact header when scroll down
+        this.hasScrolled = currentScrollTop > pageOffset;
+        document.body.classList.toggle(classes$s.hasScrolled, this.hasScrolled);
+        console.log('dfbsdfb');
+          
+        icons.style.filter = 'invert(1)';
+        cart.forEach((item) => {
+          item.style.filter = 'invert(1)';
+
+        })
+        language.style.color = "#ffffff";
         }
 
         // Update header background height if users scroll the page with their mouse over the header or over an opened nav menu

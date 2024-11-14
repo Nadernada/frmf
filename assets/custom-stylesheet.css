@@ -775,11 +775,22 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   margin-left: 4rem;
 }
 
-.custom-newsletter-section {
-  margin-left: 4rem;
-  margin-right: 4rem;
+.custom-newsletter-wrapper {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5rem;
   min-height: 75vh;
+  border-radius: calc(var(--RADIUS));
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-newsletter-wrapper > .wrapper {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  /* min-height: 75vh; */
   border-radius: calc(var(--RADIUS));
   overflow: hidden;
 }
@@ -835,8 +846,12 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 .featured-video-section {
   height: 100vh;
-  position: sticky;
+  position: sticky !important;
   top: 0;
+}
+
+section {
+  position: relative;
 }
 
 .localization-form .select-popout__toggle {

@@ -833,6 +833,27 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   height: 13rem;
 }
 
+.featured-video-section {
+  height: 100vh;
+  margin-bottom: 3rem;
+}
+
+.localization-form .select-popout__toggle {
+  background-color: transparent;
+  color: white;
+
+}
+
+.navlink--icon > svg {
+  filter: invert(1);
+}
+
+.cart-badge {
+  background-color: white;
+  color: black;
+}
+
+
 
 
 @media only screen and (min-width: 1024px) {

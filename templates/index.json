@@ -15,7 +15,7 @@
         "heading_Cyb4Vd": {
           "type": "heading",
           "settings": {
-            "text": "<p>Home Jersey 2024</p>",
+            "text": "<p>Our Moroccan 2024 Home Jersey</p>",
             "size": 180,
             "heading_highlight_type": "italics",
             "highlight_color": "#d43747",
@@ -25,7 +25,7 @@
         "text_69LRbm": {
           "type": "text",
           "settings": {
-            "text": "<p>Our shop by Player collection is crafted for those who embody both passion and performance. From bold colors to standout designs, our collection seamlessly combines comfort with top-tier athletic fashion.</p>",
+            "text": "<p>The official 2024 collection embodies the spirit of the Moroccan National Team. With a fusion of Moroccan heritage and a modern touch, unleash your inner Atlas Lion in style.</p>",
             "size": 130
           }
         },
@@ -61,7 +61,7 @@
         "collection_daQLNF": {
           "type": "collection",
           "settings": {
-            "ft_collection": "home-jersey-2024",
+            "ft_collection": "home-kit-24-25",
             "collection_text": "Best Selling",
             "collection_image": "{{ block.settings.ft_collection.image }}",
             "button_collection_text": "Shop Now",
@@ -442,6 +442,7 @@
         "flex_align": "align--middle-right",
         "text_color": "text-light",
         "title": "",
+        "title_section": "Limited Edition",
         "text": "<p>Subscribe to join the waitlist</p>",
         "extra_fields": "",
         "button_text": "Subscribe",
@@ -450,6 +451,12 @@
         "image_height": "five-fifty-height",
         "overlay_opacity": 0,
         "width": "wrapper",
+        "heading_size": 130,
+        "text-section": "Be the first to know! Join the waitlist today.",
+        "button_1_text": "Coming Soon",
+        "button_1_color": "btn--primary",
+        "button_1_style": "btn--solid",
+        "button_1_size": "btn--small",
         "padding_top": 58,
         "padding_bottom": 56
       }
@@ -617,23 +624,23 @@
           "settings": {
             "icon_name": "none",
             "title": "New customers get 15% off",
-            "text": "<p>on their first purchase</p>"
+            "text": "<p>Available on your first purchase</p>"
           }
         },
         "text_mzBAWm": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "title": "Game-Ready Performance",
-            "text": "<p>Play with Morocco’s ultimate comfort and durability.</p>"
+            "title": "Convenient Payment Options",
+            "text": "<p>Secure online or cash express payment through our provider network</p>"
           }
         },
         "text_Kk3PGE": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "title": "Pay on delivery",
-            "text": "<p>Convenient, secure payment when your order arrives.</p>"
+            "title": "Worldwide Shipping",
+            "text": "<p>Easy delivery to your location, wherever you are</p>"
           }
         }
       },

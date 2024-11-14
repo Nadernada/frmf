@@ -12915,15 +12915,15 @@
         this.background.style.setProperty('--header-background-height', `${this.dropdownHeight}px`);
 
 
-        const language = document.querySelector('.select-lang-reverse');
-        const icons = document.querySelectorAll('.navitem-account-reversed');
-        console.log(icons);
+        // const language = document.querySelector('.select-lang-reverse');
+        // const icons = document.querySelectorAll('.navitem-account-reversed');
+        // console.log(icons);
 
-        icons.forEach((item) => {
-          item.style.filter = 'invert(0)';
-        })
-        language.style.color = "#000000";
-        this.updateHeaderHover();
+        // icons.forEach((item) => {
+        //   item.style.filter = 'invert(0)';
+        // })
+        // language.style.color = "#000000";
+        // this.updateHeaderHover();
 
         // Hide header dropdowns on mobile
         if (window.innerWidth < theme.sizes.small) {
@@ -12948,12 +12948,12 @@
         const cart = document.querySelectorAll('.navitem-cart-reversed');
 
 
-        icons.style.filter = 'invert(1)';
-        cart.forEach((item) => {
-          item.style.filter = 'invert(1)';
+        // icons.style.filter = 'invert(1)';
+        // cart.forEach((item) => {
+        //   item.style.filter = 'invert(1)';
 
-        })
-        language.style.color = "#000000";
+        // })
+        // language.style.color = "#000000";
       }
 
       hideDisclosure() {

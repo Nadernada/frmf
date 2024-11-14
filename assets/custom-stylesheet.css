@@ -762,15 +762,12 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 }
 
 
+.follow-on-shop {
+  display: none;
+}
+
 
 @media only screen and (min-width: 1024px) {
-
-  
-  .mosaic__custom__item--1 {
-    margin-bottom: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
 
   .featured-product-wrapper {
     background-color: #f2f2f2;
@@ -782,6 +779,19 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   background-color: white !important;
 }
 
+
+
+
+}
+
+@media only screen and (min-width: 769px) {
+
+    
+  .mosaic__custom__item--1 {
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 
 
 
@@ -882,6 +892,17 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 
 @media only screen and (max-width: 796px) {
+
+
+.custom-mosaic-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.mosaic__custom__item--1 {
+  grid-row: 1;
+}
+
 
   .countdown-timer__wrapper {
     display: inline-grid;

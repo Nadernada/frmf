@@ -855,7 +855,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   height: 98vh;
 }
 
-.banner-image__text-wrapper {
+.banner-image__text-wrapper > p {
   margin-top: 1rem;
 }
 

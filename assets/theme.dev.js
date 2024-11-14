@@ -2573,6 +2573,7 @@
       }
 
       openItem(dropdown, trigger) {
+        console.log('ittttt');
         let dropdownHeight = dropdown.querySelector(selectors$15.content).offsetHeight;
 
         this.setDropdownHeight(dropdown, dropdownHeight, trigger, true);
@@ -10578,8 +10579,11 @@
         this.cartEvents();
 
         // Init collapsible function for the cart drawer accordions
-        if (this.cartDrawerBody) {
-          this.collapsible = new Collapsible(this.cartDrawerBody);
+        // if (this.cartDrawerBody) {
+        //   this.collapsible = new Collapsible(this.cartDrawerBody);
+        // }
+        if (this.buttonHolder) {
+          this.collapsible = new Collapsible(this.buttonHolder);
         }
 
         // Bind cart drawer close button event
@@ -11136,7 +11140,7 @@
         }
       },
     };
-    register('cart-template', cartDrawer);
+    register('cart-template', cartDrawer, collapsible, Collapsible);
 
     const selectors$I = {
       scrollToTop: '[data-scroll-top-button]',

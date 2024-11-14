@@ -60,7 +60,7 @@
     "buynow_btn_color": "btn--black",
     "buynow_btn_style": "btn--outline",
     "quick_buy": "none",
-    "show_quantity": false,
+    "show_quantity": true,
     "show_remaining": true,
     "show_payment_button": true,
     "max_inventory": 5,

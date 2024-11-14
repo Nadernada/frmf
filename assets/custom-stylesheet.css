@@ -770,6 +770,8 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   background-color: white;
   border-radius: var(--RADIUS);
   padding: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin-left: 4rem;
 }
 
@@ -786,6 +788,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   height: 100%;
   min-height: 100%;
   justify-content: space-between;
+  width: 95%;
 }
 
 .custom-newsletter-section > div > .mosaic__item__content, .signature-wrapper {
@@ -805,11 +808,25 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   flex-direction: column;
 }
 
+.custom-newsletter-content > div > div > p {
+  text-transform: uppercase;
+}
+
 .custom-newsletter-content .input-group__btn {
   background-color: var(--accent);
   border-color: var(--accent);
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.coming-soon-text {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.signature-limited-img {
+  width: 29rem;
+  height: 13rem;
 }
 
 

@@ -137,7 +137,7 @@
         "text": "",
         "type_style": "subheading-text",
         "tab_heading_size": 120,
-        "show_buttons": true,
+        "show_buttons": false,
         "collection_button_text": "Shop Now",
         "collection_button_color": "btn--primary",
         "collection_button_style": "btn--solid",

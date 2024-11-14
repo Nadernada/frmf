@@ -825,6 +825,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 .coming-soon-text {
   font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 .signature-limited-img {
@@ -834,7 +835,6 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 .featured-video-section {
   height: 100vh;
-  margin-bottom: 3rem;
 }
 
 .localization-form .select-popout__toggle {

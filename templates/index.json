@@ -180,15 +180,14 @@
         },
         "collection_rWFWya": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "width": "50",
-            "collection": "womens-collection",
-            "overlay_opacity": 65,
+            "collection": "training",
+            "overlay_opacity": 0,
             "text_position": "bottom-left",
             "subheading": "",
             "show_description": true,
-            "button_1_text": "Coming Soon",
+            "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_1_color": "btn--black",
             "button_1_style": "btn--solid",
@@ -218,7 +217,7 @@
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "official-training",
+            "collection": "fans",
             "overlay_opacity": 10,
             "text_position": "bottom-left",
             "subheading": "",
@@ -501,6 +500,7 @@
     },
     "section_custom_overlapping_images_PwVhti": {
       "type": "section-custom-overlapping-images",
+      "disabled": true,
       "settings": {
         "text_position": "right",
         "text_alignment": "center",
@@ -577,12 +577,13 @@
       "type": "section-newsletter",
       "settings": {
         "flex_align": "align--middle-center",
-        "text_color": "text-dark",
+        "text_color": "text-light",
         "title": "Sign up now and Get 10% OFF",
         "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
         "extra_fields": "",
         "button_text": "",
         "bg_color": "#f4f4f4",
+        "image": "shopify://shop_images/Newsletter.png",
         "image_height": "three-fifty-height",
         "overlay_opacity": 10,
         "width": "wrapper",

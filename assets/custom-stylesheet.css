@@ -46,7 +46,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 
 .half-width {
-  width: 62%
+  width: 45%
 }
 
 .sm-r-margin {
@@ -835,6 +835,8 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 .featured-video-section {
   height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
 .localization-form .select-popout__toggle {
@@ -853,11 +855,10 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 .banner-image__image-container {
   height: 98vh;
+  position: sticky;
+  top: 0;
 }
 
-.banner-image__text-wrapper > p {
-  margin-top: 1rem;
-}
 
 
 

@@ -238,6 +238,7 @@
                   assign text = collection.description | strip_html
                 else
                   assign image = block.settings.image | default: ''
+                  assign img_mobile = block.settings.img_mobile
                   assign heading = 'homepage.onboarding.collection_title' | t
                   assign text = 'homepage.onboarding.single_collection_description' | t
                 endif
@@ -367,7 +368,7 @@
 
                 assign sizes = '(min-width: 1024px) ' | append: img_width_lg | append: ', (min-width: 768px) ' | append: img_width_md | append: ', ' | append: img_width_sm
 
-                render 'image-fill', is_background: true, img_object: image, sizes: sizes, placeholder_svg: placeholder_svg, cover: true
+                render 'image-fill', is_background: true, img_object: image, sizes: sizes, placeholder_svg: placeholder_svg, cover: true, image_mobile: img_mobile
               -%}
             </div>
           {%- endcapture -%}
@@ -385,7 +386,7 @@
 
                   <div class="mosaic__item__content{% unless has_content %} no-content{% endunless %} {{ text_position_class }}{% if button_1_link == blank %} mosaic__item__content--nolink{% endif %}">
                     <div id="{{ content_inner_id }}"
-                      class="mosaic__item__content-inner"
+                      class="mosaic__item__content-inner custom-banner-mosaic"
                       {% if animations_enabled %}
                         data-aos="hero"
                         data-aos-anchor="{{ content_inner_anchor }}"

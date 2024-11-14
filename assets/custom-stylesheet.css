@@ -766,6 +766,13 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   display: none;
 }
 
+.custom-banner-mosaic {
+  background-color: white;
+  border-radius: var(--RADIUS);
+  padding: 1.5rem;
+  margin-left: 4rem;
+}
+
 
 @media only screen and (min-width: 1024px) {
 

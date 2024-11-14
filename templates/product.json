@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -69,7 +69,7 @@
             "icon_name": "eco-friendly",
             "icon_color": "",
             "icon_width": 20,
-            "icon_text": "Official Merchandise of the Federation of Morocco",
+            "icon_text": "Official Merchandise of the FRMF",
             "text_size": 90,
             "width": "full",
             "text_alignment": "left",
@@ -131,6 +131,7 @@
     },
     "section_image_kBg8ga": {
       "type": "section-image",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Rectangle327.png",
         "height": "original-height",
@@ -153,12 +154,12 @@
         "image_width": "standard",
         "image": "shopify://shop_images/material.png",
         "subheading": "Material",
-        "title": "<p>Premium Material</p>",
+        "title": "<p>Premium Quality</p>",
         "heading_highlight_type": "circle",
         "highlight_color": "#d43747",
         "highlight_text_color": "#000000",
         "heading_size": 130,
-        "content": "<p>Made from 100% recycled materials, excluding decorations & trim, for a first step towards a better future.We're committed to making a positive impact on the environment, and this product is a reflection of that commitment. Crafted entirely from 100% recycled materials (excluding decorations and trim), this item represents our first step towards a more sustainable future.</p>",
+        "content": "<p>The latest official PUMA merchandise for the Atlas Lions celebrates the spirit of Morocco’s national team. With the team crest, sponsor logo, and quality finishes, each item brings fans closer to the game.</p>",
         "text_alignment": "left",
         "button_text": "",
         "button_link": "",

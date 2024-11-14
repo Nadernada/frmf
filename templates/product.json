@@ -213,6 +213,7 @@
         "acordion-2",
         "d0defd0d-94c3-403c-bd36-dc2f140a104f"
       ],
+      "disabled": true,
       "settings": {
         "layout": "two-columns",
         "show_accordion_divider": false,
@@ -332,7 +333,7 @@
         "press_PViAJ6": {
           "type": "press",
           "settings": {
-            "text": "<p>Our kit is designed with your ultimate comfort in mind, providing you with a seamless and enjoyable experience every time. From luxurious materials to thoughtful design, every element is crafted to ensure you feel relaxed and at ease, so you can focus on what matters most.</p>",
+            "text": "<p>Live the ultimate fan experience. Wear the national colors with pride. Our official products are created to bring fans closer to the game. From jerseys to fan items, every piece reflects your passion for the national team.</p>",
             "link": "",
             "logo_width": 70
           }

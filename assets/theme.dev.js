@@ -12914,6 +12914,17 @@
 
         this.background.style.setProperty('--header-background-height', `${this.dropdownHeight}px`);
 
+
+        const language = document.querySelector('.select-lang-reverse');
+        const icons = document.querySelectorAll('.navitem-account-reversed');
+        console.log(icons);
+
+        icons.forEach((item) => {
+          item.style.filter = 'invert(0)';
+        })
+        language.style.color = "#000000";
+        this.updateHeaderHover();
+
         // Hide header dropdowns on mobile
         if (window.innerWidth < theme.sizes.small) {
           this.hideDisclosure();
@@ -12921,6 +12932,7 @@
       }
 
       showDisclosure() {
+        console.log('popopop');
         this.setBackgroundHeight();
         document.addEventListener('theme:resize', this.setBackgroundHeightEvent);
 
@@ -12931,6 +12943,15 @@
         if (this.trigger.classList.contains(classes$t.grandparent)) {
           this.body.classList.add(classes$t.megamenuOpened);
         }
+
+        const language = document.querySelector('.select-lang-reverse');
+        const icons = document.querySelectorAll('.navitem-account-reversed');
+        console.log(icons);
+
+        icons.forEach((item) => {
+          item.style.filter = 'invert(0)';
+        })
+        language.style.color = "#000000";
         this.updateHeaderHover();
       }
 
@@ -12942,14 +12963,35 @@
         this.trigger.setAttribute(attributes$p.ariaExpanded, false);
         this.header.classList.remove(classes$t.headerMenuOpened);
         this.body.classList.remove(classes$t.megamenuOpened);
+
+
+        const language = document.querySelector('.select-lang-reverse');
+        const icons = document.querySelectorAll('.navitem-account-reversed');
+        console.log(icons);
+
+        icons.forEach((item) => {
+          item.style.filter = 'invert(1)';
+        })
+        language.style.color = "#000000";
+        this.updateHeaderHover();
       }
 
       updateHeaderHover() {
+        console.log('popo')
         requestAnimationFrame(() => {
           const isHovered = this.header.matches(':hover');
           const hasHoveredClass = this.header.classList.contains(classes$t.headerHovered);
 
           if (isHovered && !hasHoveredClass) this.header.classList.add(classes$t.headerHovered);
+
+
+          // const language = document.querySelector('.select-lang-reverse');
+          // const icons = document.querySelectorAll('.navitem-account-reversed');
+
+          // icons.forEach((item) => {
+          //   item.style.filter = 'invert(0)';
+          // })
+          // language.style.color = "#000000";
         });
       }
 
@@ -12989,7 +13031,16 @@
       }
 
       connectHoverToggle() {
-        this.trigger.addEventListener('mouseenter', () => this.showDisclosure());
+        this.trigger.addEventListener('mouseenter', () => {
+
+          // const language = document.querySelector('.select-lang-reverse');
+          // const icons = document.querySelectorAll('.navitem-account-reversed');
+
+          // icons.forEach((item) => {
+          //   item.style.filter = 'invert(0)';
+          // })
+          // language.style.color = "#000000";
+          this.showDisclosure()});
         this.link.addEventListener('focus', () => this.showDisclosure());
 
         this.trigger.addEventListener('mouseleave', () => this.hideDisclosure());
@@ -13154,6 +13205,15 @@
           const hasHoveredClass = this.header.classList.contains(classes$s.headerHovered);
 
           if (isHovered && !hasHoveredClass) this.header.classList.add(classes$s.headerHovered);
+
+
+        //   const language = document.querySelector('.select-lang-reverse');
+        //   const icons = document.querySelectorAll('.navitem-account-reversed');
+
+        //   icons.forEach((item) => {
+        //     item.style.filter = 'invert(0)';
+        //   })
+        //   language.style.color = "#000000";
         });
       }
 
@@ -13227,6 +13287,15 @@
           const currentHeight = this.hasScrolled ? window.stickyHeaderHeight : headerHeight;
           this.background.style.setProperty('--header-background-height', `${currentHeight}px`);
 
+
+          // const language = document.querySelector('.select-lang-reverse');
+          // const icons = document.querySelectorAll('.navitem-account-reversed');
+
+          // icons.forEach((item) => {
+          //   item.style.filter = 'invert(0)';
+          // })
+          // language.style.color = "#000000";
+
           const activeNavItem = this.header.querySelector(`.${classes$s.isVisible}${selectors$A.navItem}`);
           if (activeNavItem) {
             activeNavItem.dispatchEvent(new Event('mouseenter', {bubbles: true}));
@@ -13256,18 +13325,51 @@
 
         let drawersVisible = classes$s.jsDrawerOpenAll.some((popupClass) => document.body.classList.contains(popupClass));
 
+
+       
+
         // Update header background height on:
         // 'mouseenter' event
         // opened Cart drawer/Quick View/Menu drawers
+        const language = document.querySelector('.select-lang-reverse');
+          const icons = document.querySelector('.navitem-account-reversed');
+          const cart = document.querySelectorAll('.navitem-cart-reversed');
+ 
         if (event.type === 'mouseenter' || drawersVisible) {
           this.headerHeight = this.hasScrolled ? window.stickyHeaderHeight : this.header.offsetHeight;
+
+          
+  
+          icons.style.filter = 'invert(0)';
+          cart.forEach((item) => {
+            item.style.filter = 'invert(0)';
+
+          })
+          language.style.color = "#000000";
 
           this.header.classList.add(classes$s.headerHovered);
 
           if (!this.header.classList.contains(classes$s.headerMenuOpened)) {
             this.background.style.setProperty('--header-background-height', `${this.headerHeight}px`);
+            
           }
-        }
+        } else if (event.type === 'mouseleave') {
+          console.log(cart);
+  
+          icons.style.filter = 'invert(1)';
+          language.style.color = "#ffffff";
+          cart.forEach((item) => {
+            item.style.filter = 'invert(1)';
+
+          })        }
+
+        // const language = document.querySelector('.select-lang-reverse');
+        // const icons = document.querySelectorAll('.navitem-account-reversed');
+
+        // icons.forEach((item) => {
+        //   item.style.filter = 'invert(1)';
+        // })
+        // language.style.color = "#FFFFFF";
 
         if (event.type === 'mouseenter') return;
 

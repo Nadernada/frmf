@@ -32,6 +32,7 @@
           "settings": {
             "width": "100",
             "image": "{{ collection.metafields.custom.banner_image.value }}",
+            "img_mobile": "{{ collection.metafields.custom.banner_mobile.value }}",
             "overlay_opacity": 10,
             "text_position": "left",
             "subheading": "",

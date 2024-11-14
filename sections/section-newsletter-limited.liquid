@@ -19,7 +19,7 @@
   assign show_description = section.settings.show_description
   assign show_price = section.settings.show_price
   assign price = ''
-  assign text-section = section.settings.text-text-section
+  assign text-section = section.settings.text-section
   assign image_link = false
   assign button_1_link = section.settings.button_1_link
   assign button_1_text = section.settings.button_1_text
@@ -70,7 +70,7 @@
     </div>
     <div class="mosaic__item__content{% unless has_content %} no-content{% endunless %} {{ text_position_class }}{% if button_1_link == blank %} mosaic__item__content--nolink{% endif %}">
       <div id="{{ content_inner_id }}"
-        class="mosaic__item__content-inner custom-banner-mosaic"
+        class="custom-newletter-inner mosaic__item__content-inner custom-banner-mosaic"
         {% if animations_enabled %}
           data-aos="hero"
           data-aos-anchor="{{ content_inner_anchor }}"
@@ -83,7 +83,7 @@
           <p class="mosaic__item__subheading subheading-text">{{ subheading }}</p>
         {%- endif -%}
 
-        {%- if heading != blank -%}
+        {% comment %} {%- if heading != blank -%} {% endcomment %}
           <h3 class="mosaic__item__heading h2"
           {% if animations_enabled %}
             data-aos="heading"
@@ -92,13 +92,13 @@
             data-aos-intersection="0"
           {% endif %}
           >{{ heading-section }}</h3>
-        {%- endif -%}
+        {% comment %} {%- endif -%} {% endcomment %}
 
-        {%- if text != blank -%}
+        {% comment %} {%- if text != blank -%} {% endcomment %}
           <div class="mosaic__item__text p">
             {{- text-section -}}
           </div>
-        {%- endif -%}
+        {% comment %} {%- endif -%} {% endcomment %}
         
 
         <div class="mosaic__item__text p coming-soon-text">
@@ -122,7 +122,7 @@
       </div>
     </div>
     <div class="newsletter-section__content__wrapper {{ section.settings.flex_align }}">
-      <div class="newsletter-section__content">
+      <div class="newsletter-section__content custom-newsletter-content">
         <div class="newsletter-section__entry">
           {%- if title != blank -%}
             <h2

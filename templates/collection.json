@@ -463,6 +463,7 @@
         "text_yr9mfi",
         "button_YaJH7W"
       ],
+      "disabled": true,
       "settings": {
         "text_position": "center",
         "bg_color_secondary": false,

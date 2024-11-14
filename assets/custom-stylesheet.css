@@ -851,6 +851,10 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   color: black;
 }
 
+.banner-image__image-container {
+  height: 98vh;
+}
+
 
 
 

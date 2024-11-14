@@ -77,7 +77,7 @@
           "disabled": true,
           "settings": {
             "width": "100",
-            "image": "shopify://shop_images/Group_1171275641.png",
+            "image": "{{ collection.metafields.custom.banner_image.value }}",
             "overlay_opacity": 5,
             "text_position": "bottom-left",
             "subheading": "",

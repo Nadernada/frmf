@@ -164,7 +164,7 @@
         "collection_XMCtNG": {
           "type": "collection",
           "settings": {
-            "width": "50",
+            "width": "100",
             "collection": "mens-collection",
             "overlay_opacity": 10,
             "text_position": "bottom-left",
@@ -181,7 +181,7 @@
         "collection_rWFWya": {
           "type": "collection",
           "settings": {
-            "width": "50",
+            "width": "100",
             "collection": "training",
             "overlay_opacity": 0,
             "text_position": "bottom-left",
@@ -216,7 +216,7 @@
         "collection_Wmpcae": {
           "type": "collection",
           "settings": {
-            "width": "50",
+            "width": "100",
             "collection": "fans",
             "overlay_opacity": 10,
             "text_position": "bottom-left",

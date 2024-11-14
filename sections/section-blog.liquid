@@ -118,29 +118,37 @@
   }
 {%- endstyle -%}
 
-<div id="FeaturedBlog--{{ section.id }}"
+<div
+  id="FeaturedBlog--{{ section.id }}"
   class="featured-blog {{ blog_style_class }} {{ text_color }} section-padding{%- render 'button-fallback-classes', primary_color: button_color, bg_color_secondary: bg_color_secondary -%}"
   data-section-id="{{ section.id }}"
-  data-section-type="featured-blog">
+  data-section-type="featured-blog"
+>
   <div class="{{ section_width }}">
     {%- if heading != '' -%}
       <div class="section__header">
-        <h2 class="section__heading h2"
+        <h2
+          class="section__heading h2"
           {% if animations_enabled %}
             data-aos="fade-up"
             data-aos-anchor="{{ animation_anchor }}"
             data-aos-delay="{{ animation_delay }}"
             {%- assign animation_delay = animation_delay | plus: 150 -%}
-          {% endif %}>{{ heading }}</h2>
+          {% endif %}
+        >
+          {{ heading }}
+        </h2>
 
         {%- if show_spacer_lines -%}
-          <hr class="section__heading-line"
+          <hr
+            class="section__heading-line"
             {% if animations_enabled %}
               data-aos="fade-up"
               data-aos-anchor="{{ animation_anchor }}"
               data-aos-delay="{{ animation_delay }}"
               {%- assign animation_delay = animation_delay | plus: 150 -%}
-            {% endif %}>
+            {% endif %}
+          >
         {%- endif -%}
       </div>
     {%- endif -%}
@@ -148,14 +156,19 @@
     {% assign selected_tag = request.path | split: '/' | last | default: 'all' %}
     {%- if section.settings.blog != blank -%}
       <div class="blogs-filters-wrapper">
+        <a href="{{ request.origin }}/blogs/blogs">
           <div class="btn {% if selected_tag == 'blogs' %} btn--primary text-white{% else %} btn--black btn--outline {% endif %}">
-            <a href="{{ request.origin }}/blogs/blogs">All</a>
+            All
           </div>
+        </a>
         {%- for tag in blog.all_tags -%}
           {%- assign tag_handle = tag | handle -%}
+          <a href="{{ request.origin }}/blogs/blogs/tagged/{{ tag_handle }}">
           <div class="btn {% if selected_tag == tag_handle %} btn--primary {% else %} btn--black btn--outline {% endif %}">
-            {{- tag | link_to_tag: tag }}
+            <!--{{- tag | link_to_tag: tag }} -->
+            {{ tag_handle }}
           </div>
+          </a>
         {%- endfor -%}
       </div>
     {%- endif -%}
@@ -163,26 +176,25 @@
     <div class="featured-blog__container">
       <div class="grid custom-blog-grid">
         {%- if section.settings.blog != blank -%}
-          
           {%- for article in blog.articles limit: articles_count -%}
             {%- assign animation_delay = 150 | times: forloop.index -%}
             {%- assign article_tag = article.tags[0] | handle -%}
             {% if selected_tag == 'blogs' or article_tag == selected_tag %}
-
-                {%- render 'blog-post-grid-item',
-                  article: article,
-                  article_style: blog_style,
-                  img_sizes: sizes,
-                  classes: classes,
-                  animation_anchor: animation_anchor,
-                  animation_delay: animation_delay,
-                  default_color: default_color,
-                  default_image: default_image,
-                  show_author: show_author,
-                  show_date: show_date,
-                  show_tags: show_tags,
-                  show_comments_count: show_comments_count,
-                  onboarding: false -%}
+              {%- render 'blog-post-grid-item',
+                article: article,
+                article_style: blog_style,
+                img_sizes: sizes,
+                classes: classes,
+                animation_anchor: animation_anchor,
+                animation_delay: animation_delay,
+                default_color: default_color,
+                default_image: default_image,
+                show_author: show_author,
+                show_date: show_date,
+                show_tags: show_tags,
+                show_comments_count: show_comments_count,
+                onboarding: false
+              -%}
             {%- endif -%}
           {%- endfor -%}
         {%- else -%}
@@ -201,19 +213,22 @@
               show_date: show_date,
               show_tags: show_tags,
               show_comments_count: show_comments_count,
-              onboarding: true -%}
+              onboarding: true
+            -%}
           {%- endfor -%}
         {%- endif -%}
       </div>
     </div>
 
     {%- if button_text != '' -%}
-      <div class="featured-blog__button"
+      <div
+        class="featured-blog__button"
         {% if animations_enabled %}
           data-aos="fade-up"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-delay="{{ animation_delay | plus: 150 }}"
-        {% endif %}>
+        {% endif %}
+      >
         <a href="{{ blog_link }}" class="btn {{ button_style }} {{ button_size }} {{ button_color }}">
           {{- button_text -}}
         </a>
@@ -223,234 +238,234 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Blog posts",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Layout"
-      },
-      {
-        "type": "blog",
-        "id": "blog",
-        "label": "Blog"
-      },
-      {
-        "type": "select",
-        "id": "blog_style",
-        "label": "Blog style",
-        "default": "photo",
-        "options": [
-          { "value": "standard", "label": "Standard" },
-          { "value": "photo", "label": "Photo background" }
-        ]
-      },
-      {
-        "type": "range",
-        "id": "image_aspect_ratio",
-        "label": "Image aspect ratio",
-        "min": 0.5,
-        "max": 1.5,
-        "step": 0.1,
-        "unit": ":1",
-        "default": 1.1,
-        "info": "Wide to tall"
-      },
-      {
-        "type": "range",
-        "id": "rows",
-        "label": "Number of rows",
-        "default": 1,
-        "min": 1,
-        "max": 4,
-        "step": 1
-      },
-      {
-        "type": "range",
-        "id": "columns",
-        "label": "Articles per row on desktop",
-        "default": 3,
-        "min": 2,
-        "max": 4,
-        "step": 1
-      },
-      {
-        "type": "select",
-        "id": "columns_mobile",
-        "label": "Articles per row on mobile",
-        "default": "1",
-        "options": [
-          { "label": "1", "value": "1" },
-          { "label": "2", "value": "2" }
-        ]
-      },
-      {
-        "type": "checkbox",
-        "id": "show_tags",
-        "label": "Show tags",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "show_author",
-        "label": "Show author",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_date",
-        "label": "Show date",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_comments_count",
-        "label": "Show comment count",
-        "default": false
-      },
-      {
-        "type": "header",
-        "content": "Image"
-      },
-      {
-        "type": "image_picker",
-        "id": "default_image",
-        "label": "Default blog image",
-        "info": "Applies if the blog has no featured image"
-      },
-      {
-        "type": "select",
-        "id": "default_color",
-        "label": "Image replacement color",
-        "info": "Applies if the blog has no image set",
-        "default": "none",
-        "options": [
-          { "value": "accent", "label": "Accent color" },
-          { "value": "default", "label": "Default color" },
-          { "value": "none", "label": "None" }
-        ]
-      },
-      {
-        "type": "header",
-        "content": "Text"
-      },
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading"
-      },
-      {
-        "type": "header",
-        "content": "Button"
-      },
-      {
-        "type": "text",
-        "id": "button_text",
-        "label": "Text",
-        "default": "View all posts",
-        "info": "Links to blog"
-      },
-      {
-        "type": "select",
-        "id": "button_color",
-        "label": "Button color",
-        "default": "btn--black",
-        "options": [
-          { "label": "Primary", "value": "btn--primary" },
-          { "label": "Secondary", "value": "btn--secondary" },
-          { "label": "White", "value": "btn--white" },
-          { "label": "Black", "value": "btn--black" }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "button_style",
-        "label": "Button style",
-        "default": "btn--solid",
-        "options": [
-          { "label": "Solid", "value": "btn--solid" },
-          { "label": "Outline", "value": "btn--outline" },
-          { "label": "Solid with border", "value": "btn--solid-border" },
-          { "label": "Text", "value": "btn--text" }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "button_size",
-        "label": "Size",
-        "default": "btn--small",
-        "options": [
-          { "label": "Large", "value": "btn--large" },
-          { "label": "Medium", "value": "btn--medium" },
-          { "label": "Small", "value": "btn--small" }
-        ]
-      },
-      {
-        "type": "header",
-        "content": "Colors"
-      },
-      {
-        "type": "select",
-        "id": "text_color",
-        "label": "Text color",
-        "default": "text-dark",
-        "info": "Only applies to text not overlaid on images",
-        "options": [
-          { "value": "text-light", "label": "Light"},
-          { "value": "text-dark", "label": "Dark"}
-        ]
-      },
-      {
-        "type": "checkbox",
-        "id": "bg_color_secondary",
-        "label": "Background",
-        "default": false,
-        "info": "Use secondary background color"
-      },
-      {
-        "type": "header",
-        "content": "Section spacing"
-      },
-      {
-        "type": "select",
-        "id": "width",
-        "label": "Width",
-        "default": "wrapper",
-        "options": [
-          { "value": "wrapper--narrow", "label": "Page width narrow" },
-          { "value": "wrapper", "label": "Page width" },
-          { "value": "wrapper--full-padded", "label": "Full width padded" }
-        ]
-      },
-      {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Padding top",
-        "default": 60
-      },
-      {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Padding bottom",
-        "default": 60
-      }
-    ],
-    "presets": [
-      {
-        "name": "Blog posts",
-        "category": "Text"
-      }
-    ],
-    "disabled_on": {
-      "groups": ["header","aside","footer"]
+{
+  "name": "Blog posts",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Blog"
+    },
+    {
+      "type": "select",
+      "id": "blog_style",
+      "label": "Blog style",
+      "default": "photo",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "photo", "label": "Photo background" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "min": 0.5,
+      "max": 1.5,
+      "step": 0.1,
+      "unit": ":1",
+      "default": 1.1,
+      "info": "Wide to tall"
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": "Number of rows",
+      "default": 1,
+      "min": 1,
+      "max": 4,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "label": "Articles per row on desktop",
+      "default": 3,
+      "min": 2,
+      "max": 4,
+      "step": 1
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Articles per row on mobile",
+      "default": "1",
+      "options": [
+        { "label": "1", "value": "1" },
+        { "label": "2", "value": "2" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show tags",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_comments_count",
+      "label": "Show comment count",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "default_image",
+      "label": "Default blog image",
+      "info": "Applies if the blog has no featured image"
+    },
+    {
+      "type": "select",
+      "id": "default_color",
+      "label": "Image replacement color",
+      "info": "Applies if the blog has no image set",
+      "default": "none",
+      "options": [
+        { "value": "accent", "label": "Accent color" },
+        { "value": "default", "label": "Default color" },
+        { "value": "none", "label": "None" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Text",
+      "default": "View all posts",
+      "info": "Links to blog"
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Button color",
+      "default": "btn--black",
+      "options": [
+        { "label": "Primary", "value": "btn--primary" },
+        { "label": "Secondary", "value": "btn--secondary" },
+        { "label": "White", "value": "btn--white" },
+        { "label": "Black", "value": "btn--black" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "default": "btn--solid",
+      "options": [
+        { "label": "Solid", "value": "btn--solid" },
+        { "label": "Outline", "value": "btn--outline" },
+        { "label": "Solid with border", "value": "btn--solid-border" },
+        { "label": "Text", "value": "btn--text" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "btn--small",
+      "options": [
+        { "label": "Large", "value": "btn--large" },
+        { "label": "Medium", "value": "btn--medium" },
+        { "label": "Small", "value": "btn--small" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "select",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "text-dark",
+      "info": "Only applies to text not overlaid on images",
+      "options": [
+        { "value": "text-light", "label": "Light" },
+        { "value": "text-dark", "label": "Dark" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "bg_color_secondary",
+      "label": "Background",
+      "default": false,
+      "info": "Use secondary background color"
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--full-padded", "label": "Full width padded" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
     }
+  ],
+  "presets": [
+    {
+      "name": "Blog posts",
+      "category": "Text"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "aside", "footer"]
   }
+}
 {% endschema %}

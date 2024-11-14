@@ -5,6 +5,8 @@
   assign enable_mobile_height = section.settings.enable_mobile_height
   assign mobile_height = section.settings.mobile_height
   assign image_desktop = section.settings.image
+  assign image_desktop_ar = section.settings.image_ar
+
   assign image_aspect_ratio = image_desktop.aspect_ratio | default: 2.63
   assign image_mobile = section.settings.image_mobile
   assign image_mobile_aspect_ratio = image_mobile.aspect_ratio | default: image_aspect_ratio | default: 0.66
@@ -148,11 +150,19 @@
 
     {{ image_link }}
 
+
+    <div class="banner-image__image-container arabic">
+      <div class="banner-image__image-inner" data-banner-image>
+        {%- render 'image-fill', is_background: true, image_desktop: image_desktop_ar, image_mobile: image_mobile, sizes: '100vw', classes: 'banner-image__image', loading: loading, fetchpriority: fetchpriority, preload: preload, placeholder_svg: 'lifestyle-1' -%}
+      </div>
+    </div>
+
     <div class="banner-image__image-container">
       <div class="banner-image__image-inner" data-banner-image>
         {%- render 'image-fill', is_background: true, image_desktop: image_desktop, image_mobile: image_mobile, sizes: '100vw', classes: 'banner-image__image', loading: loading, fetchpriority: fetchpriority, preload: preload, placeholder_svg: 'lifestyle-1' -%}
       </div>
     </div>
+
 
     <div class="banner-image__text-container">
       <div class="banner-image__text-wrapper {{ text_width_class }}">
@@ -730,6 +740,12 @@
         "type": "image_picker",
         "id": "image",
         "label": "Image",
+        "info": "2048px width recommended"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_ar",
+        "label": "Image Arabic",
         "info": "2048px width recommended"
       },
       {

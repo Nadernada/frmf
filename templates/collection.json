@@ -390,7 +390,7 @@
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "limited-editions",
+            "collection": "fans",
             "overlay_opacity": 10,
             "text_position": "center",
             "subheading": "",
@@ -403,7 +403,7 @@
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "exclusive-offers",
+            "collection": "away-kit-24-25",
             "overlay_opacity": 10,
             "text_position": "center",
             "subheading": "",

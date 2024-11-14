@@ -235,10 +235,10 @@
                 if collection != blank
                   assign image = block.settings.image | default: collection.image | default: collection.products[0].featured_media.preview_image
                   assign heading = collection.title | strip_html
+                  assign img_mobile = block.settings.img_mobile
                   assign text = collection.description | strip_html
                 else
                   assign image = block.settings.image | default: ''
-                  assign img_mobile = block.settings.img_mobile
                   assign heading = 'homepage.onboarding.collection_title' | t
                   assign text = 'homepage.onboarding.single_collection_description' | t
                 endif

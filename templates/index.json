@@ -436,6 +436,24 @@
         "padding_bottom": 16
       }
     },
+    "section_newsletter_limited_W3Q8eb": {
+      "type": "section-newsletter-limited",
+      "settings": {
+        "flex_align": "align--middle-right",
+        "text_color": "text-light",
+        "title": "",
+        "text": "<p>Subscribe to join the waitlist</p>",
+        "extra_fields": "",
+        "button_text": "Subscribe",
+        "bg_color": "",
+        "image": "shopify://shop_images/Autographed_Section.png",
+        "image_height": "five-fifty-height",
+        "overlay_opacity": 0,
+        "width": "wrapper",
+        "padding_top": 58,
+        "padding_bottom": 56
+      }
+    },
     "section_custom_product_8zxtme": {
       "type": "section-custom-product",
       "blocks": {
@@ -656,6 +674,7 @@
     "section_custom_grid_WYVgaV",
     "section_custom_products_list_KGQghF",
     "section_collection_GpAxjQ",
+    "section_newsletter_limited_W3Q8eb",
     "section_custom_product_8zxtme",
     "section_custom_overlapping_images_PwVhti",
     "section_collection_iMijfG",

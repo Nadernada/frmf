@@ -27,6 +27,7 @@
         },
         "text_HLTtcJ": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "alignment": "text-left",
             "title": "FEDERATION ROYALE  MOROCAINE DE FOOTBALL",

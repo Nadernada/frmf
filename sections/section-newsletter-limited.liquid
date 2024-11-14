@@ -10,6 +10,23 @@
   assign animations_enabled = settings.animations_enabled
   assign animation_anchor = '#Newsletter--' | append: section.id
   assign animation_delay = 150
+  assign heading_size = section.settings.heading_size | times: 0.01
+  assign block_width = section.settings.width
+  assign text_position = section.settings.text_position
+  assign subheading = section.settings.subheading
+  assign heading = section.settings.title
+  assign heading-section = section.settings.title_section
+  assign show_description = section.settings.show_description
+  assign show_price = section.settings.show_price
+  assign price = ''
+  assign text-section = section.settings.text-text-section
+  assign image_link = false
+  assign button_1_link = section.settings.button_1_link
+  assign button_1_text = section.settings.button_1_text
+  assign button_2_text = section.settings.button_2_text
+  assign button_2_link = section.settings.button_2_link
+  assign has_content = true
+
 -%}
 {%- style -%}
   #Newsletter--{{ section.id }} {
@@ -23,7 +40,7 @@
 {%- endstyle -%}
 
 <section
-  class="section-padding newsletter-section{% if image %} {{ section.settings.image_height }}{% endif %} {{ section.settings.text_color }}"
+  class="custom-newsletter-section section-padding newsletter-section{% if image %} {{ section.settings.image_height }}{% endif %} {{ section.settings.text_color }}"
   id="Newsletter--{{ unique }}"
   data-section-id="{{ unique }}"
   data-section-type="newsletter">
@@ -48,6 +65,62 @@
   {%- endif -%}
 
   <div class="{{ section_width }}">
+    <div class="signature-wrapper">
+      <img class="signature-img" src="https://cdn.shopify.com/s/files/1/0801/4862/7649/files/Layer_2_3.png?v=1731586057" width="15.063rem" height="4.625rem">
+    </div>
+    <div class="mosaic__item__content{% unless has_content %} no-content{% endunless %} {{ text_position_class }}{% if button_1_link == blank %} mosaic__item__content--nolink{% endif %}">
+      <div id="{{ content_inner_id }}"
+        class="mosaic__item__content-inner custom-banner-mosaic"
+        {% if animations_enabled %}
+          data-aos="hero"
+          data-aos-anchor="{{ content_inner_anchor }}"
+          data-aos-order="{{ forloop.index }}"
+          data-aos-intersection="0"
+          data-item-content-inner
+        {% endif %}
+      >
+        {%- if subheading != blank -%}
+          <p class="mosaic__item__subheading subheading-text">{{ subheading }}</p>
+        {%- endif -%}
+
+        {%- if heading != blank -%}
+          <h3 class="mosaic__item__heading h2"
+          {% if animations_enabled %}
+            data-aos="heading"
+            data-aos-anchor="{{ content_inner_anchor }}"
+            data-aos-order="{{ forloop.index | plus: 3 }}"
+            data-aos-intersection="0"
+          {% endif %}
+          >{{ heading-section }}</h3>
+        {%- endif -%}
+
+        {%- if text != blank -%}
+          <div class="mosaic__item__text p">
+            {{- text-section -}}
+          </div>
+        {%- endif -%}
+        
+
+        <div class="mosaic__item__text p coming-soon-text">
+          {{- button_1_text -}}
+        </div>
+        {% comment %} {%- if button_1_text != blank or button_2_text != blank -%}
+          <div class="mosaic__item__buttons">
+            {%- if button_1_text != blank and button_1_link != blank -%}
+              <a href="{{ button_1_link }}" class="mosaic__item__btn btn {{ button_1_style }} {{ button_1_size }} {{ button_1_color }}">{{ button_1_text }}</a>
+            {%- elsif button_1_text != blank -%}
+              <span class="mosaic__item__btn btn {{ button_1_style }} {{ button_1_size }} {{ button_1_color }}">{{ button_1_text }}</span>
+            {%- endif -%}
+
+            {%- if button_2_text != blank and button_2_link != blank -%}
+              <a href="{{ button_2_link }}" class="mosaic__item__btn btn {{ button_2_style }} {{ button_2_size }} {{ button_2_color }}">{{ button_2_text }}</a>
+            {%- elsif button_2_text != blank -%}
+              <span class="mosaic__item__btn btn {{ button_2_style }} {{ button_2_size }} {{ button_2_color }}">{{ button_2_text }}</span>
+            {%- endif -%}
+          </div>
+        {%- endif -%} {% endcomment %}
+      </div>
+    </div>
     <div class="newsletter-section__content__wrapper {{ section.settings.flex_align }}">
       <div class="newsletter-section__content">
         <div class="newsletter-section__entry">
@@ -143,6 +216,12 @@
         "default": "Newsletter"
       },
       {
+        "type": "text",
+        "id": "title_section",
+        "label": "Heading section",
+        "default": "Newsletter"
+      },
+      {
         "type": "richtext",
         "id": "text",
         "label": "Text",
@@ -229,6 +308,74 @@
           { "value": "wrapper--narrow", "label": "Page width narrow" }
         ]
       },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "range",
+        "id": "heading_size",
+        "label": "Heading size",
+        "default": 130,
+        "min": 100,
+        "max": 200,
+        "step": 10,
+        "unit": "%"
+      },
+      {
+        "type": "text",
+        "id": "text-section",
+        "label": "section text",
+        "default": "Shop Now",
+        "info": "Leave blank to link entire block"
+      },
+      {
+        "type": "header",
+        "content": "Buttons"
+      },
+      {
+        "type": "text",
+        "id": "button_1_text",
+        "label": "Button text",
+        "default": "Shop Now",
+        "info": "Leave blank to link entire block"
+      },
+      {
+        "type": "select",
+        "id": "button_1_color",
+        "label": "Button color",
+        "default": "btn--white",
+        "options": [
+          { "label": "Primary", "value": "btn--primary" },
+          { "label": "Secondary", "value": "btn--secondary" },
+          { "label": "White", "value": "btn--white" },
+          { "label": "Black", "value": "btn--black" }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "button_1_style",
+        "label": "Button style",
+        "default": "btn--text",
+        "options": [
+          { "label": "Solid", "value": "btn--solid" },
+          { "label": "Outline", "value": "btn--outline" },
+          { "label": "Solid with border", "value": "btn--solid-border" },
+          { "label": "Text", "value": "btn--text" }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "button_1_size",
+        "label": "Size",
+        "default": "btn--small",
+        "options": [
+          { "label": "Large", "value": "btn--large" },
+          { "label": "Medium", "value": "btn--medium" },
+          { "label": "Small", "value": "btn--small" }
+        ]
+      },
+      
       {
         "type": "range",
         "id": "padding_top",

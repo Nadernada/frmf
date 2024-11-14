@@ -623,7 +623,7 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "title": "New customers get 15% off",
+            "title": "New customers get 10% off",
             "text": "<p>Available on your first purchase</p>"
           }
         },

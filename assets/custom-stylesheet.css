@@ -812,6 +812,10 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   text-transform: uppercase;
 }
 
+.custom-newsletter-content > div > form > div > div > div > input {
+  width: 300px;
+}
+
 .custom-newsletter-content .input-group__btn {
   background-color: var(--accent);
   border-color: var(--accent);

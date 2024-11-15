@@ -37,7 +37,7 @@
             "text_position": "left",
             "subheading": "",
             "title": "{{ collection.title }}",
-            "text": "Red and green, a symbol of identity.",
+            "text": "",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",

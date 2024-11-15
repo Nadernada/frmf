@@ -296,7 +296,7 @@
         "text_HwARpC": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign Up Now and get 10% off</p>",
+            "text": "<p>Sign Up Now and get 5% off</p>",
             "text_color": "",
             "heading_highlight_type": "circle",
             "highlight_color": "#d43747",
@@ -431,7 +431,7 @@
       "settings": {
         "flex_align": "align--middle-center",
         "text_color": "text-light",
-        "title": "Sign Up Now and Get 10% Off",
+        "title": "Sign Up Now and Get 5% Off",
         "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
         "extra_fields": "",
         "button_text": "",
@@ -451,7 +451,7 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "title": "New customers get 15% off",
+            "title": "New customers get 5% off",
             "text": "<p>on your first purchase</p>"
           }
         },

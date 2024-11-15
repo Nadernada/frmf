@@ -63,6 +63,16 @@
             "padding_bottom": 38
           }
         },
+        "product_accordion_zpbpnm": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Care Instructions",
+            "heading_style": "font-body",
+            "accordion_text": "<p>{{ product.metafields.custom.care_instructions | metafield_tag }}</p>",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
         "7ddd2db6-1d92-43ee-a7d9-e786662f9ced": {
           "type": "icon",
           "settings": {
@@ -112,6 +122,7 @@
         "description",
         "product_accordion",
         "9927e90d-2ecb-4104-af67-0dadf75b2a0a",
+        "product_accordion_zpbpnm",
         "7ddd2db6-1d92-43ee-a7d9-e786662f9ced",
         "icon_qziME4",
         "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9"
@@ -243,7 +254,7 @@
             "title": "The New Collection",
             "text": "Official Jersey Collection",
             "button_1_text": "Shop Now",
-            "button_1_link": "",
+            "button_1_link": "shopify://collections/official-jerseys",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-light"
@@ -260,7 +271,7 @@
             "title": "Fan Collection",
             "text": "Hats, Hoodies & More",
             "button_1_text": "Shop Now",
-            "button_1_link": "",
+            "button_1_link": "shopify://collections/fans",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-light"
@@ -277,7 +288,7 @@
             "title": "Training Collection",
             "text": "Performance and Comfort",
             "button_1_text": "Shop Now",
-            "button_1_link": "",
+            "button_1_link": "shopify://collections/training",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-light"
@@ -294,7 +305,7 @@
             "title": "Shop by Player",
             "text": "Pick Your Stars",
             "button_1_text": "Shop Now",
-            "button_1_link": "",
+            "button_1_link": "shopify://collections/shop-by-player",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-light"

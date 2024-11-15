@@ -71,7 +71,7 @@
         "collection_8TGJxE": {
           "type": "collection",
           "settings": {
-            "ft_collection": "training",
+            "ft_collection": "training-apparel",
             "collection_text": "New This Month",
             "collection_image": "{{ block.settings.ft_collection.image }}",
             "button_collection_text": "Shop Now",
@@ -205,7 +205,7 @@
           "type": "collection",
           "settings": {
             "width": "100",
-            "collection": "training",
+            "collection": "training-apparel",
             "overlay_opacity": 0,
             "text_position": "bottom-left",
             "subheading": "",

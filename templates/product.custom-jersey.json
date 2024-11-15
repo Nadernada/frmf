@@ -275,7 +275,7 @@
             "title": "Training Collection",
             "text": "Performance and comfort",
             "button_1_text": "Shop Now",
-            "button_1_link": "shopify://collections/training",
+            "button_1_link": "shopify://collections/training-apparel",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-light"

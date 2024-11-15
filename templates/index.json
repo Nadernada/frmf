@@ -471,6 +471,7 @@
         "button_text": "Subscribe",
         "bg_color": "",
         "image": "shopify://shop_images/limited-edition.png",
+        "image_mobile": "shopify://shop_images/Autographed-mobile_1.png",
         "image_height": "five-fifty-height",
         "overlay_opacity": 0,
         "width": "wrapper--full-padded",

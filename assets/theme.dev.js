@@ -4834,6 +4834,7 @@
       }
 
       replaceImages(id) {
+        console.log('replace images');
         const imageSecondary = this.outer.querySelector(`[${attributes$H.variantSecondaryId}="${id}"]`);
         const gridImage = this.outer.querySelector(`[${attributes$H.variantId}="${id}"]`);
         const gridImages = this.outer.querySelectorAll(selectors$X.gridImage);
@@ -15096,15 +15097,18 @@
         this.listen();
 
         this.handleLastSlideOverlayOnMobile();
+        console.log(container);
       }
-
+      
       initSlider(slider) {
         const sliderId = slider.getAttribute(attributes$g.sliderId);
         slider.classList.remove(classes$h.carouselInactive);
 
+        const dots = this.container.classList.contains('players-collection')
+
         if (this.flkty[sliderId] === undefined || !this.flkty[sliderId].isActive) {
           this.flkty[sliderId] = new Flickity(slider, {
-            pageDots: true,
+            pageDots:  !dots,
             cellSelector: selectors$n.sliderItem,
             cellAlign: 'left',
             groupCells: false,

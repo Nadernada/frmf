@@ -20,7 +20,7 @@
   class="section-padding featured-product{% if product == blank %} featured-product--onboarding{% endif %} product--{{ section.id }} product-single{% if bg_color_secondary %} bg-secondary{% endif %}{%- render 'button-fallback-classes', primary_color: settings.atc_button_color, secondary_color: settings.buynow_btn_color, bg_color_secondary: bg_color_secondary -%}"
   data-enable-history-state="false"
   data-section-id="{{ section.id }}"
-  data-section-type="featured-product"
+  
   data-sticky-enabled="{{ section.settings.product_sticky_enable }}"
   data-tall-layout="{% if section.settings.image_layout == 'carousel' %}false{% else %}true{% endif %}"
   {% if settings.animations_enabled %}
@@ -35,7 +35,7 @@
       <button class="btn btn--white btn--outline btn--medium">Kids</button>
     </div>
     <div class="featured-product-wrapper custom-jersey-wrapper">
-      {%- render 'product-custom-jersey' product: product, unique: section.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
+      {%- render 'product-custom-jersey' product: product, unique: product.id, section: section, section_type: 'featured', animation_anchor: animation_anchor -%}
     </div>
   </div>
 </section>

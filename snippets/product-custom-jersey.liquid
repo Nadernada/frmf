@@ -264,15 +264,15 @@
 {%- endcapture -%}
 
 {%- unless section_type == 'quickview' -%}
-  <div
+  <section
     class=" custom-jersey-product featured-product product-single"
     data-section-id="{{ unique }}"
     data-section-type="featured-product"
     data-sticky-enabled="true"
     data-tall-layout="false"
-    data-product 
+
   >
-    <div class="{{ product_wrapper_class }}{{ product_wrapper_modifiers }}" 
+    <div     data-product class="{{ product_wrapper_class }}{{ product_wrapper_modifiers }}" 
     >
       {%- comment -%} Product media {%- endcomment -%}
       {{ product_gallery }}
@@ -1404,5 +1404,5 @@
 
     <script type="application/json" id="ProductJson-{{ unique }}" data-product-json>{{ product | json }}</script>
     <script type="application/json" id="ModelJson-{{ unique }}">{{ product.media | where: 'media_type', 'model' | json }}</script>
-  </div>
+  </section>
 {%- endunless -%}

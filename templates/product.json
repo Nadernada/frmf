@@ -273,7 +273,7 @@
             "title": "Fan Collection",
             "text": "Hats, Hoodies & More",
             "button_1_text": "Shop Now",
-            "button_1_link": "shopify://collections/fans",
+            "button_1_link": "shopify://collections/fan-collection",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-light"

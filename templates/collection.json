@@ -390,7 +390,7 @@
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "fans",
+            "collection": "fan-collection",
             "overlay_opacity": 10,
             "text_position": "center",
             "subheading": "",

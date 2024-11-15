@@ -614,6 +614,8 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   top: 0;
   background-color: black;
   aspect-ratio: 1/1;
+  width: 18px;
+  height: 18px;
   max-height: fit-content;
   display: flex;
   flex-direction: column;
@@ -795,7 +797,6 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 }
 
 .custom-newsletter-section > div {
-  height: 100%;
   min-height: 100%;
   justify-content: space-between;
   width: 95%;
@@ -813,7 +814,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 
 .custom-newsletter-content {
   flex-basis: auto;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
@@ -887,37 +888,73 @@ section {
   text-align: center;
 }
 
+.custom-newsletter-wrapper {
+  height: 80vh;
+}
+
+.custom-newsletter-wrapper > figure > img {
+  object-fit: contain;
+}
+
+.custom-newsletter-wrapper {
+  height: 50vw;
+}
+
+.custom-newsletter-wrapper > .wrapper--full-padded{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-newsletter-wrapper > .wrapper--full-padded > .mosaic__item__content{
+  flex: none;
+}
+
+.custom-newsletter-section .newsletter-section__content__wrapper {
+  height: auto;
+}
+
+.custom-newsletter-section .mosaic__item__content {
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-newletter-inner {
+  margin-left: 0;
+}
+
 
 
 
 @media only screen and (min-width: 1024px) {
-
+  
   .featured-product-wrapper {
     background-color: #f2f2f2;
     border-radius: calc(var(--RADIUS) * 2);
   }
-
-
-.custom-jersey-wrapper {
-  background-color: white !important;
-}
-
-
-
-
+  
+  
+  .custom-jersey-wrapper {
+    background-color: white !important;
+  }
+  
+  
+  
+  
 }
 
 @media only screen and (min-width: 769px) {
-
-    
+  
+  
   .mosaic__custom__item--1 {
     margin-bottom: 3rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-
-
-
+  
+  
+  
 }
 
 
@@ -929,9 +966,26 @@ section {
     z-index: 2;
     /* width: 75%; */
   }
-
+  
   .password-page__inner {
     z-index: 999;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .signature-limited-img {
+    width: 18rem;
+    height: 7rem;
+  }
+  
+  .custom-newsletter-section .input-group__fields, .custom-newsletter-section .input-group__fields > div, .custom-newsletter-section .input-group__item {
+    flex-basis: auto;
+    width: 100%;
+    min-width: 100%;
+  }
+  
+  .custom-newsletter-section .input-group__item > input,  .custom-newsletter-section .input-group__item > button {
+    width: 100%;
   }
 }
 
@@ -1001,6 +1055,16 @@ section {
 }
 }
 
+@media only screen and (max-width: 1024px) {
+  .custom-newsletter-wrapper {
+    height: 100vw;
+  }
+
+  .custom-newsletter-wrapper > figure > img {
+    object-fit: cover;
+  }
+}
+
 
 @media only screen and (min-width: 768px) {
   .product-single__details .form__wrapper {
@@ -1016,6 +1080,9 @@ section {
 
 @media only screen and (max-width: 796px) {
 
+  .custom-newsletter-wrapper {
+    height: 120vw;
+  }
 
 .custom-mosaic-grid {
   display: grid;

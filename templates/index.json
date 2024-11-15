@@ -612,7 +612,7 @@
         "button_style": "btn--text",
         "button_size": "btn--large",
         "button_product_text": "Shop Now",
-        "button_product_link": "shopify://collections/new-arrival",
+        "button_product_link": "{{ section.settings.collection.url }}",
         "button_product_color": "btn--primary",
         "button_product_style": "btn--solid",
         "button_product_size": "btn--small",

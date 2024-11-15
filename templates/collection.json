@@ -403,7 +403,7 @@
           "type": "collection",
           "settings": {
             "width": "50",
-            "collection": "away-kit-24-25",
+            "collection": "away-kits",
             "overlay_opacity": 10,
             "text_position": "center",
             "subheading": "",

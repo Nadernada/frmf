@@ -353,7 +353,7 @@
         "width": "wrapper",
         "heading_size": 130,
         "text-section": "This limited edition is on its way. Join the waitlist",
-        "button_1_text": "SUBSCRIBE",
+        "button_1_text": "",
         "button_1_color": "btn--white",
         "button_1_style": "btn--text",
         "button_1_size": "btn--small",

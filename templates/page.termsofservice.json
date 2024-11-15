@@ -151,7 +151,7 @@
         "text_AMP7n6": {
           "type": "text",
           "settings": {
-            "text": "<h2><strong>31. Applicable Law and Jurisdiction</strong></h2><p>31.1. These terms of use, their subject matter, and their formation are governed by Moroccan law.<br/>31.2. You and we both agree that the courts of Morocco will have exclusive jurisdiction in any disputes or claims arising from or relating to these terms of use.</p><p></p><h2></h2><h2><strong>32. Entire Agreement</strong></h2><p>32.1. These terms and any document expressly referred to in them constitute the entire agreement between you and us and supersede all previous discussions, correspondence, negotiations, previous arrangement, understanding, or agreement between us relating to the subject matter of these terms.<br/>32.2. Both you and we agree that neither of us shall have any remedies in respect of any statement, representation, assurance, or warranty (whether made innocently or negligently) that is not set out in these terms or any document referred to herein.</p><h2></h2><h2><strong>33. Contact Information</strong></h2><p>If you have any questions or concerns about these terms, please reach out to our customer support team by email at customersupport@webloo.co. We value your feedback and are here to assist you with any inquiries regarding the use of our website or our products and services.</p>",
+            "text": "<h3><strong>31. Applicable Law and Jurisdiction</strong></h3><p>31.1. These terms of use, their subject matter, and their formation are governed by Moroccan law.<br/>31.2. You and we both agree that the courts of Morocco will have exclusive jurisdiction in any disputes or claims arising from or relating to these terms of use.</p><p></p><h2></h2><h3><strong>32. Entire Agreement</strong></h3><p>32.1. These terms and any document expressly referred to in them constitute the entire agreement between you and us and supersede all previous discussions, correspondence, negotiations, previous arrangement, understanding, or agreement between us relating to the subject matter of these terms.<br/>32.2. Both you and we agree that neither of us shall have any remedies in respect of any statement, representation, assurance, or warranty (whether made innocently or negligently) that is not set out in these terms or any document referred to herein.</p><h2></h2><h3><strong>33. Contact Information</strong></h3><p>If you have any questions or concerns about these terms, please reach out to our customer support team by email at customersupport@webloo.co. We value your feedback and are here to assist you with any inquiries regarding the use of our website or our products and services.</p>",
             "size": 100
           }
         }
@@ -164,7 +164,7 @@
         "bg_color_secondary": false,
         "text_color": "text-dark",
         "width": "wrapper--narrow",
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 60
       }
     }

@@ -76,7 +76,7 @@
       "settings": {
         "subcollections": [
           "kids-collection",
-          "official-jerseys-collection",
+          "official-jerseys",
           "womens-collection"
         ],
         "limit": 8,

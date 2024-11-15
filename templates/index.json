@@ -626,7 +626,7 @@
       "settings": {
         "flex_align": "align--middle-center",
         "text_color": "text-light",
-        "title": "Sign up now and get 10% off",
+        "title": "Sign up now and get 5% off",
         "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
         "extra_fields": "",
         "button_text": "",
@@ -646,7 +646,7 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "title": "New customers get 10% off",
+            "title": "New customers get 5% off",
             "text": "<p>Available on your first purchase</p>"
           }
         },

@@ -84,7 +84,7 @@
         "collection_daQLNF": {
           "type": "collection",
           "settings": {
-            "ft_collection": "home-kit-24-25",
+            "ft_collection": "home-kits",
             "collection_text": "Best Selling",
             "collection_image": "{{ block.settings.ft_collection.image }}",
             "button_collection_text": "Shop Now",

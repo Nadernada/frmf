@@ -778,7 +778,6 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 .custom-newsletter-wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
   min-height: 75vh;
   border-radius: calc(var(--RADIUS));
   overflow: hidden;

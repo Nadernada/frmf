@@ -171,6 +171,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .offset {
@@ -1148,8 +1149,9 @@ section {
   flex-direction: column;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background-color: white;
 }
 
 .banner-image__text-wrapper::before {
@@ -1338,6 +1340,10 @@ section {
 
 .form__item .btn {
   width: 100%;
+}
+
+.custom-jersey-product .selector-wrapper {
+  grid-column: 1/3;
 }
 
 }

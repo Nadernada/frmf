@@ -52,7 +52,7 @@
     "image_aspect_ratio": 1.2,
     "show_gray_bg": true,
     "product_grid_hover": "image",
-    "product_grid_hover_animation": "slide",
+    "product_grid_hover_animation": "fade-in",
     "show_product_gray_bg": false,
     "variants_style": "boxes",
     "show_variant_image": false,

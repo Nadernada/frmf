@@ -37,7 +37,7 @@
             "text_position": "left",
             "subheading": "",
             "title": "{{ collection.title }}",
-            "text": "{{ collection.metafields.custom.collection_description.value }}",
+            "text": "",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",

@@ -14,7 +14,7 @@
       "settings": {
         "video_height": "six-fifty-height",
         "text_position": "middle-center",
-        "video_link_bg": "https://cdn.shopify.com/videos/c/o/v/85e996e186e843529fdda0e6b5b7ab18.mp4",
+        "video_link_bg": "https://cdn.shopify.com/videos/c/o/v/2c7585fdcc264352afbf5ca0ee2c46cc.mp4",
         "video_link": "",
         "overlay_opacity": 10,
         "text_color": "text-light",
@@ -106,7 +106,7 @@
         "height": "six-fifty-height",
         "enable_mobile_height": false,
         "mobile_height": "four-fifty-height-mobile",
-        "image": "shopify://shop_images/HEADER_-FRMF-DIAZ.png",
+        "image": "shopify://shop_images/HEADER_-FRMF_0f1b105c-6d4b-4c50-811e-4174fa2115d4.png",
         "image_mobile": "shopify://shop_images/mobile-diaz.png",
         "overlay_opacity": 0,
         "transition": "zoom-out",
@@ -654,8 +654,8 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "title": "Convenient Payment Options",
-            "text": "<p>Secure online or cash express payment through our provider network</p>"
+            "title": "100% Official Merchandise",
+            "text": "<p>Wear it with pride.</p>"
           }
         },
         "text_Kk3PGE": {

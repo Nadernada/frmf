@@ -336,6 +336,31 @@
         "padding_bottom": 36
       }
     },
+    "section_newsletter_limited_ti7VAr": {
+      "type": "section-newsletter-limited",
+      "settings": {
+        "flex_align": "align--middle-left",
+        "text_color": "text-dark",
+        "title": "",
+        "title_section": "Coming Soon",
+        "text": "<p>Subscribe to join the waitlist</p>",
+        "extra_fields": "",
+        "button_text": "",
+        "bg_color": "",
+        "image": "shopify://shop_images/limited-edition.png",
+        "image_height": "three-fifty-height",
+        "overlay_opacity": 10,
+        "width": "wrapper",
+        "heading_size": 130,
+        "text-section": "This limited edition is on its way. Join the waitlist",
+        "button_1_text": "SUBSCRIBE",
+        "button_1_color": "btn--white",
+        "button_1_style": "btn--text",
+        "button_1_size": "btn--small",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "section_collection_RNbDrT": {
       "type": "section-collection",
       "settings": {
@@ -543,6 +568,7 @@
     "section_list_butttons_FMBGYM",
     "main",
     "section_marquee_gJnUNj",
+    "section_newsletter_limited_ti7VAr",
     "section_collection_RNbDrT",
     "section_grid_R4tgBM",
     "section_text_w7ET4z",

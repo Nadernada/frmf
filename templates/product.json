@@ -48,7 +48,7 @@
           "settings": {
             "accordion_heading": "Product Details",
             "heading_style": "font-body",
-            "accordion_text": "<p><strong>•\t</strong>Regular fit</p><p>\t•\tShort sleeves</p><p>\t•\tFRMF badge on the left chest</p><p>\t•\tPUMA Cat logo on the right chest</p><p>\t•\tRound collar</p><p>\t•\tDouble-sided jacquard fabric</p><p>\t•\tCurved mesh side panels</p><p>\t•\tSmall mesh inserts along the side panels</p><p>\t•\tdryCELL: Performance technology that wicks moisture, keeping you dry during activity</p><p>\t•\tMade from 100% recycled materials, excluding finishes and decorations</p>",
+            "accordion_text": "<p>{{ product.metafields.custom.product_details | metafield_tag }}</p>",
             "accordion_page": "",
             "padding_bottom": 10
           }

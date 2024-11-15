@@ -442,7 +442,7 @@
     "section_newsletter_limited_GP8Jk4": {
       "type": "section-newsletter-limited",
       "settings": {
-        "flex_align": "align--middle-left",
+        "flex_align": "align--middle-center",
         "text_color": "text-light",
         "title": "",
         "title_section": "Coming Soon",
@@ -452,7 +452,7 @@
         "bg_color": "",
         "image": "shopify://shop_images/limited-edition.png",
         "image_height": "three-fifty-height",
-        "overlay_opacity": 10,
+        "overlay_opacity": 0,
         "width": "wrapper--full-padded",
         "heading_size": 130,
         "text-section": "This limited edition is on its way. Join the waitlist",

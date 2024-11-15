@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -66,19 +66,20 @@
         "accordion_block_1_1": {
           "type": "text",
           "settings": {
-            "title": "Is my payment data safe with you?",
-            "text": "<p>All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express, and Discover.</p>"
+            "title": "Do you offer international shipping?",
+            "text": "<p>Yes, we ship to various countries worldwide. Shipping fees and delivery times vary based on the destination.</p>"
           }
         },
         "accordion_block_1_2": {
           "type": "text",
           "settings": {
-            "title": "Do you accept online payments?",
-            "text": "<p>Yes, we accept online payments. All payment processing and vital customer information is quick, easy, and secure.<br/></p><p>Learn more about our store's safe checkout experience (powered by Shopify) <a href=\"https://www.shopify.com/legal/terms#DataProtection\" target=\"_blank\" title=\"https://www.shopify.com/legal/terms#DataProtection\">here</a>.</p>"
+            "title": "What are the shipping costs?",
+            "text": "<p>Shipping costs depend on the delivery location and the weight of the package. Detailed information is available at checkout.</p>"
           }
         },
         "accordion_block_1_3": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Where can I learn more about the payment and processing on your store?",
             "text": "<p>For more insight, you may also want to read Shopify’s Terms of Service <a href=\"https://www.shopify.com/legal/terms\" target=\"_blank\" title=\"https://www.shopify.com/legal/terms\">here</a> or Privacy Statement <a href=\"https://www.shopify.com/legal/privacy\" target=\"_blank\" title=\"https://www.shopify.com/legal/privacy\">here</a>.</p>"
@@ -93,7 +94,7 @@
       "settings": {
         "layout": "one-column",
         "show_accordion_divider": false,
-        "title": "Shipping",
+        "title": "Shipping and Delivery",
         "subheading": "",
         "text": "",
         "tabs_bg_color": "#fafafa",
@@ -110,22 +111,22 @@
         "accordion_block_2_0": {
           "type": "text",
           "settings": {
-            "title": "How long does it take to get my products?",
-            "text": "<p>Domestic shipping can take up to 5 business days.<br/><br/>Foreign shipping could take up to 14 business days.<br/><br/>Due to global supply chain challenges, shipping times could be longer than usual.</p>"
+            "title": "What payment methods are accepted?",
+            "text": "<p>We accept major credit cards, PayPal, and other secure payment options.</p>"
           }
         },
         "accordion_block_2_1": {
           "type": "text",
           "settings": {
-            "title": "How much does it cost?",
-            "text": "<p>Shipping rates can vary depending on your region and are calculated at checkout.<br/><br/>Here are the full details of our <a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">Shipping Policy</a>.</p>"
+            "title": "Can I modify or cancel my order after placing it?",
+            "text": "<p>Orders can be modified or canceled within a limited time frame. </p><p>Please contact our Customer Service at store@frmf.ma promptly for assistance.</p>"
           }
         },
         "accordion_block_2_2": {
           "type": "text",
           "settings": {
-            "title": "Is there free shipping?",
-            "text": "<p>Yes, we offer free shipping for large domestic orders.  Check the cart to see the current deal on free shipping..</p>"
+            "title": "Is it possible to personalize my jersey?",
+            "text": "<p>Yes, you can customize your jersey with a name and number of your choice during the ordering process.</p>"
           }
         }
       },
@@ -137,7 +138,7 @@
       "settings": {
         "layout": "one-column",
         "show_accordion_divider": false,
-        "title": "Orders",
+        "title": "Ordering and Payment",
         "subheading": "",
         "text": "",
         "tabs_bg_color": "#fafafa",
@@ -154,22 +155,22 @@
         "accordion_block_4_0": {
           "type": "text",
           "settings": {
-            "title": "Do you offer refunds?",
-            "text": "<p>Yes, we offer full and partial refunds.<br/><br/>Please enquire for more information about our Refund policy.</p>"
+            "title": "What types of products do you offer?",
+            "text": "<p>We offer a selection of official merchandise, including jerseys and training apparel.</p>"
           }
         },
         "accordion_block_4_1": {
           "type": "text",
           "settings": {
-            "title": "How long after I complete a purchase can I ask for a refund?",
-            "text": "<p>A refund request can be submitted within a month after the purchase is made.</p>"
+            "title": "Are all products authentic?",
+            "text": "<p>Yes, all our products are 100% official and sourced directly from authorized manufacturers.</p>"
           }
         },
         "accordion_block_4_4": {
           "type": "text",
           "settings": {
-            "title": "Who pays the shipping costs in the case of a refund when the order has free shipping?",
-            "text": "<p>When an order includes free shipping, only the cost of the return shipping is handled by the customer.</p>"
+            "title": "How can I find the right size?",
+            "text": "<p>Please refer to PUMA’s official <a href=\"https://eu.puma.com/de/en/size-charts.html?srsltid=AfmBOorsnYUHkQuHmqxOyjsWK96XAob8ralJFvCl0vOcnpcLk8O-eXW9\"><span style=\"text-decoration:underline\">size chart</span></a> for detailed measurements to ensure the perfect fit.</p>"
           }
         }
       },
@@ -181,7 +182,95 @@
       "settings": {
         "layout": "one-column",
         "show_accordion_divider": false,
-        "title": "Product Care",
+        "title": " Products and Availability",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_accordions_W3PYbk": {
+      "type": "section-accordions",
+      "blocks": {
+        "text_kDNEaN": {
+          "type": "text",
+          "settings": {
+            "title": "What is your return policy?",
+            "text": "<p>You can submit a return request within 7 days of the delivery date. Returns are accepted if the item you received is non-compliant, damaged, defective, or counterfeit. </p><p>Customized products are not eligible for return.</p>"
+          }
+        },
+        "text_8x6DLe": {
+          "type": "text",
+          "settings": {
+            "title": "Is there a refund policy?",
+            "text": "<p>We currently do not offer refunds. Approved returns may be exchanged for a replacement item or store credit, subject to availability.</p>"
+          }
+        },
+        "text_fzALfb": {
+          "type": "text",
+          "settings": {
+            "title": "How do I initiate a return or exchange?",
+            "text": "<p>Contact Customer Service at store@frmf.ma to submit your return request. Please include your order number and a description of the issue.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_kDNEaN",
+        "text_8x6DLe",
+        "text_fzALfb"
+      ],
+      "settings": {
+        "layout": "one-column",
+        "show_accordion_divider": false,
+        "title": " Returns and Exchanges",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_accordions_niidir": {
+      "type": "section-accordions",
+      "blocks": {
+        "text_hthG6w": {
+          "type": "text",
+          "settings": {
+            "title": "How can I contact customer support?",
+            "text": "<p>You can reach us at store@frmf.ma for any inquiries or assistance.</p>"
+          }
+        },
+        "text_XVew34": {
+          "type": "text",
+          "settings": {
+            "title": "Do I need an account to place an order?",
+            "text": "<p>No, you can checkout as a guest. However, creating an account allows you to track orders, manage your preferences, and receive a welcome coupon for 5% off your first purchase.</p>"
+          }
+        },
+        "text_TnxAFz": {
+          "type": "text",
+          "settings": {
+            "title": "How can I reset my password?",
+            "text": "<p>Click on “Forgot Password” on the login page and follow the instructions to reset your password.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_hthG6w",
+        "text_XVew34",
+        "text_TnxAFz"
+      ],
+      "settings": {
+        "layout": "one-column",
+        "show_accordion_divider": false,
+        "title": "Account and Support",
         "subheading": "",
         "text": "",
         "tabs_bg_color": "#fafafa",
@@ -198,6 +287,8 @@
     "section_custom_banner_image_KqF6kR",
     "accordion-section-1",
     "accordion-section-2",
-    "accordion-section-4"
+    "accordion-section-4",
+    "section_accordions_W3PYbk",
+    "section_accordions_niidir"
   ]
 }

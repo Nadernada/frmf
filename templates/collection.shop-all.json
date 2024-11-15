@@ -336,6 +336,38 @@
         "padding_bottom": 36
       }
     },
+    "section_collection_RNbDrT": {
+      "type": "section-collection",
+      "settings": {
+        "collection": "trending",
+        "products_layout": "carousel",
+        "number_of_products": 8,
+        "products_per_row_on_desktop": 3,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Trending Now</p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#D43747",
+        "highlight_text_color": "#000",
+        "heading_size": 100,
+        "text": "",
+        "text_size": 100,
+        "button_text": "",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--large",
+        "button_product_text": "",
+        "button_product_link": "",
+        "button_product_color": "btn--black",
+        "button_product_style": "btn--solid",
+        "button_product_size": "btn--small",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "section_grid_R4tgBM": {
       "type": "section-grid",
       "blocks": {
@@ -370,6 +402,7 @@
         "collection_7HC8j3",
         "collection_igQMpN"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "five-fifty-height",
         "enable_mobile_height": false,
@@ -510,6 +543,7 @@
     "section_list_butttons_FMBGYM",
     "main",
     "section_marquee_gJnUNj",
+    "section_collection_RNbDrT",
     "section_grid_R4tgBM",
     "section_text_w7ET4z",
     "section_newsletter_b8r6Cy",

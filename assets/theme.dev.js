@@ -12974,17 +12974,19 @@
         requestAnimationFrame(() => {
           const isHovered = this.header.matches(':hover');
           const hasHoveredClass = this.header.classList.contains(classes$t.headerHovered);
+          const language = document.querySelector('.select-lang-reverse');
+          const icons = document.querySelector('.navitem-account-reversed');
+          const cart = document.querySelectorAll('.navitem-cart-reversed');
 
-          if (isHovered && !hasHoveredClass) this.header.classList.add(classes$t.headerHovered);
+          if (isHovered && !hasHoveredClass) {
+            
+            
+            this.header.classList.add(classes$t.headerHovered)};
 
+  
 
-          // const language = document.querySelector('.select-lang-reverse');
-          // const icons = document.querySelectorAll('.navitem-account-reversed');
-
-          // icons.forEach((item) => {
-          //   item.style.filter = 'invert(0)';
-          // })
-          // language.style.color = "#000000";
+          
+       
         });
       }
 
@@ -13261,6 +13263,8 @@
         this.hasScrolled = currentScrollTop > pageOffset;
         document.body.classList.toggle(classes$s.hasScrolled, this.hasScrolled);
         console.log('dfbsdfb');
+
+        console.log('hover');
           
         icons.style.filter = 'invert(0)';
         cart.forEach((item) => {
@@ -13367,7 +13371,7 @@
             this.background.style.setProperty('--header-background-height', `${this.headerHeight}px`);
             
           }
-        } else if (event.type === 'mouseleave') {
+        } else if (event.type === 'mouseleave' && this.header.classList.contains('site-header--transparent')) {
           console.log(cart);
   
           icons.style.filter = 'invert(1)';

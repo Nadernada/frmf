@@ -67,8 +67,8 @@
             muted
             width="320"
             height="240">
-            <source media="(min-width: 768px)"srcset="{{ background_video }}" />
-            <source media="(max-width: 767px)"srcset="{{ background_video_mobile }}" />
+            <source media="(min-width: 768px)" src="{{ background_video }}" type="video/mp4">
+            <source media="(max-width: 767px)" src="{{ background_video_mobile }}" type="video/mp4" />
             {% comment %} <source src="{{ video_bg }}" type="video/mp4"
           /> {% endcomment %}
           </video>

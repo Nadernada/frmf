@@ -113,7 +113,7 @@
           "type": "text",
           "settings": {
             "title": "What payment methods are accepted?",
-            "text": "<p>We accept major credit cards, PayPal, and other secure payment options.</p>"
+            "text": "<p>We accept major credit cards and secure online payment methods, including Cash Express.</p>"
           }
         },
         "accordion_block_2_1": {

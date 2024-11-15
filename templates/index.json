@@ -15,6 +15,7 @@
         "video_height": "six-fifty-height",
         "text_position": "middle-center",
         "video_link_bg": "https://cdn.shopify.com/videos/c/o/v/4f492a32c28241839545d5a03d39bcb2.mp4",
+        "mobile_video_link_bg": "https://cdn.shopify.com/videos/c/o/v/116ce3b9833b4617a0d69bb6682a8a09.mp4",
         "video_link": "",
         "overlay_opacity": 10,
         "text_color": "text-light",

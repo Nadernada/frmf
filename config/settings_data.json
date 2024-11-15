@@ -100,7 +100,7 @@
     "sold_bg_color": "rgba(0,0,0,0)",
     "sold_text_color": "#000000",
     "saving_bg_color": "#ffffff",
-    "saving_text_color": "#f23000",
+    "saving_text_color": "#008455",
     "color_swatches_type": "theme",
     "color_swatches_product_style": "rectangle",
     "enable_infinity_scroll": false,

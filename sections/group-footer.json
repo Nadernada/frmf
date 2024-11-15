@@ -22,7 +22,7 @@
             "logo_width": 100,
             "show_shop_name": false,
             "text": "",
-            "column_width": "10"
+            "column_width": "33.33"
           }
         },
         "text_HLTtcJ": {
@@ -46,6 +46,7 @@
         },
         "footer-block-1": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "alignment": "text-left",
             "menu": "info",
@@ -58,7 +59,7 @@
           "settings": {
             "alignment": "text-left",
             "menu": "company",
-            "title": "Company",
+            "title": "About",
             "column_width": "20"
           }
         }

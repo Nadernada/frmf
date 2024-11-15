@@ -1321,4 +1321,8 @@ section {
   .overlapping-images__images-inner {
     padding-right: 0;
   }
+
+  .custom-banner-mosaic {
+    margin-left: 0;
+  }
 }

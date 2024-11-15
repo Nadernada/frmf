@@ -226,10 +226,10 @@
           "type": "promo",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/image_8.png",
+            "image": "shopify://shop_images/shop-by-player-cta-listing.png",
             "position": 9,
             "width": "half",
-            "title": "<p>2024's women's collection</p>",
+            "title": "<p>Shop by Player</p>",
             "heading_highlight_type": "circle",
             "highlight_color": "#d43747",
             "highlight_text_color": "#ffffff",

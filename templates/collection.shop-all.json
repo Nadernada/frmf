@@ -339,7 +339,7 @@
     "section_newsletter_limited_ti7VAr": {
       "type": "section-newsletter-limited",
       "settings": {
-        "flex_align": "align--middle-left",
+        "flex_align": "align--middle-center",
         "text_color": "text-light",
         "title": "",
         "title_section": "Coming Soon",

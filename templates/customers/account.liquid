@@ -5,6 +5,7 @@
       <div class="account text-left">
         <div class="section__header">
           <h1 class="section__heading account__heading">{{ 'customer.account.title' | t }}</h1>
+{% render 'hulkapps-wishlist-account-btn' %}
           <a class="account__logout" href="{{ routes.account_logout_url }}">{{ 'layout.customer.log_out' | t }}</a>
 
           {%- if settings.show_spacer_lines -%}

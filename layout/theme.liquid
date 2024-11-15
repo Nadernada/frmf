@@ -230,6 +230,12 @@
   {%- endcomment -%}
 
   {{ content_for_header }}
+<script type="text/javascript">if(typeof window.hulkappsWishlist === 'undefined') {
+        window.hulkappsWishlist = {};
+        }
+        window.hulkappsWishlist.baseURL = '/apps/advanced-wishlist/api';
+        window.hulkappsWishlist.hasAppBlockSupport = '1';
+        </script>
 </head>{%- capture body_classes -%}
 template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
 {% if customer %} customer-logged-in{% endif %}
@@ -277,5 +283,6 @@ template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
 
   <!-- And above this comment line ================================================== -->
 
+{% render 'hulkappsWishlistPopup' %}
 </body>
 </html>

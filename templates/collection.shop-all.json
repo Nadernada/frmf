@@ -242,7 +242,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "shopify://collections/shop-by-player",
             "button_color": "btn--primary",
             "button_style": "btn--solid",
             "button_size": "btn--small"

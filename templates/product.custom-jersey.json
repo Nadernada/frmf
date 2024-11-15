@@ -146,6 +146,7 @@
     },
     "section_image_with_text_Fkxeen": {
       "type": "section-image-with-text",
+      "disabled": true,
       "settings": {
         "section_height": "six-fifty-height",
         "layout": "inline",

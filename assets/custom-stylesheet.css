@@ -1097,7 +1097,16 @@ section {
 @media only screen and (max-width: 796px) {
 
   .custom-newsletter-wrapper {
-    height: 120vw;
+    height: 145vw;
+  }
+
+  .custom-newsletter-wrapper > .wrapper--full-padded > .mosaic__item__content {
+    margin-top: auto;
+  }
+
+  .custom-newsletter-wrapper > .wrapper--full-padded {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
 .custom-mosaic-grid {

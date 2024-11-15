@@ -1,6 +1,7 @@
 <!-- /snippets/video.liquid -->
 {%- liquid
   assign sizes = image_sizes | default: '100vw'
+  assign video_bg = background_video_mobile | default: background_video
   capture image_classes
     echo 'video-background video-background--image'
     if image == blank
@@ -24,11 +25,12 @@
     image_attributes: image_attributes,
     sizes: sizes,
     classes: image_classes,
-    placeholder_svg: 'lifestyle-1' -%}
+    placeholder_svg: 'lifestyle-1'
+    -%}
 
   {%- assign video_bg_show = false -%}
   {%- if background_video != blank -%}
-    {%- assign video_link_bg_downcase = background_video | downcase -%}
+    {%- assign video_link_bg_downcase = video_bg | downcase -%}
 
     {%- if video_link_bg_downcase contains '.mp4' -%}
       {%- assign video_bg_show = true -%}
@@ -65,7 +67,8 @@
             muted
             width="320"
             height="240">
-            <source src="{{ background_video }}" type="video/mp4" />
+            <source src="{{ video_bg }}" type="video/mp4"
+          />
           </video>
         </template>
       </div>

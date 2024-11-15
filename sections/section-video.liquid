@@ -25,6 +25,7 @@
   assign animation_delay = 150
   assign video_link = section.settings.video_link
   assign background_video = section.settings.video_link_bg
+  assign background_video_mobile = section.settings.mobile_video_link_bg
 -%}{% comment %}
   Enhanced text decorations options - Liquid variables
 
@@ -220,6 +221,7 @@
       animation_anchor: animation_anchor,
       animation_delay: animation_delay,
       background_video: background_video,
+      background_video_mobile: background_video_mobile,
       video_id: video_id,
       video_link: video_link
     -%}
@@ -296,6 +298,12 @@
       "type": "text",
       "id": "video_link_bg",
       "label": "Video background link",
+      "info": "MP4 video link from [files](/admin/content/files?selectedView=all&media_type=VIDEO)"
+    },
+    {
+      "type": "text",
+      "id": "mobile_video_link_bg",
+      "label": "Mobile Video background link",
       "info": "MP4 video link from [files](/admin/content/files?selectedView=all&media_type=VIDEO)"
     },
     {

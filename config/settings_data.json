@@ -78,6 +78,7 @@
     ],
     "empty_cart_buttons": "main-menu",
     "free_shipping_limit": "250",
+    "cart_custom_message_text": "<p>New customers save 5% with code <strong>WELCOME10</strong></p>",
     "cart_custom_message_color": "text-dark",
     "enable_accept_terms": false,
     "upsells_height": 130,

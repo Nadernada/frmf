@@ -13266,6 +13266,8 @@
         console.log('dfbsdfb');
 
         console.log('hover');
+        // if (window.location.pathname === '/') {
+
           
         icons.style.filter = 'invert(0)';
         cart.forEach((item) => {
@@ -13273,6 +13275,8 @@
 
         })
         language.style.color = "#000000";
+        // language.style.backgroundColor = "#ffffff";
+      // }
 
 
         // Hide compact header when scroll back to top
@@ -13292,15 +13296,27 @@
         this.hasScrolled = currentScrollTop > pageOffset;
         document.body.classList.toggle(classes$s.hasScrolled, this.hasScrolled);
         console.log('dfbsdfb');
+
+        if (window.location.pathname === '/') {
+          console.log('look');
+
           
         icons.style.filter = 'invert(1)';
         cart.forEach((item) => {
           item.style.filter = 'invert(1)';
-
         })
         language.style.color = "#ffffff";
+        language.style.backgroundColor = "transparent";
+      } else {
+        
+        icons.style.filter = 'invert(0)';
+        cart.forEach((item) => {
+          item.style.filter = 'invert(0)';
+        })
+        language.style.color = "#000000";
         }
 
+      }
         // Update header background height if users scroll the page with their mouse over the header or over an opened nav menu
         if (this.header.classList.contains(classes$s.headerHovered)) {
           const currentHeight = this.hasScrolled ? window.stickyHeaderHeight : headerHeight;
@@ -13358,13 +13374,15 @@
           this.headerHeight = this.hasScrolled ? window.stickyHeaderHeight : this.header.offsetHeight;
 
           
-  
+          // if (window.location.pathname === '/') {
+
           icons.style.filter = 'invert(0)';
           cart.forEach((item) => {
             item.style.filter = 'invert(0)';
 
           })
           language.style.color = "#000000";
+        // }
 
           this.header.classList.add(classes$s.headerHovered);
 
@@ -13374,13 +13392,19 @@
           }
         } else if (event.type === 'mouseleave' && this.header.classList.contains('site-header--transparent')) {
           console.log(cart);
+
+          if (window.location.pathname === '/') {
+
   
           icons.style.filter = 'invert(1)';
           language.style.color = "#ffffff";
           cart.forEach((item) => {
             item.style.filter = 'invert(1)';
 
-          })        }
+          })        
+        
+                  }      
+          }
 
         // const language = document.querySelector('.select-lang-reverse');
         // const icons = document.querySelectorAll('.navitem-account-reversed');

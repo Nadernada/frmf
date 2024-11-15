@@ -856,12 +856,12 @@ section {
 }
 
 .localization-form .select-popout__toggle {
-  background-color: transparent;
-  color: white;
+  /* background-color: transparent;
+  color: white; */
 }
 
 .navlink--icon > svg {
-  filter: invert(1);
+  /* filter: invert(1); */
 }
 
 .cart-badge {
@@ -970,6 +970,21 @@ section {
   
   .password-page__inner {
     z-index: 999;
+  }
+
+  .signature-limited-img {
+    width: 18rem;
+    height: 7rem;
+  }
+  
+  .custom-newsletter-section .input-group__fields, .custom-newsletter-section .input-group__fields > div, .custom-newsletter-section .input-group__item {
+    flex-basis: auto;
+    width: 100%;
+    min-width: 100%;
+  }
+  
+  .custom-newsletter-section .input-group__item > input,  .custom-newsletter-section .input-group__item > button {
+    width: 100%;
   }
 }
 

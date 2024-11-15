@@ -1290,7 +1290,7 @@
                 </div> -->
 
                 <div class="product__block product__accordions"
-                  id="Block--{{ product.id }}-2"
+                  id="Block--{{ product.id }}-1"
                   {% if animations_enabled %}
                     data-aos="hero"
                     data-aos-anchor="{{ animation_anchor }}"
@@ -1302,21 +1302,62 @@
                 >
 
                   <div class="product__accordion">
-                    <button class="product__accordion__title" aria-controls="ProductAccordion--page-{{ "Shipping and returns" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-trigger
+                    <button class="product__accordion__title" aria-controls="ProductAccordion--page-{{ "Care Instructions" | handle }}--{{ section.id }}--{{ product.id }}-1" data-collapsible-trigger
                     >
-                      {{ 'custom.shipping_and_returns' | t }}
+                      {{ 'custom.care_instructions' | t }}
                       {%- render 'icon-toggle-plus' -%}
                       {%- render 'icon-toggle-minus' -%}
                     </button>
-                    <div class="product__accordion__content" id="ProductAccordion--page-{{ "Shipping and returns" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-container>
+                    <div class="product__accordion__content" id="ProductAccordion--page-{{ "Care Instructions" | handle }}--{{ section.id }}--{{ product.id }}-1" data-collapsible-container>
                       <div class="product__accordion__inner rte" data-collapsible-content>
-                        {{ 'custom.accordion_body' | t }}
+                        <ul>
+                          <li>{{ 'custom.wash_inside' | t }}</li>
+                          <li>{{ 'custom.mild_inside' | t }}</li>
+                          <li>{{ 'custom.iron_inside' | t }}</li>
+                          <li>{{ 'custom.separate_inside' | t }}</li>
+                          <li>{{ 'custom.decoration_inside' | t }}</li>
+                        </ul>
+                       
                       </div>
                     </div>
                   </div>
                 </div>
 
+                  <div class="product__block product__accordions"
+                    id="Block--{{ product.id }}-2"
+                    {% if animations_enabled %}
+                      data-aos="hero"
+                      data-aos-anchor="{{ animation_anchor }}"
+                      data-aos-order="{{ animation_order }}"
+                      {%- assign animation_order = animation_order | plus: 1 -%}
+                    {% endif %}
+                    {{ block_style }}
+                    {{ block.shopify_attributes }}
+                  >
+  
+                    <div class="product__accordion">
+                      <button class="product__accordion__title" aria-controls="ProductAccordion--page-{{ "Shipping Information" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-trigger
+                      >
+                        {{ 'custom.shipping_info' | t }}
+                        {%- render 'icon-toggle-plus' -%}
+                        {%- render 'icon-toggle-minus' -%}
+                      </button>
+                      <div class="product__accordion__content" id="ProductAccordion--page-{{ "Shipping Information" | handle }}--{{ section.id }}--{{ product.id }}-2" data-collapsible-container>
+                        <div class="product__accordion__inner rte" data-collapsible-content>
+                          <ul>
+                            <li>{{ 'custom.delivery' | t }}</li>
+                            <li>{{ 'custom.inter_delivery' | t }}</li>
+                            <li>{{ 'custom.note' | t }}</li>
+     
+                          </ul>
+                         
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
               </div>
+              
 
               {%- liquid
 

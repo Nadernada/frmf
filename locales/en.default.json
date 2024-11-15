@@ -627,6 +627,16 @@
     "recycled_materials": "Recycled materials",
     "more_about-warranty": "Learn more about our warranty",
     "all_rights_reserved": "All rights reserved",
-    "frmf": "Royal Moroccan Football Federation"
+    "frmf": "Royal Moroccan Football Federation",
+    "wash_inside": "Wash and iron inside out",
+    "mild_inside": "Use only mild detergent",
+    "iron_inside": "Do not iron print",
+    "separate_inside": "Wash separately",
+    "decoration_inside": "Exclusive of Decoration",
+    "shipping_info": "Shipping Information",
+    "care_instructions": "Care Instructions",
+    "delivery": "Standard Delivery (Morocco): Free.",
+    "inter_delivery": "International Delivery: 300 MAD.",
+    "note": "Note: For personalized items, delivery may take additional time.",
   }
 }

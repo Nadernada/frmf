@@ -37,9 +37,11 @@
             "padding_bottom": 20
           }
         },
-        "description": {
-          "type": "description",
+        "text_G7GBwc": {
+          "type": "text",
           "settings": {
+            "title": "<p>{{ product.metafields.custom.description | metafield_tag }}</p>",
+            "text_alignment": "left",
             "padding_bottom": 20
           }
         },
@@ -119,7 +121,7 @@
         "inventory_countdown",
         "title",
         "form",
-        "description",
+        "text_G7GBwc",
         "product_accordion",
         "9927e90d-2ecb-4104-af67-0dadf75b2a0a",
         "product_accordion_zpbpnm",

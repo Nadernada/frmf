@@ -461,10 +461,10 @@
     "section_newsletter_limited_W3Q8eb": {
       "type": "section-newsletter-limited",
       "settings": {
-        "flex_align": "align--middle-right",
+        "flex_align": "align--middle-center",
         "text_color": "text-light",
         "title": "",
-        "title_section": "Limited Edition",
+        "title_section": "Coming Soon",
         "text": "<p>Subscribe to join the waitlist</p>",
         "extra_fields": "",
         "button_text": "Subscribe",
@@ -474,8 +474,8 @@
         "overlay_opacity": 0,
         "width": "wrapper--full-padded",
         "heading_size": 130,
-        "text-section": "Be the first to know! Join the waitlist today.",
-        "button_1_text": "Coming Soon",
+        "text-section": "This limited edition is on its way. Join the waitlist",
+        "button_1_text": "",
         "button_1_color": "btn--primary",
         "button_1_style": "btn--solid",
         "button_1_size": "btn--small",

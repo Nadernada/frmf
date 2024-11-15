@@ -46,9 +46,9 @@
         "product_accordion": {
           "type": "product_accordion",
           "settings": {
-            "accordion_heading": "Materials and specs",
+            "accordion_heading": "Product Details",
             "heading_style": "font-body",
-            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_text": "<p><strong>•\t</strong>Regular fit</p><p>\t•\tShort sleeves</p><p>\t•\tFRMF badge on the left chest</p><p>\t•\tPUMA Cat logo on the right chest</p><p>\t•\tRound collar</p><p>\t•\tDouble-sided jacquard fabric</p><p>\t•\tCurved mesh side panels</p><p>\t•\tSmall mesh inserts along the side panels</p><p>\t•\tdryCELL: Performance technology that wicks moisture, keeping you dry during activity</p><p>\t•\tMade from 100% recycled materials, excluding finishes and decorations</p>",
             "accordion_page": "",
             "padding_bottom": 10
           }
@@ -56,9 +56,9 @@
         "9927e90d-2ecb-4104-af67-0dadf75b2a0a": {
           "type": "product_accordion",
           "settings": {
-            "accordion_heading": "Shipping and returns",
+            "accordion_heading": "Shipping Information",
             "heading_style": "font-body",
-            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_text": "<p>Standard Delivery (Morocco): Free.</p><p>International Delivery: 300 MAD.</p><p>Note: For personalized items, delivery may take additional time.</p>",
             "accordion_page": "",
             "padding_bottom": 38
           }

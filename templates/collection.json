@@ -247,7 +247,7 @@
           "type": "promo",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/23-Maroc-Homme_3_1.png",
+            "image": "shopify://shop_images/new-arrivals-cta-listing.png",
             "position": 4,
             "width": "auto",
             "title": "<p>New arrivals have landed</p>",
@@ -263,7 +263,7 @@
             "overlay_opacity": 10,
             "bg_color": "#f5f4f1",
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "shopify://collections/new-arrival",
             "button_color": "btn--primary",
             "button_style": "btn--solid",
             "button_size": "btn--small"
@@ -273,10 +273,10 @@
           "type": "promo",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/image_8.png",
+            "image": "shopify://shop_images/menu03.png",
             "position": 9,
             "width": "half",
-            "title": "<p>2024's women's collection</p>",
+            "title": "<p>Shop By Player</p>",
             "heading_highlight_type": "circle",
             "highlight_color": "#d43747",
             "highlight_text_color": "#ffffff",
@@ -289,7 +289,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "shopify://collections/shop-by-player",
             "button_color": "btn--primary",
             "button_style": "btn--solid",
             "button_size": "btn--small"

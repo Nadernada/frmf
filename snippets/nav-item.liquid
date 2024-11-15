@@ -73,7 +73,7 @@
   endif
 -%}
 
-<div class="{{ classes }}"
+<div class="{{ classes }} {% if link_title == 'New Arrivals' %} relative-menu-item {% endif %}"
   data-nav-item
   {% if grandparent %}
     role="navigation"
@@ -87,11 +87,29 @@
   {% else %}
     data-hover-disclosure-toggle
   {% endif %}>
+  {% comment %} {%- if link_title == 'New Arrivals' -%}
+    <div class="link__badge"
+      data-product-badge
+      {% if animations_enabled %}
+        data-aos="fade"
+        {% if aos_anchor %}
+          data-aos-anchor="{{ aos_anchor }}"
+        {% endif %}
+        {% if aos_custom_init %}
+          data-aos-custom-init
+        {% endif %}
+        data-aos-delay="{{ aos_delay }}"
+      {% endif %}>
+      <div class="product__badge__item product__badge__item--custom">
+        <span>new</span>
+      </div>        </div>
+  {%- endif -%} {% endcomment %}
   <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel{{ link_hover_dot_class }}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}{% if settings.nav_caps_toplevel %} caps{% endif %}">
     <span class="navtext sm-r-margin">{{ link_title }}</span>
     {%- if grandparent -%}
     <div class="navlink--highlight--icon">
       {%- render 'icon-chevron-down' -%}
+      
     </div>
   {%- endif -%}
   </a>
@@ -105,6 +123,7 @@
           {%- if grandparent -%}
             {%- unless images_only -%}
               <div class="header__grandparent__links{% if settings.nav_caps_megamenu %} caps{% endif %}">
+
                 {%- if link.levels == 2 -%}
                   {%- for link in link.links -%}
                     {%- capture link_image_markup -%}

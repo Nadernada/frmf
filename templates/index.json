@@ -270,7 +270,7 @@
         "button_2_color": "btn--black",
         "button_2_style": "btn--text",
         "button_2_size": "btn--small",
-        "bg_color_secondary": false,
+        "bg_color_secondary": true,
         "enable_slider_mobile": false,
         "columns_mobile": "1",
         "overlay_text": true,

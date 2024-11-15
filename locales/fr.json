@@ -648,7 +648,15 @@
     "materials_and_specs": "Matériaux et spécifications",
     "shipping_and_returns": "Expédition et retours",
     "official_merchandise": "Marchandise officielle de la Fédération du Maroc",
-    "recycled_materials": "Matériaux recyclés"
+    "recycled_materials": "Matériaux recyclés",
+    "wash_inside": "Laver et repasser à l'envers",
+    "mild_inside": "Utilisez uniquement un détergent doux",
+    "iron_inside": "Ne pas repasser l'imprimé",
+    "separate_inside": "Laver séparément",
+    "decoration_inside": "Exclusif à la Décoration",
+    "delivery": "Livraison Standard (Maroc) : Gratuite.",
+    "inter_delivery": "Livraison Internationale : 300 MAD.",
+    "note": "Remarque : pour les articles personnalisés, la livraison peut prendre un délai supplémentaire."
   },
   "customer_accounts": {
     "orders": {

@@ -36,6 +36,7 @@
       "blocks": {
         "heading_Cyb4Vd": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "<p></p><p></p><p>24/25 Home Jersey</p>",
             "size": 180,
@@ -56,7 +57,7 @@
           "settings": {
             "stacked_button": false,
             "button_1_text": "Shop Now",
-            "button_1_link": "shopify://collections/all",
+            "button_1_link": "shopify://collections/all-products",
             "button_1_color": "btn--primary",
             "button_1_style": "btn--solid-border",
             "button_1_size": "btn--small",
@@ -193,7 +194,7 @@
             "subheading": "",
             "show_description": true,
             "button_1_text": "Shop Now",
-            "button_1_link": "{{ block.settings.collection.url }}",
+            "button_1_link": "shopify://collections/mens-collection",
             "button_1_color": "btn--black",
             "button_1_style": "btn--outline",
             "button_1_size": "btn--small",
@@ -210,7 +211,7 @@
             "subheading": "",
             "show_description": true,
             "button_1_text": "Shop Now",
-            "button_1_link": "",
+            "button_1_link": "{{ block.settings.collection.url }}",
             "button_1_color": "btn--black",
             "button_1_style": "btn--solid",
             "button_1_size": "btn--small",
@@ -245,7 +246,7 @@
             "subheading": "",
             "show_description": true,
             "button_1_text": "Shop Now",
-            "button_1_link": "{{ block.settings.collection.url }}",
+            "button_1_link": "shopify://collections/fans",
             "button_1_color": "btn--black",
             "button_1_style": "btn--outline",
             "button_1_size": "btn--small",

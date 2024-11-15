@@ -472,7 +472,7 @@
         "image": "shopify://shop_images/limited-edition.png",
         "image_height": "five-fifty-height",
         "overlay_opacity": 0,
-        "width": "wrapper",
+        "width": "wrapper--full-padded",
         "heading_size": 130,
         "text-section": "Be the first to know! Join the waitlist today.",
         "button_1_text": "Coming Soon",

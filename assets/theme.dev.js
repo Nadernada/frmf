@@ -13297,7 +13297,7 @@
         document.body.classList.toggle(classes$s.hasScrolled, this.hasScrolled);
         console.log('dfbsdfb');
 
-        if (window.location.pathname === '/') {
+        if (window.location.pathname === '/' || window.location.pathname === '/fr') {
           console.log('look');
 
           
@@ -13393,7 +13393,7 @@
         } else if (event.type === 'mouseleave' && this.header.classList.contains('site-header--transparent')) {
           console.log(cart);
 
-          if (window.location.pathname === '/') {
+          if (window.location.pathname === '/' || window.location.pathname === '/fr') {
 
   
           icons.style.filter = 'invert(1)';

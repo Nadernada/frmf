@@ -835,6 +835,17 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   padding-right: 2rem;
 }
 
+.custom-newsletter-content .input-group__btn:hover {
+  background-color: transparent;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.collection-promo__body .btn--primary:hover {
+  background-color: white;
+  color: var(--accent);
+}
+
 .coming-soon-text {
   font-size: 1.5rem;
   margin-top: 3rem;

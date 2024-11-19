@@ -658,7 +658,7 @@
   --COLOR-BLACK-ALPHA-60: {{ color_black_alpha_60 }};
 
   {%- comment -%} Typography {%- endcomment -%}
-  --FONT-STACK-BODY: 'Inter Tight', {{ base_font.fallback_families }};
+  --FONT-STACK-BODY: 'Inter Tight', 'Inter', {{ base_font.fallback_families }};
   --FONT-STYLE-BODY: {{ base_font.style }};
   --FONT-STYLE-BODY-ITALIC: {{ base_font_italic.style | default: 'italic' }};
   --FONT-ADJUST-BODY: {{ settings.text_size | divided_by: 100.0 }};
@@ -668,7 +668,7 @@
   --FONT-WEIGHT-BODY-MEDIUM: {{ base_font_medium.weight | default: 500 }};
   --FONT-WEIGHT-BODY-BOLD: {{ base_font_bold.weight | default: 700 }};
 
-  --FONT-STACK-HEADING: 'Inter Tight', {{ heading_font.fallback_families }};
+  --FONT-STACK-HEADING: 'Inter Tight', 'Inter', {{ heading_font.fallback_families }};
   --FONT-STYLE-HEADING: {{ heading_font.style }};
   --FONT-STYLE-HEADING-ITALIC: {{ heading_font_italic.style | default: 'italic' }};
   --FONT-ADJUST-HEADING: {{ settings.heading_size | divided_by: 100.0 }};
@@ -840,14 +840,35 @@
 
  @font-face {   
     font-family: 'Inter Tight';  
-          src: 	url('{{ "InterTight-VariableFont_wght.ttf" | asset_url }}');   
+          src: 	url('{{ "https://cdn.shopify.com/s/files/1/0801/4862/7649/files/InterTight-VariableFont_wght.ttf?v=1732045236" | asset_url }}  format ('ttf')');   
          font-weight: normal;
          font-style: normal;
  } 
 
  @font-face {   
+    font-family: 'Inter Tight';  
+          src: 	url('{{ "https://cdn.shopify.com/s/files/1/0801/4862/7649/files/InterTight-VariableFont_wght.ttf?v=1732045236" | asset_url }}  format ('ttf')');   
+         font-weight: 900;
+         font-style: normal;
+ } 
+
+ @font-face {   
+    font-family: 'Inter Tight';  
+          src: 	url('{{ "https://cdn.shopify.com/s/files/1/0801/4862/7649/files/InterTight-VariableFont_wght.ttf?v=1732045236" | asset_url }}  format ('ttf')');   
+         font-weight: 800;
+         font-style: normal;
+ } 
+
+ @font-face {   
+    font-family: 'Inter Tight';  
+          src: 	url('{{ "https://cdn.shopify.com/s/files/1/0801/4862/7649/files/InterTight-VariableFont_wght.ttf?v=1732045236" | asset_url }}  format ('ttf')');   
+         font-weight: 1000;
+         font-style: normal;
+ } 
+
+ @font-face {   
     font-family: 'Urbanist';  
-          src: 	url('{{ "Urbanist-VariableFont_wght.ttf" | asset_url }}');   
+          src: 	url('{{ "Urbanist-VariableFont_wght.ttf" | asset_url }}  format ('ttf')');   
          font-weight: normal;
          font-style: normal;
  } 

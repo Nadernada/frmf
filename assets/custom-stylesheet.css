@@ -1,3 +1,5 @@
+
+
 html:lang(ar) .banner-image__text-wrapper {
   direction: rtl !important;
 }
@@ -41,6 +43,13 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   direction: rtl !important;
   text-align: center !important;
 }
+
+ * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-smooth: always;
+
+ }
 
 
 

@@ -58,7 +58,7 @@
   {% endif %}
 >
   <div class="wrapper">
-    <form action="{{ routes.cart_url }}" method="post" novalidate data-cart-form>
+    <form action="{{ routes.cart_url | escape }}" method="post" novalidate data-cart-form>
       <div class="cart__empty{% if cart_items_size > 0 %} hidden{% endif %}" data-empty-message>{%- liquid
   assign animation_order = animation_order | default: 1
   assign empty_cart_heading = settings.empty_cart_heading

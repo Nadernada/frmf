@@ -82,7 +82,7 @@
     "show_free_shipping_message": false,
     "message": "",
     "free_shipping_limit": "",
-    "cart_custom_message_text": "<p>Sign up now and save 5% with code <strong>MFYAZHMSKTAV </strong>on your first purchase</p>",
+    "cart_custom_message_text": "<p>Sign up now and save 5% on your first purchase</p>",
     "cart_custom_message_color": "text-dark",
     "enable_accept_terms": false,
     "upsells_height": 130,

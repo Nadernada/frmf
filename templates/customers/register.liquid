@@ -11,6 +11,8 @@
       <div class="form-vertical">
         {% form 'create_customer', id: 'CreateCustomer', data-form-newsletter: '' %}
           {{ form.errors | default_errors }}
+          <input type="hidden" name="contact[accepts_marketing]" value="true">
+
           <label for="FirstName" class="hidden-label">{{ 'customer.register.first_name' | t }}</label>
           <input type="text" name="customer[first_name]" id="FirstName" class="input--full" placeholder="{{ 'customer.register.first_name' | t }}" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus>
           <label for="LastName" class="hidden-label">{{ 'customer.register.last_name' | t }}</label>

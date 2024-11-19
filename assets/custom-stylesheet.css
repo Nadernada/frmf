@@ -945,6 +945,16 @@ section {
   margin-left: 0;
 }
 
+.no-padding {
+  padding: 0;
+  background-color: transparent;
+  width: auto;
+}
+.no-padding > svg {
+  max-width: auto;
+  max-height: auto;
+  height: 100%;
+}
 
 
 

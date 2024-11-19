@@ -343,7 +343,7 @@
         "text_HwARpC": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign Up Now and get 5% off</p>",
+            "text": "<p>Sign up now and get 5% off</p>",
             "text_color": "",
             "heading_highlight_type": "circle",
             "highlight_color": "#d43747",
@@ -472,7 +472,7 @@
         "products_layout": "carousel",
         "number_of_products": 8,
         "products_per_row_on_desktop": 3,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "text_alignment": "text-left",
         "title": "<p>Trending Now</p>",
         "heading_highlight_type": "circle",
@@ -485,9 +485,9 @@
         "button_color": "btn--black",
         "button_style": "btn--text",
         "button_size": "btn--large",
-        "button_product_text": "",
+        "button_product_text": "Shop Now",
         "button_product_link": "",
-        "button_product_color": "btn--black",
+        "button_product_color": "btn--primary",
         "button_product_style": "btn--solid",
         "button_product_size": "btn--small",
         "bg_color_secondary": false,
@@ -537,7 +537,7 @@
       "settings": {
         "flex_align": "align--middle-center",
         "text_color": "text-light",
-        "title": "Sign Up Now and get 5% off",
+        "title": "Sign up now and get 5% off",
         "text": "<p>Sign up for exclusive deals and early access to new products.</p>",
         "extra_fields": "",
         "button_text": "",

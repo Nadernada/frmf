@@ -951,8 +951,8 @@ section {
   width: auto;
 }
 .no-padding > svg {
-  max-width: auto;
-  max-height: auto;
+  max-width: none;
+  max-height: none;
   height: 100%;
 }
 

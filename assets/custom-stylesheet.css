@@ -956,6 +956,21 @@ section {
   height: 100%;
 }
 
+.loader-container-video {
+  /* display: flex !important; */
+  z-index: 10;
+}
+
+.loader-container-video.hidden {
+  /* display: flex !important; */
+  display: none !important;
+}
+
+.main-content--parallax {
+  background-color: black !important;
+}
+
+
 
 
 @media only screen and (min-width: 1024px) {

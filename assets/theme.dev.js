@@ -13173,7 +13173,6 @@
 
       initQuantity() {
         this.items = document.querySelectorAll('[data-cart-item]');
-        console.log(this.items, 'items');
 
         this.items?.forEach((item) => {
           const quantity = new QuantityCounter(item, true);
@@ -13235,7 +13234,6 @@
         const shouldShowCompactHeader = this.position === 'fixed' && !this.hasCollectionFilters;
         if (shouldShowCompactHeader) {
           this.headerState();
-        console.log('dfbsdfb');
 
           document.addEventListener('theme:scroll', this.headerStateEvent);
           return;
@@ -13263,9 +13261,7 @@
         // Show compact header when scroll down
         this.hasScrolled = currentScrollTop > pageOffset;
         document.body.classList.toggle(classes$s.hasScrolled, this.hasScrolled);
-        console.log('dfbsdfb');
-
-        console.log('hover');
+ 
         // if (window.location.pathname === '/') {
 
           
@@ -13295,10 +13291,8 @@
         // Show compact header when scroll down
         this.hasScrolled = currentScrollTop > pageOffset;
         document.body.classList.toggle(classes$s.hasScrolled, this.hasScrolled);
-        console.log('dfbsdfb');
 
         if (window.location.pathname === '/' || window.location.pathname === '/fr' || window.location.pathname === '/fr/pages/faq' || window.location.pathname === '/pages/faq') {
-          console.log('look');
 
           
         icons.style.filter = 'invert(1)';
@@ -14714,7 +14708,7 @@
                 const videoMarkup = this.videoTemplate.innerHTML;
                 this.videoPlayer.innerHTML = videoMarkup;
                 this.video = this.container.querySelector(selectors$q.videoAutoplay);
-                // this.videoPlayer.classList.remove(classes$j.loading);
+                this.videoPlayer.classList.remove(classes$j.loading);
                 // this.container.classList.add(classes$j.paused);
 
                 this.listen();
@@ -14734,15 +14728,18 @@
         videoObserver.observe(this.videoPlayer);
 
         // Force video autoplay button
-        this.videoPlayButton.addEventListener('click', (event) => {
-          event.preventDefault();
-          this.video?.play();
-        });
+        // this.videoPlayButton.addEventListener('click', (event) => {
+        //   event.preventDefault();
+        //   this.video?.play();
+        // });
       }
 
       listen() {
         this.video.addEventListener('play', () => {
+          this.loader = this.container.querySelector('[data-loader]');
           this.container.classList.remove(classes$j.paused);
+          this.loader.classList.add('hidden');
+
         });
 
         // Force video autoplay on iOS when Low Power Mode is On
@@ -15121,7 +15118,6 @@
         this.listen();
 
         this.handleLastSlideOverlayOnMobile();
-        console.log(container);
       }
       
       initSlider(slider) {

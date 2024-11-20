@@ -52,8 +52,11 @@
   {%- endif -%}
 
   {%- if video_bg_show -%}
-    <div class="video-background">
-      <div class="video__player"
+    <div class="video-background loading-image">
+      <div class="loader__image__holder loader-container-video" data-loader>
+        <div class="loader__image loader__image--fallback"></div>
+      </div>
+      <div class="video__player is-loading"
         data-video-player
         data-video-id="{{ unique }}-video-background">
         <template data-video-template>

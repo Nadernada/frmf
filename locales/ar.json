@@ -1727,7 +1727,9 @@
           "other": "المجموع الفرعي • %{count} عناصر"
         },
         "shipping_default_value": "تم حسابها في الخطوة التالية",
-        "price_after_discount_aria_text": "سعر مخفض"
+        "price_after_discount_aria_text": "سعر مخفض",
+        "price_before_discount_aria_text": "السعر الأصلي",
+        "discount_code_aria_text": "كود الخصم"
       },
       "delivery_options": {
         "free_total_label": "حر",
@@ -3599,6 +3601,14 @@
           "auth": "المصادقة:",
           "aid": "يساعد:",
           "source": "مصدر:"
+        },
+        "payment_type": {
+          "gift_card": "بطاقة هدية",
+          "store_credit": "رصيد المتجر",
+          "money_order": "حوالة بريدية",
+          "cash_on_delivery": "الدفع عند الاستلام (COD)",
+          "bank_deposit": "وديعة بنكية",
+          "manual": "يدوي"
         }
       },
       "paid_with_shop_pay_installments_card": {
@@ -4414,6 +4424,8 @@
     "accordion_body": "استخدم هذا الأكورديون لإضافة معلومات مثل المواد والمقاسات والميزات وسياسات الشحن والإرجاع",
     "more_about-warranty": "تعرف على المزيد حول ضماننا",
     "all_rights_reserved": "جميع الحقوق محفوظة",
-    "frmf": "الجامعة الملكية المغربية لكرة القدم"
+    "frmf": "الجامعة الملكية المغربية لكرة القدم",
+    "shipping_info": "معلومات الشحن",
+    "care_instructions": "تعليمات العناية"
   }
 }

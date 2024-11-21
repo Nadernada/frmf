@@ -49,7 +49,7 @@
         "text_69LRbm": {
           "type": "text",
           "settings": {
-            "text": "<p>The official 2024 collection embodies the spirit of the Moroccan National Team. With a fusion of Moroccan heritage and a modern touch, unleash your inner Atlas Lion in style.</p>",
+            "text": "<p>The official 24/25 collection embodies the spirit of the Moroccan National Team. With a fusion of Moroccan heritage and a modern touch, unleash your inner Atlas Lion in style.</p>",
             "size": 120
           }
         },
@@ -89,7 +89,7 @@
             "collection_text": "Best Selling",
             "collection_image": "{{ block.settings.ft_collection.image }}",
             "button_collection_text": "Shop Now",
-            "button_collection_link": "",
+            "button_collection_link": "shopify://collections/home-kits",
             "button_collection_color": "btn--white",
             "button_collection_style": "btn--outline",
             "button_collection_size": "btn--small"

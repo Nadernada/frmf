@@ -606,7 +606,7 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   object-fit: contain;
   background-color: white;
   border-radius: calc(var(--RADIUS) / 2);
-  padding: 8px;
+  /* padding: 8px; */
   display: flex !important;
   justify-content: center;
   align-items: center;

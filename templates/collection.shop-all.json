@@ -510,8 +510,8 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "title": "New customers get 5% off",
-            "text": "<p>on your first purchase</p>"
+            "title": "New Customers Get 5% Off",
+            "text": "<p>Available on your first purchase</p>"
           }
         },
         "text_kyMjDF": {
@@ -526,8 +526,8 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "title": "Pay on delivery",
-            "text": "<p>Convenient, secure payment when your order arrives.</p>"
+            "title": "Worldwide Shipping",
+            "text": "<p>Easy delivery to your location, wherever you are</p>"
           }
         }
       },

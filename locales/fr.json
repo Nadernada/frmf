@@ -183,7 +183,7 @@
       "gift_notes_label": "Est-ce un cadeau?",
       "gift_note_attribute": "Note de cadeau",
       "update": "Mettre à jour le panier",
-      "checkout": "Caisset",
+      "checkout": "Caissier",
       "empty": "Votre panier est actuellement vide.",
       "accept_terms": "Vous devez accepter nos termes et conditions.",
       "accepted_terms": "Termes/conditions acceptés?",
@@ -656,7 +656,9 @@
     "decoration_inside": "Exclusif à la Décoration",
     "delivery": "Livraison Standard (Maroc) : Gratuite.",
     "inter_delivery": "Livraison Internationale : 300 MAD.",
-    "note": "Remarque : pour les articles personnalisés, la livraison peut prendre un délai supplémentaire."
+    "note": "Remarque : pour les articles personnalisés, la livraison peut prendre un délai supplémentaire.",
+    "shipping_info": "Informations sur la livraison",
+    "care_instructions": "Conseils d'entretien"
   },
   "customer_accounts": {
     "orders": {

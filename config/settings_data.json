@@ -78,6 +78,7 @@
     ],
     "empty_cart_button_text": "",
     "empty_cart_button_link": "shopify://collections/all-products",
+    "empty_cart_message": "",
     "empty_cart_buttons": "main-menu",
     "show_free_shipping_message": false,
     "message": "",

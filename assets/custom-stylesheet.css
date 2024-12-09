@@ -157,13 +157,17 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.056);
+  background-color: rgba(0, 0, 0, 0.27);
 }
 
 .featured-product-wrapper {
   background-color: #f2f2f2;
   border-radius: calc(var(--RADIUS) * 2);
   padding: 3rem;
+}
+
+.custom-newletter-inner .mosaic__item__heading {
+  padding-bottom: 1rem;
 }
 
 .product-grid-item__info_wrapper {
@@ -840,8 +844,11 @@ html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section
 .custom-newsletter-content .input-group__btn {
   background-color: var(--accent);
   border-color: var(--accent);
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: calc(var(--top-bottom-padding)* var(--adjust-button) + var(--BORDER-WIDTH));
+  padding-bottom: calc(var(--top-bottom-padding)* var(--adjust-button) + var(--BORDER-WIDTH));
+  padding-right: calc(var(--left-right-padding) * var(--adjust-button) + var(--BORDER-WIDTH));
+  padding-left: calc(var(--left-right-padding) * var(--adjust-button) + var(--BORDER-WIDTH));
+  font-size: calc(1rem * var(--adjust-button));
 }
 
 .custom-newsletter-content .input-group__btn:hover {

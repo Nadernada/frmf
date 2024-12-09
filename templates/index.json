@@ -137,10 +137,9 @@
         },
         "collection_Y6rDrJ": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "title": "Women's Team",
-            "tab_collection": "shop-by-player",
+            "tab_collection": "women-collection",
             "number_of_products": 6,
             "show_image": false,
             "overlay_opacity": 10,

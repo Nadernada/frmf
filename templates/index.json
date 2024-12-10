@@ -37,10 +37,9 @@
       "blocks": {
         "heading_Cyb4Vd": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "<p></p><p></p><p>24/25 Home Jersey</p>",
-            "size": 180,
+            "text": "<p></p><p></p><h1><strong>Official Merchandise Store of Royal Moroccan Football Federation</strong></h1>",
+            "size": 130,
             "heading_highlight_type": "italics",
             "highlight_color": "#d43747",
             "highlight_text_color": "#000000"

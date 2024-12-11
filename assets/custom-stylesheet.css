@@ -9,7 +9,7 @@ html:lang(ar) .banner-image__text-wrapper > .banner-image__heading, html:lang(ar
   text-align: right;
 }
 
- html:lang(ar) .custom-newletter-inner  > .newsletter-section__content {
+ html:lang(ar) .newsletter-section__content {
   direction: rtl !important;
   text-align: right;
   align-items: center;

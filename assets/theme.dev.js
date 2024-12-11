@@ -13292,7 +13292,7 @@
         this.hasScrolled = currentScrollTop > pageOffset;
         document.body.classList.toggle(classes$s.hasScrolled, this.hasScrolled);
 
-        if (window.location.pathname === '/' || window.location.pathname === '/fr' || window.location.pathname === '/fr/pages/faq' || window.location.pathname === '/pages/faq') {
+        if (window.location.pathname === '/' || window.location.pathname === '/fr' || window.location.pathname === '/ar' || window.location.pathname === '/fr/pages/faq' || window.location.pathname === '/pages/faq' || window.location.pathname === '/ar/pages/faq') {
 
           
         icons.style.filter = 'invert(1)';
@@ -13387,7 +13387,7 @@
         } else if (event.type === 'mouseleave' && this.header.classList.contains('site-header--transparent')) {
           console.log(cart);
 
-          if (window.location.pathname === '/' || window.location.pathname === '/fr' || window.location.pathname === '/fr/pages/faq' || window.location.pathname === '/pages/faq') {
+          if (window.location.pathname === '/' || window.location.pathname === '/fr' || window.location.pathname === '/ar' || window.location.pathname === '/fr/pages/faq' || window.location.pathname === '/pages/faq' || window.location.pathname === '/ar/pages/faq') {
 
   
           icons.style.filter = 'invert(1)';

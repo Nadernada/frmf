@@ -4,13 +4,23 @@ html:lang(ar) .banner-image__text-wrapper {
   direction: rtl !important;
 }
 
-html:lang(ar) .banner-image__text-wrapper > .banner-image__heading {
+html:lang(ar) .banner-image__text-wrapper > .banner-image__heading, html:lang(ar) .banner-image__text-wrapper > .banner-image__content, html:lang(ar) .custom-newletter-inner {
   direction: rtl !important;
   text-align: right;
 }
 
+ html:lang(ar) .custom-newletter-inner  > .newsletter-section__content {
+  direction: rtl !important;
+  text-align: right;
+  align-items: center;
+}
+
 html:lang(ar) .form__wrapper {
   direction: rtl !important;
+}
+
+html:lang(ar) .two-inputs-wrapper {
+  margin-right: var(--form-left);
 }
 
 html:lang(ar) .featured-collection__top {

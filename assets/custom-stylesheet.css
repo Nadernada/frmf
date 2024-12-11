@@ -4,6 +4,11 @@ html:lang(ar) .banner-image__text-wrapper {
   direction: rtl !important;
 }
 
+html:lang(ar) .banner-image__text-wrapper > .banner-image__heading {
+  direction: rtl !important;
+  text-align: right;
+}
+
 html:lang(ar) .form__wrapper {
   direction: rtl !important;
 }
@@ -42,6 +47,22 @@ html:lang(ar) .footer-block--menu > div > ul > li {
 html:lang(ar) .icons-row-item__text > div > p, html:lang(ar) .newsletter-section__entry p, html:lang(ar) .icons-row-item__text > p {
   direction: rtl !important;
   text-align: center !important;
+}
+
+html:lang(ar) .english-banner {
+  display: none;
+}
+
+html:lang(ar) .arabic-banner {
+  display: block;
+}
+
+html:not(:lang(ar)) .english-banner {
+  display: block;
+}
+
+html:not(:lang(ar)) .arabic-banner {
+  display: none;
 }
 
  * {

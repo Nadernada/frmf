@@ -5,6 +5,7 @@
   assign enable_mobile_height = section.settings.enable_mobile_height
   assign mobile_height = section.settings.mobile_height
   assign image_desktop = section.settings.image
+  assign image_desktop_arabic = section.settings.image_arabic
   assign image_aspect_ratio = image_desktop.aspect_ratio | default: 2.63
   assign image_mobile = section.settings.image_mobile
   assign image_mobile_aspect_ratio = image_mobile.aspect_ratio | default: image_aspect_ratio | default: 0.66
@@ -149,8 +150,11 @@
     {{ image_link }}
 
     <div class="banner-image__image-container">
-      <div class="banner-image__image-inner" data-banner-image>
+      <div class="banner-image__image-inner english-banner" data-banner-image>
         {%- render 'image-fill', is_background: true, image_desktop: image_desktop, image_mobile: image_mobile, sizes: '100vw', classes: 'banner-image__image', loading: loading, fetchpriority: fetchpriority, preload: preload, placeholder_svg: 'lifestyle-1' -%}
+      </div>
+      <div class="banner-image__image-inner arabic-banner" data-banner-image>
+        {%- render 'image-fill', is_background: true, image_desktop: image_desktop_arabic, image_mobile: image_mobile, sizes: '100vw', classes: 'banner-image__image', loading: loading, fetchpriority: fetchpriority, preload: preload, placeholder_svg: 'lifestyle-1' -%}
       </div>
     </div>
 

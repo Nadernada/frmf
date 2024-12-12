@@ -105,10 +105,11 @@
         },
         "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "icon_name": "support",
             "icon_image": "shopify://shop_images/PUMA_MEN_21.29.19.png",
-            "icon_width": 40,
+            "icon_width": 50,
             "title": "Need help with sizing?",
             "text": "",
             "bg_color": "#f7f9fa",

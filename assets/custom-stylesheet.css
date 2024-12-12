@@ -77,6 +77,9 @@ html:lang(ar) .newsletter-section__entry {
 html:lang(ar) .custom-newsletter-wrapper > .newsletter-section__entry {
   text-align: right !important;
 }
+html:lang(ar) .product-grid-item__title {
+  text-align: right !important;
+}
 
 html:not(:lang(ar)) .english-banner {
   display: block;

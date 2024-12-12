@@ -162,6 +162,11 @@
             </div>
           </div>{%- endif -%}
 
+          {% comment %} <div class="search-icon" menu__item menu__item--icons>
+            {%- render 'search-popdown', unique: 'desktop', in_header: true, classes: 'menu__item menu__item--icon', summary_classes: summary_classes, header_icons_as_text: header_icons_as_text -%}
+          </div> {% endcomment %}
+
+
             <div class="collection__products-count" data-products-count="{{ products_count }}">
               {{- products_count -}}
             </div>

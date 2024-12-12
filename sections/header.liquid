@@ -289,9 +289,9 @@
       </div>
     {%- endif -%}
 
-    {%- if settings.show_header_search -%}
+    {% comment %} {%- if settings.show_header_search -%} {% endcomment %}
       {%- render 'search-popdown', unique: 'desktop', in_header: true, classes: 'menu__item menu__item--icon', summary_classes: summary_classes, header_icons_as_text: header_icons_as_text -%}
-    {%- endif -%}
+    {% comment %} {%- endif -%} {% endcomment %}
 
     {%- render 'cross-border' -%}
 

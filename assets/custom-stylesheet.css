@@ -74,6 +74,9 @@ html:lang(ar) .input-group--inline {
 html:lang(ar) .newsletter-section__entry {
   text-align: center;
 }
+html:lang(ar) .custom-newsletter-wrapper > .newsletter-section__entry {
+  text-align: right;
+}
 
 html:not(:lang(ar)) .english-banner {
   display: block;

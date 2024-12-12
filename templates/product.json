@@ -105,12 +105,12 @@
         },
         "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9": {
           "type": "feature",
-          "disabled": true,
           "settings": {
             "icon_name": "support",
-            "icon_width": 25,
+            "icon_image": "shopify://shop_images/PUMA_MEN_21.29.19.png",
+            "icon_width": 40,
             "title": "Need help with sizing?",
-            "text": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
+            "text": "",
             "bg_color": "#f7f9fa",
             "text_color": "#000000",
             "padding_bottom": 20

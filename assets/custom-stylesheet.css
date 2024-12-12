@@ -1006,6 +1006,7 @@ section {
 
 .search-icon {
   width: 1rem;
+  z-index: 9999;
 }
 
 

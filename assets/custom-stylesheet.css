@@ -75,7 +75,7 @@ html:lang(ar) .newsletter-section__entry {
   text-align: center;
 }
 html:lang(ar) .custom-newsletter-wrapper > .newsletter-section__entry {
-  text-align: right;
+  text-align: right !important;
 }
 
 html:not(:lang(ar)) .english-banner {

@@ -67,6 +67,14 @@ html:lang(ar) .arabic-banner {
   display: block;
 }
 
+html:lang(ar) .input-group--inline {
+  direction: ltr;
+}
+
+html:lang(ar) .newsletter-section__entry {
+  text-align: center;
+}
+
 html:not(:lang(ar)) .english-banner {
   display: block;
 }

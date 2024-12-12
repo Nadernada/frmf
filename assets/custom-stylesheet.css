@@ -1017,6 +1017,15 @@ section {
   z-index: 9999;
 }
 
+.input-group__field {
+  padding: 12px 20px 12px 20px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .input-group__item {
+    flex-basis: 24%;
+  }
+}
 
 
 

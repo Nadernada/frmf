@@ -4,7 +4,7 @@ html:lang(ar) .banner-image__text-wrapper {
   direction: rtl !important;
 }
 
-html:lang(ar) .banner-image__text-wrapper > .banner-image__heading, html:lang(ar) .banner-image__text-wrapper > .banner-image__content, html:lang(ar) .custom-newletter-inner {
+html:lang(ar) .banner-image__text-wrapper > .banner-image__heading, html:lang(ar) .banner-image__text-wrapper > .banner-image__content, html:lang(ar) .custom-newletter-inner, html:lang(ar) .text__content {
   direction: rtl !important;
   text-align: right;
 }
@@ -74,9 +74,11 @@ html:lang(ar) .input-group--inline {
 html:lang(ar) .newsletter-section__entry {
   text-align: center;
 }
+
 html:lang(ar) .custom-newsletter-wrapper > .newsletter-section__entry {
   text-align: right !important;
 }
+
 html:lang(ar) .product-grid-item__title {
   text-align: right !important;
 }

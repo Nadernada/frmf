@@ -1,5 +1,3 @@
-
-
 html:lang(ar) .banner-image__text-wrapper {
   direction: rtl !important;
 }
@@ -1514,7 +1512,7 @@ section {
   }
 
   .subheading-text {
-    /*flex-direction: column;*/
+    flex-direction: column;
     gap: .5rem;
     justify-content: center;
   }

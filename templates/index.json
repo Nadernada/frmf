@@ -37,6 +37,7 @@
       "blocks": {
         "heading_Cyb4Vd": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "<p></p><p></p><h1><strong>Official Merchandise Store of Royal Moroccan Football Federation</strong></h1>",
             "size": 130,

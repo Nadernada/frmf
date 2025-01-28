@@ -1,23 +1,23 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin language editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "ie11_support_message": "This site has limited support for your browser. We recommend switching to Edge, Chrome, Safari, or Firefox.",
     "swatches": {
-      "color": "Color, Colour",
+      "color": "Color, Colour, لون",
       "color_variant": "color variant",
       "more_colors": "+ {{ number }} more"
     },
     "siblings": {
       "label": "Color",
-      "swatches": "Color, Colour"
+      "swatches": "Color, Colour, لون"
     },
     "size_chart": {
       "button": "Size guide",
@@ -25,7 +25,7 @@
     },
     "accessibility": {
       "skip_to_content": "Skip to content",
-      "select_variant":  "Select variant dropdown",
+      "select_variant": "Select variant dropdown",
       "show_submenu": "Show submenu",
       "product": "Product",
       "show_products": "Show products",
@@ -306,7 +306,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal\/Zip Code",
+      "zip": "Postal/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -408,7 +408,7 @@
       "add_product": "Add a Product",
       "product_title": "Product Title",
       "vendor": "Shopify",
-      "no_collections_html": "You don't have any collections to show here. <a href=\"\/admin\/custom_collections\">Add some collections<\/a> to go along with the default Frontpage.",
+      "no_collections_html": "You don't have any collections to show here. <a href=\"/admin/custom_collections\">Add some collections</a> to go along with the default Frontpage.",
       "add_collection": "Add a Collection",
       "collection_title": "Collection",
       "single_product_title": "Showcase a single product",
@@ -528,8 +528,8 @@
       "remaining_html": "Only {{ inventory }} left in stock",
       "remaining_no_count": "Hurry! Low inventory",
       "on_sale": "Sale",
-      "save_badge_html" : "Save {{ discount }}",
-      "save_badge_up_to_html" : "Save up to {{ discount }}",
+      "save_badge_html": "Save {{ discount }}",
+      "save_badge_up_to_html": "Save up to {{ discount }}",
       "quick_view": "Quick Buy",
       "checkout": "Checkout",
       "view_in_space": "View in Your Space",
@@ -585,9 +585,9 @@
     "month_day_year": "%B %d, %Y"
   },
   "footer": {
-    "socials" : {
-      "title":"View {{ shop_name }} on {{ social }}",
-      "rss":"RSS"
+    "socials": {
+      "title": "View {{ shop_name }} on {{ social }}",
+      "rss": "RSS"
     },
     "country": "Country",
     "language": "Language",
@@ -600,8 +600,8 @@
       "check_other_stores": "Check availability at other stores",
       "pick_up_available": "Pickup available",
       "pick_up_currently_unavailable": "Pickup currently unavailable",
-      "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}<\/strong>",
+      "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}</strong>",
       "kilometers": "km",
       "miles": "mi"
     }
@@ -614,10 +614,10 @@
   "video": {
     "play_bg_video": "Play background video"
   },
-  "custom" : {
-    "customize_your_jersey" : "Customize Your Jersey",
-    "add_jersey_number" : "Add Jersey Number",
-    "add_jersey_name" : "Add Jersey Name",
+  "custom": {
+    "customize_your_jersey": "Customize Your Jersey",
+    "add_jersey_number": "Add Jersey Number",
+    "add_jersey_name": "Add Jersey Name",
     "enter_your_jersey-number": "Enter Your Jersey Number",
     "enter_your_jersey-name": "Enter Your Jersey Name",
     "materials_and_specs": "Materials and specs",
@@ -637,6 +637,6 @@
     "care_instructions": "Care Instructions",
     "delivery": "Standard Delivery (Morocco): Free.",
     "inter_delivery": "International Delivery: 300 MAD.",
-    "note": "Note: For personalized items, delivery may take additional time.",
+    "note": "Note: For personalized items, delivery may take additional time."
   }
 }
